@@ -19,15 +19,14 @@ function getTransporter() {
 
 export async function sendPasswordResetEmail(
   toEmail: string,
-  rawToken: string
+  token: string
 ): Promise<{ success: boolean; error?: string }> {
-  const baseUrl = (
+  const baseUrl =
     process.env.NEXT_PUBLIC_APP_URL ||
     process.env.APP_URL ||
-    "https://finder.uzeetech.com.lk"
-  ).replace(/\/$/, "");
+    "https://finder.uzeetech.com.lk";
 
-  const resetUrl = `${baseUrl}/reset-password?token=${encodeURIComponent(rawToken)}`;
+  const resetUrl = `${baseUrl.replace(/\/$/, "")}/reset-password?token=${encodeURIComponent(token)}`;
 
   console.log("\n=======================================================");
   console.log(`🔑 [PASSWORD RESET LINK for ${toEmail}]:`);
@@ -63,10 +62,9 @@ export async function sendPasswordResetEmail(
             body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f8fafc; margin: 0; padding: 40px 20px; color: #1e293b; }
             .card { max-width: 500px; margin: 0 auto; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; padding: 32px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
             .logo { font-size: 20px; font-weight: 900; color: #0f172a; margin-bottom: 24px; }
-            .logo span { color: #b91c1c; }
+            .logo span { color: #dc2626; }
             h2 { font-size: 18px; font-weight: 700; margin-top: 0; color: #0f172a; }
             p { font-size: 14px; line-height: 1.6; color: #475569; }
-            .btn { display: inline-block; background-color: #b91c1c; color: #ffffff !important; font-weight: 600; font-size: 14px; text-decoration: none; padding: 12px 24px; border-radius: 10px; margin: 20px 0; text-align: center; }
             .footer { font-size: 12px; color: #94a3b8; margin-top: 24px; border-top: 1px solid #f1f5f9; padding-top: 16px; }
           </style>
         </head>
@@ -75,11 +73,12 @@ export async function sendPasswordResetEmail(
             <div class="logo"><span>UZEE</span> TECH</div>
             <h2>Password Reset Request</h2>
             <p>Hello,</p>
-            <p>We received a request to reset the password for your <strong>UZEE TECH ScreenGuard Finder</strong> account (<strong>${toEmail}</strong>).</p>
+            <p>We received a request to reset the password for your <strong>UZEE TECH ScreenGuard Finder</strong> account (<strong>${recipient}</strong>).</p>
             <p>Click the button below to set a new password. This link is valid for <strong>1 hour</strong>.</p>
-            <p style="text-align: center;">
-              <a href="${resetUrl}" class="btn" target="_blank">Reset Password</a>
+            <p style="text-align: center; margin: 24px 0;">
+              <a href="${resetUrl}" target="_blank" style="display: inline-block; background-color: #dc2626; color: #ffffff; padding: 14px 28px; font-weight: bold; border-radius: 8px; text-decoration: none; font-size: 15px;">Reset Password</a>
             </p>
+            <p style="margin-top: 16px; font-size: 12px; color: #94a3b8;">Or copy this link into your browser:<br/><a href="${resetUrl}" style="color: #60a5fa;">${resetUrl}</a></p>
             <p>If you did not request a password reset, you can safely ignore this email. Your password will remain unchanged.</p>
             <div class="footer">
               <p>UZEE TECH Internal Tool &bull; This is an automated notification.</p>
@@ -90,7 +89,7 @@ export async function sendPasswordResetEmail(
       `,
     });
 
-    console.log(`[mail] Password reset email successfully sent via Gmail to ${toEmail}`);
+    console.log(`[mail] Password reset email successfully sent via Gmail to ${recipient}`);
     return { success: true };
   } catch (err) {
     const msg = err instanceof Error ? err.message : "Unknown mail error";

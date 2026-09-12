@@ -18,19 +18,20 @@ export async function POST(request: Request) {
       );
     }
 
-    const normalizedEmail = email.trim().toLowerCase();
+    // Normalize incoming email
+    const targetEmail = email.trim().toLowerCase();
 
-    // Check if user exists in database
+    // Query Turso strictly
     const userRes = await turso.execute({
       sql: "SELECT id, email FROM users WHERE LOWER(email) = ? LIMIT 1",
-      args: [normalizedEmail],
+      args: [targetEmail],
     });
 
-    // If user doesn't exist, return success message anyway to prevent account enumeration
+    // CRITICAL: If no user is returned, DO NOT CALL sendPasswordResetEmail. Exit immediately.
     if (userRes.rows.length === 0) {
       return NextResponse.json({
         success: true,
-        message: "If that email address is registered, a password reset link has been sent.",
+        message: "If an account exists, a link was sent.",
       });
     }
 
@@ -60,12 +61,12 @@ export async function POST(request: Request) {
       args: [uuidv4(), userId, tokenHash, expiresAt],
     });
 
-    // Dispatch email directly to registered user email
+    // ONLY when user is found: call sendPasswordResetEmail with registered email and rawToken
     await sendPasswordResetEmail(registeredEmail, rawToken);
 
     return NextResponse.json({
       success: true,
-      message: "If that email address is registered, a password reset link has been sent.",
+      message: "If an account exists, a link was sent.",
     });
   } catch (err) {
     const msg = err instanceof Error ? err.message : "Unknown error";
