@@ -8,6 +8,7 @@ import { DataQualityModal } from "@/components/DataQualityModal";
 import { StockCountModeModal } from "@/components/StockCountModeModal";
 import { UserManagementModal } from "@/components/UserManagementModal";
 import { BulkImportModal } from "@/components/BulkImportModal";
+import { BulkDeleteModal } from "@/components/BulkDeleteModal";
 import type { Box } from "@/types/screenguard";
 import {
   Package,
@@ -87,6 +88,7 @@ export default function AdminPage() {
   const [isStockCountModalOpen, setIsStockCountModalOpen] = useState(false);
   const [isUserModalOpen, setIsUserModalOpen] = useState(false);
   const [isImportModalOpen, setIsImportModalOpen] = useState(false);
+  const [isBulkDeleteModalOpen, setIsBulkDeleteModalOpen] = useState(false);
   const [saveStatus, setSaveStatus] = useState<"idle" | "success" | "error">("idle");
   const [deleteId, setDeleteId] = useState<string | null>(null);
 
@@ -571,6 +573,19 @@ export default function AdminPage() {
                     >
                       <UploadCloud className="w-4 h-4 text-brand-700 dark:text-brand-400" />
                       <span>Import Boxes (CSV)</span>
+                    </button>
+
+                    <div className="my-1 border-t border-slate-100 dark:border-slate-800" />
+
+                    <button
+                      onClick={() => {
+                        setIsToolsOpen(false);
+                        setIsBulkDeleteModalOpen(true);
+                      }}
+                      className="w-full text-left px-4 py-2.5 text-xs font-semibold text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/40 flex items-center gap-2.5 transition-colors"
+                    >
+                      <Trash2 className="w-4 h-4 text-rose-600 dark:text-rose-400" />
+                      <span>Bulk Delete Boxes</span>
                     </button>
                   </div>
                 </>
@@ -1202,6 +1217,12 @@ export default function AdminPage() {
       <BulkImportModal
         isOpen={isImportModalOpen}
         onClose={() => setIsImportModalOpen(false)}
+        onSuccess={fetchData}
+      />
+
+      <BulkDeleteModal
+        isOpen={isBulkDeleteModalOpen}
+        onClose={() => setIsBulkDeleteModalOpen(false)}
         onSuccess={fetchData}
       />
     </div>
