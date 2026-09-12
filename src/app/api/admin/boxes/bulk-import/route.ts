@@ -116,29 +116,64 @@ export async function POST(request: Request) {
       const row = records[i];
       const rowNumber = i + 2; // +1 for 0-index, +1 for header line
 
-      // Flexible header mapping
-      const rawBoxNum =
+      // Extract required fields
+      const title = (
+        row["Box Title / Main Model"] ||
+        row["Box Title"] ||
+        row["title"] ||
+        row["Title"] ||
+        ""
+      ).trim();
+
+      const models = (
+        row["Compatible Models"] ||
+        row["compatible_models"] ||
+        row["Models"] ||
+        ""
+      ).trim();
+
+      const size = (
+        row["Display Size"] ||
+        row["display_size"] ||
+        row["Size"] ||
+        ""
+      ).trim();
+
+      const stock = (
+        row["Initial Stock"] ||
+        row["stock"] ||
+        row["Stock Quantity"] ||
+        ""
+      ).trim();
+
+      // Strict skip rule: If !title && !models && !size && !stock, VOID/SKIP this row completely.
+      // Do not create a box, do not reserve the box number, and do not execute any database write for it.
+      if (!title && !models && !size && !stock) {
+        continue;
+      }
+
+      // Only process and insert rows that have at least a title or models defined
+      if (!title && !models) {
+        continue;
+      }
+
+      const rawBoxNum = (
         row["Box Number"] ||
         row["box_number"] ||
         row["Box #"] ||
         row["boxNumber"] ||
-        "";
+        ""
+      ).trim();
 
-      // Skip completely empty placeholder rows
-      if (!rawBoxNum.trim() && Object.values(row).every((v) => !v.trim())) {
-        continue;
-      }
-
-      if (!rawBoxNum.trim()) {
+      if (!rawBoxNum) {
         validationErrors.push(`Row ${rowNumber}: Box Number is required.`);
         continue;
       }
 
       // Normalize Box Number: e.g. "134" -> "BOX 134", or "BOX 134" -> "BOX 134"
-      const trimmedBox = rawBoxNum.trim();
-      const normalizedBoxNumber = trimmedBox.toUpperCase().startsWith("BOX")
-        ? trimmedBox.toUpperCase()
-        : `BOX ${trimmedBox}`;
+      const normalizedBoxNumber = rawBoxNum.toUpperCase().startsWith("BOX")
+        ? rawBoxNum.toUpperCase()
+        : `BOX ${rawBoxNum}`;
 
       // Check for duplication against existing database
       if (existingBoxNumbers.has(normalizedBoxNumber)) {
@@ -157,15 +192,11 @@ export async function POST(request: Request) {
       }
       seenBatchNumbers.add(normalizedBoxNumber);
 
-      const title =
-        row["Box Title"] || row["title"] || row["Title"] || normalizedBoxNumber;
-      const displaySize =
-        row["Display Size"] || row["display_size"] || row["Size"] || "Unknown";
+      const finalTitle = title || models.split(",")[0]?.trim() || normalizedBoxNumber;
+      const displaySize = size || "Unknown";
 
       // Parse Initial Stock
-      const rawStock =
-        row["Initial Stock"] || row["stock"] || row["Stock Quantity"] || "0";
-      const stockQty = Math.max(0, parseInt(rawStock.trim(), 10) || 0);
+      const stockQty = Math.max(0, parseInt(stock, 10) || 0);
 
       // Normalize Physical Stock Verified into 1 or 0 boolean
       const rawVerified =
@@ -173,18 +204,12 @@ export async function POST(request: Request) {
         row["verified"] ||
         row["Stock Verified"] ||
         "";
-      const isVerified = /^(1|true|yes|y)$/i.test(rawVerified.trim()) ? 1 : 0;
+      const isVerified = /^(1|true|yes|y)$/i.test(String(rawVerified).trim()) ? 1 : 0;
 
       // Parse Compatible Models
-      const rawModels =
-        row["Compatible Models"] ||
-        row["compatible_models"] ||
-        row["Models"] ||
-        "";
-      const compatibleModels = rawModels
-        .split(",")
-        .map((m) => m.trim())
-        .filter(Boolean);
+      const compatibleModels = models
+        ? models.split(",").map((m) => m.trim()).filter(Boolean)
+        : [finalTitle];
 
       // Generate unique box id
       const digitsMatch = normalizedBoxNumber.match(/\d+/);
@@ -209,7 +234,7 @@ export async function POST(request: Request) {
           created_at,
           updated_at
         ) VALUES (?, ?, ?, ?, 'Super-D', ?, ?, 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)`,
-        args: [boxId, normalizedBoxNumber, displaySize, title, stockQty, isVerified],
+        args: [boxId, normalizedBoxNumber, displaySize, finalTitle, stockQty, isVerified],
       });
       boxesAdded++;
 

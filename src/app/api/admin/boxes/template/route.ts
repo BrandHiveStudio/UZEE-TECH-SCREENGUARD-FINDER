@@ -25,7 +25,7 @@ export async function GET() {
     // Headers as specified
     const headers = [
       "Box Number",
-      "Box Title",
+      "Box Title / Main Model",
       "Display Size",
       "Initial Stock",
       "Physical Stock Verified",
@@ -38,11 +38,12 @@ export async function GET() {
     for (let i = 0; i < 50; i++) {
       const currentBoxNum = startBox + i;
       if (i === 0) {
-        // Helpful standard example row on the first item
+        // Helpful standard example row using an actual phone model as Main Model
         lines.push(
-          `${currentBoxNum},Super-D Black Edge,6.67,20,YES,"Redmi Note 12, Poco X5 5G"`
+          `${currentBoxNum},Redmi Note 12,"6.67""",20,YES,"Redmi Note 12, Poco X5 5G, Note 12 4G"`
         );
       } else {
+        // Leave all columns empty except for the prefilled Box Number
         lines.push(`${currentBoxNum},,,,,`);
       }
     }
