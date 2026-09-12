@@ -6,6 +6,7 @@ import { Header } from "@/components/Header";
 import { AdminBoxModal } from "@/components/AdminBoxModal";
 import { DataQualityModal } from "@/components/DataQualityModal";
 import { StockCountModeModal } from "@/components/StockCountModeModal";
+import { UserManagementModal } from "@/components/UserManagementModal";
 import type { Box } from "@/types/screenguard";
 import {
   Package,
@@ -23,6 +24,7 @@ import {
   Layers,
   MapPin,
   RefreshCw,
+  Users,
 } from "lucide-react";
 
 export default function AdminPage() {
@@ -45,6 +47,7 @@ export default function AdminPage() {
   const [editingBox, setEditingBox] = useState<Box | null>(null);
   const [saving, setSaving] = useState(false);
   const [isStockCountModalOpen, setIsStockCountModalOpen] = useState(false);
+  const [isUserModalOpen, setIsUserModalOpen] = useState(false);
   const [saveStatus, setSaveStatus] = useState<"idle" | "success" | "error">("idle");
   const [deleteId, setDeleteId] = useState<string | null>(null);
 
@@ -503,6 +506,13 @@ export default function AdminPage() {
               className="px-4 py-2.5 rounded-2xl bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-bold text-xs sm:text-sm shadow-sm transition-all flex items-center gap-2 active:scale-95"
             >
               <Database className="w-4 h-4 text-brand-700 dark:text-brand-400" /> Backup Data
+            </button>
+
+            <button
+              onClick={() => setIsUserModalOpen(true)}
+              className="px-4 py-2.5 rounded-2xl bg-slate-800 dark:bg-slate-700 hover:bg-slate-700 dark:hover:bg-slate-600 text-white font-bold text-xs sm:text-sm shadow-md transition-all flex items-center gap-2 active:scale-95"
+            >
+              <Users className="w-4 h-4 text-brand-400" /> Manage Users
             </button>
 
             {/* Save Status Banner */}
@@ -1031,6 +1041,11 @@ export default function AdminPage() {
         onClose={() => setIsStockCountModalOpen(false)}
         boxes={boxes}
         onComplete={fetchData}
+      />
+
+      <UserManagementModal
+        isOpen={isUserModalOpen}
+        onClose={() => setIsUserModalOpen(false)}
       />
     </div>
   );
