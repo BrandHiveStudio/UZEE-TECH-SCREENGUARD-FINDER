@@ -7,6 +7,7 @@ import { AdminBoxModal } from "@/components/AdminBoxModal";
 import { DataQualityModal } from "@/components/DataQualityModal";
 import { StockCountModeModal } from "@/components/StockCountModeModal";
 import { UserManagementModal } from "@/components/UserManagementModal";
+import { BulkImportModal } from "@/components/BulkImportModal";
 import type { Box } from "@/types/screenguard";
 import {
   Package,
@@ -26,6 +27,8 @@ import {
   ChevronDown,
   TrendingUp,
   Copy,
+  FileSpreadsheet,
+  UploadCloud,
 } from "lucide-react";
 
 function getOrderRecommendation(unitsSold: number) {
@@ -83,6 +86,7 @@ export default function AdminPage() {
   const [saving, setSaving] = useState(false);
   const [isStockCountModalOpen, setIsStockCountModalOpen] = useState(false);
   const [isUserModalOpen, setIsUserModalOpen] = useState(false);
+  const [isImportModalOpen, setIsImportModalOpen] = useState(false);
   const [saveStatus, setSaveStatus] = useState<"idle" | "success" | "error">("idle");
   const [deleteId, setDeleteId] = useState<string | null>(null);
 
@@ -239,6 +243,13 @@ export default function AdminPage() {
     a.download = filename;
     a.click();
     URL.revokeObjectURL(url);
+  };
+
+  const handleDownloadImportTemplate = () => {
+    const link = document.createElement("a");
+    link.href = "/api/admin/boxes/template";
+    link.download = "screenguards_import_template.csv";
+    link.click();
   };
 
   // ── Focused 4-Card Inventory Statistics ────────────────────────────────────
@@ -515,7 +526,7 @@ export default function AdminPage() {
                     className="fixed inset-0 z-20"
                     onClick={() => setIsToolsOpen(false)}
                   />
-                  <div className="absolute right-0 mt-2 w-56 bg-white dark:bg-slate-900 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-800 py-1.5 z-30 animate-in fade-in slide-in-from-top-2 duration-150">
+                  <div className="absolute right-0 mt-2 w-64 bg-white dark:bg-slate-900 rounded-2xl shadow-xl border border-slate-200 dark:border-slate-800 py-1.5 z-30 animate-in fade-in slide-in-from-top-2 duration-150">
                     <button
                       onClick={() => {
                         setIsToolsOpen(false);
@@ -536,6 +547,30 @@ export default function AdminPage() {
                     >
                       <Download className="w-4 h-4 text-emerald-600" />
                       <span>Download Stock CSV</span>
+                    </button>
+
+                    <div className="my-1 border-t border-slate-100 dark:border-slate-800" />
+
+                    <button
+                      onClick={() => {
+                        setIsToolsOpen(false);
+                        handleDownloadImportTemplate();
+                      }}
+                      className="w-full text-left px-4 py-2.5 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2.5 transition-colors"
+                    >
+                      <FileSpreadsheet className="w-4 h-4 text-blue-500" />
+                      <span>Download Import Template (CSV)</span>
+                    </button>
+
+                    <button
+                      onClick={() => {
+                        setIsToolsOpen(false);
+                        setIsImportModalOpen(true);
+                      }}
+                      className="w-full text-left px-4 py-2.5 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center gap-2.5 transition-colors"
+                    >
+                      <UploadCloud className="w-4 h-4 text-brand-700 dark:text-brand-400" />
+                      <span>Import Boxes (CSV)</span>
                     </button>
                   </div>
                 </>
@@ -1162,6 +1197,12 @@ export default function AdminPage() {
       <UserManagementModal
         isOpen={isUserModalOpen}
         onClose={() => setIsUserModalOpen(false)}
+      />
+
+      <BulkImportModal
+        isOpen={isImportModalOpen}
+        onClose={() => setIsImportModalOpen(false)}
+        onSuccess={fetchData}
       />
     </div>
   );
