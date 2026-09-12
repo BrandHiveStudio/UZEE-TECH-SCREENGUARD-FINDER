@@ -1,0 +1,7220 @@
+[
+  {
+    "id": "SD-F001",
+    "box_number": "BOX 001",
+    "display_size": "4.7\"",
+    "title": "iPhone 6",
+    "raw_text": "iPhone 6 — iPhone 6, iPhone 6S",
+    "models": [
+      {
+        "model_name": "iPhone 6"
+      },
+      {
+        "model_name": "iPhone 6S"
+      }
+    ]
+  },
+  {
+    "id": "SD-F002",
+    "box_number": "BOX 002",
+    "display_size": "Unknown",
+    "title": "Samsung A05S",
+    "raw_text": "Samsung A05S — Samsung A05S, Samsung M14 4G, Samsung F14 4G, Realme C53, Realme C51, Realme C51S, Realme C61, Realme C63, Realme C71 4G INDIA, Realme NOTE 70, Realme P4 LITE 4G, Realme NOTE 50, Realme NOTE 60, Realme NOTE 60X, Realme NOTE 70T, Realme NOTE 80, Realme NARZO N53, Realme NARZO N61, Realme NARZO N63, Realme NARZO 80 LITE, Vivo Y04 4G, Vivo Y05, Vivo Y11 5G 2026, Vivo Y11D, Vivo Y19E, Vivo Y19 5G, Vivo Y19S 5G, Vivo Y19S GT, Vivo Y21 5G 2026, Vivo Y29T, Vivo Y29S 5G, Vivo T4 LITE 5G, Vivo iQOO Z10 LITE 5G, HONOR PLAY 10A, HONOR X5C, Honor X5C PLUS, HONOR X6D, HONOR PLAY 60, Realme C71, Realme C61 (India)",
+    "models": [
+      {
+        "model_name": "Samsung A05S"
+      },
+      {
+        "model_name": "Samsung M14 4G"
+      },
+      {
+        "model_name": "Samsung F14 4G"
+      },
+      {
+        "model_name": "Realme C53"
+      },
+      {
+        "model_name": "Realme C51"
+      },
+      {
+        "model_name": "Realme C51S"
+      },
+      {
+        "model_name": "Realme C61"
+      },
+      {
+        "model_name": "Realme C63"
+      },
+      {
+        "model_name": "Realme C71 4G INDIA"
+      },
+      {
+        "model_name": "Realme NOTE 70"
+      },
+      {
+        "model_name": "Realme P4 LITE 4G"
+      },
+      {
+        "model_name": "Realme NOTE 50"
+      },
+      {
+        "model_name": "Realme NOTE 60"
+      },
+      {
+        "model_name": "Realme NOTE 60X"
+      },
+      {
+        "model_name": "Realme NOTE 70T"
+      },
+      {
+        "model_name": "Realme NOTE 80"
+      },
+      {
+        "model_name": "Realme NARZO N53"
+      },
+      {
+        "model_name": "Realme NARZO N61"
+      },
+      {
+        "model_name": "Realme NARZO N63"
+      },
+      {
+        "model_name": "Realme NARZO 80 LITE"
+      },
+      {
+        "model_name": "Vivo Y04 4G"
+      },
+      {
+        "model_name": "Vivo Y05"
+      },
+      {
+        "model_name": "Vivo Y11 5G 2026"
+      },
+      {
+        "model_name": "Vivo Y11D"
+      },
+      {
+        "model_name": "Vivo Y19E"
+      },
+      {
+        "model_name": "Vivo Y19 5G"
+      },
+      {
+        "model_name": "Vivo Y19S 5G"
+      },
+      {
+        "model_name": "Vivo Y19S GT"
+      },
+      {
+        "model_name": "Vivo Y21 5G 2026"
+      },
+      {
+        "model_name": "Vivo Y29T"
+      },
+      {
+        "model_name": "Vivo Y29S 5G"
+      },
+      {
+        "model_name": "Vivo T4 LITE 5G"
+      },
+      {
+        "model_name": "Vivo iQOO Z10 LITE 5G"
+      },
+      {
+        "model_name": "HONOR PLAY 10A"
+      },
+      {
+        "model_name": "HONOR X5C"
+      },
+      {
+        "model_name": "Honor X5C PLUS"
+      },
+      {
+        "model_name": "HONOR X6D"
+      },
+      {
+        "model_name": "HONOR PLAY 60"
+      },
+      {
+        "model_name": "Realme C71"
+      },
+      {
+        "model_name": "Realme C61 (India)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F003",
+    "box_number": "BOX 003",
+    "display_size": "5.5\"",
+    "title": "iPhone 6 PLUS",
+    "raw_text": "iPhone 6 PLUS — iPhone 6 PLUS, iPhone 6S PLUS",
+    "models": [
+      {
+        "model_name": "iPhone 6 PLUS"
+      },
+      {
+        "model_name": "iPhone 6S PLUS"
+      }
+    ]
+  },
+  {
+    "id": "SD-F004",
+    "box_number": "BOX 004",
+    "display_size": "6.5\"",
+    "title": "Samsung A12",
+    "raw_text": "Samsung A12 — Samsung A12, Samsung A02, Samsung A02S, Samsung A02 5G, Samsung A03, Samsung A03S, Samsung A03 CORE, Samsung A04, Samsung A04S, Samsung A04 CORE, Samsung A04 E, Samsung A13 4G, Samsung 5G, Samsung A23 4G, Samsung A32 5G, Samsung M02 4G, Samsung M02S, Samsung M04 4G, Samsung M12, Samsung M13 4G, Samsung M13 INDIA, Samsung M23 5G, Samsung M32 5G, Samsung M33 5G, Samsung F02S 4G, Samsung F04 4G, Samsung F12 4G, Samsung F13 4G, Samsung F23 5G, Infinix HOT 8, Infinix HOT 8 LITE, Infinix HOT 10i, Infinix HOT 11, Infinix HOT 12i, Infinix HOT 20i, Infinix HOT 20 5G, Infinix HOT 30i, Infinix SMART 6, Infinix SMART 6 HD, Infinix SMART 7 HD, Motorola E13, Motorola E22, Tecno POP 5 LTE, Tecno POP 7, Tecno POP 7 PRO, Tecno SPARK GO, Tecno SPARK GO 2020, Tecno SPARK GO 2023, Tecno SPARK 6 GO, Tecno SPARK 7, Tecno SPARK 8C, Tecno SPARK10 4G, Tecno 5G, Tecno SPARK 10C, Itel A60, Itel A60S, Itel A70, Itel P40, Itel S23, Tecno Spark 10",
+    "models": [
+      {
+        "model_name": "Itel A70"
+      },
+      {
+        "model_name": "Itel P40"
+      },
+      {
+        "model_name": "Itel S23"
+      },
+      {
+        "model_name": "Tecno Spark 10"
+      },
+      {
+        "model_name": "Samsung A12"
+      },
+      {
+        "model_name": "Samsung A02"
+      },
+      {
+        "model_name": "Samsung A02S"
+      },
+      {
+        "model_name": "Samsung A02 5G"
+      },
+      {
+        "model_name": "Samsung A03"
+      },
+      {
+        "model_name": "Samsung A03S"
+      },
+      {
+        "model_name": "Samsung A03 CORE"
+      },
+      {
+        "model_name": "Samsung A04"
+      },
+      {
+        "model_name": "Samsung A04S"
+      },
+      {
+        "model_name": "Samsung A04 CORE"
+      },
+      {
+        "model_name": "Samsung A04 E"
+      },
+      {
+        "model_name": "Samsung A13 4G"
+      },
+      {
+        "model_name": "Samsung 5G"
+      },
+      {
+        "model_name": "Samsung A23 4G"
+      },
+      {
+        "model_name": "Samsung A32 5G"
+      },
+      {
+        "model_name": "Samsung M02 4G"
+      },
+      {
+        "model_name": "Samsung M02S"
+      },
+      {
+        "model_name": "Samsung M04 4G"
+      },
+      {
+        "model_name": "Samsung M12"
+      },
+      {
+        "model_name": "Samsung M13 4G"
+      },
+      {
+        "model_name": "Samsung M13 INDIA"
+      },
+      {
+        "model_name": "Samsung M23 5G"
+      },
+      {
+        "model_name": "Samsung M32 5G"
+      },
+      {
+        "model_name": "Samsung M33 5G"
+      },
+      {
+        "model_name": "Samsung F02S 4G"
+      },
+      {
+        "model_name": "Samsung F04 4G"
+      },
+      {
+        "model_name": "Samsung F12 4G"
+      },
+      {
+        "model_name": "Samsung F13 4G"
+      },
+      {
+        "model_name": "Samsung F23 5G"
+      },
+      {
+        "model_name": "Infinix HOT 8"
+      },
+      {
+        "model_name": "Infinix HOT 8 LITE"
+      },
+      {
+        "model_name": "Infinix HOT 10i"
+      },
+      {
+        "model_name": "Infinix HOT 11"
+      },
+      {
+        "model_name": "Infinix HOT 12i"
+      },
+      {
+        "model_name": "Infinix HOT 20i"
+      },
+      {
+        "model_name": "Infinix HOT 20 5G"
+      },
+      {
+        "model_name": "Infinix HOT 30i"
+      },
+      {
+        "model_name": "Infinix SMART 6"
+      },
+      {
+        "model_name": "Infinix SMART 6 HD"
+      },
+      {
+        "model_name": "Infinix SMART 7 HD"
+      },
+      {
+        "model_name": "Motorola E13"
+      },
+      {
+        "model_name": "Motorola E22"
+      },
+      {
+        "model_name": "Tecno POP 5 LTE"
+      },
+      {
+        "model_name": "Tecno POP 7"
+      },
+      {
+        "model_name": "Tecno POP 7 PRO"
+      },
+      {
+        "model_name": "Tecno SPARK GO"
+      },
+      {
+        "model_name": "Tecno SPARK GO 2020"
+      },
+      {
+        "model_name": "Tecno SPARK GO 2023"
+      },
+      {
+        "model_name": "Tecno SPARK 6 GO"
+      },
+      {
+        "model_name": "Tecno SPARK 7"
+      },
+      {
+        "model_name": "Tecno SPARK 8C"
+      },
+      {
+        "model_name": "Tecno SPARK10 4G"
+      },
+      {
+        "model_name": "Tecno 5G"
+      },
+      {
+        "model_name": "Tecno SPARK 10C"
+      },
+      {
+        "model_name": "Itel A60"
+      },
+      {
+        "model_name": "Itel A60S"
+      }
+    ]
+  },
+  {
+    "id": "SD-F005",
+    "box_number": "BOX 005",
+    "display_size": "4.7\"",
+    "title": "iPhone 7",
+    "raw_text": "iPhone 7 — iPhone 7, iPhone 8",
+    "models": [
+      {
+        "model_name": "iPhone 7"
+      },
+      {
+        "model_name": "iPhone 8"
+      }
+    ]
+  },
+  {
+    "id": "SD-F006",
+    "box_number": "BOX 006",
+    "display_size": "5.5\"",
+    "title": "iPhone 7 PLUS",
+    "raw_text": "iPhone 7 PLUS — iPhone 7 PLUS, iPhone 8 PLUS",
+    "models": [
+      {
+        "model_name": "iPhone 7 PLUS"
+      },
+      {
+        "model_name": "iPhone 8 PLUS"
+      }
+    ]
+  },
+  {
+    "id": "SD-F007",
+    "box_number": "BOX 007",
+    "display_size": "5.8\"",
+    "title": "iPhone X",
+    "raw_text": "iPhone X — iPhone X, iPhone XS, iPhone 11 PRO",
+    "models": [
+      {
+        "model_name": "iPhone X"
+      },
+      {
+        "model_name": "iPhone XS"
+      },
+      {
+        "model_name": "iPhone 11 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F008",
+    "box_number": "BOX 008",
+    "display_size": "Unknown",
+    "title": "Samsung A14 4G",
+    "raw_text": "Samsung A14 4G — Samsung A14 4G, Samsung A14 5G, Samsung M14 5G, Samsung F14 5G, Samsung SAM A14 5G",
+    "models": [
+      {
+        "model_name": "Samsung A14 4G"
+      },
+      {
+        "model_name": "Samsung A14 5G"
+      },
+      {
+        "model_name": "Samsung M14 5G"
+      },
+      {
+        "model_name": "Samsung F14 5G"
+      },
+      {
+        "model_name": "Samsung SAM A14 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F009",
+    "box_number": "BOX 009",
+    "display_size": "6.1\"",
+    "title": "iPhone XR 6.1",
+    "raw_text": "iPhone XR 6.1 — iPhone XR 6.1, iPhone 11",
+    "models": [
+      {
+        "model_name": "iPhone XR 6.1"
+      },
+      {
+        "model_name": "iPhone 11"
+      }
+    ]
+  },
+  {
+    "id": "SD-F010",
+    "box_number": "BOX 010",
+    "display_size": "Unknown",
+    "title": "Samsung A15 4G",
+    "raw_text": "Samsung A15 4G — Samsung A15 4G, Samsung A15 5G, Samsung A25 5G, Samsung A24 4G, Samsung M34 5G, Samsung F34 5G, Samsung F15, Samsung M15, Samsung A15, Samsung A25, Samsung F34",
+    "models": [
+      {
+        "model_name": "Samsung A15 4G"
+      },
+      {
+        "model_name": "Samsung A15 5G"
+      },
+      {
+        "model_name": "Samsung A25 5G"
+      },
+      {
+        "model_name": "Samsung A24 4G"
+      },
+      {
+        "model_name": "Samsung M34 5G"
+      },
+      {
+        "model_name": "Samsung F34 5G"
+      },
+      {
+        "model_name": "Samsung F15"
+      },
+      {
+        "model_name": "Samsung M15"
+      },
+      {
+        "model_name": "Samsung A15"
+      },
+      {
+        "model_name": "Samsung A25"
+      },
+      {
+        "model_name": "Samsung F34"
+      }
+    ]
+  },
+  {
+    "id": "SD-F011",
+    "box_number": "BOX 011",
+    "display_size": "6.5\"",
+    "title": "iPhone XS MAX",
+    "raw_text": "iPhone XS MAX — iPhone XS MAX, iPhone 11 PRO MAX",
+    "models": [
+      {
+        "model_name": "iPhone XS MAX"
+      },
+      {
+        "model_name": "iPhone 11 PRO MAX"
+      }
+    ]
+  },
+  {
+    "id": "SD-F012",
+    "box_number": "BOX 012",
+    "display_size": "Unknown",
+    "title": "Samsung A16 4G",
+    "raw_text": "Samsung A16 4G — Samsung A16 4G, Samsung A16 5G, Samsung A17 5G, Samsung A26, Samsung M16, Samsung M17 5G, Samsung M36, Samsung F16, Samsung F17, Samsung F36, Samsung A16, Samsung A17, Samsung M17",
+    "models": [
+      {
+        "model_name": "Samsung A16 4G"
+      },
+      {
+        "model_name": "Samsung A16 5G"
+      },
+      {
+        "model_name": "Samsung A17 5G"
+      },
+      {
+        "model_name": "Samsung A26"
+      },
+      {
+        "model_name": "Samsung M16"
+      },
+      {
+        "model_name": "Samsung M17 5G"
+      },
+      {
+        "model_name": "Samsung M36"
+      },
+      {
+        "model_name": "Samsung F16"
+      },
+      {
+        "model_name": "Samsung F17"
+      },
+      {
+        "model_name": "Samsung F36"
+      },
+      {
+        "model_name": "Samsung A16"
+      },
+      {
+        "model_name": "Samsung A17"
+      },
+      {
+        "model_name": "Samsung M17"
+      }
+    ]
+  },
+  {
+    "id": "SD-F013",
+    "box_number": "BOX 013",
+    "display_size": "Unknown",
+    "title": "iPhone 12 MINI",
+    "raw_text": "iPhone 12 MINI — iPhone 12 MINI",
+    "models": [
+      {
+        "model_name": "iPhone 12 MINI"
+      }
+    ]
+  },
+  {
+    "id": "SD-F014",
+    "box_number": "BOX 014",
+    "display_size": "Unknown",
+    "title": "Samsung A22 5G",
+    "raw_text": "Samsung A22 5G — Samsung A22 5G, Samsung F42 5G",
+    "models": [
+      {
+        "model_name": "Samsung A22 5G"
+      },
+      {
+        "model_name": "Samsung F42 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F015",
+    "box_number": "BOX 015",
+    "display_size": "6.1\"",
+    "title": "iPhone 12",
+    "raw_text": "iPhone 12 — iPhone 12, iPhone 12 PRO",
+    "models": [
+      {
+        "model_name": "iPhone 12"
+      },
+      {
+        "model_name": "iPhone 12 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F016",
+    "box_number": "BOX 016",
+    "display_size": "Unknown",
+    "title": "Samsung A30",
+    "raw_text": "Samsung A30 — Samsung A30, Samsung A50, Samsung A20, Samsung A30S, Samsung A50S, Samsung M10S, Samsung M21, Samsung M21S, Samsung M21 2021, Samsung M30, Samsung M30S, Samsung M31, Samsung M31 PRIME, Samsung F41, Xiaomi 9X, Xiaomi 9 PRO",
+    "models": [
+      {
+        "model_name": "Samsung A30"
+      },
+      {
+        "model_name": "Samsung A50"
+      },
+      {
+        "model_name": "Samsung A20"
+      },
+      {
+        "model_name": "Samsung A30S"
+      },
+      {
+        "model_name": "Samsung A50S"
+      },
+      {
+        "model_name": "Samsung M10S"
+      },
+      {
+        "model_name": "Samsung M21"
+      },
+      {
+        "model_name": "Samsung M21S"
+      },
+      {
+        "model_name": "Samsung M21 2021"
+      },
+      {
+        "model_name": "Samsung M30"
+      },
+      {
+        "model_name": "Samsung M30S"
+      },
+      {
+        "model_name": "Samsung M31"
+      },
+      {
+        "model_name": "Samsung M31 PRIME"
+      },
+      {
+        "model_name": "Samsung F41"
+      },
+      {
+        "model_name": "Xiaomi 9X"
+      },
+      {
+        "model_name": "Xiaomi 9 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F017",
+    "box_number": "BOX 017",
+    "display_size": "6.7\"",
+    "title": "iPhone 12 PRO MAX",
+    "raw_text": "iPhone 12 PRO MAX — iPhone 12 PRO MAX",
+    "models": [
+      {
+        "model_name": "iPhone 12 PRO MAX"
+      }
+    ]
+  },
+  {
+    "id": "SD-F018",
+    "box_number": "BOX 018",
+    "display_size": "Unknown",
+    "title": "Samsung A31",
+    "raw_text": "Samsung A31 — Samsung A31, Samsung A32 4G, Samsung A33 5G, Samsung A22 4G, Samsung F22 4G, Samsung M22 4G, Samsung M32 4G, Vivo Y100 5G, Vivo T2, Vivo iQOO Z7 5G, Vivo iQOO Z7S 5G, VIVO T2(INDIA)",
+    "models": [
+      {
+        "model_name": "Samsung A31"
+      },
+      {
+        "model_name": "Samsung A32 4G"
+      },
+      {
+        "model_name": "Samsung A33 5G"
+      },
+      {
+        "model_name": "Samsung A22 4G"
+      },
+      {
+        "model_name": "Samsung F22 4G"
+      },
+      {
+        "model_name": "Samsung M22 4G"
+      },
+      {
+        "model_name": "Samsung M32 4G"
+      },
+      {
+        "model_name": "Vivo Y100 5G"
+      },
+      {
+        "model_name": "Vivo T2"
+      },
+      {
+        "model_name": "Vivo iQOO Z7 5G"
+      },
+      {
+        "model_name": "Vivo iQOO Z7S 5G"
+      },
+      {
+        "model_name": "VIVO T2(INDIA)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F019",
+    "box_number": "BOX 019",
+    "display_size": "Unknown",
+    "title": "iPhone SE 2 2020",
+    "raw_text": "iPhone SE 2 2020 — iPhone SE 2 2020, iPhone SE 3 2022 350胶",
+    "models": [
+      {
+        "model_name": "iPhone SE 2 2020"
+      },
+      {
+        "model_name": "iPhone SE 3 2022 350胶"
+      }
+    ]
+  },
+  {
+    "id": "SD-F020",
+    "box_number": "BOX 020",
+    "display_size": "Unknown",
+    "title": "Samsung A34 5G",
+    "raw_text": "Samsung A34 5G — Samsung A34 5G",
+    "models": [
+      {
+        "model_name": "Samsung A34 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F021",
+    "box_number": "BOX 021",
+    "display_size": "6.1\"",
+    "title": "iPhone 13",
+    "raw_text": "iPhone 13 — iPhone 13, iPhone 13 PRO, iPhone 14 6.1, iPhone 16E, iPhone 17E, iPhone 14",
+    "models": [
+      {
+        "model_name": "iPhone 13"
+      },
+      {
+        "model_name": "iPhone 13 PRO"
+      },
+      {
+        "model_name": "iPhone 14 6.1"
+      },
+      {
+        "model_name": "iPhone 16E"
+      },
+      {
+        "model_name": "iPhone 17E"
+      },
+      {
+        "model_name": "iPhone 14"
+      }
+    ]
+  },
+  {
+    "id": "SD-F022",
+    "box_number": "BOX 022",
+    "display_size": "Unknown",
+    "title": "Samsung A35 5G",
+    "raw_text": "Samsung A35 5G — Samsung A35 5G, Samsung A55 5G, Samsung M35 5G",
+    "models": [
+      {
+        "model_name": "Samsung A35 5G"
+      },
+      {
+        "model_name": "Samsung A55 5G"
+      },
+      {
+        "model_name": "Samsung M35 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F023",
+    "box_number": "BOX 023",
+    "display_size": "6.7\"",
+    "title": "iPhone 13 PRO MAX",
+    "raw_text": "iPhone 13 PRO MAX — iPhone 13 PRO MAX, iPhone 14 PLUS",
+    "models": [
+      {
+        "model_name": "iPhone 13 PRO MAX"
+      },
+      {
+        "model_name": "iPhone 14 PLUS"
+      }
+    ]
+  },
+  {
+    "id": "SD-F024",
+    "box_number": "BOX 024",
+    "display_size": "Unknown",
+    "title": "Samsung A51",
+    "raw_text": "Samsung A51 — Samsung A51, Samsung A51 5G, Samsung A52, Samsung A52S 5G, Samsung A53 5G, Samsung M31S, Samsung S20FE, Samsung S20FE 5G, Samsung S20FE 2022, OPPO A93 4G, OPPO F17 PRO, OPPO RENO 4, OPPO RENO4 5G, OPPO RENO 4 SE, OPPO RENO4 F",
+    "models": [
+      {
+        "model_name": "Samsung A51"
+      },
+      {
+        "model_name": "Samsung A51 5G"
+      },
+      {
+        "model_name": "Samsung A52"
+      },
+      {
+        "model_name": "Samsung A52S 5G"
+      },
+      {
+        "model_name": "Samsung A53 5G"
+      },
+      {
+        "model_name": "Samsung M31S"
+      },
+      {
+        "model_name": "Samsung S20FE"
+      },
+      {
+        "model_name": "Samsung S20FE 5G"
+      },
+      {
+        "model_name": "Samsung S20FE 2022"
+      },
+      {
+        "model_name": "OPPO A93 4G"
+      },
+      {
+        "model_name": "OPPO F17 PRO"
+      },
+      {
+        "model_name": "OPPO RENO 4"
+      },
+      {
+        "model_name": "OPPO RENO4 5G"
+      },
+      {
+        "model_name": "OPPO RENO 4 SE"
+      },
+      {
+        "model_name": "OPPO RENO4 F"
+      }
+    ]
+  },
+  {
+    "id": "SD-F025",
+    "box_number": "BOX 025",
+    "display_size": "6.1\"",
+    "title": "iPhone 14 PRO",
+    "raw_text": "iPhone 14 PRO — iPhone 14 PRO",
+    "models": [
+      {
+        "model_name": "iPhone 14 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F026",
+    "box_number": "BOX 026",
+    "display_size": "Unknown",
+    "title": "Samsung A54 5G",
+    "raw_text": "Samsung A54 5G — Samsung A54 5G, Samsung S23 FE 5G",
+    "models": [
+      {
+        "model_name": "Samsung A54 5G"
+      },
+      {
+        "model_name": "Samsung S23 FE 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F027",
+    "box_number": "BOX 027",
+    "display_size": "6.7\"",
+    "title": "iPhone 14 PRO MAX",
+    "raw_text": "iPhone 14 PRO MAX — iPhone 14 PRO MAX",
+    "models": [
+      {
+        "model_name": "iPhone 14 PRO MAX"
+      }
+    ]
+  },
+  {
+    "id": "SD-F028",
+    "box_number": "BOX 028",
+    "display_size": "Unknown",
+    "title": "Samsung A70",
+    "raw_text": "Samsung A70 — Samsung A70, Samsung A70S, Samsung A42 5G, Samsung M42 5G, Infinix NOTE 12, Infinix NOTE 12 (2023), Infinix NOTE 12 G96, Infinix NOTE 12 PRO, Infinix NOTE 12i 2022, Infinix ZERO 20, Infinix NOTE 12(2023), Infinix Note 12 Turbo",
+    "models": [
+      {
+        "model_name": "Samsung A70"
+      },
+      {
+        "model_name": "Samsung A70S"
+      },
+      {
+        "model_name": "Samsung A42 5G"
+      },
+      {
+        "model_name": "Samsung M42 5G"
+      },
+      {
+        "model_name": "Infinix NOTE 12"
+      },
+      {
+        "model_name": "Infinix NOTE 12 (2023)"
+      },
+      {
+        "model_name": "Infinix NOTE 12 G96"
+      },
+      {
+        "model_name": "Infinix NOTE 12 PRO"
+      },
+      {
+        "model_name": "Infinix NOTE 12i 2022"
+      },
+      {
+        "model_name": "Infinix ZERO 20"
+      },
+      {
+        "model_name": "Infinix NOTE 12(2023)"
+      },
+      {
+        "model_name": "Infinix Note 12 Turbo"
+      }
+    ]
+  },
+  {
+    "id": "SD-F029",
+    "box_number": "BOX 029",
+    "display_size": "6.1\"",
+    "title": "iPhone 15",
+    "raw_text": "iPhone 15 — iPhone 15, iPhone 16 6.1",
+    "models": [
+      {
+        "model_name": "iPhone 15"
+      },
+      {
+        "model_name": "iPhone 16 6.1"
+      }
+    ]
+  },
+  {
+    "id": "SD-F030",
+    "box_number": "BOX 030",
+    "display_size": "Unknown",
+    "title": "Samsung A71",
+    "raw_text": "Samsung A71 — Samsung A71, Samsung A71 5G, Samsung A73 5G, Samsung A81, Samsung A91, Samsung M51, Samsung M52 5G, Samsung M53 5G, Samsung M54 5G, Samsung M62, Samsung F54 5G, Samsung F62, Samsung S10 LITE, Samsung NOTE 10 LITE, Redmi NOTE 12 PRO 4G, Redmi NOTE 12 PRO 5G, Redmi NOTE 12 PRO+, Redmi NOTE 12 Explorer, Xiaomi POCO X5 PRO, Vivo T1, Vivo S16E, Vivo V27E",
+    "models": [
+      {
+        "model_name": "Samsung A71"
+      },
+      {
+        "model_name": "Samsung A71 5G"
+      },
+      {
+        "model_name": "Samsung A73 5G"
+      },
+      {
+        "model_name": "Samsung A81"
+      },
+      {
+        "model_name": "Samsung A91"
+      },
+      {
+        "model_name": "Samsung M51"
+      },
+      {
+        "model_name": "Samsung M52 5G"
+      },
+      {
+        "model_name": "Samsung M53 5G"
+      },
+      {
+        "model_name": "Samsung M54 5G"
+      },
+      {
+        "model_name": "Samsung M62"
+      },
+      {
+        "model_name": "Samsung F54 5G"
+      },
+      {
+        "model_name": "Samsung F62"
+      },
+      {
+        "model_name": "Samsung S10 LITE"
+      },
+      {
+        "model_name": "Samsung NOTE 10 LITE"
+      },
+      {
+        "model_name": "Redmi NOTE 12 PRO 4G"
+      },
+      {
+        "model_name": "Redmi NOTE 12 PRO 5G"
+      },
+      {
+        "model_name": "Redmi NOTE 12 PRO+"
+      },
+      {
+        "model_name": "Redmi NOTE 12 Explorer"
+      },
+      {
+        "model_name": "Xiaomi POCO X5 PRO"
+      },
+      {
+        "model_name": "Vivo T1"
+      },
+      {
+        "model_name": "Vivo S16E"
+      },
+      {
+        "model_name": "Vivo V27E"
+      }
+    ]
+  },
+  {
+    "id": "SD-F031",
+    "box_number": "BOX 031",
+    "display_size": "6.7\"",
+    "title": "iPhone 15 PLUS",
+    "raw_text": "iPhone 15 PLUS — iPhone 15 PLUS, iPhone 16 PLUS 6.7",
+    "models": [
+      {
+        "model_name": "iPhone 15 PLUS"
+      },
+      {
+        "model_name": "iPhone 16 PLUS 6.7"
+      }
+    ]
+  },
+  {
+    "id": "SD-F032",
+    "box_number": "BOX 032",
+    "display_size": "Unknown",
+    "title": "Samsung J4 PLUS",
+    "raw_text": "Samsung J4 PLUS — Samsung J4 PLUS, Samsung J6 PLUS, Samsung J4 CORE",
+    "models": [
+      {
+        "model_name": "Samsung J4 PLUS"
+      },
+      {
+        "model_name": "Samsung J6 PLUS"
+      },
+      {
+        "model_name": "Samsung J4 CORE"
+      }
+    ]
+  },
+  {
+    "id": "SD-F033",
+    "box_number": "BOX 033",
+    "display_size": "Unknown",
+    "title": "iPhone 15 PRO 6.1",
+    "raw_text": "iPhone 15 PRO 6.1 — iPhone 15 PRO 6.1",
+    "models": [
+      {
+        "model_name": "iPhone 15 PRO 6.1"
+      }
+    ]
+  },
+  {
+    "id": "SD-F034",
+    "box_number": "BOX 034",
+    "display_size": "Unknown",
+    "title": "Samsung S21FE 5G",
+    "raw_text": "Samsung S21FE 5G — Samsung S21FE 5G",
+    "models": [
+      {
+        "model_name": "Samsung S21FE 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F035",
+    "box_number": "BOX 035",
+    "display_size": "Unknown",
+    "title": "iPhone 15 PRO MAX 6.7",
+    "raw_text": "iPhone 15 PRO MAX 6.7 — iPhone 15 PRO MAX 6.7",
+    "models": [
+      {
+        "model_name": "iPhone 15 PRO MAX 6.7"
+      }
+    ]
+  },
+  {
+    "id": "SD-F036",
+    "box_number": "BOX 036",
+    "display_size": "Unknown",
+    "title": "Samsung S24FE 5G",
+    "raw_text": "Samsung S24FE 5G — Samsung S24FE 5G, Samsung A36 5G, Samsung A56 5G, Samsung M36 5G, Samsung M56 5G, Samsung F56 5G",
+    "models": [
+      {
+        "model_name": "Samsung S24FE 5G"
+      },
+      {
+        "model_name": "Samsung A36 5G"
+      },
+      {
+        "model_name": "Samsung A56 5G"
+      },
+      {
+        "model_name": "Samsung M36 5G"
+      },
+      {
+        "model_name": "Samsung M56 5G"
+      },
+      {
+        "model_name": "Samsung F56 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F037",
+    "box_number": "BOX 037",
+    "display_size": "6.3\"",
+    "title": "iPhone 16 PRO",
+    "raw_text": "iPhone 16 PRO — iPhone 16 PRO, iPhone 17 6.3 380胶",
+    "models": [
+      {
+        "model_name": "iPhone 16 PRO"
+      },
+      {
+        "model_name": "iPhone 17 6.3 380胶"
+      }
+    ]
+  },
+  {
+    "id": "SD-F038",
+    "box_number": "BOX 038",
+    "display_size": "Unknown",
+    "title": "Samsung S25FE",
+    "raw_text": "Samsung S25FE — Samsung S25FE",
+    "models": [
+      {
+        "model_name": "Samsung S25FE"
+      }
+    ]
+  },
+  {
+    "id": "SD-F039",
+    "box_number": "BOX 039",
+    "display_size": "Unknown",
+    "title": "iPhone 16 PRO MAX 6.9 380胶",
+    "raw_text": "iPhone 16 PRO MAX 6.9 380胶 — iPhone 16 PRO MAX 6.9 380胶",
+    "models": [
+      {
+        "model_name": "iPhone 16 PRO MAX 6.9 380胶"
+      }
+    ]
+  },
+  {
+    "id": "SD-F040",
+    "box_number": "BOX 040",
+    "display_size": "Unknown",
+    "title": "Samsung A36 5G",
+    "raw_text": "Samsung A36 5G — Samsung A36 5G, Samsung A37, Samsung A56 5G, Samsung A57, Samsung M36 5G, Samsung M56 5G, Samsung F56 5G, Samsung S24FE 5G, Samsung S25FE 新图纸",
+    "models": [
+      {
+        "model_name": "Samsung A36 5G"
+      },
+      {
+        "model_name": "Samsung A37"
+      },
+      {
+        "model_name": "Samsung A56 5G"
+      },
+      {
+        "model_name": "Samsung A57"
+      },
+      {
+        "model_name": "Samsung M36 5G"
+      },
+      {
+        "model_name": "Samsung M56 5G"
+      },
+      {
+        "model_name": "Samsung F56 5G"
+      },
+      {
+        "model_name": "Samsung S24FE 5G"
+      },
+      {
+        "model_name": "Samsung S25FE 新图纸"
+      }
+    ]
+  },
+  {
+    "id": "SD-F041",
+    "box_number": "BOX 041",
+    "display_size": "Unknown",
+    "title": "iPhone 17 AIR 6.6380胶",
+    "raw_text": "iPhone 17 AIR 6.6380胶 — iPhone 17 AIR 6.6380胶",
+    "models": [
+      {
+        "model_name": "iPhone 17 AIR 6.6380胶"
+      }
+    ]
+  },
+  {
+    "id": "SD-F042",
+    "box_number": "BOX 042",
+    "display_size": "Unknown",
+    "title": "Samsung Z FOLD4",
+    "raw_text": "Samsung Z FOLD4 — Samsung Z FOLD4, Samsung FOLD 5",
+    "models": [
+      {
+        "model_name": "Samsung Z FOLD4"
+      },
+      {
+        "model_name": "Samsung FOLD 5"
+      }
+    ]
+  },
+  {
+    "id": "SD-F043",
+    "box_number": "BOX 043",
+    "display_size": "Unknown",
+    "title": "iPhone 17 PRO 6.3 380胶",
+    "raw_text": "iPhone 17 PRO 6.3 380胶 — iPhone 17 PRO 6.3 380胶",
+    "models": [
+      {
+        "model_name": "iPhone 17 PRO 6.3 380胶"
+      }
+    ]
+  },
+  {
+    "id": "SD-F044",
+    "box_number": "BOX 044",
+    "display_size": "Unknown",
+    "title": "Samsung Z FOLD 6",
+    "raw_text": "Samsung Z FOLD 6 — Samsung Z FOLD 6",
+    "models": [
+      {
+        "model_name": "Samsung Z FOLD 6"
+      }
+    ]
+  },
+  {
+    "id": "SD-F045",
+    "box_number": "BOX 045",
+    "display_size": "Unknown",
+    "title": "iPhone 17 PRO MAX 6.9 380胶",
+    "raw_text": "iPhone 17 PRO MAX 6.9 380胶 — iPhone 17 PRO MAX 6.9 380胶",
+    "models": [
+      {
+        "model_name": "iPhone 17 PRO MAX 6.9 380胶"
+      }
+    ]
+  },
+  {
+    "id": "SD-F046",
+    "box_number": "BOX 046",
+    "display_size": "Unknown",
+    "title": "Samsung Z FOLD 7",
+    "raw_text": "Samsung Z FOLD 7 — Samsung Z FOLD 7",
+    "models": [
+      {
+        "model_name": "Samsung Z FOLD 7"
+      }
+    ]
+  },
+  {
+    "id": "SD-F047",
+    "box_number": "BOX 047",
+    "display_size": "6.88\"",
+    "title": "Redmi 15 4G",
+    "raw_text": "Redmi 15 4G — Redmi 15 4G, Redmi 15 5G",
+    "models": [
+      {
+        "model_name": "Redmi 15 4G"
+      },
+      {
+        "model_name": "Redmi 15 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F048",
+    "box_number": "BOX 048",
+    "display_size": "6.53\"",
+    "title": "Redmi NOTE 8 PRO",
+    "raw_text": "Redmi NOTE 8 PRO — Samsung A20S, Redmi 9, Redmi 9 PRIME, Redmi 9A, Redmi 9C, Redmi 9i, Redmi 9 ACTIV, Redmi 10A 4G, Redmi NOTE 8 PRO, Redmi NOTE 9 4G, Redmi 9 POWER, Redmi 9T, OPPO F11, OPPO A9, Xiaomi POCO C3, Xiaomi POCO C31, Xiaomi POCO M2, Xiaomi POCO M3, Realme X2 PRO, OPPO RENO ACE, Vivo Y36 INDIA, Vivo Y27, Vivo Y27 INDONESIA, Vivo Y35+, Vivo U20, Vivo Y19, Vivo Y5S, Vivo U3, OnePlus 7T",
+    "models": [
+      {
+        "model_name": "Xiaomi POCO M3"
+      },
+      {
+        "model_name": "Samsung A20S"
+      },
+      {
+        "model_name": "Redmi 9"
+      },
+      {
+        "model_name": "Redmi 9 PRIME"
+      },
+      {
+        "model_name": "Redmi 9A"
+      },
+      {
+        "model_name": "Redmi 9C"
+      },
+      {
+        "model_name": "Redmi 9i"
+      },
+      {
+        "model_name": "Redmi 9 ACTIV"
+      },
+      {
+        "model_name": "Redmi 10A 4G"
+      },
+      {
+        "model_name": "Redmi NOTE 8 PRO"
+      },
+      {
+        "model_name": "Redmi NOTE 9 4G"
+      },
+      {
+        "model_name": "Redmi 9 POWER"
+      },
+      {
+        "model_name": "Redmi 9T"
+      },
+      {
+        "model_name": "OPPO F11"
+      },
+      {
+        "model_name": "OPPO A9"
+      },
+      {
+        "model_name": "Xiaomi POCO C3"
+      },
+      {
+        "model_name": "Xiaomi POCO C31"
+      },
+      {
+        "model_name": "Xiaomi POCO M2"
+      },
+      {
+        "model_name": "Realme X2 PRO"
+      },
+      {
+        "model_name": "OPPO RENO ACE"
+      },
+      {
+        "model_name": "Vivo Y36 INDIA"
+      },
+      {
+        "model_name": "Vivo Y27"
+      },
+      {
+        "model_name": "Vivo Y27 INDONESIA"
+      },
+      {
+        "model_name": "Vivo Y35+"
+      },
+      {
+        "model_name": "Vivo U20"
+      },
+      {
+        "model_name": "Vivo Y19"
+      },
+      {
+        "model_name": "Vivo Y5S"
+      },
+      {
+        "model_name": "Vivo U3"
+      },
+      {
+        "model_name": "OnePlus 7T"
+      }
+    ]
+  },
+  {
+    "id": "SD-F049",
+    "box_number": "BOX 049",
+    "display_size": "6.88\"",
+    "title": "Redmi 15 4G",
+    "raw_text": "Redmi 15 4G — Redmi 15 4G, Redmi 15 5G",
+    "models": [
+      {
+        "model_name": "Redmi 15 4G"
+      },
+      {
+        "model_name": "Redmi 15 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F050",
+    "box_number": "BOX 050",
+    "display_size": "6.7\"",
+    "title": "Redmi 13C 4G",
+    "raw_text": "Redmi 13C 4G — Samsung A05, Samsung A06 4G, Samsung A06 5G, Samsung A07 5G, Samsung M05, Samsung M06, Samsung M07 4G, Samsung M17E, Samsung F07E 5G, Samsung F05, Samsung F06 5G, Samsung F07 4G, Redmi 13C 4G, Redmi 13C 5G, Redmi 13R, Xiaomi POCO C65, Xiaomi POCO M6 5G, Samsung A06, Samsung A07, Samsung M07, Samsung F07",
+    "models": [
+      {
+        "model_name": "Samsung A05"
+      },
+      {
+        "model_name": "Samsung A06 4G"
+      },
+      {
+        "model_name": "Samsung A06 5G"
+      },
+      {
+        "model_name": "Samsung A07 5G"
+      },
+      {
+        "model_name": "Samsung M05"
+      },
+      {
+        "model_name": "Samsung M06"
+      },
+      {
+        "model_name": "Samsung M07 4G"
+      },
+      {
+        "model_name": "Samsung M17E"
+      },
+      {
+        "model_name": "Samsung F07E 5G"
+      },
+      {
+        "model_name": "Samsung F05"
+      },
+      {
+        "model_name": "Samsung F06 5G"
+      },
+      {
+        "model_name": "Samsung F07 4G"
+      },
+      {
+        "model_name": "Redmi 13C 4G"
+      },
+      {
+        "model_name": "Redmi 13C 5G"
+      },
+      {
+        "model_name": "Redmi 13R"
+      },
+      {
+        "model_name": "Xiaomi POCO C65"
+      },
+      {
+        "model_name": "Xiaomi POCO M6 5G"
+      },
+      {
+        "model_name": "Samsung A06"
+      },
+      {
+        "model_name": "Samsung A07"
+      },
+      {
+        "model_name": "Samsung M07"
+      },
+      {
+        "model_name": "Samsung F07"
+      }
+    ]
+  },
+  {
+    "id": "SD-F051",
+    "box_number": "BOX 051",
+    "display_size": "6.88\"",
+    "title": "Redmi 15C 4G",
+    "raw_text": "Redmi 15C 4G — Redmi 15C 4G, Redmi 15C 5G, Redmi 15A 5G, Redmi A7 PRO 5G",
+    "models": [
+      {
+        "model_name": "Redmi 15C 4G"
+      },
+      {
+        "model_name": "Redmi 15C 5G"
+      },
+      {
+        "model_name": "Redmi 15A 5G"
+      },
+      {
+        "model_name": "Redmi A7 PRO 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F052",
+    "box_number": "BOX 052",
+    "display_size": "6.67\"",
+    "title": "Redmi K30",
+    "raw_text": "Redmi K30 — Samsung A72, Samsung A80, Samsung A90, Samsung M55, Samsung M55S, Samsung C55, Samsung F55, Redmi K30, Redmi 5G, Redmi K30S, Redmi K30 PRO, Redmi NOTE 9S, Redmi NOTE 9 PRO, Redmi NOTE 9 PRO MAX, Redmi NOTE 10 LITE, Xiaomi POCO M2 PRO, Xiaomi POCO X2, Xiaomi POCO X3, Xiaomi POCO X3 NFC, Xiaomi POCO X3 PRO, Xiaomi POCO F2 PRO, Xiaomi MI 10i 5G, Xiaomi MI 10T 5G, Xiaomi MI 10T PRO 5G, Xiaomi MI 10T LITE 5G, Xiaomi 11T, Xiaomi 11T PRO, Vivo T1 CHINA, Vivo Y27S, Vivo Y36 4G, Vivo Y36 5G, Vivo Y77 CHINA, Vivo Y77T, Vivo Y78 5G CHINA, Vivo Y100i, Vivo Y100T, Vivo iQOO Z5, Vivo iQOO Z6 CHIAN, Vivo iQOO Z7X, Vivo iQOO Z7, Vivo iQOO Z8, Vivo iQOO Z8X, Vivo iQOO NEO 5, Vivo iQOO NEO5 SE, Vivo iQOO NEO 10, Vivo iQOO NEO 10 PRO, Redmi K30 5G",
+    "models": [
+      {
+        "model_name": "Samsung A72"
+      },
+      {
+        "model_name": "Samsung A80"
+      },
+      {
+        "model_name": "Samsung A90"
+      },
+      {
+        "model_name": "Samsung M55"
+      },
+      {
+        "model_name": "Samsung M55S"
+      },
+      {
+        "model_name": "Samsung C55"
+      },
+      {
+        "model_name": "Samsung F55"
+      },
+      {
+        "model_name": "Redmi K30"
+      },
+      {
+        "model_name": "Redmi 5G"
+      },
+      {
+        "model_name": "Redmi K30S"
+      },
+      {
+        "model_name": "Redmi K30 PRO"
+      },
+      {
+        "model_name": "Redmi NOTE 9S"
+      },
+      {
+        "model_name": "Redmi NOTE 9 PRO"
+      },
+      {
+        "model_name": "Redmi NOTE 9 PRO MAX"
+      },
+      {
+        "model_name": "Redmi NOTE 10 LITE"
+      },
+      {
+        "model_name": "Xiaomi POCO M2 PRO"
+      },
+      {
+        "model_name": "Xiaomi POCO X2"
+      },
+      {
+        "model_name": "Xiaomi POCO X3"
+      },
+      {
+        "model_name": "Xiaomi POCO X3 NFC"
+      },
+      {
+        "model_name": "Xiaomi POCO X3 PRO"
+      },
+      {
+        "model_name": "Xiaomi POCO F2 PRO"
+      },
+      {
+        "model_name": "Xiaomi MI 10i 5G"
+      },
+      {
+        "model_name": "Xiaomi MI 10T 5G"
+      },
+      {
+        "model_name": "Xiaomi MI 10T PRO 5G"
+      },
+      {
+        "model_name": "Xiaomi MI 10T LITE 5G"
+      },
+      {
+        "model_name": "Xiaomi 11T"
+      },
+      {
+        "model_name": "Xiaomi 11T PRO"
+      },
+      {
+        "model_name": "Vivo T1 CHINA"
+      },
+      {
+        "model_name": "Vivo Y27S"
+      },
+      {
+        "model_name": "Vivo Y36 4G"
+      },
+      {
+        "model_name": "Vivo Y36 5G"
+      },
+      {
+        "model_name": "Vivo Y77 CHINA"
+      },
+      {
+        "model_name": "Vivo Y77T"
+      },
+      {
+        "model_name": "Vivo Y78 5G CHINA"
+      },
+      {
+        "model_name": "Vivo Y100i"
+      },
+      {
+        "model_name": "Vivo Y100T"
+      },
+      {
+        "model_name": "Vivo iQOO Z5"
+      },
+      {
+        "model_name": "Vivo iQOO Z6 CHIAN"
+      },
+      {
+        "model_name": "Vivo iQOO Z7X"
+      },
+      {
+        "model_name": "Vivo iQOO Z7"
+      },
+      {
+        "model_name": "Vivo iQOO Z8"
+      },
+      {
+        "model_name": "Vivo iQOO Z8X"
+      },
+      {
+        "model_name": "Vivo iQOO NEO 5"
+      },
+      {
+        "model_name": "Vivo iQOO NEO5 SE"
+      },
+      {
+        "model_name": "Vivo iQOO NEO 10"
+      },
+      {
+        "model_name": "Vivo iQOO NEO 10 PRO"
+      },
+      {
+        "model_name": "Redmi K30 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F053",
+    "box_number": "BOX 053",
+    "display_size": "6.88\"",
+    "title": "Redmi 15C 4G",
+    "raw_text": "Redmi 15C 4G — Redmi 15C 4G",
+    "models": [
+      {
+        "model_name": "Redmi 15C 4G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F054",
+    "box_number": "BOX 054",
+    "display_size": "6.2\"",
+    "title": "Vivo Y90",
+    "raw_text": "Vivo Y90 — Samsung A10S, Samsung M10, Samsung M20, Samsung A10, Samsung M01S, Vivo Y90, Vivo Y91, Vivo Y93, Vivo Y95, Vivo Y1S",
+    "models": [
+      {
+        "model_name": "Samsung A10S"
+      },
+      {
+        "model_name": "Samsung M10"
+      },
+      {
+        "model_name": "Samsung M20"
+      },
+      {
+        "model_name": "Samsung A10"
+      },
+      {
+        "model_name": "Samsung M01S"
+      },
+      {
+        "model_name": "Vivo Y90"
+      },
+      {
+        "model_name": "Vivo Y91"
+      },
+      {
+        "model_name": "Vivo Y93"
+      },
+      {
+        "model_name": "Vivo Y95"
+      },
+      {
+        "model_name": "Vivo Y1S"
+      }
+    ]
+  },
+  {
+    "id": "SD-F055",
+    "box_number": "BOX 055",
+    "display_size": "6.88\"",
+    "title": "Redmi A5 4G",
+    "raw_text": "Redmi A5 4G — Redmi A5 4G",
+    "models": [
+      {
+        "model_name": "Redmi A5 4G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F056",
+    "box_number": "BOX 056",
+    "display_size": "6.53\"",
+    "title": "OPPO F11 PRO",
+    "raw_text": "OPPO F11 PRO — Samsung A11, Samsung M11, OPPO F11 PRO, OPPO K3, OPPO REAL X, Redmi NOTE 9海外版, Redmi NOTE 9 5G, Redmi NOTE 9T 5G, Redmi 10X 4G, Vivo Z1 PRO, Vivo Z5X, Vivo Y50, Vivo Y30, Vivo Y70S, Vivo V15",
+    "models": [
+      {
+        "model_name": "OPPO F11 PRO"
+      },
+      {
+        "model_name": "OPPO K3"
+      },
+      {
+        "model_name": "OPPO REAL X"
+      },
+      {
+        "model_name": "Redmi NOTE 9海外版"
+      },
+      {
+        "model_name": "Redmi NOTE 9 5G"
+      },
+      {
+        "model_name": "Redmi NOTE 9T 5G"
+      },
+      {
+        "model_name": "Redmi 10X 4G"
+      },
+      {
+        "model_name": "Vivo Z1 PRO"
+      },
+      {
+        "model_name": "Vivo Z5X"
+      },
+      {
+        "model_name": "Vivo Y50"
+      },
+      {
+        "model_name": "Vivo Y30"
+      },
+      {
+        "model_name": "Vivo Y70S"
+      },
+      {
+        "model_name": "Vivo V15"
+      },
+      {
+        "model_name": "Samsung A11"
+      },
+      {
+        "model_name": "Samsung M11"
+      }
+    ]
+  },
+  {
+    "id": "SD-F057",
+    "box_number": "BOX 057",
+    "display_size": "6.71\"",
+    "title": "Redmi 10C",
+    "raw_text": "Redmi 10C — Redmi 10C, Redmi 10, Redmi 10 POWER, Redmi 11A, Redmi 12C, Redmi A3, Redmi A3X, Redmi 10(INDIA)",
+    "models": [
+      {
+        "model_name": "Redmi 10C"
+      },
+      {
+        "model_name": "Redmi 10"
+      },
+      {
+        "model_name": "Redmi 10 POWER"
+      },
+      {
+        "model_name": "Redmi 11A"
+      },
+      {
+        "model_name": "Redmi 12C"
+      },
+      {
+        "model_name": "Redmi A3"
+      },
+      {
+        "model_name": "Redmi A3X"
+      },
+      {
+        "model_name": "Redmi 10(INDIA)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F058",
+    "box_number": "BOX 058",
+    "display_size": "6.5\"",
+    "title": "Realme 6 PRO",
+    "raw_text": "Realme 6 PRO — Samsung F52 5G, Samsung A21S, OPPO A53 4G, OPPO A11S, OPPO A32 4G, OPPO A33 2020, OPPO A36 4G, OPPO A53S 4G, OPPO A54 4G, OPPO A55 4G, OPPO A76 4G, OPPO A92S 5G, OPPO A96 4G, OPPO K10 CHINA, OPPO K10X 5G, Redmi NOTE 10 5G, OPPO A93 5G, OPPO A93S 5G, OPPO A53 5G, OPPO A54 5G, OPPO A72 5G, OPPO A73 5G, OPPO A74 5G, OPPO A52 4G, OPPO A72 4G, OPPO A92 4G, OPPO K7X 5G, OPPO RENO2 Z, OPPO RENO2 F, Xiaomi POCO M3 PRO 4G, Xiaomi POCO M3 PRO 5G, Xiaomi POCO X3 GT, Realme 6, Realme 6S, Realme 7 5G, Realme 7 (ASIA), Realme 7, Realme X7 PRO, Realme NARZO 20 PRO, Realme NARZO 30 4G, Realme NARZO 30 5G, Realme NARZO 30 PRO 5G, Realme 6 PRO, Realme 7i, Realme 8i, Realme 9i 4G, Realme 9 PRO, Realme 9 5G, Realme 9 5G SE, Realme 9 5G SPEED, Realme X3, Realme X3 SUPER ZOOM, Realme Q3S, Realme X50 5G, Realme C17, Realme NARZO 50 4G, OPPO RENO4 Z 5G, Realme 8 5G, Realme 8S 5G, OnePlus NORD N10 5G, OnePlus NORD N200 5G, HUAWEI NOVA7, Huawei HW NOVA7 SE, Huawei HW NOVA 10Z, Huawei HW P40 LITE 5G, Huawei HW HONOR 30, Huawei HW 30S, HONOR V30, HONOR V30 PRO, Infinix HOT 40i, Infinix TECON SPARK 20, Infinix SPARK 20C, Infinix GO 2024, Infinix POP 8, Infinix SMART 8, Infinix SMART 8 PRO, Itel S24, Realme Narzo 50, Realme 9i, Realme X3 SuperZoom, Realme 7(ASIA), Realme 7(GLOBAL)",
+    "models": [
+      {
+        "model_name": "Samsung F52 5G"
+      },
+      {
+        "model_name": "Samsung A21S"
+      },
+      {
+        "model_name": "OPPO A53 4G"
+      },
+      {
+        "model_name": "OPPO A11S"
+      },
+      {
+        "model_name": "OPPO A32 4G"
+      },
+      {
+        "model_name": "OPPO A33 2020"
+      },
+      {
+        "model_name": "OPPO A36 4G"
+      },
+      {
+        "model_name": "OPPO A53S 4G"
+      },
+      {
+        "model_name": "OPPO A54 4G"
+      },
+      {
+        "model_name": "OPPO A55 4G"
+      },
+      {
+        "model_name": "OPPO A76 4G"
+      },
+      {
+        "model_name": "OPPO A92S 5G"
+      },
+      {
+        "model_name": "OPPO A96 4G"
+      },
+      {
+        "model_name": "OPPO K10 CHINA"
+      },
+      {
+        "model_name": "OPPO K10X 5G"
+      },
+      {
+        "model_name": "Redmi NOTE 10 5G"
+      },
+      {
+        "model_name": "OPPO A93 5G"
+      },
+      {
+        "model_name": "OPPO A93S 5G"
+      },
+      {
+        "model_name": "OPPO A53 5G"
+      },
+      {
+        "model_name": "OPPO A54 5G"
+      },
+      {
+        "model_name": "OPPO A72 5G"
+      },
+      {
+        "model_name": "OPPO A73 5G"
+      },
+      {
+        "model_name": "OPPO A74 5G"
+      },
+      {
+        "model_name": "Realme X3 SuperZoom"
+      },
+      {
+        "model_name": "Realme 7(ASIA)"
+      },
+      {
+        "model_name": "Realme 7(GLOBAL)"
+      },
+      {
+        "model_name": "OPPO A52 4G"
+      },
+      {
+        "model_name": "OPPO A72 4G"
+      },
+      {
+        "model_name": "OPPO A92 4G"
+      },
+      {
+        "model_name": "OPPO K7X 5G"
+      },
+      {
+        "model_name": "OPPO RENO2 Z"
+      },
+      {
+        "model_name": "OPPO RENO2 F"
+      },
+      {
+        "model_name": "Xiaomi POCO M3 PRO 4G"
+      },
+      {
+        "model_name": "Xiaomi POCO M3 PRO 5G"
+      },
+      {
+        "model_name": "Xiaomi POCO X3 GT"
+      },
+      {
+        "model_name": "Realme 6"
+      },
+      {
+        "model_name": "Realme 6S"
+      },
+      {
+        "model_name": "Realme 7 5G"
+      },
+      {
+        "model_name": "Realme 7 (ASIA)"
+      },
+      {
+        "model_name": "Realme 7"
+      },
+      {
+        "model_name": "Realme X7 PRO"
+      },
+      {
+        "model_name": "Realme NARZO 20 PRO"
+      },
+      {
+        "model_name": "Realme NARZO 30 4G"
+      },
+      {
+        "model_name": "Realme NARZO 30 5G"
+      },
+      {
+        "model_name": "Realme NARZO 30 PRO 5G"
+      },
+      {
+        "model_name": "Realme 6 PRO"
+      },
+      {
+        "model_name": "Realme 7i"
+      },
+      {
+        "model_name": "Realme 8i"
+      },
+      {
+        "model_name": "Realme 9i 4G"
+      },
+      {
+        "model_name": "Realme 9 PRO"
+      },
+      {
+        "model_name": "Realme 9 5G"
+      },
+      {
+        "model_name": "Realme 9 5G SE"
+      },
+      {
+        "model_name": "Realme 9 5G SPEED"
+      },
+      {
+        "model_name": "Realme X3"
+      },
+      {
+        "model_name": "Realme X3 SUPER ZOOM"
+      },
+      {
+        "model_name": "Realme Q3S"
+      },
+      {
+        "model_name": "Realme X50 5G"
+      },
+      {
+        "model_name": "Realme C17"
+      },
+      {
+        "model_name": "Realme NARZO 50 4G"
+      },
+      {
+        "model_name": "OPPO RENO4 Z 5G"
+      },
+      {
+        "model_name": "Realme 8 5G"
+      },
+      {
+        "model_name": "Realme 8S 5G"
+      },
+      {
+        "model_name": "OnePlus NORD N10 5G"
+      },
+      {
+        "model_name": "OnePlus NORD N200 5G"
+      },
+      {
+        "model_name": "HUAWEI NOVA7"
+      },
+      {
+        "model_name": "Huawei HW NOVA7 SE"
+      },
+      {
+        "model_name": "Huawei HW NOVA 10Z"
+      },
+      {
+        "model_name": "Huawei HW P40 LITE 5G"
+      },
+      {
+        "model_name": "Huawei HW HONOR 30"
+      },
+      {
+        "model_name": "Huawei HW 30S"
+      },
+      {
+        "model_name": "HONOR V30"
+      },
+      {
+        "model_name": "HONOR V30 PRO"
+      },
+      {
+        "model_name": "Infinix HOT 40i"
+      },
+      {
+        "model_name": "Infinix TECON SPARK 20"
+      },
+      {
+        "model_name": "Infinix SPARK 20C"
+      },
+      {
+        "model_name": "Infinix GO 2024"
+      },
+      {
+        "model_name": "Infinix POP 8"
+      },
+      {
+        "model_name": "Infinix SMART 8"
+      },
+      {
+        "model_name": "Infinix SMART 8 PRO"
+      },
+      {
+        "model_name": "Itel S24"
+      },
+      {
+        "model_name": "Realme Narzo 50"
+      },
+      {
+        "model_name": "Realme 9i"
+      }
+    ]
+  },
+  {
+    "id": "SD-F059",
+    "box_number": "BOX 059",
+    "display_size": "6.5\"",
+    "title": "Redmi 10 PRIME",
+    "raw_text": "Redmi 10 PRIME — Redmi 10 PRIME, Redmi 10, Redmi NOTE 10 5G, Redmi NOTE 10T 5G, Redmi NOTE 11 4G (2021), Redmi NOTE 11SE 5G, Redmi NOTE 11 4G（2021)",
+    "models": [
+      {
+        "model_name": "Redmi 10 PRIME"
+      },
+      {
+        "model_name": "Redmi 10"
+      },
+      {
+        "model_name": "Redmi NOTE 10 5G"
+      },
+      {
+        "model_name": "Redmi NOTE 10T 5G"
+      },
+      {
+        "model_name": "Redmi NOTE 11 4G (2021)"
+      },
+      {
+        "model_name": "Redmi NOTE 11SE 5G"
+      },
+      {
+        "model_name": "Redmi NOTE 11 4G（2021)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F060",
+    "box_number": "BOX 060",
+    "display_size": "Unknown",
+    "title": "Samsung S21",
+    "raw_text": "Samsung S21 — Samsung S21",
+    "models": [
+      {
+        "model_name": "Samsung S21"
+      }
+    ]
+  },
+  {
+    "id": "SD-F061",
+    "box_number": "BOX 061",
+    "display_size": "Unknown",
+    "title": "Samsung S21 PLUS",
+    "raw_text": "Samsung S21 PLUS — Samsung S21 PLUS",
+    "models": [
+      {
+        "model_name": "Samsung S21 PLUS"
+      }
+    ]
+  },
+  {
+    "id": "SD-F062",
+    "box_number": "BOX 062",
+    "display_size": "6.79\"",
+    "title": "Redmi 12 4G",
+    "raw_text": "Redmi 12 4G — Redmi 12 4G, Redmi 12 5G, Redmi 13 4G, Redmi 13 5G, Redmi 13X 4G, Redmi NOTE 12R, Redmi NOTE 13R, Redmi Note12 R",
+    "models": [
+      {
+        "model_name": "Redmi 12 4G"
+      },
+      {
+        "model_name": "Redmi 12 5G"
+      },
+      {
+        "model_name": "Redmi 13 4G"
+      },
+      {
+        "model_name": "Redmi 13 5G"
+      },
+      {
+        "model_name": "Redmi 13X 4G"
+      },
+      {
+        "model_name": "Redmi NOTE 12R"
+      },
+      {
+        "model_name": "Redmi NOTE 13R"
+      },
+      {
+        "model_name": "Redmi Note12 R"
+      }
+    ]
+  },
+  {
+    "id": "SD-F063",
+    "box_number": "BOX 063",
+    "display_size": "Unknown",
+    "title": "Samsung S22",
+    "raw_text": "Samsung S22 — Samsung S22, Samsung S23",
+    "models": [
+      {
+        "model_name": "Samsung S22"
+      },
+      {
+        "model_name": "Samsung S23"
+      }
+    ]
+  },
+  {
+    "id": "SD-F064",
+    "box_number": "BOX 064",
+    "display_size": "Unknown",
+    "title": "Samsung S22 PLUS",
+    "raw_text": "Samsung S22 PLUS — Samsung S22 PLUS, Samsung S23 PLUS",
+    "models": [
+      {
+        "model_name": "Samsung S22 PLUS"
+      },
+      {
+        "model_name": "Samsung S23 PLUS"
+      }
+    ]
+  },
+  {
+    "id": "SD-F065",
+    "box_number": "BOX 065",
+    "display_size": "6.88\"",
+    "title": "Redmi 14C 4G",
+    "raw_text": "Redmi 14C 4G — Redmi 14C 4G, Redmi 14C 5G, Redmi 14R 5G, Redmi A3 PRO 4G, Redmi A4 5G, Redmi A5 4G, Xiaomi POCO C75, Xiaomi POCO C71, Xiaomi POCO M7, Motorola G06, Motorola G06 POWER",
+    "models": [
+      {
+        "model_name": "Redmi 14C 4G"
+      },
+      {
+        "model_name": "Redmi 14C 5G"
+      },
+      {
+        "model_name": "Redmi 14R 5G"
+      },
+      {
+        "model_name": "Redmi A3 PRO 4G"
+      },
+      {
+        "model_name": "Redmi A4 5G"
+      },
+      {
+        "model_name": "Redmi A5 4G"
+      },
+      {
+        "model_name": "Xiaomi POCO C75"
+      },
+      {
+        "model_name": "Xiaomi POCO C71"
+      },
+      {
+        "model_name": "Xiaomi POCO M7"
+      },
+      {
+        "model_name": "Motorola G06"
+      },
+      {
+        "model_name": "Motorola G06 POWER"
+      }
+    ]
+  },
+  {
+    "id": "SD-F066",
+    "box_number": "BOX 066",
+    "display_size": "Unknown",
+    "title": "Samsung S24",
+    "raw_text": "Samsung S24 — Samsung S24",
+    "models": [
+      {
+        "model_name": "Samsung S24"
+      }
+    ]
+  },
+  {
+    "id": "SD-F067",
+    "box_number": "BOX 067",
+    "display_size": "Unknown",
+    "title": "Samsung S24 PLUS",
+    "raw_text": "Samsung S24 PLUS — Samsung S24 PLUS",
+    "models": [
+      {
+        "model_name": "Samsung S24 PLUS"
+      }
+    ]
+  },
+  {
+    "id": "SD-F068",
+    "box_number": "BOX 068",
+    "display_size": "6.67\"",
+    "title": "Xiaomi POCO F7 5G",
+    "raw_text": "Xiaomi POCO F7 5G — Redmi TURBO 4 PRO 5G, Redmi K80 ULTRA, Redmi NOTE 15 PRO, Redmi NOTE 15 PRO 5G (GIobaI), Redmi TURBO 5 MAX, Xiaomi POCO F7 5G, Xiaomi 15T, Xiaomi 15T PRO, Xiaomi POCO X8 PRO MAX",
+    "models": [
+      {
+        "model_name": "Redmi TURBO 4 PRO 5G"
+      },
+      {
+        "model_name": "Redmi K80 ULTRA"
+      },
+      {
+        "model_name": "Redmi NOTE 15 PRO"
+      },
+      {
+        "model_name": "Redmi NOTE 15 PRO 5G (GIobaI)"
+      },
+      {
+        "model_name": "Redmi TURBO 5 MAX"
+      },
+      {
+        "model_name": "Xiaomi POCO F7 5G"
+      },
+      {
+        "model_name": "Xiaomi 15T"
+      },
+      {
+        "model_name": "Xiaomi 15T PRO"
+      },
+      {
+        "model_name": "Xiaomi POCO X8 PRO MAX"
+      }
+    ]
+  },
+  {
+    "id": "SD-F069",
+    "box_number": "BOX 069",
+    "display_size": "Unknown",
+    "title": "Samsung S24 ULTRA",
+    "raw_text": "Samsung S24 ULTRA — Samsung S24 ULTRA",
+    "models": [
+      {
+        "model_name": "Samsung S24 ULTRA"
+      }
+    ]
+  },
+  {
+    "id": "SD-F070",
+    "box_number": "BOX 070",
+    "display_size": "Unknown",
+    "title": "Samsung S25",
+    "raw_text": "Samsung S25 — Samsung S25",
+    "models": [
+      {
+        "model_name": "Samsung S25"
+      }
+    ]
+  },
+  {
+    "id": "SD-F071",
+    "box_number": "BOX 071",
+    "display_size": "Unknown",
+    "title": "Samsung S25 PLUS",
+    "raw_text": "Samsung S25 PLUS — Samsung S25 PLUS",
+    "models": [
+      {
+        "model_name": "Samsung S25 PLUS"
+      }
+    ]
+  },
+  {
+    "id": "SD-F072",
+    "box_number": "BOX 072",
+    "display_size": "6.67\"",
+    "title": "Redmi K70",
+    "raw_text": "Redmi K70 — Redmi K70, Redmi K70E, Redmi K70 PRO, Redmi K70 ULTRA, Redmi K80, Redmi K80 PRO, Xiaomi POCO X6 PRO, Xiaomi POCO F6 PRO, Xiaomi POCO F7 PRO, Xiaomi POCO F7 ULTRA, Xiaomi 14T, Xiaomi 14T PRO, Motorola G86, Motorola G86 POWER, Motorola EDGE 70, Motorola X70 AIR",
+    "models": [
+      {
+        "model_name": "Redmi K70"
+      },
+      {
+        "model_name": "Redmi K70E"
+      },
+      {
+        "model_name": "Redmi K70 PRO"
+      },
+      {
+        "model_name": "Redmi K70 ULTRA"
+      },
+      {
+        "model_name": "Redmi K80"
+      },
+      {
+        "model_name": "Redmi K80 PRO"
+      },
+      {
+        "model_name": "Xiaomi POCO X6 PRO"
+      },
+      {
+        "model_name": "Xiaomi POCO F6 PRO"
+      },
+      {
+        "model_name": "Xiaomi POCO F7 PRO"
+      },
+      {
+        "model_name": "Xiaomi POCO F7 ULTRA"
+      },
+      {
+        "model_name": "Xiaomi 14T"
+      },
+      {
+        "model_name": "Xiaomi 14T PRO"
+      },
+      {
+        "model_name": "Motorola G86"
+      },
+      {
+        "model_name": "Motorola G86 POWER"
+      },
+      {
+        "model_name": "Motorola EDGE 70"
+      },
+      {
+        "model_name": "Motorola X70 AIR"
+      }
+    ]
+  },
+  {
+    "id": "SD-F073",
+    "box_number": "BOX 073",
+    "display_size": "Unknown",
+    "title": "Samsung S25 ULTRA",
+    "raw_text": "Samsung S25 ULTRA — Samsung S25 ULTRA",
+    "models": [
+      {
+        "model_name": "Samsung S25 ULTRA"
+      }
+    ]
+  },
+  {
+    "id": "SD-F074",
+    "box_number": "BOX 074",
+    "display_size": "6.43\"",
+    "title": "Redmi NOTE 10S",
+    "raw_text": "Redmi NOTE 10S — Redmi NOTE 10S, Redmi NOTE 10 4G, Redmi NOTE 11 (2022), Redmi NOTE 11S 2022, Redmi NOTE 11SE, Redmi NOTE 12S, Xiaomi POCO M4 PRO (2022), Xiaomi POCO M5S",
+    "models": [
+      {
+        "model_name": "Redmi NOTE 10S"
+      },
+      {
+        "model_name": "Redmi NOTE 10 4G"
+      },
+      {
+        "model_name": "Redmi NOTE 11 (2022)"
+      },
+      {
+        "model_name": "Redmi NOTE 11S 2022"
+      },
+      {
+        "model_name": "Redmi NOTE 11SE"
+      },
+      {
+        "model_name": "Redmi NOTE 12S"
+      },
+      {
+        "model_name": "Xiaomi POCO M4 PRO (2022)"
+      },
+      {
+        "model_name": "Xiaomi POCO M5S"
+      }
+    ]
+  },
+  {
+    "id": "SD-F075",
+    "box_number": "BOX 075",
+    "display_size": "Unknown",
+    "title": "Samsung S25 EDGE 5G",
+    "raw_text": "Samsung S25 EDGE 5G — Samsung S25 EDGE 5G",
+    "models": [
+      {
+        "model_name": "Samsung S25 EDGE 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F076",
+    "box_number": "BOX 076",
+    "display_size": "Unknown",
+    "title": "Samsung S26",
+    "raw_text": "Samsung S26 — Samsung S26, Samsung S26 PRO",
+    "models": [
+      {
+        "model_name": "Samsung S26"
+      },
+      {
+        "model_name": "Samsung S26 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F077",
+    "box_number": "BOX 077",
+    "display_size": "6.67\"",
+    "title": "Redmi NOTE 10 PRO",
+    "raw_text": "Redmi NOTE 10 PRO — Redmi NOTE 10 PRO, Redmi NOTE 10 PRO MAX, Redmi NOTE 11 PRO, Redmi NOTE 11 PRO+, Redmi NOTE 11E PRO, Redmi NOTE 13 4G, Redmi NOTE 14 4G, Redmi NOTE 14 5G, Redmi NOTE 14, Redmi NOTE 14 SE, Redmi K40, Redmi K40S, Redmi K40 PRO+, Redmi K40 PRO, Redmi K50, Redmi K50 PRO, Redmi K60E, Xiaomi 11i, Xiaomi MI 11X 5G, Xiaomi MI 11X PRO, Xiaomi MI 13T, Xiaomi MI 13T PRO, Xiaomi BLACK SHARK 4, Xiaomi BLACK SHARK 4 PRO, Xiaomi POCO F3, Xiaomi POCO X4 PRO 5G, Xiaomi POCO F4, Xiaomi POCO M7 PRO 5G, Redmi Note 11 Pro+ 5G, Redmi Note 14 SE 5G, Xiaomi 11X 5G, Xiaomi 11X Pro, Xiaomi 13T, Xiaomi 13T Pro",
+    "models": [
+      {
+        "model_name": "Xiaomi BLACK SHARK 4 PRO"
+      },
+      {
+        "model_name": "Xiaomi POCO F3"
+      },
+      {
+        "model_name": "Xiaomi POCO X4 PRO 5G"
+      },
+      {
+        "model_name": "Xiaomi POCO F4"
+      },
+      {
+        "model_name": "Xiaomi POCO M7 PRO 5G"
+      },
+      {
+        "model_name": "Redmi Note 11 Pro+ 5G"
+      },
+      {
+        "model_name": "Redmi Note 14 SE 5G"
+      },
+      {
+        "model_name": "Xiaomi 11X 5G"
+      },
+      {
+        "model_name": "Xiaomi 11X Pro"
+      },
+      {
+        "model_name": "Xiaomi 13T"
+      },
+      {
+        "model_name": "Xiaomi 13T Pro"
+      },
+      {
+        "model_name": "Redmi NOTE 10 PRO"
+      },
+      {
+        "model_name": "Redmi NOTE 10 PRO MAX"
+      },
+      {
+        "model_name": "Redmi NOTE 11 PRO"
+      },
+      {
+        "model_name": "Redmi NOTE 11 PRO+"
+      },
+      {
+        "model_name": "Redmi NOTE 11E PRO"
+      },
+      {
+        "model_name": "Redmi NOTE 13 4G"
+      },
+      {
+        "model_name": "Redmi NOTE 14 4G"
+      },
+      {
+        "model_name": "Redmi NOTE 14 5G"
+      },
+      {
+        "model_name": "Redmi NOTE 14"
+      },
+      {
+        "model_name": "Redmi NOTE 14 SE"
+      },
+      {
+        "model_name": "Redmi K40"
+      },
+      {
+        "model_name": "Redmi K40S"
+      },
+      {
+        "model_name": "Redmi K40 PRO+"
+      },
+      {
+        "model_name": "Redmi K40 PRO"
+      },
+      {
+        "model_name": "Redmi K50"
+      },
+      {
+        "model_name": "Redmi K50 PRO"
+      },
+      {
+        "model_name": "Redmi K60E"
+      },
+      {
+        "model_name": "Xiaomi 11i"
+      },
+      {
+        "model_name": "Xiaomi MI 11X 5G"
+      },
+      {
+        "model_name": "Xiaomi MI 11X PRO"
+      },
+      {
+        "model_name": "Xiaomi MI 13T"
+      },
+      {
+        "model_name": "Xiaomi MI 13T PRO"
+      },
+      {
+        "model_name": "Xiaomi BLACK SHARK 4"
+      }
+    ]
+  },
+  {
+    "id": "SD-F078",
+    "box_number": "BOX 078",
+    "display_size": "Unknown",
+    "title": "Samsung S26 PLUS",
+    "raw_text": "Samsung S26 PLUS — Samsung S26 PLUS, Samsung S26 EDGE",
+    "models": [
+      {
+        "model_name": "Samsung S26 PLUS"
+      },
+      {
+        "model_name": "Samsung S26 EDGE"
+      }
+    ]
+  },
+  {
+    "id": "SD-F079",
+    "box_number": "BOX 079",
+    "display_size": "Unknown",
+    "title": "Samsung S26 ULTRA",
+    "raw_text": "Samsung S26 ULTRA — Samsung S26 ULTRA",
+    "models": [
+      {
+        "model_name": "Samsung S26 ULTRA"
+      }
+    ]
+  },
+  {
+    "id": "SD-F080",
+    "box_number": "BOX 080",
+    "display_size": "6.6\"",
+    "title": "Redmi NOTE 11 5G",
+    "raw_text": "Redmi NOTE 11 5G — Redmi NOTE 11 5G, Redmi NOTE 11S 5G, Redmi NOTE 11T 5G",
+    "models": [
+      {
+        "model_name": "Redmi NOTE 11 5G"
+      },
+      {
+        "model_name": "Redmi NOTE 11S 5G"
+      },
+      {
+        "model_name": "Redmi NOTE 11T 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F081",
+    "box_number": "BOX 081",
+    "display_size": "6.6\"",
+    "title": "Redmi NOTE 11T PRO",
+    "raw_text": "Redmi NOTE 11T PRO — Redmi NOTE 11T PRO, Redmi NOTE 11T PRO+, Redmi NOTE 12T PRO, Redmi K50i, Xiaomi POCO X4 GT",
+    "models": [
+      {
+        "model_name": "Redmi NOTE 11T PRO"
+      },
+      {
+        "model_name": "Redmi NOTE 11T PRO+"
+      },
+      {
+        "model_name": "Redmi NOTE 12T PRO"
+      },
+      {
+        "model_name": "Redmi K50i"
+      },
+      {
+        "model_name": "Xiaomi POCO X4 GT"
+      }
+    ]
+  },
+  {
+    "id": "SD-F082",
+    "box_number": "BOX 082",
+    "display_size": "6.4\"",
+    "title": "OPPO A91",
+    "raw_text": "OPPO A91 — OPPO A91, OPPO A73 4G, OPPO F15, OPPO F17, OPPO RENO 3 4G, Vivo V20, Vivo V20 SE, Vivo V21E, Vivo V21E 5G, Vivo V23E, Vivo Y71T, Vivo Y73, Vivo Y73S, Vivo Y75 4G, Vivo S10E, Vivo T1 44W, Vivo iQOO Z6 44W",
+    "models": [
+      {
+        "model_name": "OPPO A91"
+      },
+      {
+        "model_name": "OPPO A73 4G"
+      },
+      {
+        "model_name": "OPPO F15"
+      },
+      {
+        "model_name": "OPPO F17"
+      },
+      {
+        "model_name": "OPPO RENO 3 4G"
+      },
+      {
+        "model_name": "Vivo V20"
+      },
+      {
+        "model_name": "Vivo V20 SE"
+      },
+      {
+        "model_name": "Vivo V21E"
+      },
+      {
+        "model_name": "Vivo V21E 5G"
+      },
+      {
+        "model_name": "Vivo V23E"
+      },
+      {
+        "model_name": "Vivo Y71T"
+      },
+      {
+        "model_name": "Vivo Y73"
+      },
+      {
+        "model_name": "Vivo Y73S"
+      },
+      {
+        "model_name": "Vivo Y75 4G"
+      },
+      {
+        "model_name": "Vivo S10E"
+      },
+      {
+        "model_name": "Vivo T1 44W"
+      },
+      {
+        "model_name": "Vivo iQOO Z6 44W"
+      }
+    ]
+  },
+  {
+    "id": "SD-F083",
+    "box_number": "BOX 083",
+    "display_size": "6.67\"",
+    "title": "Redmi NOTE 12 4G",
+    "raw_text": "Redmi NOTE 12 4G — Redmi NOTE 12 4G, Redmi NOTE 12 5G, Redmi NOTE 12R PRO",
+    "models": [
+      {
+        "model_name": "Redmi NOTE 12 4G"
+      },
+      {
+        "model_name": "Redmi NOTE 12 5G"
+      },
+      {
+        "model_name": "Redmi NOTE 12R PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F084",
+    "box_number": "BOX 084",
+    "display_size": "6.67\"",
+    "title": "Redmi NOTE 13 PRO 5G",
+    "raw_text": "Redmi NOTE 13 PRO 5G — Redmi NOTE 13 PRO 5G, Redmi TURBO 3, Redmi TURBO 4, Xiaomi POCO X6 5G, Xiaomi POCO X6 PRO 5G, Xiaomi POCO F6 5G",
+    "models": [
+      {
+        "model_name": "Redmi NOTE 13 PRO 5G"
+      },
+      {
+        "model_name": "Redmi TURBO 3"
+      },
+      {
+        "model_name": "Redmi TURBO 4"
+      },
+      {
+        "model_name": "Xiaomi POCO X6 5G"
+      },
+      {
+        "model_name": "Xiaomi POCO X6 PRO 5G"
+      },
+      {
+        "model_name": "Xiaomi POCO F6 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F085",
+    "box_number": "BOX 085",
+    "display_size": "6.7\"",
+    "title": "OPPO F29 5G",
+    "raw_text": "OPPO F29 5G — OPPO F29 5G",
+    "models": [
+      {
+        "model_name": "OPPO F29 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F086",
+    "box_number": "BOX 086",
+    "display_size": "6.26\"",
+    "title": "Redmi NOTE 6 PRO",
+    "raw_text": "Redmi NOTE 6 PRO — Redmi NOTE 6 PRO",
+    "models": [
+      {
+        "model_name": "Redmi NOTE 6 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F087",
+    "box_number": "BOX 087",
+    "display_size": "6.78\"",
+    "title": "OPPO F31 PRO+",
+    "raw_text": "OPPO F31 PRO+ — OPPO F31 PRO+, OPPO A6 MAX, OPPO A6 GT, OPPO K13 TURBO, OPPO K13 TURBO PRO, OPPO FIND X9 ULTRA 5G",
+    "models": [
+      {
+        "model_name": "OPPO F31 PRO+"
+      },
+      {
+        "model_name": "OPPO A6 MAX"
+      },
+      {
+        "model_name": "OPPO A6 GT"
+      },
+      {
+        "model_name": "OPPO K13 TURBO"
+      },
+      {
+        "model_name": "OPPO K13 TURBO PRO"
+      },
+      {
+        "model_name": "OPPO FIND X9 ULTRA 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F088",
+    "box_number": "BOX 088",
+    "display_size": "6.3\"",
+    "title": "Redmi NOTE 8",
+    "raw_text": "Redmi NOTE 8 — Redmi NOTE 8",
+    "models": [
+      {
+        "model_name": "Redmi NOTE 8"
+      }
+    ]
+  },
+  {
+    "id": "SD-F089",
+    "box_number": "BOX 089",
+    "display_size": "6.59\"",
+    "title": "OPPO FIND X8S",
+    "raw_text": "OPPO FIND X8S — OPPO FIND X8, OPPO X8S+, OPPO FIND X8S, Vivo S30 PRO MINI, Vivo X200FE, Vivo X300, Vivo X300 FE, HUAWEI PURA 70, Honor PURA 80",
+    "models": [
+      {
+        "model_name": "OPPO FIND X8"
+      },
+      {
+        "model_name": "OPPO X8S+"
+      },
+      {
+        "model_name": "OPPO FIND X8S"
+      },
+      {
+        "model_name": "Vivo S30 PRO MINI"
+      },
+      {
+        "model_name": "Vivo X200FE"
+      },
+      {
+        "model_name": "Vivo X300"
+      },
+      {
+        "model_name": "Vivo X300 FE"
+      },
+      {
+        "model_name": "HUAWEI PURA 70"
+      },
+      {
+        "model_name": "Honor PURA 80"
+      }
+    ]
+  },
+  {
+    "id": "SD-F090",
+    "box_number": "BOX 090",
+    "display_size": "6.58\"",
+    "title": "HUAWEI NOVA Y61",
+    "raw_text": "HUAWEI NOVA Y61 — Redmi 11 PRIME 4G, Redmi 11 PRIME 5G, Redmi A1, Redmi A1+, Redmi A2, Redmi A2+, Redmi 10 5G, Redmi 10X 5G, Redmi 10X PRO 5G, Redmi 10 PRIME+5G, Redmi NOTE 11E, Redmi NOTE 11R 5G, OPPO A1X, OPPO A2X, OPPO A2M, OPPO K10 5G, OPPO A5 2020, OPPO A8, OPPO A9 (2020), OPPO A11, OPPO A15, OPPO A15S, OPPO A16, OPPO A16E, OPPO A16S, OPPO A16K, OPPO A17, OPPO A17K, OPPO A18, OPPO A31, OPPO A35, OPPO A38, OPPO A53S 5G, OPPO A54S, OPPO A55 5G, OPPO A55S, OPPO A56S, OPPO A56 5G, OPPO A57 4G, OPPO A57 5G, OPPO A57E, OPPO A57S, OPPO A58, OPPO A58X 5G, OPPO A59 5G, OPPO A77 4G, OPPO A77 5G, OPPO A77S, OPPO A78 5G, Xiaomi MI 10 LITE 5G, Xiaomi POCO M4 5G, Xiaomi POCO M5, Xiaomi POCO C50, Xiaomi POCO C51, Realme 5, Realme 5i, Realme 5S, Realme 6i, Realme 7i Global, Realme 9i 5G, Realme 10 5G, Realme 10S 5G, Realme 10T, Realme C3, Realme C11, Realme 2021, Realme C12, Realme C15, Realme C20, Realme C21, Realme C21Y, Realme C25, Realme C25Y, Realme C25S, Realme C30, Realme C30S, Realme C31, Realme C33 2023, Realme C35, Realme V11 5G, Realme V23, Realme V23I 5G, Realme V30 5G, Realme Q5i, Realme NARZO 10, Realme NARZO 10A, Realme NARZO 20, Realme NARZO 20A, Realme NARZO 30A, Realme NARZO 50 5G, Realme NARZO 50A, Realme NARZO 50A PRIME, Realme NARZO 50i, Realme NARZO 50i PRIME, OnePlus NORD N20 SE, OnePlus N300 5G, HUAWEI NOVA Y61, Honor ENJOY 50Z, HONOR X5, Honor X5 PLUS, Honor X5B, Honor X5B PLUS, Honor X6, Honor X6A, Honor X6B, Honor X8 5G, Honor X8A 5G, Honor PLAY 6C, Honor 20, Honor 30, Honor 40, Honor 70 LITE, Honor ENJOY 20, Honor NOVA Y60, Honor PLAY 9C (REDMI 11 PRIME 4G, OPPO REAL 5), Honor X8a, Honor Play6C, OPPO A57, OPPO A58x, OPPO A59, OPPO A77, OPPO A78, Realme 10s, Realme C11 (2021), Realme V23i, Realme V30, Realme Nord N300, Realme Nord N20 SE, Redmi 11 Prime, Redmi 10 Prime+ 5G, Redmi Note 11R, Xiaomi Poco M5 (India)",
+    "models": [
+      {
+        "model_name": "OPPO A55 5G"
+      },
+      {
+        "model_name": "OPPO A55S"
+      },
+      {
+        "model_name": "OPPO A56S"
+      },
+      {
+        "model_name": "OPPO A56 5G"
+      },
+      {
+        "model_name": "OPPO A57 4G"
+      },
+      {
+        "model_name": "OPPO A57 5G"
+      },
+      {
+        "model_name": "OPPO A57E"
+      },
+      {
+        "model_name": "OPPO A57S"
+      },
+      {
+        "model_name": "Redmi 11 PRIME 4G"
+      },
+      {
+        "model_name": "Redmi 11 PRIME 5G"
+      },
+      {
+        "model_name": "Redmi A1"
+      },
+      {
+        "model_name": "Redmi A1+"
+      },
+      {
+        "model_name": "Redmi A2"
+      },
+      {
+        "model_name": "Redmi A2+"
+      },
+      {
+        "model_name": "Redmi 10 5G"
+      },
+      {
+        "model_name": "Redmi 10X 5G"
+      },
+      {
+        "model_name": "Redmi 10X PRO 5G"
+      },
+      {
+        "model_name": "Redmi 10 PRIME+5G"
+      },
+      {
+        "model_name": "Redmi NOTE 11E"
+      },
+      {
+        "model_name": "Redmi NOTE 11R 5G"
+      },
+      {
+        "model_name": "OPPO A1X"
+      },
+      {
+        "model_name": "OPPO A2X"
+      },
+      {
+        "model_name": "OPPO A2M"
+      },
+      {
+        "model_name": "OPPO K10 5G"
+      },
+      {
+        "model_name": "OPPO A5 2020"
+      },
+      {
+        "model_name": "OPPO A8"
+      },
+      {
+        "model_name": "OPPO A9 (2020)"
+      },
+      {
+        "model_name": "OPPO A11"
+      },
+      {
+        "model_name": "OPPO A15"
+      },
+      {
+        "model_name": "OPPO A15S"
+      },
+      {
+        "model_name": "OPPO A16"
+      },
+      {
+        "model_name": "OPPO A16E"
+      },
+      {
+        "model_name": "OPPO A16S"
+      },
+      {
+        "model_name": "OPPO A16K"
+      },
+      {
+        "model_name": "OPPO A17"
+      },
+      {
+        "model_name": "OPPO A17K"
+      },
+      {
+        "model_name": "OPPO A18"
+      },
+      {
+        "model_name": "OPPO A31"
+      },
+      {
+        "model_name": "OPPO A35"
+      },
+      {
+        "model_name": "OPPO A38"
+      },
+      {
+        "model_name": "OPPO A53S 5G"
+      },
+      {
+        "model_name": "OPPO A54S"
+      },
+      {
+        "model_name": "OPPO A58"
+      },
+      {
+        "model_name": "OPPO A58X 5G"
+      },
+      {
+        "model_name": "OPPO A59 5G"
+      },
+      {
+        "model_name": "OPPO A77 4G"
+      },
+      {
+        "model_name": "OPPO A77 5G"
+      },
+      {
+        "model_name": "OPPO A77S"
+      },
+      {
+        "model_name": "OPPO A78 5G"
+      },
+      {
+        "model_name": "Xiaomi MI 10 LITE 5G"
+      },
+      {
+        "model_name": "Xiaomi POCO M4 5G"
+      },
+      {
+        "model_name": "Xiaomi POCO M5"
+      },
+      {
+        "model_name": "Xiaomi POCO C50"
+      },
+      {
+        "model_name": "Xiaomi POCO C51"
+      },
+      {
+        "model_name": "Realme 5"
+      },
+      {
+        "model_name": "Realme 5i"
+      },
+      {
+        "model_name": "Realme 5S"
+      },
+      {
+        "model_name": "Realme 6i"
+      },
+      {
+        "model_name": "Realme 7i Global"
+      },
+      {
+        "model_name": "Realme 9i 5G"
+      },
+      {
+        "model_name": "Realme 10 5G"
+      },
+      {
+        "model_name": "Realme 10S 5G"
+      },
+      {
+        "model_name": "Realme 10T"
+      },
+      {
+        "model_name": "Realme C3"
+      },
+      {
+        "model_name": "Realme C11"
+      },
+      {
+        "model_name": "Realme 2021"
+      },
+      {
+        "model_name": "Realme C12"
+      },
+      {
+        "model_name": "Realme C15"
+      },
+      {
+        "model_name": "Realme C20"
+      },
+      {
+        "model_name": "Realme C21"
+      },
+      {
+        "model_name": "Realme C21Y"
+      },
+      {
+        "model_name": "Realme C25"
+      },
+      {
+        "model_name": "Realme C25Y"
+      },
+      {
+        "model_name": "Realme C25S"
+      },
+      {
+        "model_name": "Realme C30"
+      },
+      {
+        "model_name": "Realme C30S"
+      },
+      {
+        "model_name": "Realme C31"
+      },
+      {
+        "model_name": "Realme C33 2023"
+      },
+      {
+        "model_name": "Realme C35"
+      },
+      {
+        "model_name": "Realme V11 5G"
+      },
+      {
+        "model_name": "Realme V23"
+      },
+      {
+        "model_name": "Realme V23I 5G"
+      },
+      {
+        "model_name": "Realme V30 5G"
+      },
+      {
+        "model_name": "Realme Q5i"
+      },
+      {
+        "model_name": "Realme NARZO 10"
+      },
+      {
+        "model_name": "Realme NARZO 10A"
+      },
+      {
+        "model_name": "Realme NARZO 20"
+      },
+      {
+        "model_name": "Realme NARZO 20A"
+      },
+      {
+        "model_name": "Realme NARZO 30A"
+      },
+      {
+        "model_name": "Realme NARZO 50 5G"
+      },
+      {
+        "model_name": "Realme NARZO 50A"
+      },
+      {
+        "model_name": "Realme NARZO 50A PRIME"
+      },
+      {
+        "model_name": "Realme NARZO 50i"
+      },
+      {
+        "model_name": "Realme NARZO 50i PRIME"
+      },
+      {
+        "model_name": "OnePlus NORD N20 SE"
+      },
+      {
+        "model_name": "OnePlus N300 5G"
+      },
+      {
+        "model_name": "HUAWEI NOVA Y61"
+      },
+      {
+        "model_name": "Honor ENJOY 50Z"
+      },
+      {
+        "model_name": "HONOR X5"
+      },
+      {
+        "model_name": "Honor X5 PLUS"
+      },
+      {
+        "model_name": "Honor X5B"
+      },
+      {
+        "model_name": "Honor X5B PLUS"
+      },
+      {
+        "model_name": "Honor X6"
+      },
+      {
+        "model_name": "Honor X6A"
+      },
+      {
+        "model_name": "Honor X6B"
+      },
+      {
+        "model_name": "Honor X8 5G"
+      },
+      {
+        "model_name": "Honor X8A 5G"
+      },
+      {
+        "model_name": "Honor PLAY 6C"
+      },
+      {
+        "model_name": "Honor 20"
+      },
+      {
+        "model_name": "Honor 30"
+      },
+      {
+        "model_name": "Honor 40"
+      },
+      {
+        "model_name": "Honor 70 LITE"
+      },
+      {
+        "model_name": "Honor ENJOY 20"
+      },
+      {
+        "model_name": "Honor NOVA Y60"
+      },
+      {
+        "model_name": "Honor PLAY 9C (REDMI 11 PRIME 4G"
+      },
+      {
+        "model_name": "OPPO REAL 5)"
+      },
+      {
+        "model_name": "Honor X8a"
+      },
+      {
+        "model_name": "Honor Play6C"
+      },
+      {
+        "model_name": "OPPO A57"
+      },
+      {
+        "model_name": "OPPO A58x"
+      },
+      {
+        "model_name": "OPPO A59"
+      },
+      {
+        "model_name": "OPPO A77"
+      },
+      {
+        "model_name": "OPPO A78"
+      },
+      {
+        "model_name": "Realme 10s"
+      },
+      {
+        "model_name": "Realme C11 (2021)"
+      },
+      {
+        "model_name": "Realme V23i"
+      },
+      {
+        "model_name": "Realme V30"
+      },
+      {
+        "model_name": "Realme Nord N300"
+      },
+      {
+        "model_name": "Realme Nord N20 SE"
+      },
+      {
+        "model_name": "Redmi 11 Prime"
+      },
+      {
+        "model_name": "Redmi 10 Prime+ 5G"
+      },
+      {
+        "model_name": "Redmi Note 11R"
+      },
+      {
+        "model_name": "Xiaomi Poco M5 (India)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F091",
+    "box_number": "BOX 091",
+    "display_size": "6.7\"",
+    "title": "OPPO RENO 13 5G国际版",
+    "raw_text": "OPPO RENO 13 5G国际版 — OPPO RENO 13 5G国际版, OPPO RENO 13 CHINA, OPPO RENO 14 5G, OPPO RENO 14F 5G, OPPO RENO 15国外版, OPPO RENO 15 5G, OPPO RENO 15C, OPPO RENO 15FS, OPPO RENO 15F, OPPO RENO 15C INDIA, OPPO F31 5G, OPPO F31 PRO 5G, OPPO A6, OPPO A6 PRO CHINA, OPPO A6 PRO 4G, OPPO A6 PRO 5G, OPPO A6 PRO, OPPO A6S PRO 国际版, Realme 16, OPPO RENO 15 5G(INDIA), OPPO RENO16 F, OPPO RENO16 FS, OPPO A6 (CHINA), OPPO A6S PRO, OPPO F33 5G, OPPO F33 PRO 5G",
+    "models": [
+      {
+        "model_name": "OPPO RENO 13 CHINA"
+      },
+      {
+        "model_name": "OPPO RENO 14 5G"
+      },
+      {
+        "model_name": "OPPO RENO 14F 5G"
+      },
+      {
+        "model_name": "OPPO RENO 15国外版"
+      },
+      {
+        "model_name": "OPPO RENO 15 5G"
+      },
+      {
+        "model_name": "OPPO RENO 15C"
+      },
+      {
+        "model_name": "OPPO RENO 15FS"
+      },
+      {
+        "model_name": "OPPO RENO 15F"
+      },
+      {
+        "model_name": "OPPO RENO 15C INDIA"
+      },
+      {
+        "model_name": "OPPO F31 5G"
+      },
+      {
+        "model_name": "OPPO F31 PRO 5G"
+      },
+      {
+        "model_name": "OPPO A6"
+      },
+      {
+        "model_name": "OPPO A6 PRO CHINA"
+      },
+      {
+        "model_name": "OPPO A6 PRO 4G"
+      },
+      {
+        "model_name": "OPPO A6 PRO 5G"
+      },
+      {
+        "model_name": "OPPO A6 PRO"
+      },
+      {
+        "model_name": "OPPO A6S PRO 国际版"
+      },
+      {
+        "model_name": "Realme 16"
+      },
+      {
+        "model_name": "OPPO RENO 15 5G(INDIA)"
+      },
+      {
+        "model_name": "OPPO RENO16 F"
+      },
+      {
+        "model_name": "OPPO RENO16 FS"
+      },
+      {
+        "model_name": "OPPO A6 (CHINA)"
+      },
+      {
+        "model_name": "OPPO A6S PRO"
+      },
+      {
+        "model_name": "OPPO F33 5G"
+      },
+      {
+        "model_name": "OPPO F33 PRO 5G"
+      },
+      {
+        "model_name": "OPPO RENO 13 5G国际版"
+      }
+    ]
+  },
+  {
+    "id": "SD-F092",
+    "box_number": "BOX 092",
+    "display_size": "6.7\"",
+    "title": "OPPO RENO 14 PRO 5G",
+    "raw_text": "OPPO RENO 14 PRO 5G — OPPO RENO 14 PRO 5G, OPPO FIND X9 PRO, OPPO RENO 15 PRO CHINA, OPPO RENO 15 PRO MAX, OnePlus 15, OnePlus NORD 5, OnePlus ACE 5 ULTRA, OnePlus 15R, OnePlus ACE 6T",
+    "models": [
+      {
+        "model_name": "OPPO RENO 14 PRO 5G"
+      },
+      {
+        "model_name": "OPPO FIND X9 PRO"
+      },
+      {
+        "model_name": "OPPO RENO 15 PRO CHINA"
+      },
+      {
+        "model_name": "OPPO RENO 15 PRO MAX"
+      },
+      {
+        "model_name": "OnePlus 15"
+      },
+      {
+        "model_name": "OnePlus NORD 5"
+      },
+      {
+        "model_name": "OnePlus ACE 5 ULTRA"
+      },
+      {
+        "model_name": "OnePlus 15R"
+      },
+      {
+        "model_name": "OnePlus ACE 6T"
+      }
+    ]
+  },
+  {
+    "id": "SD-F093",
+    "box_number": "BOX 093",
+    "display_size": "6.73\"",
+    "title": "Xiaomi 17 PRO MAX",
+    "raw_text": "Xiaomi 17 PRO MAX — Redmi K9O PRO MAX, Xiaomi 17 PRO MAX, Xiaomi POCO F8 ULTRA",
+    "models": [
+      {
+        "model_name": "Redmi K9O PRO MAX"
+      },
+      {
+        "model_name": "Xiaomi 17 PRO MAX"
+      },
+      {
+        "model_name": "Xiaomi POCO F8 ULTRA"
+      }
+    ]
+  },
+  {
+    "id": "SD-F094",
+    "box_number": "BOX 094",
+    "display_size": "6.78\"",
+    "title": "OPPO FIND X9",
+    "raw_text": "OPPO FIND X9 — OPPO FIND X9",
+    "models": [
+      {
+        "model_name": "OPPO FIND X9"
+      }
+    ]
+  },
+  {
+    "id": "SD-F095",
+    "box_number": "BOX 095",
+    "display_size": "6.7\"",
+    "title": "OPPO RENO 15 5G",
+    "raw_text": "OPPO RENO 15 5G — OPPO RENO 15 5G, OPPO RENO 15 PRO MINI, OPPO RENO 15 PRO国外版",
+    "models": [
+      {
+        "model_name": "OPPO RENO 15 5G"
+      },
+      {
+        "model_name": "OPPO RENO 15 PRO MINI"
+      },
+      {
+        "model_name": "OPPO RENO 15 PRO国外版"
+      }
+    ]
+  },
+  {
+    "id": "SD-F096",
+    "box_number": "BOX 096",
+    "display_size": "6.67\"",
+    "title": "Realme GT2 PRO",
+    "raw_text": "Realme GT2 PRO — Redmi K60, Redmi K60 PRO, Redmi RDEMI NOTE 12 TURBO, Redmi NOTE 13 5G, Redmi NOTE 13 PRO 4G, Redmi NOTE 13R PRO, Redmi NOTE 14S, OPPO RENO 8 PRO, OPPO RENO 8 PRO+, OPPO RENO 11F, OPPO F25 PRO, OPPO A5 CHINA, Xiaomi POCO F5, Xiaomi POCO M6 PRO 4G, Xiaomi POCO X6 NEO, Realme GT2 PRO, Realme GT NEO 3, Xiaomi 12T, Xiaomi MI 12T PRO, Xiaomi POCO F5 PRO, OnePlus 10R, OnePlus ACE, OnePlus 10T, HUAWEI HONOR X10 5G, HONOR 90 GT, Huawei HW ENJOY 20 PLUS, Huawei HW Y9A, Redmi NOTE 12 TURBO",
+    "models": [
+      {
+        "model_name": "Redmi K60"
+      },
+      {
+        "model_name": "Redmi K60 PRO"
+      },
+      {
+        "model_name": "Redmi RDEMI NOTE 12 TURBO"
+      },
+      {
+        "model_name": "Redmi NOTE 13 5G"
+      },
+      {
+        "model_name": "Redmi NOTE 13 PRO 4G"
+      },
+      {
+        "model_name": "Redmi NOTE 13R PRO"
+      },
+      {
+        "model_name": "Redmi NOTE 14S"
+      },
+      {
+        "model_name": "OPPO RENO 8 PRO"
+      },
+      {
+        "model_name": "OPPO RENO 8 PRO+"
+      },
+      {
+        "model_name": "OPPO RENO 11F"
+      },
+      {
+        "model_name": "OPPO F25 PRO"
+      },
+      {
+        "model_name": "OPPO A5 CHINA"
+      },
+      {
+        "model_name": "Xiaomi POCO F5"
+      },
+      {
+        "model_name": "Xiaomi POCO M6 PRO 4G"
+      },
+      {
+        "model_name": "Xiaomi POCO X6 NEO"
+      },
+      {
+        "model_name": "Realme GT2 PRO"
+      },
+      {
+        "model_name": "Realme GT NEO 3"
+      },
+      {
+        "model_name": "Xiaomi 12T"
+      },
+      {
+        "model_name": "Xiaomi MI 12T PRO"
+      },
+      {
+        "model_name": "Xiaomi POCO F5 PRO"
+      },
+      {
+        "model_name": "OnePlus 10R"
+      },
+      {
+        "model_name": "OnePlus ACE"
+      },
+      {
+        "model_name": "OnePlus 10T"
+      },
+      {
+        "model_name": "HUAWEI HONOR X10 5G"
+      },
+      {
+        "model_name": "HONOR 90 GT"
+      },
+      {
+        "model_name": "Huawei HW ENJOY 20 PLUS"
+      },
+      {
+        "model_name": "Huawei HW Y9A"
+      },
+      {
+        "model_name": "Redmi NOTE 12 TURBO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F097",
+    "box_number": "BOX 097",
+    "display_size": "6.67\"",
+    "title": "OPPO A6 4G",
+    "raw_text": "OPPO A6 4G — OPPO A6 4G, OPPO A6 5G, OPPO A6X 4G, OPPO A6X 5G, OPPO C85 4G, OPPO A6S 4G, OPPO A6S 5G, OPPO A6T 4G, OPPO A6T 5G, OPPO A6T PRO 4G, OPPO A6C, OPPO A6 PRO INDIA, OPPO K14X 5G, Vivo T5X 5G (REALME 15X, Realme C85)",
+    "models": [
+      {
+        "model_name": "OPPO A6 4G"
+      },
+      {
+        "model_name": "OPPO A6 5G"
+      },
+      {
+        "model_name": "OPPO A6X 4G"
+      },
+      {
+        "model_name": "OPPO A6X 5G"
+      },
+      {
+        "model_name": "OPPO C85 4G"
+      },
+      {
+        "model_name": "OPPO A6S 4G"
+      },
+      {
+        "model_name": "OPPO A6S 5G"
+      },
+      {
+        "model_name": "OPPO A6T 4G"
+      },
+      {
+        "model_name": "OPPO A6T 5G"
+      },
+      {
+        "model_name": "OPPO A6T PRO 4G"
+      },
+      {
+        "model_name": "OPPO A6C"
+      },
+      {
+        "model_name": "OPPO A6 PRO INDIA"
+      },
+      {
+        "model_name": "OPPO K14X 5G"
+      },
+      {
+        "model_name": "Vivo T5X 5G (REALME 15X"
+      },
+      {
+        "model_name": "Realme C85)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F098",
+    "box_number": "BOX 098",
+    "display_size": "6.67\"",
+    "title": "Xiaomi POCO F8 PRO",
+    "raw_text": "Xiaomi POCO F8 PRO — Redmi K90, Redmi TURBO 5, Xiaomi POCO F8 PRO, Xiaomi POCO X8 PRO",
+    "models": [
+      {
+        "model_name": "Redmi K90"
+      },
+      {
+        "model_name": "Redmi TURBO 5"
+      },
+      {
+        "model_name": "Xiaomi POCO F8 PRO"
+      },
+      {
+        "model_name": "Xiaomi POCO X8 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F099",
+    "box_number": "BOX 099",
+    "display_size": "Unknown",
+    "title": "OnePlus NORD 2 5G",
+    "raw_text": "OnePlus NORD 2 5G — OPPO RENO 5 4G, OPPO RENO5 5G, OPPO RENO 5K, OPPO RENO6 4G, OPPO 5G, OPPO RENO7 5G, OPPO K9, OPPO RENO6 5G, OPPO RENO5 4G, OPPO RENO5 K, Realme X7 MAX 5G, Realme GT 5G, Realme GT NEO, Realme GT NEO 2T, Realme GT NEO FLASH, Realme GT MASTER, OnePlus NORD 2 5G, OnePlus NORD CE 5G, OnePlus NORD 2T",
+    "models": [
+      {
+        "model_name": "Realme GT NEO"
+      },
+      {
+        "model_name": "Realme GT NEO 2T"
+      },
+      {
+        "model_name": "Realme GT NEO FLASH"
+      },
+      {
+        "model_name": "Realme GT MASTER"
+      },
+      {
+        "model_name": "OnePlus NORD 2 5G"
+      },
+      {
+        "model_name": "OnePlus NORD CE 5G"
+      },
+      {
+        "model_name": "OnePlus NORD 2T"
+      },
+      {
+        "model_name": "OPPO RENO 5 4G"
+      },
+      {
+        "model_name": "OPPO RENO5 5G"
+      },
+      {
+        "model_name": "OPPO RENO 5K"
+      },
+      {
+        "model_name": "OPPO RENO6 4G"
+      },
+      {
+        "model_name": "OPPO 5G"
+      },
+      {
+        "model_name": "OPPO RENO7 5G"
+      },
+      {
+        "model_name": "OPPO K9"
+      },
+      {
+        "model_name": "OPPO RENO6 5G"
+      },
+      {
+        "model_name": "OPPO RENO5 4G"
+      },
+      {
+        "model_name": "OPPO RENO5 K"
+      },
+      {
+        "model_name": "Realme X7 MAX 5G"
+      },
+      {
+        "model_name": "Realme GT 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F100",
+    "box_number": "BOX 100",
+    "display_size": "Unknown",
+    "title": "Realme GT 3 5G",
+    "raw_text": "Realme GT 3 5G — OPPO K13 5G, Realme GT 3 5G, Realme GT NEO 5, Realme NEO 5 240W, Realme GT NEO 5 SE",
+    "models": [
+      {
+        "model_name": "OPPO K13 5G"
+      },
+      {
+        "model_name": "Realme GT 3 5G"
+      },
+      {
+        "model_name": "Realme GT NEO 5"
+      },
+      {
+        "model_name": "Realme NEO 5 240W"
+      },
+      {
+        "model_name": "Realme GT NEO 5 SE"
+      }
+    ]
+  },
+  {
+    "id": "SD-F101",
+    "box_number": "BOX 101",
+    "display_size": "Unknown",
+    "title": "OPPO F19",
+    "raw_text": "OPPO F19 — OPPO F19, OPPO F19S, OPPO F19 PRO, OPPO F19 PRO+ 5G, OPPO F21 PRO, OPPO F21 PRO 5G, OPPO F21S PRO 4G, OPPO F21S PRO 5G, OPPO A74 4G, OPPO A78 4G, OPPO A94 4G, OPPO A94 5G, OPPO A95 4G, OPPO A95 5G, OPPO A96 5G, OPPO RENO5 Z, OPPO RENO6 Z, OPPO RENO5 LITE, OPPO RENO5F, OPPO RENO7 SE 5G, OPPO RENO7Z 5G, OPPO RENO7 4G, OPPO RENO7 LITE, OPPO RENOX7, OPPO RENO8 4G, OPPO RENO5G, OPPO RENO8Z 5G, OPPO RENO8 LITE, OPPO RENO8T 4G, OPPO NARZO 60, OPPO FIND X5 LITE, Realme 7 PRO, Realme 8 4G, Realme 8 PRO, Realme 9 4G, Realme 9 PRO+, Realme 10 4G, Realme X7, Realme V15 5G, Realme 11, Realme 11 4G, Realme NARZO 50 PRO, OnePlus NORD CE 2 5G, OPPO A96 5G(CHINA), OPPO RENO 5F, OPPO RENO 7Z 5G, OPPO RENO 7 4G, OPPO RENO X7, OPPO RENO 5G, OPPO RENO 8Z 5G, OPPO RENO 8 LITE, OPPO RENO 8T 4G, Realme 11(CHINA)",
+    "models": [
+      {
+        "model_name": "OPPO F19"
+      },
+      {
+        "model_name": "OPPO F19S"
+      },
+      {
+        "model_name": "OPPO F19 PRO"
+      },
+      {
+        "model_name": "OPPO F19 PRO+ 5G"
+      },
+      {
+        "model_name": "OPPO F21 PRO"
+      },
+      {
+        "model_name": "OPPO F21 PRO 5G"
+      },
+      {
+        "model_name": "OPPO F21S PRO 4G"
+      },
+      {
+        "model_name": "OPPO F21S PRO 5G"
+      },
+      {
+        "model_name": "OPPO A74 4G"
+      },
+      {
+        "model_name": "OPPO A78 4G"
+      },
+      {
+        "model_name": "OPPO A94 4G"
+      },
+      {
+        "model_name": "OPPO A94 5G"
+      },
+      {
+        "model_name": "OPPO A95 4G"
+      },
+      {
+        "model_name": "OPPO A95 5G"
+      },
+      {
+        "model_name": "OPPO A96 5G"
+      },
+      {
+        "model_name": "OPPO RENO5 Z"
+      },
+      {
+        "model_name": "OPPO RENO6 Z"
+      },
+      {
+        "model_name": "OPPO RENO5 LITE"
+      },
+      {
+        "model_name": "OPPO RENO5F"
+      },
+      {
+        "model_name": "OPPO RENO7 SE 5G"
+      },
+      {
+        "model_name": "OPPO RENO7Z 5G"
+      },
+      {
+        "model_name": "OPPO RENO7 4G"
+      },
+      {
+        "model_name": "OPPO RENO7 LITE"
+      },
+      {
+        "model_name": "OPPO RENOX7"
+      },
+      {
+        "model_name": "OPPO RENO8 4G"
+      },
+      {
+        "model_name": "OPPO RENO5G"
+      },
+      {
+        "model_name": "OPPO RENO8Z 5G"
+      },
+      {
+        "model_name": "OPPO RENO8 LITE"
+      },
+      {
+        "model_name": "OPPO RENO8T 4G"
+      },
+      {
+        "model_name": "OPPO NARZO 60"
+      },
+      {
+        "model_name": "OPPO FIND X5 LITE"
+      },
+      {
+        "model_name": "Realme 7 PRO"
+      },
+      {
+        "model_name": "Realme 8 4G"
+      },
+      {
+        "model_name": "Realme 8 PRO"
+      },
+      {
+        "model_name": "Realme 9 4G"
+      },
+      {
+        "model_name": "Realme 9 PRO+"
+      },
+      {
+        "model_name": "Realme 10 4G"
+      },
+      {
+        "model_name": "Realme X7"
+      },
+      {
+        "model_name": "Realme V15 5G"
+      },
+      {
+        "model_name": "Realme 11"
+      },
+      {
+        "model_name": "Realme 11 4G"
+      },
+      {
+        "model_name": "Realme NARZO 50 PRO"
+      },
+      {
+        "model_name": "OnePlus NORD CE 2 5G"
+      },
+      {
+        "model_name": "OPPO A96 5G(CHINA)"
+      },
+      {
+        "model_name": "OPPO RENO 5F"
+      },
+      {
+        "model_name": "OPPO RENO 7Z 5G"
+      },
+      {
+        "model_name": "OPPO RENO 7 4G"
+      },
+      {
+        "model_name": "OPPO RENO X7"
+      },
+      {
+        "model_name": "OPPO RENO 5G"
+      },
+      {
+        "model_name": "OPPO RENO 8Z 5G"
+      },
+      {
+        "model_name": "OPPO RENO 8 LITE"
+      },
+      {
+        "model_name": "OPPO RENO 8T 4G"
+      },
+      {
+        "model_name": "Realme 11(CHINA)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F102",
+    "box_number": "BOX 102",
+    "display_size": "Unknown",
+    "title": "Xiaomi 17",
+    "raw_text": "Xiaomi 17 — Xiaomi 17, Xiaomi 17 PRO",
+    "models": [
+      {
+        "model_name": "Xiaomi 17"
+      },
+      {
+        "model_name": "Xiaomi 17 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F103",
+    "box_number": "BOX 103",
+    "display_size": "Unknown",
+    "title": "Xiaomi POCO M7 4G",
+    "raw_text": "Xiaomi POCO M7 4G — Xiaomi POCO M7 4G, Xiaomi POCO M7 PLUS 5G(RM 15 4G, Xiaomi 5G )",
+    "models": [
+      {
+        "model_name": "Xiaomi POCO M7 4G"
+      },
+      {
+        "model_name": "Xiaomi POCO M7 PLUS 5G(RM 15 4G"
+      },
+      {
+        "model_name": "Xiaomi 5G )"
+      }
+    ]
+  },
+  {
+    "id": "SD-F104",
+    "box_number": "BOX 104",
+    "display_size": "Unknown",
+    "title": "Xiaomi POCO M7 4G(RM 15 4G",
+    "raw_text": "Xiaomi POCO M7 4G(RM 15 4G — Xiaomi POCO M7 4G(RM 15 4G",
+    "models": [
+      {
+        "model_name": "Xiaomi POCO M7 4G(RM 15 4G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F105",
+    "box_number": "BOX 105",
+    "display_size": "Unknown",
+    "title": "Xiaomi POCO C85 4G",
+    "raw_text": "Xiaomi POCO C85 4G — Xiaomi POCO C85 4G, Xiaomi POCO C85 5G(RM 15C 4G)",
+    "models": [
+      {
+        "model_name": "Xiaomi POCO C85 4G"
+      },
+      {
+        "model_name": "Xiaomi POCO C85 5G(RM 15C 4G)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F106",
+    "box_number": "BOX 106",
+    "display_size": "Unknown",
+    "title": "Xiaomi POCO C85 4G",
+    "raw_text": "Xiaomi POCO C85 4G — Xiaomi POCO C85 4G, Xiaomi POCO C85X(RM 15C 4G)",
+    "models": [
+      {
+        "model_name": "Xiaomi POCO C85 4G"
+      },
+      {
+        "model_name": "Xiaomi POCO C85X(RM 15C 4G)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F107",
+    "box_number": "BOX 107",
+    "display_size": "Unknown",
+    "title": "Xiaomi MI 11 LITE 4G",
+    "raw_text": "Xiaomi MI 11 LITE 4G — Xiaomi MI 11 LITE 4G, Xiaomi MI 11 LITE 5G, Xiaomi MI 11 LITE 5G NE, Xiaomi MI 12 LITE",
+    "models": [
+      {
+        "model_name": "Xiaomi MI 11 LITE 4G"
+      },
+      {
+        "model_name": "Xiaomi MI 11 LITE 5G"
+      },
+      {
+        "model_name": "Xiaomi MI 11 LITE 5G NE"
+      },
+      {
+        "model_name": "Xiaomi MI 12 LITE"
+      }
+    ]
+  },
+  {
+    "id": "SD-F108",
+    "box_number": "BOX 108",
+    "display_size": "Unknown",
+    "title": "Xiaomi POCO F3 GT",
+    "raw_text": "Xiaomi POCO F3 GT — Xiaomi POCO F3 GT, Xiaomi K40 GAMING",
+    "models": [
+      {
+        "model_name": "Xiaomi POCO F3 GT"
+      },
+      {
+        "model_name": "Xiaomi K40 GAMING"
+      }
+    ]
+  },
+  {
+    "id": "SD-F109",
+    "box_number": "BOX 109",
+    "display_size": "Unknown",
+    "title": "Xiaomi 13",
+    "raw_text": "Xiaomi 13 — Xiaomi 13, Xiaomi 14",
+    "models": [
+      {
+        "model_name": "Xiaomi 13"
+      },
+      {
+        "model_name": "Xiaomi 14"
+      }
+    ]
+  },
+  {
+    "id": "SD-F110",
+    "box_number": "BOX 110",
+    "display_size": "Unknown",
+    "title": "OnePlus NORD CE 3 LITE 5G",
+    "raw_text": "OnePlus NORD CE 3 LITE 5G — OPPO A1 5G, OPPO A2 5G, OPPO A3 PRO, OPPO A3 4G, OPPO A3 5G, OPPO A3X, OPPO A5 ENERGY, OPPO A5 PRO 4G, OPPO A5 PRO 5G, OPPO A5 4G, OPPO A5 5G, OPPO A5X 4G, OPPO A58 4G, OPPO A60, OPPO A79 5G, OPPO A80 5G, OPPO A98 5G, OPPO K11X 5G, OPPO K12X, OPPO K13X, OPPO F23 5G, Realme NARZO N55, Realme NARZO 60X 5G, Realme NARZO N65 5G, Realme NARZO 70X 5G, Realme NARZO 80X, Realme NARZO 80 LITE 5G, Realme C55, Realme C63 5G, Realme C65 4G, Realme C65 5G, Realme C67 4G, Realme C67 5G, Realme C71 4G, Realme C73 5G, Realme C75 4G, Realme C75 5G, Realme C75X, Realme V50S, Realme P3X, Realme P3 LITE, Realme P4X, Realme 11 5G, Realme 11X 5G, Realme 12 5G, Realme 12X 5G, Realme 12X INDIA 5G, Realme 12 LITE, Realme 13 5G, Realme 14X, Realme V60 PRO, OnePlus NORD CE 3 LITE 5G, OnePlus NORD N30 5G, OnePlus NORD N30 SE 5G, Vivo T3X 5G, Vivo T4X, Vivo Y19S 4G, Vivo Y19S PRO, Vivo Y21D, Vivo Y28 4G, Vivo Y29 4G, Vivo Y29 5G, Vivo Y31 5G, Vivo Y31 PRO 5G, Vivo Y37 PRO, Vivo Y38 5G, Vivo Y39, Vivo Y58, Vivo Y200I 5G, Vivo Y200+, Vivo Y300I, Vivo Y300T, Vivo iQOO Z9X 5G, Vivo iQOO Z10X, VIVO T3x, VIVO Y29, VIVO Y31 Pro, VIVO Y38, VIVO Y200i, VIVO iQOO Z9x",
+    "models": [
+      {
+        "model_name": "OPPO K11X 5G"
+      },
+      {
+        "model_name": "OPPO K12X"
+      },
+      {
+        "model_name": "OPPO K13X"
+      },
+      {
+        "model_name": "OPPO F23 5G"
+      },
+      {
+        "model_name": "Realme NARZO N55"
+      },
+      {
+        "model_name": "Realme NARZO 60X 5G"
+      },
+      {
+        "model_name": "Realme NARZO N65 5G"
+      },
+      {
+        "model_name": "Realme NARZO 70X 5G"
+      },
+      {
+        "model_name": "Realme NARZO 80X"
+      },
+      {
+        "model_name": "Realme NARZO 80 LITE 5G"
+      },
+      {
+        "model_name": "Realme C55"
+      },
+      {
+        "model_name": "Realme C63 5G"
+      },
+      {
+        "model_name": "Realme C65 4G"
+      },
+      {
+        "model_name": "Realme C65 5G"
+      },
+      {
+        "model_name": "Realme C67 4G"
+      },
+      {
+        "model_name": "Realme C67 5G"
+      },
+      {
+        "model_name": "Realme C71 4G"
+      },
+      {
+        "model_name": "Realme C73 5G"
+      },
+      {
+        "model_name": "Realme C75 4G"
+      },
+      {
+        "model_name": "Realme C75 5G"
+      },
+      {
+        "model_name": "Realme C75X"
+      },
+      {
+        "model_name": "Realme V50S"
+      },
+      {
+        "model_name": "Realme P3X"
+      },
+      {
+        "model_name": "Realme P3 LITE"
+      },
+      {
+        "model_name": "Realme P4X"
+      },
+      {
+        "model_name": "Realme 11 5G"
+      },
+      {
+        "model_name": "Realme 11X 5G"
+      },
+      {
+        "model_name": "Realme 12 5G"
+      },
+      {
+        "model_name": "Realme 12X 5G"
+      },
+      {
+        "model_name": "Realme 12X INDIA 5G"
+      },
+      {
+        "model_name": "Realme 12 LITE"
+      },
+      {
+        "model_name": "Realme 13 5G"
+      },
+      {
+        "model_name": "Realme 14X"
+      },
+      {
+        "model_name": "Realme V60 PRO"
+      },
+      {
+        "model_name": "OnePlus NORD CE 3 LITE 5G"
+      },
+      {
+        "model_name": "OnePlus NORD N30 5G"
+      },
+      {
+        "model_name": "OnePlus NORD N30 SE 5G"
+      },
+      {
+        "model_name": "Vivo T3X 5G"
+      },
+      {
+        "model_name": "Vivo T4X"
+      },
+      {
+        "model_name": "Vivo Y19S 4G"
+      },
+      {
+        "model_name": "Vivo Y19S PRO"
+      },
+      {
+        "model_name": "Vivo Y21D"
+      },
+      {
+        "model_name": "Vivo Y28 4G"
+      },
+      {
+        "model_name": "Vivo Y29 4G"
+      },
+      {
+        "model_name": "Vivo Y29 5G"
+      },
+      {
+        "model_name": "Vivo Y31 5G"
+      },
+      {
+        "model_name": "Vivo Y31 PRO 5G"
+      },
+      {
+        "model_name": "Vivo Y37 PRO"
+      },
+      {
+        "model_name": "Vivo Y38 5G"
+      },
+      {
+        "model_name": "Vivo Y39"
+      },
+      {
+        "model_name": "Vivo Y58"
+      },
+      {
+        "model_name": "Vivo Y200I 5G"
+      },
+      {
+        "model_name": "Vivo Y200+"
+      },
+      {
+        "model_name": "Vivo Y300I"
+      },
+      {
+        "model_name": "Vivo Y300T"
+      },
+      {
+        "model_name": "Vivo iQOO Z9X 5G"
+      },
+      {
+        "model_name": "OPPO A1 5G"
+      },
+      {
+        "model_name": "OPPO A2 5G"
+      },
+      {
+        "model_name": "OPPO A3 PRO"
+      },
+      {
+        "model_name": "OPPO A3 4G"
+      },
+      {
+        "model_name": "OPPO A3 5G"
+      },
+      {
+        "model_name": "OPPO A3X"
+      },
+      {
+        "model_name": "OPPO A5 ENERGY"
+      },
+      {
+        "model_name": "OPPO A5 PRO 4G"
+      },
+      {
+        "model_name": "OPPO A5 PRO 5G"
+      },
+      {
+        "model_name": "OPPO A5 4G"
+      },
+      {
+        "model_name": "OPPO A5 5G"
+      },
+      {
+        "model_name": "OPPO A5X 4G"
+      },
+      {
+        "model_name": "OPPO A58 4G"
+      },
+      {
+        "model_name": "OPPO A60"
+      },
+      {
+        "model_name": "OPPO A79 5G"
+      },
+      {
+        "model_name": "OPPO A80 5G"
+      },
+      {
+        "model_name": "OPPO A98 5G"
+      },
+      {
+        "model_name": "Vivo iQOO Z10X"
+      },
+      {
+        "model_name": "VIVO T3x"
+      },
+      {
+        "model_name": "VIVO Y29"
+      },
+      {
+        "model_name": "VIVO Y31 Pro"
+      },
+      {
+        "model_name": "VIVO Y38"
+      },
+      {
+        "model_name": "VIVO Y200i"
+      },
+      {
+        "model_name": "VIVO iQOO Z9x"
+      }
+    ]
+  },
+  {
+    "id": "SD-F111",
+    "box_number": "BOX 111",
+    "display_size": "Unknown",
+    "title": "Xiaomi POCO X7 PRO",
+    "raw_text": "Xiaomi POCO X7 PRO — Xiaomi POCO X7 PRO",
+    "models": [
+      {
+        "model_name": "Xiaomi POCO X7 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F112",
+    "box_number": "BOX 112",
+    "display_size": "Unknown",
+    "title": "OnePlus NORD 3",
+    "raw_text": "OnePlus NORD 3 — OPPO K11, OPPO F27 5G, OPPO RENO 12F 4G, OPPO RENO12F 5G, OPPO RENO13F 4G, OPPO RENO 13F 4G, OPPO 5G, Realme GT 5, Realme 12+ 5G, Realme 12 4G, Realme 13 4G, Realme 14, Realme 14T, Realme K12 5G, Realme K12X 5G, Realme K12 PLUS, Realme P3, Realme P4, Realme NARZO 70, Realme 70 PRO 5G, Realme P1 5G, Realme NEO 7X, OnePlus NORD 3, OnePlus NORD CE 3, OnePlus NORD 4, OnePlus NORD CE 4, OnePlus ACE 2V, OnePlus ACE 3V, OnePlus NORD CE 4 LITE 5G 无孔, Vivo T2, Vivo T3 5G, Vivo S18E, Vivo V29E, Vivo Y100 4G, Vivo Y100 (IDN), Vivo Y200 4G, Vivo Y200 ASIA, Vivo Y200 INDIA, Vivo Y200E, Vivo Y300 5G, Vivo Y400, Vivo V30 SE, Vivo V30 LITE, Vivo V40 SE, Vivo V40 LITE 4G (IDN), Vivo V40 LITE 5G (IDN), Vivo iQOO NEO 6, Vivo iQOO NEO 6 SE, Vivo iQOO Z9 5G, OnePlus Nord CE4 Lite, VIVO T3, VIVO Y300, VIVO V40 LITE 4G(IDN), VIVO V40 Lite (IDN), VIVO iQOO Neo6 SE, VIVO iQOO Z9",
+    "models": [
+      {
+        "model_name": "Vivo Y200 ASIA"
+      },
+      {
+        "model_name": "Vivo Y200 INDIA"
+      },
+      {
+        "model_name": "Vivo Y200E"
+      },
+      {
+        "model_name": "Vivo Y300 5G"
+      },
+      {
+        "model_name": "Vivo Y400"
+      },
+      {
+        "model_name": "Vivo V30 SE"
+      },
+      {
+        "model_name": "Vivo V30 LITE"
+      },
+      {
+        "model_name": "Vivo V40 SE"
+      },
+      {
+        "model_name": "Vivo V40 LITE 4G (IDN)"
+      },
+      {
+        "model_name": "Vivo V40 LITE 5G (IDN)"
+      },
+      {
+        "model_name": "Vivo iQOO NEO 6"
+      },
+      {
+        "model_name": "Vivo iQOO NEO 6 SE"
+      },
+      {
+        "model_name": "Vivo iQOO Z9 5G"
+      },
+      {
+        "model_name": "OnePlus Nord CE4 Lite"
+      },
+      {
+        "model_name": "VIVO T3"
+      },
+      {
+        "model_name": "VIVO Y300"
+      },
+      {
+        "model_name": "OPPO K11"
+      },
+      {
+        "model_name": "OPPO F27 5G"
+      },
+      {
+        "model_name": "OPPO RENO 12F 4G"
+      },
+      {
+        "model_name": "OPPO RENO12F 5G"
+      },
+      {
+        "model_name": "OPPO RENO13F 4G"
+      },
+      {
+        "model_name": "OPPO RENO 13F 4G"
+      },
+      {
+        "model_name": "OPPO 5G"
+      },
+      {
+        "model_name": "Realme GT 5"
+      },
+      {
+        "model_name": "Realme 12+ 5G"
+      },
+      {
+        "model_name": "Realme 12 4G"
+      },
+      {
+        "model_name": "Realme 13 4G"
+      },
+      {
+        "model_name": "Realme 14"
+      },
+      {
+        "model_name": "Realme 14T"
+      },
+      {
+        "model_name": "Realme K12 5G"
+      },
+      {
+        "model_name": "Realme K12X 5G"
+      },
+      {
+        "model_name": "Realme K12 PLUS"
+      },
+      {
+        "model_name": "Realme P3"
+      },
+      {
+        "model_name": "Realme P4"
+      },
+      {
+        "model_name": "Realme NARZO 70"
+      },
+      {
+        "model_name": "Realme 70 PRO 5G"
+      },
+      {
+        "model_name": "Realme P1 5G"
+      },
+      {
+        "model_name": "Realme NEO 7X"
+      },
+      {
+        "model_name": "OnePlus NORD 3"
+      },
+      {
+        "model_name": "OnePlus NORD CE 3"
+      },
+      {
+        "model_name": "OnePlus NORD 4"
+      },
+      {
+        "model_name": "OnePlus NORD CE 4"
+      },
+      {
+        "model_name": "OnePlus ACE 2V"
+      },
+      {
+        "model_name": "OnePlus ACE 3V"
+      },
+      {
+        "model_name": "OnePlus NORD CE 4 LITE 5G 无孔"
+      },
+      {
+        "model_name": "Vivo T2"
+      },
+      {
+        "model_name": "Vivo T3 5G"
+      },
+      {
+        "model_name": "Vivo S18E"
+      },
+      {
+        "model_name": "Vivo V29E"
+      },
+      {
+        "model_name": "Vivo Y100 4G"
+      },
+      {
+        "model_name": "Vivo Y100 (IDN)"
+      },
+      {
+        "model_name": "Vivo Y200 4G"
+      },
+      {
+        "model_name": "VIVO V40 LITE 4G(IDN)"
+      },
+      {
+        "model_name": "VIVO V40 Lite (IDN)"
+      },
+      {
+        "model_name": "VIVO iQOO Neo6 SE"
+      },
+      {
+        "model_name": "VIVO iQOO Z9"
+      }
+    ]
+  },
+  {
+    "id": "SD-F113",
+    "box_number": "BOX 113",
+    "display_size": "Unknown",
+    "title": "OPPO A7",
+    "raw_text": "OPPO A7 — OPPO A7, OPPO A5S, OPPO A11K, OPPO A12, Realme 3 (VIVO Y93)",
+    "models": [
+      {
+        "model_name": "OPPO A7"
+      },
+      {
+        "model_name": "OPPO A5S"
+      },
+      {
+        "model_name": "OPPO A11K"
+      },
+      {
+        "model_name": "OPPO A12"
+      },
+      {
+        "model_name": "Realme 3 (VIVO Y93)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F114",
+    "box_number": "BOX 114",
+    "display_size": "Unknown",
+    "title": "OPPO RENO 7 PRO 5G (XIAOMI 11 LITE)",
+    "raw_text": "OPPO RENO 7 PRO 5G (XIAOMI 11 LITE) — OPPO RENO 7 PRO 5G (XIAOMI 11 LITE)",
+    "models": [
+      {
+        "model_name": "OPPO RENO 7 PRO 5G (XIAOMI 11 LITE)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F115",
+    "box_number": "BOX 115",
+    "display_size": "Unknown",
+    "title": "Xiaomi POCO C40",
+    "raw_text": "Xiaomi POCO C40 — Xiaomi POCO C40, Xiaomi POCO C55, Xiaomi POCO C61 (RDEMI 10C)",
+    "models": [
+      {
+        "model_name": "Xiaomi POCO C40"
+      },
+      {
+        "model_name": "Xiaomi POCO C55"
+      },
+      {
+        "model_name": "Xiaomi POCO C61 (RDEMI 10C)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F116",
+    "box_number": "BOX 116",
+    "display_size": "Unknown",
+    "title": "OnePlus 6T",
+    "raw_text": "OnePlus 6T — OPPO K1, OPPO R17, OPPO RX 17 PRO, OPPO RX17 NEO, Realme X2, Realme XT, OnePlus 6T, OnePlus 7",
+    "models": [
+      {
+        "model_name": "OPPO K1"
+      },
+      {
+        "model_name": "OPPO R17"
+      },
+      {
+        "model_name": "OPPO RX 17 PRO"
+      },
+      {
+        "model_name": "OPPO RX17 NEO"
+      },
+      {
+        "model_name": "Realme X2"
+      },
+      {
+        "model_name": "Realme XT"
+      },
+      {
+        "model_name": "OnePlus 6T"
+      },
+      {
+        "model_name": "OnePlus 7"
+      }
+    ]
+  },
+  {
+    "id": "SD-F117",
+    "box_number": "BOX 117",
+    "display_size": "Unknown",
+    "title": "Vivo V9",
+    "raw_text": "Vivo V9 — OPPO F7, OPPO R15, OPPO A3 (2018), Vivo V9, Vivo X21, Vivo X21i, Vivo Y85, Vivo Y89 开槽, OnePlus 6, OPPO A3(2018), VIVO Y89",
+    "models": [
+      {
+        "model_name": "OPPO F7"
+      },
+      {
+        "model_name": "OPPO R15"
+      },
+      {
+        "model_name": "OPPO A3 (2018)"
+      },
+      {
+        "model_name": "Vivo V9"
+      },
+      {
+        "model_name": "Vivo X21"
+      },
+      {
+        "model_name": "Vivo X21i"
+      },
+      {
+        "model_name": "Vivo Y85"
+      },
+      {
+        "model_name": "Vivo Y89 开槽"
+      },
+      {
+        "model_name": "OnePlus 6"
+      },
+      {
+        "model_name": "OPPO A3(2018)"
+      },
+      {
+        "model_name": "VIVO Y89"
+      }
+    ]
+  },
+  {
+    "id": "SD-F118",
+    "box_number": "BOX 118",
+    "display_size": "Unknown",
+    "title": "Xiaomi POCO M6 PRO 5G",
+    "raw_text": "Xiaomi POCO M6 PRO 5G — Xiaomi POCO M6 PRO 5G, Xiaomi POCO M6 PLUS, Xiaomi POCO M6 4G (REDMI 12 4G, Xiaomi 5G)",
+    "models": [
+      {
+        "model_name": "Xiaomi POCO M6 PRO 5G"
+      },
+      {
+        "model_name": "Xiaomi POCO M6 PLUS"
+      },
+      {
+        "model_name": "Xiaomi POCO M6 4G (REDMI 12 4G"
+      },
+      {
+        "model_name": "Xiaomi 5G)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F119",
+    "box_number": "BOX 119",
+    "display_size": "Unknown",
+    "title": "Realme NEO 7 5G",
+    "raw_text": "Realme NEO 7 5G — Realme NEO 7 5G, Realme NEO 7 SE, Realme GT 7 5G, Realme GT 7T 5G, OnePlus ACE 5, OnePlus ACE 5 PRO",
+    "models": [
+      {
+        "model_name": "Realme NEO 7 5G"
+      },
+      {
+        "model_name": "Realme NEO 7 SE"
+      },
+      {
+        "model_name": "Realme GT 7 5G"
+      },
+      {
+        "model_name": "Realme GT 7T 5G"
+      },
+      {
+        "model_name": "OnePlus ACE 5"
+      },
+      {
+        "model_name": "OnePlus ACE 5 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F120",
+    "box_number": "BOX 120",
+    "display_size": "Unknown",
+    "title": "Realme 15T",
+    "raw_text": "Realme 15T — Realme 15T, Realme NARZO 90 (玻璃0.25MM+厚胶)",
+    "models": [
+      {
+        "model_name": "Realme 15T"
+      },
+      {
+        "model_name": "Realme NARZO 90 (玻璃0.25MM+厚胶)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F121",
+    "box_number": "BOX 121",
+    "display_size": "6.67\"",
+    "title": "Realme 15X",
+    "raw_text": "Realme 15X — Realme 15X, Realme C85, Realme NARZO 90X",
+    "models": [
+      {
+        "model_name": "Realme 15X"
+      },
+      {
+        "model_name": "Realme C85"
+      },
+      {
+        "model_name": "Realme NARZO 90X"
+      }
+    ]
+  },
+  {
+    "id": "SD-F122",
+    "box_number": "BOX 122",
+    "display_size": "Unknown",
+    "title": "Realme X50 PRO 5G",
+    "raw_text": "Realme X50 PRO 5G — Realme X50 PRO 5G, OPPO RENO 3 PRO 4G, Vivo V17, Vivo V17 PRO, Vivo V17 INDIA, Vivo V19, Vivo X30, Vivo X30 PRO, Vivo S5 CHINA, Vivo V19 Indonesia",
+    "models": [
+      {
+        "model_name": "Realme X50 PRO 5G"
+      },
+      {
+        "model_name": "OPPO RENO 3 PRO 4G"
+      },
+      {
+        "model_name": "Vivo V17"
+      },
+      {
+        "model_name": "Vivo V17 PRO"
+      },
+      {
+        "model_name": "Vivo V17 INDIA"
+      },
+      {
+        "model_name": "Vivo V19"
+      },
+      {
+        "model_name": "Vivo X30"
+      },
+      {
+        "model_name": "Vivo X30 PRO"
+      },
+      {
+        "model_name": "Vivo S5 CHINA"
+      },
+      {
+        "model_name": "Vivo V19 Indonesia"
+      }
+    ]
+  },
+  {
+    "id": "SD-F123",
+    "box_number": "BOX 123",
+    "display_size": "Unknown",
+    "title": "Realme C2",
+    "raw_text": "Realme C2 — Realme C2, Realme C2S, OPPO A1K",
+    "models": [
+      {
+        "model_name": "Realme C2"
+      },
+      {
+        "model_name": "Realme C2S"
+      },
+      {
+        "model_name": "OPPO A1K"
+      }
+    ]
+  },
+  {
+    "id": "SD-F124",
+    "box_number": "BOX 124",
+    "display_size": "Unknown",
+    "title": "Xiaomi POCO M4 PRO 5G (REDMI NOTE 11 5G",
+    "raw_text": "Xiaomi POCO M4 PRO 5G (REDMI NOTE 11 5G — Xiaomi POCO M4 PRO 5G (REDMI NOTE 11 5G",
+    "models": [
+      {
+        "model_name": "Xiaomi POCO M4 PRO 5G (REDMI NOTE 11 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F125",
+    "box_number": "BOX 125",
+    "display_size": "Unknown",
+    "title": "Realme 13+ 5G",
+    "raw_text": "Realme 13+ 5G — Realme 13+ 5G",
+    "models": [
+      {
+        "model_name": "Realme 13+ 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F126",
+    "box_number": "BOX 126",
+    "display_size": "Unknown",
+    "title": "Xiaomi POCO X5 (REDMI NOTE 12 4G",
+    "raw_text": "Xiaomi POCO X5 (REDMI NOTE 12 4G — Xiaomi POCO X5 (REDMI NOTE 12 4G, Xiaomi 5G)",
+    "models": [
+      {
+        "model_name": "Xiaomi POCO X5 (REDMI NOTE 12 4G"
+      },
+      {
+        "model_name": "Xiaomi 5G)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F127",
+    "box_number": "BOX 127",
+    "display_size": "Unknown",
+    "title": "Realme 10 PRO",
+    "raw_text": "Realme 10 PRO — Realme 10 PRO",
+    "models": [
+      {
+        "model_name": "Realme 10 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F128",
+    "box_number": "BOX 128",
+    "display_size": "6.7\"",
+    "title": "Realme C83 5G",
+    "raw_text": "Realme C83 5G — Realme C83 5G, Realme P4 LITE 5G",
+    "models": [
+      {
+        "model_name": "Realme C83 5G"
+      },
+      {
+        "model_name": "Realme P4 LITE 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F129",
+    "box_number": "BOX 129",
+    "display_size": "Unknown",
+    "title": "Realme C85 PRO",
+    "raw_text": "Realme C85 PRO — Realme C85 PRO",
+    "models": [
+      {
+        "model_name": "Realme C85 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F130",
+    "box_number": "BOX 130",
+    "display_size": "Unknown",
+    "title": "Realme GT 8",
+    "raw_text": "Realme GT 8 — Realme GT 8, Realme GT 8 PRO, Realme NEO 8, Realme 16 PRO",
+    "models": [
+      {
+        "model_name": "Realme GT 8"
+      },
+      {
+        "model_name": "Realme GT 8 PRO"
+      },
+      {
+        "model_name": "Realme NEO 8"
+      },
+      {
+        "model_name": "Realme 16 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F131",
+    "box_number": "BOX 131",
+    "display_size": "Unknown",
+    "title": "Realme 15 (ONE PLUS NORD CE5)",
+    "raw_text": "Realme 15 (ONE PLUS NORD CE5) — Realme 15 (ONE PLUS NORD CE5)",
+    "models": [
+      {
+        "model_name": "Realme 15 (ONE PLUS NORD CE5)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F132",
+    "box_number": "BOX 132",
+    "display_size": "Unknown",
+    "title": "Xiaomi 9",
+    "raw_text": "Xiaomi 9 — Xiaomi 9, Xiaomi MI 9 LITE, Xiaomi MI CC9 (OPPO F9)",
+    "models": [
+      {
+        "model_name": "Xiaomi 9"
+      },
+      {
+        "model_name": "Xiaomi MI 9 LITE"
+      },
+      {
+        "model_name": "Xiaomi MI CC9 (OPPO F9)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F133",
+    "box_number": "BOX 133",
+    "display_size": "Unknown",
+    "title": "Vivo iQOO NEO7",
+    "raw_text": "Vivo iQOO NEO7 — Vivo iQOO NEO7, Vivo iQOO NEO7 SE, Vivo iQOO NEO7 PRO, Vivo iQOO NEO7 RACING, Vivo iQOO NEO 8, Vivo iQOO NEO8 PRO, Vivo iQOO 9, Vivo iQOO 10, Vivo iQOO NEO 10R, Vivo iQOO NEO 11, Vivo iQOO NEO 11S, Vivo iQOO Z9 TURBO, Vivo iQOO Z9 TURBO+, Vivo iQOO Z9 TURBO ENDURANCE, Vivo Y200 GT 版, VIVO IQOO 9(CHINA), VIVO Y200 GT",
+    "models": [
+      {
+        "model_name": "Vivo iQOO NEO 10R"
+      },
+      {
+        "model_name": "Vivo iQOO NEO 11"
+      },
+      {
+        "model_name": "Vivo iQOO NEO 11S"
+      },
+      {
+        "model_name": "Vivo iQOO Z9 TURBO"
+      },
+      {
+        "model_name": "Vivo iQOO Z9 TURBO+"
+      },
+      {
+        "model_name": "Vivo iQOO Z9 TURBO ENDURANCE"
+      },
+      {
+        "model_name": "Vivo Y200 GT 版"
+      },
+      {
+        "model_name": "VIVO IQOO 9(CHINA)"
+      },
+      {
+        "model_name": "VIVO Y200 GT"
+      },
+      {
+        "model_name": "Vivo iQOO NEO7"
+      },
+      {
+        "model_name": "Vivo iQOO NEO7 SE"
+      },
+      {
+        "model_name": "Vivo iQOO NEO7 PRO"
+      },
+      {
+        "model_name": "Vivo iQOO NEO7 RACING"
+      },
+      {
+        "model_name": "Vivo iQOO NEO 8"
+      },
+      {
+        "model_name": "Vivo iQOO NEO8 PRO"
+      },
+      {
+        "model_name": "Vivo iQOO 9"
+      },
+      {
+        "model_name": "Vivo iQOO 10"
+      }
+    ]
+  },
+  {
+    "id": "SD-F134",
+    "box_number": "BOX 134",
+    "display_size": "Unknown",
+    "title": "Vivo V70FE 5G",
+    "raw_text": "Vivo V70FE 5G — Vivo V70FE 5G",
+    "models": [
+      {
+        "model_name": "Vivo V70FE 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F135",
+    "box_number": "BOX 135",
+    "display_size": "Unknown",
+    "title": "Vivo iQOO 15",
+    "raw_text": "Vivo iQOO 15 — Vivo iQOO 15",
+    "models": [
+      {
+        "model_name": "Vivo iQOO 15"
+      }
+    ]
+  },
+  {
+    "id": "SD-F136",
+    "box_number": "BOX 136",
+    "display_size": "Unknown",
+    "title": "Vivo T2",
+    "raw_text": "Vivo T2 — Vivo T2, Vivo iQOO NEO 6 SE",
+    "models": [
+      {
+        "model_name": "Vivo T2"
+      },
+      {
+        "model_name": "Vivo iQOO NEO 6 SE"
+      }
+    ]
+  },
+  {
+    "id": "SD-F137",
+    "box_number": "BOX 137",
+    "display_size": "Unknown",
+    "title": "Vivo X70",
+    "raw_text": "Vivo X70 — Vivo X70",
+    "models": [
+      {
+        "model_name": "Vivo X70"
+      }
+    ]
+  },
+  {
+    "id": "SD-F138",
+    "box_number": "BOX 138",
+    "display_size": "Unknown",
+    "title": "Vivo X300 PRO",
+    "raw_text": "Vivo X300 PRO — Vivo X300 PRO",
+    "models": [
+      {
+        "model_name": "Vivo X300 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F139",
+    "box_number": "BOX 139",
+    "display_size": "Unknown",
+    "title": "Vivo S1",
+    "raw_text": "Vivo S1 — Vivo S1, Vivo S1 PRO INDIA, Vivo Z1X, Vivo V17 NEO",
+    "models": [
+      {
+        "model_name": "Vivo S1"
+      },
+      {
+        "model_name": "Vivo S1 PRO INDIA"
+      },
+      {
+        "model_name": "Vivo Z1X"
+      },
+      {
+        "model_name": "Vivo V17 NEO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F140",
+    "box_number": "BOX 140",
+    "display_size": "Unknown",
+    "title": "Vivo X200T",
+    "raw_text": "Vivo X200T — Vivo X200T, Vivo S20, Vivo S30, Vivo X200S未做库存, VIVO Y500 PRO",
+    "models": [
+      {
+        "model_name": "Vivo X200T"
+      },
+      {
+        "model_name": "Vivo S20"
+      },
+      {
+        "model_name": "Vivo S30"
+      },
+      {
+        "model_name": "Vivo X200S未做库存"
+      },
+      {
+        "model_name": "VIVO Y500 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F141",
+    "box_number": "BOX 141",
+    "display_size": "Unknown",
+    "title": "Vivo V21",
+    "raw_text": "Vivo V21 — Vivo V21, Vivo V21 5G, Vivo V21S, Vivo V25, Vivo V25E, Vivo T1 PRO, Vivo T1 (骁龙778G), Vivo iQOO Z6 PRO, Huawei HUAWEIW ENJOY 20 PRO, Honor NOVA 8 SE, HONOR 30 YOUTH",
+    "models": [
+      {
+        "model_name": "Vivo V21"
+      },
+      {
+        "model_name": "Vivo V21 5G"
+      },
+      {
+        "model_name": "Vivo V21S"
+      },
+      {
+        "model_name": "Vivo V25"
+      },
+      {
+        "model_name": "Vivo V25E"
+      },
+      {
+        "model_name": "Vivo T1 PRO"
+      },
+      {
+        "model_name": "Vivo T1 (骁龙778G)"
+      },
+      {
+        "model_name": "Vivo iQOO Z6 PRO"
+      },
+      {
+        "model_name": "Huawei HUAWEIW ENJOY 20 PRO"
+      },
+      {
+        "model_name": "Honor NOVA 8 SE"
+      },
+      {
+        "model_name": "HONOR 30 YOUTH"
+      }
+    ]
+  },
+  {
+    "id": "SD-F142",
+    "box_number": "BOX 142",
+    "display_size": "Unknown",
+    "title": "Vivo V23 5G 开槽",
+    "raw_text": "Vivo V23 5G 开槽 — Vivo V23 5G 开槽",
+    "models": [
+      {
+        "model_name": "Vivo V23 5G 开槽"
+      }
+    ]
+  },
+  {
+    "id": "SD-F143",
+    "box_number": "BOX 143",
+    "display_size": "6.51\"",
+    "title": "Vivo G2",
+    "raw_text": "Vivo G2 — Vivo G2, Vivo Y01, Vivo Y02, Vivo Y02S, Vivo Y03, Vivo T2X, Vivo Y02A, Vivo Y03T, Vivo Y11 (2023), Vivo Y3S, Vivo Y11S, Vivo Y12A, Vivo Y12S, Vivo Y15S, Vivo Y16, Vivo Y17S, Vivo Y18, Vivo Y18E, Vivo Y18INDIA, Vivo Y18i, Vivo Y18T, Vivo Y 20, Vivo Y20i, Vivo Y20G, Vivo Y20A, Vivo Y20T, Vivo Y21, Vivo Y21A, Vivo Y21G, Vivo Y21S, Vivo Y21T, Vivo Y22, Vivo Y22S, Vivo Y28 5G, Vivo Y28S 5G, Vivo Y30 CHINA, Vivo Y31, Vivo Y31 2021, Vivo Y31S 5G, Vivo Y32, Vivo Y33S, Vivo Y33E, Vivo Y33T, Vivo Y354G, Vivo 5G, Vivo Y35+, Vivo Y36i, Vivo Y37, Vivo Y51 2020 DECEMBER, Vivo Y51A, Vivo Y52 5G, Vivo Y52S, Vivo Y52T 5G, Vivo Y52S T1, Vivo Y53S 4G, Vivo Y55S 5G, Vivo Y55 5G, Vivo Y56, Vivo Y72 5G, Vivo Y73T 5G, Vivo Y75 5G, Vivo Y75S 5G, Vivo Y76 5G, Vivo Y77 5G, Vivo T1X, Vivo T1X 4G, Vivo T3 LITE, Vivo iQOO Z5X, Vivo iQOO Z6, Vivo iQOO Z6 LITE 5G, Vivo iQOO Z3, Vivo iQOO U5, Vivo iQOO Z7i, Vivo iQOO Z9 LITE, VIVO T2x (India), VIVO Y11, VIVO Y18 (India), VIVO Y20, VIVO Y37m, VIVO Y28e, VIVO Y28s, VIVO Y31s, VIVO Y35, VIVO Y35 5G, VIVO Y52t, VIVO Y73t, VIVO Y75s, VIVO Y77, VIVO iQOO Z6 Lite, VIVO Z7i",
+    "models": [
+      {
+        "model_name": "Vivo G2"
+      },
+      {
+        "model_name": "Vivo Y01"
+      },
+      {
+        "model_name": "Vivo Y02"
+      },
+      {
+        "model_name": "Vivo Y02S"
+      },
+      {
+        "model_name": "Vivo Y03"
+      },
+      {
+        "model_name": "Vivo T2X"
+      },
+      {
+        "model_name": "Vivo Y02A"
+      },
+      {
+        "model_name": "Vivo Y03T"
+      },
+      {
+        "model_name": "Vivo Y11 (2023)"
+      },
+      {
+        "model_name": "Vivo Y3S"
+      },
+      {
+        "model_name": "Vivo Y11S"
+      },
+      {
+        "model_name": "Vivo Y12A"
+      },
+      {
+        "model_name": "Vivo Y12S"
+      },
+      {
+        "model_name": "Vivo Y15S"
+      },
+      {
+        "model_name": "Vivo Y16"
+      },
+      {
+        "model_name": "Vivo Y17S"
+      },
+      {
+        "model_name": "Vivo Y18"
+      },
+      {
+        "model_name": "Vivo Y18E"
+      },
+      {
+        "model_name": "Vivo Y18INDIA"
+      },
+      {
+        "model_name": "Vivo Y18i"
+      },
+      {
+        "model_name": "Vivo Y18T"
+      },
+      {
+        "model_name": "Vivo Y 20"
+      },
+      {
+        "model_name": "Vivo Y20i"
+      },
+      {
+        "model_name": "Vivo Y20G"
+      },
+      {
+        "model_name": "Vivo Y20A"
+      },
+      {
+        "model_name": "Vivo T1X"
+      },
+      {
+        "model_name": "Vivo T1X 4G"
+      },
+      {
+        "model_name": "Vivo T3 LITE"
+      },
+      {
+        "model_name": "Vivo iQOO Z5X"
+      },
+      {
+        "model_name": "Vivo iQOO Z6"
+      },
+      {
+        "model_name": "Vivo iQOO Z6 LITE 5G"
+      },
+      {
+        "model_name": "Vivo iQOO Z3"
+      },
+      {
+        "model_name": "Vivo iQOO U5"
+      },
+      {
+        "model_name": "Vivo iQOO Z7i"
+      },
+      {
+        "model_name": "Vivo iQOO Z9 LITE"
+      },
+      {
+        "model_name": "VIVO T2x (India)"
+      },
+      {
+        "model_name": "VIVO Y11"
+      },
+      {
+        "model_name": "VIVO Y18 (India)"
+      },
+      {
+        "model_name": "VIVO Y20"
+      },
+      {
+        "model_name": "VIVO Y37m"
+      },
+      {
+        "model_name": "VIVO Y28e"
+      },
+      {
+        "model_name": "VIVO Y28s"
+      },
+      {
+        "model_name": "VIVO Y31s"
+      },
+      {
+        "model_name": "VIVO Y35"
+      },
+      {
+        "model_name": "Vivo Y20T"
+      },
+      {
+        "model_name": "Vivo Y21"
+      },
+      {
+        "model_name": "Vivo Y21A"
+      },
+      {
+        "model_name": "Vivo Y21G"
+      },
+      {
+        "model_name": "Vivo Y21S"
+      },
+      {
+        "model_name": "Vivo Y21T"
+      },
+      {
+        "model_name": "Vivo Y22"
+      },
+      {
+        "model_name": "Vivo Y22S"
+      },
+      {
+        "model_name": "Vivo Y28 5G"
+      },
+      {
+        "model_name": "Vivo Y28S 5G"
+      },
+      {
+        "model_name": "Vivo Y30 CHINA"
+      },
+      {
+        "model_name": "Vivo Y31"
+      },
+      {
+        "model_name": "Vivo Y31 2021"
+      },
+      {
+        "model_name": "Vivo Y31S 5G"
+      },
+      {
+        "model_name": "Vivo Y32"
+      },
+      {
+        "model_name": "Vivo Y33S"
+      },
+      {
+        "model_name": "Vivo Y33E"
+      },
+      {
+        "model_name": "Vivo Y33T"
+      },
+      {
+        "model_name": "Vivo Y354G"
+      },
+      {
+        "model_name": "Vivo 5G"
+      },
+      {
+        "model_name": "Vivo Y35+"
+      },
+      {
+        "model_name": "Vivo Y36i"
+      },
+      {
+        "model_name": "Vivo Y37"
+      },
+      {
+        "model_name": "Vivo Y51 2020 DECEMBER"
+      },
+      {
+        "model_name": "Vivo Y51A"
+      },
+      {
+        "model_name": "Vivo Y52 5G"
+      },
+      {
+        "model_name": "Vivo Y52S"
+      },
+      {
+        "model_name": "Vivo Y52T 5G"
+      },
+      {
+        "model_name": "Vivo Y52S T1"
+      },
+      {
+        "model_name": "Vivo Y53S 4G"
+      },
+      {
+        "model_name": "Vivo Y55S 5G"
+      },
+      {
+        "model_name": "Vivo Y55 5G"
+      },
+      {
+        "model_name": "Vivo Y56"
+      },
+      {
+        "model_name": "Vivo Y72 5G"
+      },
+      {
+        "model_name": "Vivo Y73T 5G"
+      },
+      {
+        "model_name": "Vivo Y75 5G"
+      },
+      {
+        "model_name": "Vivo Y75S 5G"
+      },
+      {
+        "model_name": "Vivo Y76 5G"
+      },
+      {
+        "model_name": "Vivo Y77 5G"
+      },
+      {
+        "model_name": "VIVO Y35 5G"
+      },
+      {
+        "model_name": "VIVO Y52t"
+      },
+      {
+        "model_name": "VIVO Y73t"
+      },
+      {
+        "model_name": "VIVO Y75s"
+      },
+      {
+        "model_name": "VIVO Y77"
+      },
+      {
+        "model_name": "VIVO iQOO Z6 Lite"
+      },
+      {
+        "model_name": "VIVO Z7i"
+      }
+    ]
+  },
+  {
+    "id": "SD-F144",
+    "box_number": "BOX 144",
+    "display_size": "Unknown",
+    "title": "Realme GT 2",
+    "raw_text": "Realme GT 2 — Realme GT 2, Realme GT NEO 2, Realme GT NEO 3T, Realme Q5 PRO (ONE PLUS 9RT 5G)",
+    "models": [
+      {
+        "model_name": "Realme GT 2"
+      },
+      {
+        "model_name": "Realme GT NEO 2"
+      },
+      {
+        "model_name": "Realme GT NEO 3T"
+      },
+      {
+        "model_name": "Realme Q5 PRO (ONE PLUS 9RT 5G)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F145",
+    "box_number": "BOX 145",
+    "display_size": "Unknown",
+    "title": "Vivo Y3",
+    "raw_text": "Vivo Y3 — Vivo Y3, Vivo Y11 2019, Vivo Y12, Vivo Y15 2019, Vivo Y17, Vivo U10",
+    "models": [
+      {
+        "model_name": "Vivo Y3"
+      },
+      {
+        "model_name": "Vivo Y11 2019"
+      },
+      {
+        "model_name": "Vivo Y12"
+      },
+      {
+        "model_name": "Vivo Y15 2019"
+      },
+      {
+        "model_name": "Vivo Y17"
+      },
+      {
+        "model_name": "Vivo U10"
+      }
+    ]
+  },
+  {
+    "id": "SD-F146",
+    "box_number": "BOX 146",
+    "display_size": "Unknown",
+    "title": "Vivo S50",
+    "raw_text": "Vivo S50 — Vivo S50, Vivo V70, Vivo 70 E LITE, Vivo IQ00 15R, Vivo Z11 TURB0 (XM POCO F8 PRO)",
+    "models": [
+      {
+        "model_name": "Vivo S50"
+      },
+      {
+        "model_name": "Vivo V70"
+      },
+      {
+        "model_name": "Vivo 70 E LITE"
+      },
+      {
+        "model_name": "Vivo IQ00 15R"
+      },
+      {
+        "model_name": "Vivo Z11 TURB0 (XM POCO F8 PRO)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F147",
+    "box_number": "BOX 147",
+    "display_size": "Unknown",
+    "title": "OnePlus 13R 5G",
+    "raw_text": "OnePlus 13R 5G — OnePlus 13R 5G",
+    "models": [
+      {
+        "model_name": "OnePlus 13R 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F148",
+    "box_number": "BOX 148",
+    "display_size": "Unknown",
+    "title": "Vivo Y31D",
+    "raw_text": "Vivo Y31D — Vivo Y31D, Vivo Y500i, Vivo Y51 PRO (REALME 15X INDIA)",
+    "models": [
+      {
+        "model_name": "Vivo Y31D"
+      },
+      {
+        "model_name": "Vivo Y500i"
+      },
+      {
+        "model_name": "Vivo Y51 PRO (REALME 15X INDIA)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F149",
+    "box_number": "BOX 149",
+    "display_size": "Unknown",
+    "title": "OnePlus 13T",
+    "raw_text": "OnePlus 13T — OnePlus 13T, OnePlus 13S",
+    "models": [
+      {
+        "model_name": "OnePlus 13T"
+      },
+      {
+        "model_name": "OnePlus 13S"
+      }
+    ]
+  },
+  {
+    "id": "SD-F150",
+    "box_number": "BOX 150",
+    "display_size": "Unknown",
+    "title": "Vivo iQOO NEO11",
+    "raw_text": "Vivo iQOO NEO11 — Vivo iQOO NEO11, HONOR WIN, HONOR WIN RT",
+    "models": [
+      {
+        "model_name": "Vivo iQOO NEO11"
+      },
+      {
+        "model_name": "HONOR WIN"
+      },
+      {
+        "model_name": "HONOR WIN RT"
+      }
+    ]
+  },
+  {
+    "id": "SD-F151",
+    "box_number": "BOX 151",
+    "display_size": "Unknown",
+    "title": "Nothing CMF PHONE 1",
+    "raw_text": "Nothing CMF PHONE 1 — Vivo V60 LITE 4G, Vivo V60 LITE 5G, Vivo V50 LITE 5G, Nothing CMF PHONE 1",
+    "models": [
+      {
+        "model_name": "Vivo V60 LITE 4G"
+      },
+      {
+        "model_name": "Vivo V60 LITE 5G"
+      },
+      {
+        "model_name": "Vivo V50 LITE 5G"
+      },
+      {
+        "model_name": "Nothing CMF PHONE 1"
+      }
+    ]
+  },
+  {
+    "id": "SD-F152",
+    "box_number": "BOX 152",
+    "display_size": "Unknown",
+    "title": "OnePlus 9",
+    "raw_text": "OnePlus 9 — OnePlus 9, OnePlus 8T, OnePlus 9R",
+    "models": [
+      {
+        "model_name": "OnePlus 9"
+      },
+      {
+        "model_name": "OnePlus 8T"
+      },
+      {
+        "model_name": "OnePlus 9R"
+      }
+    ]
+  },
+  {
+    "id": "SD-F153",
+    "box_number": "BOX 153",
+    "display_size": "Unknown",
+    "title": "OnePlus 10T",
+    "raw_text": "OnePlus 10T — OnePlus 10T, OnePlus 10T 5G",
+    "models": [
+      {
+        "model_name": "OnePlus 10T"
+      },
+      {
+        "model_name": "OnePlus 10T 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F154",
+    "box_number": "BOX 154",
+    "display_size": "Unknown",
+    "title": "OnePlus NORD CE 5",
+    "raw_text": "OnePlus NORD CE 5 — OnePlus NORD CE 5, OnePlus ACE5 RACING",
+    "models": [
+      {
+        "model_name": "OnePlus NORD CE 5"
+      },
+      {
+        "model_name": "OnePlus ACE5 RACING"
+      }
+    ]
+  },
+  {
+    "id": "SD-F155",
+    "box_number": "BOX 155",
+    "display_size": "Unknown",
+    "title": "OnePlus NORD CE 2 LITE 5G",
+    "raw_text": "OnePlus NORD CE 2 LITE 5G — OnePlus NORD CE 2 LITE 5G, OnePlus NORD 2 LITE, OnePlus N100, OnePlus ACE RACING",
+    "models": [
+      {
+        "model_name": "OnePlus NORD CE 2 LITE 5G"
+      },
+      {
+        "model_name": "OnePlus NORD 2 LITE"
+      },
+      {
+        "model_name": "OnePlus N100"
+      },
+      {
+        "model_name": "OnePlus ACE RACING"
+      }
+    ]
+  },
+  {
+    "id": "SD-F156",
+    "box_number": "BOX 156",
+    "display_size": "Unknown",
+    "title": "OnePlus NORD",
+    "raw_text": "OnePlus NORD — OnePlus NORD",
+    "models": [
+      {
+        "model_name": "OnePlus NORD"
+      }
+    ]
+  },
+  {
+    "id": "SD-F157",
+    "box_number": "BOX 157",
+    "display_size": "Unknown",
+    "title": "OnePlus TURBO 6",
+    "raw_text": "OnePlus TURBO 6 — OnePlus TURBO 6, OnePlus TURBO 6V, OnePlus NORD 6, Infinix NOTE 60, Infinix INFI NOTE 60 PRO, Motorola G67 5G, Motorola G77 5G, Tecno CAMON 50 4G",
+    "models": [
+      {
+        "model_name": "OnePlus TURBO 6"
+      },
+      {
+        "model_name": "OnePlus TURBO 6V"
+      },
+      {
+        "model_name": "OnePlus NORD 6"
+      },
+      {
+        "model_name": "Infinix NOTE 60"
+      },
+      {
+        "model_name": "Infinix INFI NOTE 60 PRO"
+      },
+      {
+        "model_name": "Motorola G67 5G"
+      },
+      {
+        "model_name": "Motorola G77 5G"
+      },
+      {
+        "model_name": "Tecno CAMON 50 4G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F158",
+    "box_number": "BOX 158",
+    "display_size": "Unknown",
+    "title": "Nothing PHONE 1",
+    "raw_text": "Nothing PHONE 1 — Nothing PHONE 1",
+    "models": [
+      {
+        "model_name": "Nothing PHONE 1"
+      }
+    ]
+  },
+  {
+    "id": "SD-F159",
+    "box_number": "BOX 159",
+    "display_size": "Unknown",
+    "title": "Vivo Ultrasonic poreless unlock VIVO iQOO 13 5G",
+    "raw_text": "Vivo Ultrasonic poreless unlock VIVO iQOO 13 5G — Vivo Ultrasonic poreless unlock VIVO iQOO 13 5G",
+    "models": [
+      {
+        "model_name": "Vivo Ultrasonic poreless unlock VIVO iQOO 13 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F160",
+    "box_number": "BOX 160",
+    "display_size": "Unknown",
+    "title": "Nothing PHONE 2",
+    "raw_text": "Nothing PHONE 2 — Nothing PHONE 2",
+    "models": [
+      {
+        "model_name": "Nothing PHONE 2"
+      }
+    ]
+  },
+  {
+    "id": "SD-F161",
+    "box_number": "BOX 161",
+    "display_size": "Unknown",
+    "title": "HONOR X8B",
+    "raw_text": "HONOR X8B — HONOR X8B, Honor X8C, Honor X50i+, Honor X60i, Honor X70iHONOR 200 LITE, HONOR 400 LITE, Honor X70i, Honor 200 LITE",
+    "models": [
+      {
+        "model_name": "HONOR X8B"
+      },
+      {
+        "model_name": "Honor X8C"
+      },
+      {
+        "model_name": "Honor X50i+"
+      },
+      {
+        "model_name": "Honor X60i"
+      },
+      {
+        "model_name": "Honor X70iHONOR 200 LITE"
+      },
+      {
+        "model_name": "HONOR 400 LITE"
+      },
+      {
+        "model_name": "Honor X70i"
+      },
+      {
+        "model_name": "Honor 200 LITE"
+      }
+    ]
+  },
+  {
+    "id": "SD-F162",
+    "box_number": "BOX 162",
+    "display_size": "Unknown",
+    "title": "Nothing PHONE 3",
+    "raw_text": "Nothing PHONE 3 — Nothing PHONE 3",
+    "models": [
+      {
+        "model_name": "Nothing PHONE 3"
+      }
+    ]
+  },
+  {
+    "id": "SD-F163",
+    "box_number": "BOX 163",
+    "display_size": "Unknown",
+    "title": "HONOR 400",
+    "raw_text": "HONOR 400 — HONOR 400",
+    "models": [
+      {
+        "model_name": "HONOR 400"
+      }
+    ]
+  },
+  {
+    "id": "SD-F164",
+    "box_number": "BOX 164",
+    "display_size": "Unknown",
+    "title": "Nothing PHONE 2A",
+    "raw_text": "Nothing PHONE 2A — Nothing PHONE 2A, Nothing PHONE 2A PLUS",
+    "models": [
+      {
+        "model_name": "Nothing PHONE 2A"
+      },
+      {
+        "model_name": "Nothing PHONE 2A PLUS"
+      }
+    ]
+  },
+  {
+    "id": "SD-F165",
+    "box_number": "BOX 165",
+    "display_size": "Unknown",
+    "title": "HONOR X6C",
+    "raw_text": "HONOR X6C — HONOR X6C",
+    "models": [
+      {
+        "model_name": "HONOR X6C"
+      }
+    ]
+  },
+  {
+    "id": "SD-F166",
+    "box_number": "BOX 166",
+    "display_size": "Unknown",
+    "title": "Nothing PHONE 3A",
+    "raw_text": "Nothing PHONE 3A — Nothing PHONE 3A, Nothing 3A PRO",
+    "models": [
+      {
+        "model_name": "Nothing PHONE 3A"
+      },
+      {
+        "model_name": "Nothing 3A PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F167",
+    "box_number": "BOX 167",
+    "display_size": "Unknown",
+    "title": "HONOR X7C",
+    "raw_text": "HONOR X7C — HONOR X7C, Honor X7D 4G, Honor X7B",
+    "models": [
+      {
+        "model_name": "HONOR X7C"
+      },
+      {
+        "model_name": "Honor X7D 4G"
+      },
+      {
+        "model_name": "Honor X7B"
+      }
+    ]
+  },
+  {
+    "id": "SD-F168",
+    "box_number": "BOX 168",
+    "display_size": "Unknown",
+    "title": "HONOR X70 5G",
+    "raw_text": "HONOR X70 5G — HONOR X70 5G, Honor X9D 5G, HONOR POWER 2, HONOR MAGIC 8 LITE, Honor X70 REFRESH 5G",
+    "models": [
+      {
+        "model_name": "HONOR X70 5G"
+      },
+      {
+        "model_name": "Honor X9D 5G"
+      },
+      {
+        "model_name": "HONOR POWER 2"
+      },
+      {
+        "model_name": "HONOR MAGIC 8 LITE"
+      },
+      {
+        "model_name": "Honor X70 REFRESH 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F169",
+    "box_number": "BOX 169",
+    "display_size": "Unknown",
+    "title": "Nothing CMF PHONE 2",
+    "raw_text": "Nothing CMF PHONE 2 — Nothing CMF PHONE 2, Nothing 2 PRO, Nothing PHONE 3A LITE",
+    "models": [
+      {
+        "model_name": "Nothing CMF PHONE 2"
+      },
+      {
+        "model_name": "Nothing 2 PRO"
+      },
+      {
+        "model_name": "Nothing PHONE 3A LITE"
+      }
+    ]
+  },
+  {
+    "id": "SD-F170",
+    "box_number": "BOX 170",
+    "display_size": "Unknown",
+    "title": "HUAWEI HONOR X60",
+    "raw_text": "HUAWEI HONOR X60 — HUAWEI HONOR X60, Honor X9C SMART 未做库存, Tecno SPARK 30 4G",
+    "models": [
+      {
+        "model_name": "HUAWEI HONOR X60"
+      },
+      {
+        "model_name": "Honor X9C SMART 未做库存"
+      },
+      {
+        "model_name": "Tecno SPARK 30 4G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F171",
+    "box_number": "BOX 171",
+    "display_size": "Unknown",
+    "title": "Nothing PHONE 4A PRO",
+    "raw_text": "Nothing PHONE 4A PRO — Nothing PHONE 4A PRO",
+    "models": [
+      {
+        "model_name": "Nothing PHONE 4A PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F172",
+    "box_number": "BOX 172",
+    "display_size": "Unknown",
+    "title": "HONOR MAGIC 8 PRO AIR (1+13T)",
+    "raw_text": "HONOR MAGIC 8 PRO AIR (1+13T) — HONOR MAGIC 8 PRO AIR (1+13T)",
+    "models": [
+      {
+        "model_name": "HONOR MAGIC 8 PRO AIR (1+13T)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F173",
+    "box_number": "BOX 173",
+    "display_size": "Unknown",
+    "title": "Nothing PHONE 4A",
+    "raw_text": "Nothing PHONE 4A — Nothing PHONE 4A",
+    "models": [
+      {
+        "model_name": "Nothing PHONE 4A"
+      }
+    ]
+  },
+  {
+    "id": "SD-F174",
+    "box_number": "BOX 174",
+    "display_size": "Unknown",
+    "title": "Google PIXEL 10A",
+    "raw_text": "Google PIXEL 10A — Google PIXEL 10A, Google PIXEL 9A",
+    "models": [
+      {
+        "model_name": "Google PIXEL 10A"
+      },
+      {
+        "model_name": "Google PIXEL 9A"
+      }
+    ]
+  },
+  {
+    "id": "SD-F175",
+    "box_number": "BOX 175",
+    "display_size": "Unknown",
+    "title": "Google PIXEL 9",
+    "raw_text": "Google PIXEL 9 — Google PIXEL 9, Google PIXEL 9 PRO",
+    "models": [
+      {
+        "model_name": "Google PIXEL 9"
+      },
+      {
+        "model_name": "Google PIXEL 9 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F176",
+    "box_number": "BOX 176",
+    "display_size": "Unknown",
+    "title": "Google PIXEL 9 PRO XL",
+    "raw_text": "Google PIXEL 9 PRO XL — Google PIXEL 9 PRO XL",
+    "models": [
+      {
+        "model_name": "Google PIXEL 9 PRO XL"
+      }
+    ]
+  },
+  {
+    "id": "SD-F177",
+    "box_number": "BOX 177",
+    "display_size": "Unknown",
+    "title": "Google PIXEL 4A 4G",
+    "raw_text": "Google PIXEL 4A 4G — Google PIXEL 4A 4G",
+    "models": [
+      {
+        "model_name": "Google PIXEL 4A 4G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F178",
+    "box_number": "BOX 178",
+    "display_size": "Unknown",
+    "title": "Google PIXEL 4A 5G",
+    "raw_text": "Google PIXEL 4A 5G — Google PIXEL 4A 5G",
+    "models": [
+      {
+        "model_name": "Google PIXEL 4A 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F179",
+    "box_number": "BOX 179",
+    "display_size": "Unknown",
+    "title": "Google PIXEL 6A",
+    "raw_text": "Google PIXEL 6A — Google PIXEL 6A",
+    "models": [
+      {
+        "model_name": "Google PIXEL 6A"
+      }
+    ]
+  },
+  {
+    "id": "SD-F180",
+    "box_number": "BOX 180",
+    "display_size": "Unknown",
+    "title": "Google PIXEL 7A",
+    "raw_text": "Google PIXEL 7A — Google PIXEL 7A",
+    "models": [
+      {
+        "model_name": "Google PIXEL 7A"
+      }
+    ]
+  },
+  {
+    "id": "SD-F181",
+    "box_number": "BOX 181",
+    "display_size": "Unknown",
+    "title": "Google PIXEL 8A",
+    "raw_text": "Google PIXEL 8A — Google PIXEL 8A",
+    "models": [
+      {
+        "model_name": "Google PIXEL 8A"
+      }
+    ]
+  },
+  {
+    "id": "SD-F182",
+    "box_number": "BOX 182",
+    "display_size": "Unknown",
+    "title": "Google PIXEL 6",
+    "raw_text": "Google PIXEL 6 — Google PIXEL 6",
+    "models": [
+      {
+        "model_name": "Google PIXEL 6"
+      }
+    ]
+  },
+  {
+    "id": "SD-F183",
+    "box_number": "BOX 183",
+    "display_size": "Unknown",
+    "title": "Google PIXEL 7",
+    "raw_text": "Google PIXEL 7 — Google PIXEL 7",
+    "models": [
+      {
+        "model_name": "Google PIXEL 7"
+      }
+    ]
+  },
+  {
+    "id": "SD-F184",
+    "box_number": "BOX 184",
+    "display_size": "Unknown",
+    "title": "Google PIXEL 8",
+    "raw_text": "Google PIXEL 8 — Google PIXEL 8",
+    "models": [
+      {
+        "model_name": "Google PIXEL 8"
+      }
+    ]
+  },
+  {
+    "id": "SD-F185",
+    "box_number": "BOX 185",
+    "display_size": "Unknown",
+    "title": "Google PIXEL 8 PRO",
+    "raw_text": "Google PIXEL 8 PRO — Google PIXEL 8 PRO",
+    "models": [
+      {
+        "model_name": "Google PIXEL 8 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F186",
+    "box_number": "BOX 186",
+    "display_size": "Unknown",
+    "title": "Google Ultrasonic poreless unlock GG PIXEL 10",
+    "raw_text": "Google Ultrasonic poreless unlock GG PIXEL 10 — Google Ultrasonic poreless unlock GG PIXEL 10, Google 10 PRO",
+    "models": [
+      {
+        "model_name": "Google Ultrasonic poreless unlock GG PIXEL 10"
+      },
+      {
+        "model_name": "Google 10 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F187",
+    "box_number": "BOX 187",
+    "display_size": "Unknown",
+    "title": "Motorola G60",
+    "raw_text": "Motorola G60 — Infinix HOT 10, Infinix HOT 11S, Infinix HOT 20S, Infinix HOT 30, Infinix HOT 30 5G, Infinix HOT 40, Infinix HOT 40 PRO, Infinix NOTE 30 4G, Infinix NOTE 30 5G, Infinix NOTE 40X 5G, Infinix ZERO 5G, Infinix ZERO 5G 2023, Motorola G60, Motorola G60S, Motorola G51 5G, Motorola G40 FUSION, Tecno SPARK 6, Tecno SPARK 10 PRO, Tecno SPARK 20 PRO, Tecno POVA 4, Tecno POVA 4G, Tecno POVA 5 4G, Tecno POVA 5 PRO, Tecno CAMON 18, Tecno 18T, Tecno 18P, Tecno CAMON 19 NEO",
+    "models": [
+      {
+        "model_name": "Infinix HOT 10"
+      },
+      {
+        "model_name": "Infinix HOT 11S"
+      },
+      {
+        "model_name": "Infinix HOT 20S"
+      },
+      {
+        "model_name": "Infinix HOT 30"
+      },
+      {
+        "model_name": "Infinix HOT 30 5G"
+      },
+      {
+        "model_name": "Infinix HOT 40"
+      },
+      {
+        "model_name": "Infinix HOT 40 PRO"
+      },
+      {
+        "model_name": "Infinix NOTE 30 4G"
+      },
+      {
+        "model_name": "Infinix NOTE 30 5G"
+      },
+      {
+        "model_name": "Infinix NOTE 40X 5G"
+      },
+      {
+        "model_name": "Infinix ZERO 5G"
+      },
+      {
+        "model_name": "Infinix ZERO 5G 2023"
+      },
+      {
+        "model_name": "Motorola G60"
+      },
+      {
+        "model_name": "Motorola G60S"
+      },
+      {
+        "model_name": "Motorola G51 5G"
+      },
+      {
+        "model_name": "Motorola G40 FUSION"
+      },
+      {
+        "model_name": "Tecno SPARK 6"
+      },
+      {
+        "model_name": "Tecno SPARK 10 PRO"
+      },
+      {
+        "model_name": "Tecno SPARK 20 PRO"
+      },
+      {
+        "model_name": "Tecno POVA 4"
+      },
+      {
+        "model_name": "Tecno POVA 4G"
+      },
+      {
+        "model_name": "Tecno POVA 5 4G"
+      },
+      {
+        "model_name": "Tecno POVA 5 PRO"
+      },
+      {
+        "model_name": "Tecno CAMON 18"
+      },
+      {
+        "model_name": "Tecno 18T"
+      },
+      {
+        "model_name": "Tecno 18P"
+      },
+      {
+        "model_name": "Tecno CAMON 19 NEO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F188",
+    "box_number": "BOX 188",
+    "display_size": "Unknown",
+    "title": "Google PIXEL 10 PRO XL",
+    "raw_text": "Google PIXEL 10 PRO XL — Google PIXEL 10 PRO XL",
+    "models": [
+      {
+        "model_name": "Google PIXEL 10 PRO XL"
+      }
+    ]
+  },
+  {
+    "id": "SD-F189",
+    "box_number": "BOX 189",
+    "display_size": "Unknown",
+    "title": "Motorola G05",
+    "raw_text": "Motorola G05 — Motorola G05, Motorola G15, Motorola G15 POWER, Motorola E15, Motorola G35 (1+NORD CE 3 LITE)",
+    "models": [
+      {
+        "model_name": "Motorola G05"
+      },
+      {
+        "model_name": "Motorola G15"
+      },
+      {
+        "model_name": "Motorola G15 POWER"
+      },
+      {
+        "model_name": "Motorola E15"
+      },
+      {
+        "model_name": "Motorola G35 (1+NORD CE 3 LITE)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F190",
+    "box_number": "BOX 190",
+    "display_size": "Unknown",
+    "title": "Tecno SPARK GO1",
+    "raw_text": "Tecno SPARK GO1 — Infinix HOT 50 5G, Infinix HOT 50i 4G, Infinix SMART 9, Infinix 9 HD, Tecno SPARK GO1, Tecno SPARK GO 1S, Tecno SPARK 30 5G, Tecno SPARK30C 4G, Tecno 5G, Tecno POVA 6",
+    "models": [
+      {
+        "model_name": "Infinix HOT 50 5G"
+      },
+      {
+        "model_name": "Infinix HOT 50i 4G"
+      },
+      {
+        "model_name": "Infinix SMART 9"
+      },
+      {
+        "model_name": "Infinix 9 HD"
+      },
+      {
+        "model_name": "Tecno SPARK GO1"
+      },
+      {
+        "model_name": "Tecno SPARK GO 1S"
+      },
+      {
+        "model_name": "Tecno SPARK 30 5G"
+      },
+      {
+        "model_name": "Tecno SPARK30C 4G"
+      },
+      {
+        "model_name": "Tecno 5G"
+      },
+      {
+        "model_name": "Tecno POVA 6"
+      }
+    ]
+  },
+  {
+    "id": "SD-F191",
+    "box_number": "BOX 191",
+    "display_size": "Unknown",
+    "title": "Infinix NOTE 40 4G",
+    "raw_text": "Infinix NOTE 40 4G — Infinix NOTE 40 4G, Infinix 5G, Infinix NOTE 50 4G, Infinix NOTE 50 PRO 4G, Infinix NOTE 50 PRO+ 5G, Infinix GT 20 PRO, Tecno POVA 6, Tecno POVA 6 PRO, Tecno CAMON 30 4G, Tecno 5G, Tecno CAMON 30 PRO 5G",
+    "models": [
+      {
+        "model_name": "Infinix NOTE 40 4G"
+      },
+      {
+        "model_name": "Infinix 5G"
+      },
+      {
+        "model_name": "Infinix NOTE 50 4G"
+      },
+      {
+        "model_name": "Infinix NOTE 50 PRO 4G"
+      },
+      {
+        "model_name": "Infinix NOTE 50 PRO+ 5G"
+      },
+      {
+        "model_name": "Infinix GT 20 PRO"
+      },
+      {
+        "model_name": "Tecno POVA 6"
+      },
+      {
+        "model_name": "Tecno POVA 6 PRO"
+      },
+      {
+        "model_name": "Tecno CAMON 30 4G"
+      },
+      {
+        "model_name": "Tecno 5G"
+      },
+      {
+        "model_name": "Tecno CAMON 30 PRO 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F192",
+    "box_number": "BOX 192",
+    "display_size": "Unknown",
+    "title": "Motorola G57 POWER",
+    "raw_text": "Motorola G57 POWER — Motorola G57 POWER, Motorola G67 POWER, Motorola G75, Motorola G100, Motorola G (2025), Motorola G POWER (2025)",
+    "models": [
+      {
+        "model_name": "Motorola G57 POWER"
+      },
+      {
+        "model_name": "Motorola G67 POWER"
+      },
+      {
+        "model_name": "Motorola G75"
+      },
+      {
+        "model_name": "Motorola G100"
+      },
+      {
+        "model_name": "Motorola G (2025)"
+      },
+      {
+        "model_name": "Motorola G POWER (2025)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F193",
+    "box_number": "BOX 193",
+    "display_size": "Unknown",
+    "title": "Motorola G52 4G",
+    "raw_text": "Motorola G52 4G — Motorola G52 4G, Motorola G82 5G, Motorola G71S 5G, Motorola G72 4G, Motorola EDGE 30 5G",
+    "models": [
+      {
+        "model_name": "Motorola G52 4G"
+      },
+      {
+        "model_name": "Motorola G82 5G"
+      },
+      {
+        "model_name": "Motorola G71S 5G"
+      },
+      {
+        "model_name": "Motorola G72 4G"
+      },
+      {
+        "model_name": "Motorola EDGE 30 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F194",
+    "box_number": "BOX 194",
+    "display_size": "Unknown",
+    "title": "Motorola G31",
+    "raw_text": "Motorola G31 — Motorola G31, Motorola G41, Motorola G42, Motorola G71 5G",
+    "models": [
+      {
+        "model_name": "Motorola G31"
+      },
+      {
+        "model_name": "Motorola G41"
+      },
+      {
+        "model_name": "Motorola G42"
+      },
+      {
+        "model_name": "Motorola G71 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F195",
+    "box_number": "BOX 195",
+    "display_size": "Unknown",
+    "title": "Motorola G13",
+    "raw_text": "Motorola G13 — Motorola G13, Motorola G14, Motorola G23, Motorola G32, Motorola G34 5G, Motorola G45, Motorola G53 5G, Motorola G54 5G, Motorola G55, Motorola G62 5G, Motorola G62, Motorola G64 5G, Motorola G73 5G",
+    "models": [
+      {
+        "model_name": "Motorola G53 5G"
+      },
+      {
+        "model_name": "Motorola G54 5G"
+      },
+      {
+        "model_name": "Motorola G55"
+      },
+      {
+        "model_name": "Motorola G62 5G"
+      },
+      {
+        "model_name": "Motorola G62"
+      },
+      {
+        "model_name": "Motorola G64 5G"
+      },
+      {
+        "model_name": "Motorola G73 5G"
+      },
+      {
+        "model_name": "Motorola G13"
+      },
+      {
+        "model_name": "Motorola G14"
+      },
+      {
+        "model_name": "Motorola G23"
+      },
+      {
+        "model_name": "Motorola G32"
+      },
+      {
+        "model_name": "Motorola G34 5G"
+      },
+      {
+        "model_name": "Motorola G45"
+      }
+    ]
+  },
+  {
+    "id": "SD-F196",
+    "box_number": "BOX 196",
+    "display_size": "Unknown",
+    "title": "Motorola G04",
+    "raw_text": "Motorola G04 — Motorola G04, Motorola G04S, Motorola G22, Motorola G24, Motorola G24 POWER, Motorola E32, Motorola E32S",
+    "models": [
+      {
+        "model_name": "Motorola G04"
+      },
+      {
+        "model_name": "Motorola G04S"
+      },
+      {
+        "model_name": "Motorola G22"
+      },
+      {
+        "model_name": "Motorola G24"
+      },
+      {
+        "model_name": "Motorola G24 POWER"
+      },
+      {
+        "model_name": "Motorola E32"
+      },
+      {
+        "model_name": "Motorola E32S"
+      }
+    ]
+  },
+  {
+    "id": "SD-F197",
+    "box_number": "BOX 197",
+    "display_size": "Unknown",
+    "title": "Motorola G84 5G",
+    "raw_text": "Motorola G84 5G — Motorola G84 5G",
+    "models": [
+      {
+        "model_name": "Motorola G84 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F198",
+    "box_number": "BOX 198",
+    "display_size": "Unknown",
+    "title": "Motorola S50",
+    "raw_text": "Motorola S50 — Motorola S50, Motorola EDGE 50 NEO",
+    "models": [
+      {
+        "model_name": "Motorola S50"
+      },
+      {
+        "model_name": "Motorola EDGE 50 NEO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F199",
+    "box_number": "BOX 199",
+    "display_size": "Unknown",
+    "title": "Tecno NEO 5G",
+    "raw_text": "Tecno NEO 5G — Tecno NEO 5G, Tecno POP 9 4G, Tecno 5G",
+    "models": [
+      {
+        "model_name": "Tecno NEO 5G"
+      },
+      {
+        "model_name": "Tecno POP 9 4G"
+      },
+      {
+        "model_name": "Tecno 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F200",
+    "box_number": "BOX 200",
+    "display_size": "Unknown",
+    "title": "Motorola G75",
+    "raw_text": "Motorola G75 — Motorola G75, Motorola G 2025, Motorola G POWER 2025",
+    "models": [
+      {
+        "model_name": "Motorola G75"
+      },
+      {
+        "model_name": "Motorola G 2025"
+      },
+      {
+        "model_name": "Motorola G POWER 2025"
+      }
+    ]
+  },
+  {
+    "id": "SD-F201",
+    "box_number": "BOX 201",
+    "display_size": "Unknown",
+    "title": "Motorola G STYLUS 5G 2025",
+    "raw_text": "Motorola G STYLUS 5G 2025 — Motorola G STYLUS 5G 2025, Motorola EDGE 60 STYLUS",
+    "models": [
+      {
+        "model_name": "Motorola G STYLUS 5G 2025"
+      },
+      {
+        "model_name": "Motorola EDGE 60 STYLUS"
+      }
+    ]
+  },
+  {
+    "id": "SD-F202",
+    "box_number": "BOX 202",
+    "display_size": "Unknown",
+    "title": "Honor 600 PRO",
+    "raw_text": "Honor 600 PRO — Honor 600 PRO",
+    "models": [
+      {
+        "model_name": "Honor 600 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F203",
+    "box_number": "BOX 203",
+    "display_size": "Unknown",
+    "title": "Honor 500",
+    "raw_text": "Honor 500 — Honor 500, Honor 500 PRO(CHINA)",
+    "models": [
+      {
+        "model_name": "Honor 500"
+      },
+      {
+        "model_name": "Honor 500 PRO(CHINA)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F204",
+    "box_number": "BOX 204",
+    "display_size": "Unknown",
+    "title": "Honor X8D",
+    "raw_text": "Honor X8D — Honor X8D",
+    "models": [
+      {
+        "model_name": "Honor X8D"
+      }
+    ]
+  },
+  {
+    "id": "SD-F205",
+    "box_number": "BOX 205",
+    "display_size": "6.78\"",
+    "title": "Honor MAGIC 8",
+    "raw_text": "Honor MAGIC 8 — Honor MAGIC 8",
+    "models": [
+      {
+        "model_name": "Honor MAGIC 8"
+      }
+    ]
+  },
+  {
+    "id": "SD-F206",
+    "box_number": "BOX 206",
+    "display_size": "Unknown",
+    "title": "Huawei PURA 90 PRO MAX",
+    "raw_text": "Huawei PURA 90 PRO MAX — Huawei PURA 90 PRO MAX",
+    "models": [
+      {
+        "model_name": "Huawei PURA 90 PRO MAX"
+      }
+    ]
+  },
+  {
+    "id": "SD-F207",
+    "box_number": "BOX 207",
+    "display_size": "Unknown",
+    "title": "Infinix HOT 70",
+    "raw_text": "Infinix HOT 70 — Infinix HOT 70, Infinix Smart 20",
+    "models": [
+      {
+        "model_name": "Infinix HOT 70"
+      },
+      {
+        "model_name": "Infinix Smart 20"
+      }
+    ]
+  },
+  {
+    "id": "SD-F208",
+    "box_number": "BOX 208",
+    "display_size": "6.1\"",
+    "title": "iPhone 15 Pro",
+    "raw_text": "iPhone 15 Pro — iPhone 15 Pro",
+    "models": [
+      {
+        "model_name": "iPhone 15 Pro"
+      }
+    ]
+  },
+  {
+    "id": "SD-F209",
+    "box_number": "BOX 209",
+    "display_size": "6.9\"",
+    "title": "iPhone 16 Pro Max",
+    "raw_text": "iPhone 16 Pro Max — iPhone 16 Pro Max",
+    "models": [
+      {
+        "model_name": "iPhone 16 Pro Max"
+      }
+    ]
+  },
+  {
+    "id": "SD-F210",
+    "box_number": "BOX 210",
+    "display_size": "6.3\"",
+    "title": "iPhone 17 Pro",
+    "raw_text": "iPhone 17 Pro — iPhone 17 Pro",
+    "models": [
+      {
+        "model_name": "iPhone 17 Pro"
+      }
+    ]
+  },
+  {
+    "id": "SD-F211",
+    "box_number": "BOX 211",
+    "display_size": "6.9\"",
+    "title": "iPhone 17 Pro Max",
+    "raw_text": "iPhone 17 Pro Max — iPhone 17 Pro Max",
+    "models": [
+      {
+        "model_name": "iPhone 17 Pro Max"
+      }
+    ]
+  },
+  {
+    "id": "SD-F212",
+    "box_number": "BOX 212",
+    "display_size": "6.3\"",
+    "title": "iPhone 18 Pro",
+    "raw_text": "iPhone 18 Pro — iPhone 18 Pro",
+    "models": [
+      {
+        "model_name": "iPhone 18 Pro"
+      }
+    ]
+  },
+  {
+    "id": "SD-F213",
+    "box_number": "BOX 213",
+    "display_size": "6.9\"",
+    "title": "iPhone 18 Pro Max",
+    "raw_text": "iPhone 18 Pro Max — iPhone 18 Pro Max",
+    "models": [
+      {
+        "model_name": "iPhone 18 Pro Max"
+      }
+    ]
+  },
+  {
+    "id": "SD-F214",
+    "box_number": "BOX 214",
+    "display_size": "Unknown",
+    "title": "Motorola Moto G06",
+    "raw_text": "Motorola Moto G06 — Motorola Moto G06, Motorola Moto G06 Power",
+    "models": [
+      {
+        "model_name": "Motorola Moto G06"
+      },
+      {
+        "model_name": "Motorola Moto G06 Power"
+      }
+    ]
+  },
+  {
+    "id": "SD-F215",
+    "box_number": "BOX 215",
+    "display_size": "Unknown",
+    "title": "Motorola Moto E13",
+    "raw_text": "Motorola Moto E13 — Motorola Moto E13, Motorola Moto E22",
+    "models": [
+      {
+        "model_name": "Motorola Moto E13"
+      },
+      {
+        "model_name": "Motorola Moto E22"
+      }
+    ]
+  },
+  {
+    "id": "SD-F216",
+    "box_number": "BOX 216",
+    "display_size": "Unknown",
+    "title": "Motorola Moto G05",
+    "raw_text": "Motorola Moto G05 — Motorola Moto G05, Motorola Moto G15, Motorola Moto G15 Power, Motorola Moto E15, Motorola Moto G35",
+    "models": [
+      {
+        "model_name": "Motorola Moto G05"
+      },
+      {
+        "model_name": "Motorola Moto G15"
+      },
+      {
+        "model_name": "Motorola Moto G15 Power"
+      },
+      {
+        "model_name": "Motorola Moto E15"
+      },
+      {
+        "model_name": "Motorola Moto G35"
+      }
+    ]
+  },
+  {
+    "id": "SD-F217",
+    "box_number": "BOX 217",
+    "display_size": "Unknown",
+    "title": "OnePlus Nord N30",
+    "raw_text": "OnePlus Nord N30 — OnePlus Nord N30, OnePlus Nord N30 SE",
+    "models": [
+      {
+        "model_name": "OnePlus Nord N30"
+      },
+      {
+        "model_name": "OnePlus Nord N30 SE"
+      }
+    ]
+  },
+  {
+    "id": "SD-F218",
+    "box_number": "BOX 218",
+    "display_size": "6.78\"",
+    "title": "OPPO FIND X9S",
+    "raw_text": "OPPO FIND X9S — OPPO FIND X9S",
+    "models": [
+      {
+        "model_name": "OPPO FIND X9S"
+      }
+    ]
+  },
+  {
+    "id": "SD-F219",
+    "box_number": "BOX 219",
+    "display_size": "Unknown",
+    "title": "OPPO A6C 4G(GLOBAL)",
+    "raw_text": "OPPO A6C 4G(GLOBAL) — OPPO A6C 4G(GLOBAL)",
+    "models": [
+      {
+        "model_name": "OPPO A6C 4G(GLOBAL)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F220",
+    "box_number": "BOX 220",
+    "display_size": "6.53\"",
+    "title": "Realme X",
+    "raw_text": "Realme X — Realme X",
+    "models": [
+      {
+        "model_name": "Realme X"
+      }
+    ]
+  },
+  {
+    "id": "SD-F221",
+    "box_number": "BOX 221",
+    "display_size": "Unknown",
+    "title": "Realme NARZO 90",
+    "raw_text": "Realme NARZO 90 — Realme NARZO 90",
+    "models": [
+      {
+        "model_name": "Realme NARZO 90"
+      }
+    ]
+  },
+  {
+    "id": "SD-F222",
+    "box_number": "BOX 222",
+    "display_size": "Unknown",
+    "title": "Redmi 15 5G (Global)",
+    "raw_text": "Redmi 15 5G (Global) — Redmi 15 5G (Global)",
+    "models": [
+      {
+        "model_name": "Redmi 15 5G (Global)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F223",
+    "box_number": "BOX 223",
+    "display_size": "6.88\"",
+    "title": "Redmi 15C 4G(EU)",
+    "raw_text": "Redmi 15C 4G(EU) — Redmi 15C 4G(EU)",
+    "models": [
+      {
+        "model_name": "Redmi 15C 4G(EU)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F224",
+    "box_number": "BOX 224",
+    "display_size": "6.88\"",
+    "title": "Redmi 15 5G(EU)",
+    "raw_text": "Redmi 15 5G(EU) — Redmi 15 5G(EU)",
+    "models": [
+      {
+        "model_name": "Redmi 15 5G(EU)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F225",
+    "box_number": "BOX 225",
+    "display_size": "6.88\"",
+    "title": "Redmi A5 4G (EU)",
+    "raw_text": "Redmi A5 4G (EU) — Redmi A5 4G (EU)",
+    "models": [
+      {
+        "model_name": "Redmi A5 4G (EU)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F226",
+    "box_number": "BOX 226",
+    "display_size": "Unknown",
+    "title": "Samsung Ｚ FOLD 8 WIDE",
+    "raw_text": "Samsung Ｚ FOLD 8 WIDE — Samsung Ｚ FOLD 8 WIDE",
+    "models": [
+      {
+        "model_name": "Samsung Ｚ FOLD 8 WIDE"
+      }
+    ]
+  },
+  {
+    "id": "SD-F227",
+    "box_number": "BOX 227",
+    "display_size": "Unknown",
+    "title": "Samsung Z FOLD 8 ULTRA",
+    "raw_text": "Samsung Z FOLD 8 ULTRA — Samsung Z FOLD 8 ULTRA",
+    "models": [
+      {
+        "model_name": "Samsung Z FOLD 8 ULTRA"
+      }
+    ]
+  },
+  {
+    "id": "SD-F228",
+    "box_number": "BOX 228",
+    "display_size": "Unknown",
+    "title": "Samsung S21 PLUS No Hole Unlock",
+    "raw_text": "Samsung S21 PLUS No Hole Unlock — Samsung S21 PLUS No Hole Unlock",
+    "models": [
+      {
+        "model_name": "Samsung S21 PLUS No Hole Unlock"
+      }
+    ]
+  },
+  {
+    "id": "SD-F229",
+    "box_number": "BOX 229",
+    "display_size": "Unknown",
+    "title": "Samsung S23 No Hole Unlock",
+    "raw_text": "Samsung S23 No Hole Unlock — Samsung S23 No Hole Unlock",
+    "models": [
+      {
+        "model_name": "Samsung S23 No Hole Unlock"
+      }
+    ]
+  },
+  {
+    "id": "SD-F230",
+    "box_number": "BOX 230",
+    "display_size": "Unknown",
+    "title": "Samsung S23 PLUS No Hole Unlock",
+    "raw_text": "Samsung S23 PLUS No Hole Unlock — Samsung S23 PLUS No Hole Unlock",
+    "models": [
+      {
+        "model_name": "Samsung S23 PLUS No Hole Unlock"
+      }
+    ]
+  },
+  {
+    "id": "SD-F231",
+    "box_number": "BOX 231",
+    "display_size": "Unknown",
+    "title": "Samsung S25 No Hole Unlock",
+    "raw_text": "Samsung S25 No Hole Unlock — Samsung S25 No Hole Unlock",
+    "models": [
+      {
+        "model_name": "Samsung S25 No Hole Unlock"
+      }
+    ]
+  },
+  {
+    "id": "SD-F232",
+    "box_number": "BOX 232",
+    "display_size": "Unknown",
+    "title": "Samsung S25 PLUS No Hole Unlock",
+    "raw_text": "Samsung S25 PLUS No Hole Unlock — Samsung S25 PLUS No Hole Unlock",
+    "models": [
+      {
+        "model_name": "Samsung S25 PLUS No Hole Unlock"
+      }
+    ]
+  },
+  {
+    "id": "SD-F233",
+    "box_number": "BOX 233",
+    "display_size": "Unknown",
+    "title": "Samsung S24 ULTRA No Hole Unlock",
+    "raw_text": "Samsung S24 ULTRA No Hole Unlock — Samsung S24 ULTRA No Hole Unlock",
+    "models": [
+      {
+        "model_name": "Samsung S24 ULTRA No Hole Unlock"
+      }
+    ]
+  },
+  {
+    "id": "SD-F234",
+    "box_number": "BOX 234",
+    "display_size": "Unknown",
+    "title": "Samsung S25 ULTRA No Hole Unlock",
+    "raw_text": "Samsung S25 ULTRA No Hole Unlock — Samsung S25 ULTRA No Hole Unlock",
+    "models": [
+      {
+        "model_name": "Samsung S25 ULTRA No Hole Unlock"
+      }
+    ]
+  },
+  {
+    "id": "SD-F235",
+    "box_number": "BOX 235",
+    "display_size": "Unknown",
+    "title": "Samsung S25 EDGE 5G No Hole Unlock",
+    "raw_text": "Samsung S25 EDGE 5G No Hole Unlock — Samsung S25 EDGE 5G No Hole Unlock",
+    "models": [
+      {
+        "model_name": "Samsung S25 EDGE 5G No Hole Unlock"
+      }
+    ]
+  },
+  {
+    "id": "SD-F236",
+    "box_number": "BOX 236",
+    "display_size": "Unknown",
+    "title": "Samsung S26 No Hole Unlock",
+    "raw_text": "Samsung S26 No Hole Unlock — Samsung S26 No Hole Unlock",
+    "models": [
+      {
+        "model_name": "Samsung S26 No Hole Unlock"
+      }
+    ]
+  },
+  {
+    "id": "SD-F237",
+    "box_number": "BOX 237",
+    "display_size": "Unknown",
+    "title": "Samsung S26 PLUS No Hole Unlock",
+    "raw_text": "Samsung S26 PLUS No Hole Unlock — Samsung S26 PLUS No Hole Unlock",
+    "models": [
+      {
+        "model_name": "Samsung S26 PLUS No Hole Unlock"
+      }
+    ]
+  },
+  {
+    "id": "SD-F238",
+    "box_number": "BOX 238",
+    "display_size": "Unknown",
+    "title": "Samsung S26 ULTRA No Hole Unlock",
+    "raw_text": "Samsung S26 ULTRA No Hole Unlock — Samsung S26 ULTRA No Hole Unlock",
+    "models": [
+      {
+        "model_name": "Samsung S26 ULTRA No Hole Unlock"
+      }
+    ]
+  },
+  {
+    "id": "SD-F239",
+    "box_number": "BOX 239",
+    "display_size": "Unknown",
+    "title": "Tecno Spark 20",
+    "raw_text": "Tecno Spark 20 — Tecno Spark 20, Tecno Spark 20c, Tecno Spark Go 2024, Tecno Pop 8",
+    "models": [
+      {
+        "model_name": "Tecno Spark 20"
+      },
+      {
+        "model_name": "Tecno Spark 20c"
+      },
+      {
+        "model_name": "Tecno Spark Go 2024"
+      },
+      {
+        "model_name": "Tecno Pop 8"
+      }
+    ]
+  },
+  {
+    "id": "SD-F240",
+    "box_number": "BOX 240",
+    "display_size": "Unknown",
+    "title": "VIVO 15 ULTRA",
+    "raw_text": "VIVO 15 ULTRA — VIVO 15 ULTRA",
+    "models": [
+      {
+        "model_name": "VIVO 15 ULTRA"
+      }
+    ]
+  },
+  {
+    "id": "SD-F241",
+    "box_number": "BOX 241",
+    "display_size": "Unknown",
+    "title": "VIVO T5 Pro",
+    "raw_text": "VIVO T5 Pro — VIVO T5 Pro, VIVO Y600 Pro, VIVO iQOO Z11, VIVO iQOO Z11 5G, VIVO Y600 Turbo",
+    "models": [
+      {
+        "model_name": "VIVO T5 Pro"
+      },
+      {
+        "model_name": "VIVO Y600 Pro"
+      },
+      {
+        "model_name": "VIVO iQOO Z11"
+      },
+      {
+        "model_name": "VIVO iQOO Z11 5G"
+      },
+      {
+        "model_name": "VIVO Y600 Turbo"
+      }
+    ]
+  },
+  {
+    "id": "SD-F242",
+    "box_number": "BOX 242",
+    "display_size": "Unknown",
+    "title": "VIVO X300S",
+    "raw_text": "VIVO X300S — VIVO X300S",
+    "models": [
+      {
+        "model_name": "VIVO X300S"
+      }
+    ]
+  },
+  {
+    "id": "SD-F243",
+    "box_number": "BOX 243",
+    "display_size": "Unknown",
+    "title": "VIVO S7 5G",
+    "raw_text": "VIVO S7 5G — VIVO S7 5G, VIVO S9",
+    "models": [
+      {
+        "model_name": "VIVO S7 5G"
+      },
+      {
+        "model_name": "VIVO S9"
+      }
+    ]
+  },
+  {
+    "id": "SD-F244",
+    "box_number": "BOX 244",
+    "display_size": "Unknown",
+    "title": "VIVO iQOO 13",
+    "raw_text": "VIVO iQOO 13 — VIVO iQOO 13",
+    "models": [
+      {
+        "model_name": "VIVO iQOO 13"
+      }
+    ]
+  },
+  {
+    "id": "SD-F245",
+    "box_number": "BOX 245",
+    "display_size": "Unknown",
+    "title": "VIVO X300 ULTRA",
+    "raw_text": "VIVO X300 ULTRA — VIVO X300 ULTRA, VIVO IQOO 15T",
+    "models": [
+      {
+        "model_name": "VIVO X300 ULTRA"
+      },
+      {
+        "model_name": "VIVO IQOO 15T"
+      }
+    ]
+  },
+  {
+    "id": "SD-F246",
+    "box_number": "BOX 246",
+    "display_size": "Unknown",
+    "title": "VIVO IQOO NEO11(CHINA)",
+    "raw_text": "VIVO IQOO NEO11(CHINA) — VIVO IQOO NEO11(CHINA)",
+    "models": [
+      {
+        "model_name": "VIVO IQOO NEO11(CHINA)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F247",
+    "box_number": "BOX 247",
+    "display_size": "Unknown",
+    "title": "Xiaomi POC C40",
+    "raw_text": "Xiaomi POC C40 — Xiaomi POC C40, Xiaomi POC C55, Xiaomi POC C61",
+    "models": [
+      {
+        "model_name": "Xiaomi POC C40"
+      },
+      {
+        "model_name": "Xiaomi POC C55"
+      },
+      {
+        "model_name": "Xiaomi POC C61"
+      }
+    ]
+  },
+  {
+    "id": "SD-F248",
+    "box_number": "BOX 248",
+    "display_size": "Unknown",
+    "title": "Xiaomi Mi 9 Pro",
+    "raw_text": "Xiaomi Mi 9 Pro — Xiaomi Mi 9 Pro",
+    "models": [
+      {
+        "model_name": "Xiaomi Mi 9 Pro"
+      }
+    ]
+  },
+  {
+    "id": "SD-F249",
+    "box_number": "BOX 249",
+    "display_size": "Unknown",
+    "title": "Xiaomi POC M7 4G (Global)",
+    "raw_text": "Xiaomi POC M7 4G (Global) — Xiaomi POC M7 4G (Global), Xiaomi POC M7 PLUS 5G",
+    "models": [
+      {
+        "model_name": "Xiaomi POC M7 4G (Global)"
+      },
+      {
+        "model_name": "Xiaomi POC M7 PLUS 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F250",
+    "box_number": "BOX 250",
+    "display_size": "Unknown",
+    "title": "Xiaomi POC C85 4G(GLOBAL)",
+    "raw_text": "Xiaomi POC C85 4G(GLOBAL) — Xiaomi POC C85 4G(GLOBAL), Xiaomi POCO C85X, Xiaomi POC C81, Xiaomi C81 PRO",
+    "models": [
+      {
+        "model_name": "Xiaomi POC C85 4G(GLOBAL)"
+      },
+      {
+        "model_name": "Xiaomi POCO C85X"
+      },
+      {
+        "model_name": "Xiaomi POC C81"
+      },
+      {
+        "model_name": "Xiaomi C81 PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F251",
+    "box_number": "BOX 251",
+    "display_size": "Unknown",
+    "title": "Xiaomi POC C85 4G(EU)",
+    "raw_text": "Xiaomi POC C85 4G(EU) — Xiaomi POC C85 4G(EU), Xiaomi POC C85 5G",
+    "models": [
+      {
+        "model_name": "Xiaomi POC C85 4G(EU)"
+      },
+      {
+        "model_name": "Xiaomi POC C85 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F252",
+    "box_number": "BOX 252",
+    "display_size": "Unknown",
+    "title": "Xiaomi POC M7 4G(EU)",
+    "raw_text": "Xiaomi POC M7 4G(EU) — Xiaomi POC M7 4G(EU)",
+    "models": [
+      {
+        "model_name": "Xiaomi POC M7 4G(EU)"
+      }
+    ]
+  },
+  {
+    "id": "SD-F253",
+    "box_number": "BOX 253",
+    "display_size": "Unknown",
+    "title": "Xiaomi POC M2",
+    "raw_text": "Xiaomi POC M2 — Xiaomi POC M2",
+    "models": [
+      {
+        "model_name": "Xiaomi POC M2"
+      }
+    ]
+  },
+  {
+    "id": "SD-F254",
+    "box_number": "BOX 254",
+    "display_size": "Unknown",
+    "title": "Xiaomi POC M4 PRO 5G",
+    "raw_text": "Xiaomi POC M4 PRO 5G — Xiaomi POC M4 PRO 5G",
+    "models": [
+      {
+        "model_name": "Xiaomi POC M4 PRO 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F255",
+    "box_number": "BOX 255",
+    "display_size": "Unknown",
+    "title": "Xiaomi XIAOMI POC X4 GT",
+    "raw_text": "Xiaomi XIAOMI POC X4 GT — Xiaomi XIAOMI POC X4 GT",
+    "models": [
+      {
+        "model_name": "Xiaomi XIAOMI POC X4 GT"
+      }
+    ]
+  },
+  {
+    "id": "SD-F256",
+    "box_number": "BOX 256",
+    "display_size": "Unknown",
+    "title": "Xiaomi POC X5",
+    "raw_text": "Xiaomi POC X5 — Xiaomi POC X5",
+    "models": [
+      {
+        "model_name": "Xiaomi POC X5"
+      }
+    ]
+  },
+  {
+    "id": "SD-F257",
+    "box_number": "BOX 257",
+    "display_size": "Unknown",
+    "title": "Xiaomi POC X6 5G",
+    "raw_text": "Xiaomi POC X6 5G — Xiaomi POC X6 5G, Xiaomi POC X6 PRO 5G, Xiaomi POC F6 5G",
+    "models": [
+      {
+        "model_name": "Xiaomi POC X6 5G"
+      },
+      {
+        "model_name": "Xiaomi POC X6 PRO 5G"
+      },
+      {
+        "model_name": "Xiaomi POC F6 5G"
+      }
+    ]
+  },
+  {
+    "id": "SD-F258",
+    "box_number": "BOX 258",
+    "display_size": "Unknown",
+    "title": "Xiaomi POC M3",
+    "raw_text": "Xiaomi POC M3 — Xiaomi POC M3",
+    "models": [
+      {
+        "model_name": "Xiaomi POC M3"
+      }
+    ]
+  },
+  {
+    "id": "SD-F259",
+    "box_number": "BOX 259",
+    "display_size": "Unknown",
+    "title": "Xiaomi POC F8 ULTRA",
+    "raw_text": "Xiaomi POC F8 ULTRA — Xiaomi POC F8 ULTRA",
+    "models": [
+      {
+        "model_name": "Xiaomi POC F8 ULTRA"
+      }
+    ]
+  },
+  {
+    "id": "SD-F260",
+    "box_number": "BOX 260",
+    "display_size": "Unknown",
+    "title": "Xiaomi 17T PRO",
+    "raw_text": "Xiaomi 17T PRO — Xiaomi 17T PRO",
+    "models": [
+      {
+        "model_name": "Xiaomi 17T PRO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F261",
+    "box_number": "BOX 261",
+    "display_size": "Unknown",
+    "title": "Xiaomi POC M6 PRO 4G",
+    "raw_text": "Xiaomi POC M6 PRO 4G — Xiaomi POC M6 PRO 4G, Xiaomi POC X6 NEO",
+    "models": [
+      {
+        "model_name": "Xiaomi POC M6 PRO 4G"
+      },
+      {
+        "model_name": "Xiaomi POC X6 NEO"
+      }
+    ]
+  },
+  {
+    "id": "SD-F262",
+    "box_number": "BOX 262",
+    "display_size": "Unknown",
+    "title": "Xiaomi POC F8 PRO",
+    "raw_text": "Xiaomi POC F8 PRO — Xiaomi POC F8 PRO, Xiaomi POC X8 PRO, Xiaomi 17T",
+    "models": [
+      {
+        "model_name": "Xiaomi POC F8 PRO"
+      },
+      {
+        "model_name": "Xiaomi POC X8 PRO"
+      },
+      {
+        "model_name": "Xiaomi 17T"
+      }
+    ]
+  },
+  {
+    "id": "SD-F263",
+    "box_number": "BOX 263",
+    "display_size": "Unknown",
+    "title": "Xiaomi POC X5 PRO",
+    "raw_text": "Xiaomi POC X5 PRO — Xiaomi POC X5 PRO",
+    "models": [
+      {
+        "model_name": "Xiaomi POC X5 PRO"
+      }
+    ]
+  }
+]

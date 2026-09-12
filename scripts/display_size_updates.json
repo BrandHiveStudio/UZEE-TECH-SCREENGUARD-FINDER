@@ -1,0 +1,492 @@
+[
+  {
+    "gid": "SD-F001",
+    "old_display_size": "Unknown",
+    "new_display_size": "4.7\"",
+    "status": "Model-spec verified",
+    "main_model": "iPhone 6"
+  },
+  {
+    "gid": "SD-F003",
+    "old_display_size": "Unknown",
+    "new_display_size": "5.5\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone 6 PLUS"
+  },
+  {
+    "gid": "SD-F004",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.5\"",
+    "status": "Model-spec verified",
+    "main_model": "Samsung A12"
+  },
+  {
+    "gid": "SD-F005",
+    "old_display_size": "Unknown",
+    "new_display_size": "4.7\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone 7"
+  },
+  {
+    "gid": "SD-F006",
+    "old_display_size": "Unknown",
+    "new_display_size": "5.5\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone 7 PLUS"
+  },
+  {
+    "gid": "SD-F007",
+    "old_display_size": "Unknown",
+    "new_display_size": "5.8\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone X"
+  },
+  {
+    "gid": "SD-F009",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.1\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone XR 6.1"
+  },
+  {
+    "gid": "SD-F011",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.5\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone XS MAX"
+  },
+  {
+    "gid": "SD-F015",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.1\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone 12"
+  },
+  {
+    "gid": "SD-F017",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.7\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone 12 PRO MAX"
+  },
+  {
+    "gid": "SD-F021",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.1\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone 13"
+  },
+  {
+    "gid": "SD-F023",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.7\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone 13 PRO MAX"
+  },
+  {
+    "gid": "SD-F025",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.1\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone 14 PRO"
+  },
+  {
+    "gid": "SD-F027",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.7\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone 14 PRO MAX"
+  },
+  {
+    "gid": "SD-F029",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.1\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone 15"
+  },
+  {
+    "gid": "SD-F031",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.7\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone 15 PLUS"
+  },
+  {
+    "gid": "SD-F037",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.3\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone 16 PRO"
+  },
+  {
+    "gid": "SD-F047",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.88\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi 15 4G"
+  },
+  {
+    "gid": "SD-F048",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.53\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi NOTE 8 PRO"
+  },
+  {
+    "gid": "SD-F049",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.88\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi 15 4G"
+  },
+  {
+    "gid": "SD-F050",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.7\"",
+    "status": "Model-spec verified",
+    "main_model": "Redmi 13C 4G"
+  },
+  {
+    "gid": "SD-F051",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.88\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi 15C 4G"
+  },
+  {
+    "gid": "SD-F052",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.67\"",
+    "status": "Model-spec/reference verified",
+    "main_model": "Redmi K30"
+  },
+  {
+    "gid": "SD-F053",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.88\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi 15C 4G"
+  },
+  {
+    "gid": "SD-F054",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.2\"",
+    "status": "Physical production source-derived",
+    "main_model": "Vivo Y90"
+  },
+  {
+    "gid": "SD-F055",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.88\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi A5 4G"
+  },
+  {
+    "gid": "SD-F056",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.53\"",
+    "status": "Physical source-derived (dominant; alternatives: 6.4\", 6.53\")",
+    "main_model": "OPPO F11 PRO"
+  },
+  {
+    "gid": "SD-F057",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.71\"",
+    "status": "Physical source-derived (dominant; alternatives: 6.5\", 6.71\")",
+    "main_model": "Redmi 10C"
+  },
+  {
+    "gid": "SD-F058",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.5\"",
+    "status": "Physical production source-derived",
+    "main_model": "Realme 6 PRO"
+  },
+  {
+    "gid": "SD-F059",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.5\"",
+    "status": "Physical source-derived (dominant; alternatives: 6.5\", 6.71\")",
+    "main_model": "Redmi 10 PRIME"
+  },
+  {
+    "gid": "SD-F062",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.79\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi 12 4G"
+  },
+  {
+    "gid": "SD-F065",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.88\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi 14C 4G"
+  },
+  {
+    "gid": "SD-F068",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.67\"",
+    "status": "Physical production source-derived",
+    "main_model": "Xiaomi POCO F7 5G"
+  },
+  {
+    "gid": "SD-F072",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.67\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi K70"
+  },
+  {
+    "gid": "SD-F074",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.43\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi NOTE 10S"
+  },
+  {
+    "gid": "SD-F077",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.67\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi NOTE 10 PRO"
+  },
+  {
+    "gid": "SD-F080",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.6\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi NOTE 11 5G"
+  },
+  {
+    "gid": "SD-F081",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.6\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi NOTE 11T PRO"
+  },
+  {
+    "gid": "SD-F082",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.4\"",
+    "status": "Physical production source-derived",
+    "main_model": "OPPO A91"
+  },
+  {
+    "gid": "SD-F083",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.67\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi NOTE 12 4G"
+  },
+  {
+    "gid": "SD-F084",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.67\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi NOTE 13 PRO 5G"
+  },
+  {
+    "gid": "SD-F085",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.7\"",
+    "status": "Physical production source-derived",
+    "main_model": "OPPO F29 5G"
+  },
+  {
+    "gid": "SD-F086",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.26\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi NOTE 6 PRO"
+  },
+  {
+    "gid": "SD-F087",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.78\"",
+    "status": "Physical production source-derived",
+    "main_model": "OPPO F31 PRO+"
+  },
+  {
+    "gid": "SD-F088",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.3\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi NOTE 8"
+  },
+  {
+    "gid": "SD-F089",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.59\"",
+    "status": "Physical production source-derived",
+    "main_model": "OPPO FIND X8S"
+  },
+  {
+    "gid": "SD-F090",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.58\"",
+    "status": "Physical production source-derived",
+    "main_model": "HUAWEI NOVA Y61"
+  },
+  {
+    "gid": "SD-F091",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.7\"",
+    "status": "Physical source-derived (dominant; alternatives: 6.67\", 6.7\", 6.78\")",
+    "main_model": "OPPO RENO 13 5G国际版"
+  },
+  {
+    "gid": "SD-F092",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.7\"",
+    "status": "Physical production source-derived",
+    "main_model": "OPPO RENO 14 PRO 5G"
+  },
+  {
+    "gid": "SD-F093",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.73\"",
+    "status": "Physical production source-derived",
+    "main_model": "Xiaomi 17 PRO MAX"
+  },
+  {
+    "gid": "SD-F094",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.78\"",
+    "status": "Physical production source-derived",
+    "main_model": "OPPO FIND X9"
+  },
+  {
+    "gid": "SD-F095",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.7\"",
+    "status": "Physical production source-derived",
+    "main_model": "OPPO RENO 15 5G"
+  },
+  {
+    "gid": "SD-F096",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.67\"",
+    "status": "Physical production source-derived",
+    "main_model": "Realme GT2 PRO"
+  },
+  {
+    "gid": "SD-F097",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.67\"",
+    "status": "Physical production source-derived",
+    "main_model": "OPPO A6 4G"
+  },
+  {
+    "gid": "SD-F098",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.67\"",
+    "status": "Physical production source-derived",
+    "main_model": "Xiaomi POCO F8 PRO"
+  },
+  {
+    "gid": "SD-F121",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.67\"",
+    "status": "Physical production source-derived",
+    "main_model": "Realme 15X"
+  },
+  {
+    "gid": "SD-F128",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.7\"",
+    "status": "Physical production source-derived",
+    "main_model": "Realme C83 5G"
+  },
+  {
+    "gid": "SD-F143",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.51\"",
+    "status": "Model-spec verified",
+    "main_model": "Vivo G2"
+  },
+  {
+    "gid": "SD-F205",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.78\"",
+    "status": "Physical production source-derived",
+    "main_model": "Honor MAGIC 8"
+  },
+  {
+    "gid": "SD-F208",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.1\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone 15 Pro"
+  },
+  {
+    "gid": "SD-F209",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.9\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone 16 Pro Max"
+  },
+  {
+    "gid": "SD-F210",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.3\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone 17 Pro"
+  },
+  {
+    "gid": "SD-F211",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.9\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone 17 Pro Max"
+  },
+  {
+    "gid": "SD-F212",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.3\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone 18 Pro"
+  },
+  {
+    "gid": "SD-F213",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.9\"",
+    "status": "Physical production source-derived",
+    "main_model": "iPhone 18 Pro Max"
+  },
+  {
+    "gid": "SD-F218",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.78\"",
+    "status": "Physical production source-derived",
+    "main_model": "OPPO FIND X9S"
+  },
+  {
+    "gid": "SD-F220",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.53\"",
+    "status": "Physical production source-derived",
+    "main_model": "Realme X"
+  },
+  {
+    "gid": "SD-F223",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.88\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi 15C 4G(EU)"
+  },
+  {
+    "gid": "SD-F224",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.88\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi 15 5G(EU)"
+  },
+  {
+    "gid": "SD-F225",
+    "old_display_size": "Unknown",
+    "new_display_size": "6.88\"",
+    "status": "Physical production source-derived",
+    "main_model": "Redmi A5 4G (EU)"
+  }
+]

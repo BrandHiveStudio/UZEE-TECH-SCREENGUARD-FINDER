@@ -1,10 +1,7 @@
-import { getSupabaseClient } from "./supabase";
+import { turso } from "./turso";
+import { v4 as uuidv4 } from "uuid";
+import type { InStatement } from "@libsql/client";
 import type { Box, InventoryTransaction, PurchaseItem } from "@/types/screenguard";
-
-// ─── Local Memory Store for Fallback / Offline Inventory Transactions ─────────
-const localTransactions: InventoryTransaction[] = [];
-const localPurchaseList: PurchaseItem[] = [];
-const localStockState: Record<string, { quantity: number; verified: boolean }> = {};
 
 export function deriveStockStatus(
   quantity: number,
@@ -17,87 +14,74 @@ export function deriveStockStatus(
   return "IN_STOCK";
 }
 
-// ─── Interfaces for Joined Query Result ────────────────────────────────────────
-interface ModelRow {
-  model_name: string;
-}
-
-interface BoxWithModelsRow {
-  id: string;
-  box_number: string;
-  display_size: string;
-  title: string;
-  raw_text: string | null;
-  category: string | null;
-  notes: string | null;
-  source: string | null;
-  verification: string | null;
-  stock_quantity?: number | null;
-  stock_count_verified?: boolean | null;
-  models: ModelRow[];
-}
-
-// ─── Converters ───────────────────────────────────────────────────────────────
-function rowToBox(row: BoxWithModelsRow): Box {
-  const override = localStockState[row.id];
-  const stockQuantity = override
-    ? override.quantity
-    : Math.max(0, row.stock_quantity ?? 0);
-  const stockCountVerified = override
-    ? override.verified
-    : (row.stock_count_verified ?? false);
-
-  return {
-    id: row.id,
-    boxNumber: row.box_number,
-    displaySize: row.display_size,
-    title: row.title,
-    compatibleModels: Array.isArray(row.models)
-      ? row.models.map((m) => m.model_name)
-      : [],
-    rawText: row.raw_text ?? undefined,
-    category: row.category ?? undefined,
-    notes: row.notes ?? undefined,
-    source: row.source ?? undefined,
-    verification: row.verification ?? undefined,
-    stockQuantity,
-    stockCountVerified,
-    stockStatus: deriveStockStatus(stockQuantity, stockCountVerified),
-  };
-}
-
-// ─── Data Access Layer (Normalized Boxes + Models + Inventory) ────────────────
+// ─── Data Access Layer (Turso Normalized Boxes + Models + Inventory) ────────
 
 /** Fetch all boxes with their compatible models via 1-to-many join */
 export async function getAllBoxes(): Promise<Box[]> {
-  const supabase = getSupabaseClient();
+  try {
+    // 1. Query all boxes
+    const boxesRes = await turso.execute(
+      `SELECT
+        id,
+        box_number,
+        display_size,
+        title,
+        raw_text,
+        category,
+        notes,
+        source,
+        verification,
+        stock_quantity,
+        stock_count_verified
+      FROM boxes
+      ORDER BY box_number ASC`
+    );
 
-  const { data, error } = await supabase
-    .from("boxes")
-    .select(`
-      id,
-      box_number,
-      display_size,
-      title,
-      raw_text,
-      models (
-        model_name
-      )
-    `)
-    .order("box_number", { ascending: true });
+    // 2. Query all compatible models
+    const modelsRes = await turso.execute(
+      `SELECT box_id, model_name FROM models ORDER BY id ASC`
+    );
 
-  if (error || !data || data.length < 263) {
-    if (error) {
-      console.warn("[db] Supabase query warning, using local JSON data:", error.message);
-    } else {
-      console.log(`[db] Supabase database has unseeded/legacy data (${data?.length ?? 0} rows < 263 master groups). Using local master JSON data.`);
+    const modelsMap = new Map<string, string[]>();
+    for (const row of modelsRes.rows) {
+      const boxId = String(row.box_id);
+      const modelName = String(row.model_name);
+      const existing = modelsMap.get(boxId);
+      if (existing) {
+        existing.push(modelName);
+      } else {
+        modelsMap.set(boxId, [modelName]);
+      }
     }
+
+    return boxesRes.rows.map((row) => {
+      const stockQty = Math.max(0, Number(row.stock_quantity ?? 0));
+      const stockVerified = Boolean(row.stock_count_verified);
+      const id = String(row.id);
+
+      return {
+        id,
+        boxNumber: String(row.box_number),
+        displaySize: String(row.display_size ?? "Unknown"),
+        title: String(row.title ?? ""),
+        compatibleModels: modelsMap.get(id) || [],
+        rawText: row.raw_text ? String(row.raw_text) : undefined,
+        category: row.category ? String(row.category) : "Super-D",
+        notes: row.notes ? String(row.notes) : undefined,
+        source: row.source ? String(row.source) : undefined,
+        verification: row.verification ? String(row.verification) : undefined,
+        stockQuantity: stockQty,
+        stockCountVerified: stockVerified,
+        stockStatus: deriveStockStatus(stockQty, stockVerified),
+      };
+    });
+  } catch (error) {
+    console.error("[db] Turso query failed, using emergency fallback to local JSON data:", error);
     const jsonModule = await import("@/data/screenguards.json");
     const jsonBoxes = (jsonModule.default.boxes || jsonModule.boxes) as Box[];
     return jsonBoxes.map((b) => {
-      const override = localStockState[b.id];
-      const qty = override ? override.quantity : Math.max(0, b.stockQuantity ?? 0);
-      const ver = override ? override.verified : (b.stockCountVerified ?? false);
+      const qty = Math.max(0, b.stockQuantity ?? 0);
+      const ver = b.stockCountVerified ?? false;
       return {
         ...b,
         stockQuantity: qty,
@@ -106,79 +90,107 @@ export async function getAllBoxes(): Promise<Box[]> {
       };
     });
   }
-
-  return (data as unknown as BoxWithModelsRow[]).map(rowToBox);
 }
 
-/** Insert or update a box and its models */
+/** Insert or update a box and its models atomically in Turso */
 export async function upsertBox(box: Box): Promise<Box> {
-  const supabase = getSupabaseClient();
-
   const stockQty = Math.max(0, box.stockQuantity ?? 0);
   const stockVer = box.stockCountVerified ?? false;
 
-  const isNewBoxState = !localStockState[box.id];
-  localStockState[box.id] = { quantity: stockQty, verified: stockVer };
+  // Check if box already exists in database
+  const existingRes = await turso.execute({
+    sql: "SELECT id, stock_quantity FROM boxes WHERE id = ?",
+    args: [box.id],
+  });
+  const isNew = existingRes.rows.length === 0;
 
-  if (isNewBoxState && (stockQty > 0 || stockVer)) {
-    const tx: InventoryTransaction = {
-      id: `tx-${Date.now()}-${Math.random().toString(36).substr(2, 6)}`,
-      groupId: box.id,
-      transactionType: "INITIAL_STOCK",
-      quantityChange: stockQty,
-      previousQuantity: 0,
-      newQuantity: stockQty,
-      boxNumber: box.boxNumber,
-      note: "Initial stock setup",
-      createdAt: new Date().toISOString(),
-    };
-    localTransactions.unshift(tx);
-  }
+  const batchStatements: InStatement[] = [
+    {
+      sql: `INSERT INTO boxes (
+        id,
+        box_number,
+        display_size,
+        title,
+        raw_text,
+        category,
+        notes,
+        source,
+        verification,
+        stock_quantity,
+        stock_count_verified,
+        updated_at
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+      ON CONFLICT(id) DO UPDATE SET
+        box_number = excluded.box_number,
+        display_size = excluded.display_size,
+        title = excluded.title,
+        raw_text = excluded.raw_text,
+        category = excluded.category,
+        notes = excluded.notes,
+        source = excluded.source,
+        verification = excluded.verification,
+        stock_quantity = excluded.stock_quantity,
+        stock_count_verified = excluded.stock_count_verified,
+        updated_at = CURRENT_TIMESTAMP`,
+      args: [
+        box.id,
+        box.boxNumber,
+        box.displaySize || "Unknown",
+        box.title || "",
+        box.rawText ?? null,
+        box.category ?? "Super-D",
+        box.notes ?? null,
+        box.source ?? null,
+        box.verification ?? null,
+        stockQty,
+        stockVer ? 1 : 0,
+      ],
+    },
+    {
+      sql: "DELETE FROM models WHERE box_id = ?",
+      args: [box.id],
+    },
+  ];
 
-  const boxRow: Record<string, unknown> = {
-    id: box.id,
-    box_number: box.boxNumber,
-    display_size: box.displaySize ?? "Unknown",
-    title: box.title,
-    raw_text: box.rawText ?? null,
-    category: box.category ?? "Super-D",
-    notes: box.notes ?? null,
-    source: box.source ?? null,
-    verification: box.verification ?? null,
-  };
-
-  const { error: boxError } = await supabase
-    .from("boxes")
-    .upsert(boxRow, { onConflict: "id" });
-
-  if (boxError) {
-    console.error("[db] upsertBox box error:", boxError.message);
-  }
-
-  // Replace models for this box (delete existing + insert new list)
-  const { error: deleteError } = await supabase
-    .from("models")
-    .delete()
-    .eq("box_id", box.id);
-
-  if (deleteError) {
-    console.error("[db] upsertBox delete models error:", deleteError.message);
-  }
-
-  if (box.compatibleModels.length > 0) {
-    const modelRows = box.compatibleModels.map((m) => ({
-      box_id: box.id,
-      model_name: m,
-    }));
-
-    const { error: modelsError } = await supabase
-      .from("models")
-      .insert(modelRows);
-
-    if (modelsError) {
-      console.error("[db] upsertBox insert models error:", modelsError.message);
+  if (Array.isArray(box.compatibleModels)) {
+    for (const model of box.compatibleModels) {
+      if (model && model.trim()) {
+        batchStatements.push({
+          sql: "INSERT INTO models (id, box_id, model_name) VALUES (?, ?, ?)",
+          args: [uuidv4(), box.id, model.trim()],
+        });
+      }
     }
   }
+
+  // If this is a brand new box with initial stock, log an INITIAL_STOCK transaction
+  if (isNew && (stockQty > 0 || stockVer)) {
+    batchStatements.push({
+      sql: `INSERT INTO inventory_transactions (
+        id,
+        group_id,
+        transaction_type,
+        quantity_change,
+        previous_quantity,
+        new_quantity,
+        box_number,
+        note
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+      args: [
+        uuidv4(),
+        box.id,
+        "INITIAL_STOCK",
+        stockQty,
+        0,
+        stockQty,
+        box.boxNumber,
+        "Initial stock setup",
+      ],
+    });
+  }
+
+  // Execute atomic write transaction
+  await turso.batch(batchStatements, "write");
 
   return {
     ...box,
@@ -189,39 +201,38 @@ export async function upsertBox(box: Box): Promise<Box> {
   };
 }
 
-/** Delete a box by id */
+/** Delete a box by id (cascades to models and transactions) */
 export async function deleteBox(id: string): Promise<void> {
-  const supabase = getSupabaseClient();
-  delete localStockState[id];
+  const result = await turso.execute({
+    sql: "DELETE FROM boxes WHERE id = ?",
+    args: [id],
+  });
 
-  const { error } = await supabase
-    .from("boxes")
-    .delete()
-    .eq("id", id);
-
-  if (error) {
-    console.error("[db] deleteBox error:", error.message);
-    throw new Error(error.message);
+  if (result.rowsAffected === 0) {
+    console.warn(`[db] deleteBox: No box found with id ${id}`);
   }
 }
 
-// ─── Inventory Management Data Access Functions ────────────────────────────────
+// ─── Inventory Management Data Access Functions ──────────────────────────────
 
-/** Update stock for a group (SOLD, RESTOCK, ADJUSTMENT) */
+/** Update stock for a group (SALE, RESTOCK, ADJUSTMENT) */
 export async function updateStock(
   groupId: string,
   action: "SALE" | "RESTOCK" | "ADJUSTMENT",
   amountOrChange: number,
   note?: string
 ): Promise<Box> {
-  const allBoxes = await getAllBoxes();
-  const box = allBoxes.find((b) => b.id === groupId);
+  const boxRes = await turso.execute({
+    sql: "SELECT * FROM boxes WHERE id = ?",
+    args: [groupId],
+  });
 
-  if (!box) {
+  if (boxRes.rows.length === 0) {
     throw new Error(`Group '${groupId}' not found`);
   }
 
-  const prevQty = box.stockQuantity ?? 0;
+  const boxRow = boxRes.rows[0];
+  const prevQty = Number(boxRow.stock_quantity ?? 0);
   let newQty = prevQty;
   let qtyChange = 0;
 
@@ -243,129 +254,139 @@ export async function updateStock(
     throw new Error(`Stock quantity cannot be negative (current: ${prevQty}, attempted change: ${qtyChange})`);
   }
 
-  // Update memory state
-  localStockState[groupId] = { quantity: newQty, verified: true };
+  const txId = uuidv4();
+  const txNote = note || (action === "SALE" ? "Customer sale" : action === "RESTOCK" ? "Restock added" : "Physical stock count adjustment");
 
-  // Log transaction
-  const tx: InventoryTransaction = {
-    id: `tx-${Date.now()}-${Math.random().toString(36).substr(2, 6)}`,
-    groupId,
-    transactionType: action,
-    quantityChange: qtyChange,
-    previousQuantity: prevQty,
-    newQuantity: newQty,
-    boxNumber: box.boxNumber,
-    note: note || (action === "SALE" ? "Customer sale" : action === "RESTOCK" ? "Restock added" : "Physical stock count adjustment"),
-    createdAt: new Date().toISOString(),
-  };
+  // Atomic batch: update boxes table and insert audit log into inventory_transactions
+  await turso.batch(
+    [
+      {
+        sql: `UPDATE boxes SET stock_quantity = ?, stock_count_verified = 1, updated_at = CURRENT_TIMESTAMP WHERE id = ?`,
+        args: [newQty, groupId],
+      },
+      {
+        sql: `INSERT INTO inventory_transactions (
+          id,
+          group_id,
+          transaction_type,
+          quantity_change,
+          previous_quantity,
+          new_quantity,
+          box_number,
+          note
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+        args: [
+          txId,
+          groupId,
+          action,
+          qtyChange,
+          prevQty,
+          newQty,
+          String(boxRow.box_number),
+          txNote,
+        ],
+      },
+    ],
+    "write"
+  );
 
-  localTransactions.unshift(tx);
-
-  // Try updating Supabase (ignore error if columns don't exist yet on remote)
-  const supabase = getSupabaseClient();
-  try {
-    await supabase
-      .from("boxes")
-      .update({ stock_quantity: newQty, stock_count_verified: true })
-      .eq("id", groupId);
-
-    await supabase.from("inventory_transactions").insert({
-      group_id: groupId,
-      transaction_type: action,
-      quantity_change: qtyChange,
-      previous_quantity: prevQty,
-      new_quantity: newQty,
-      box_number: box.boxNumber,
-      note: tx.note,
-    });
-  } catch (e) {
-    console.warn("[db] Supabase stock transaction log notice:", e);
-  }
+  // Fetch models for returning the complete Box object
+  const modelsRes = await turso.execute({
+    sql: "SELECT model_name FROM models WHERE box_id = ?",
+    args: [groupId],
+  });
+  const compatibleModels = modelsRes.rows.map((r) => String(r.model_name));
 
   return {
-    ...box,
+    id: groupId,
+    boxNumber: String(boxRow.box_number),
+    displaySize: String(boxRow.display_size ?? "Unknown"),
+    title: String(boxRow.title ?? ""),
+    compatibleModels,
+    rawText: boxRow.raw_text ? String(boxRow.raw_text) : undefined,
+    category: boxRow.category ? String(boxRow.category) : "Super-D",
+    notes: boxRow.notes ? String(boxRow.notes) : undefined,
+    source: boxRow.source ? String(boxRow.source) : undefined,
+    verification: boxRow.verification ? String(boxRow.verification) : undefined,
     stockQuantity: newQty,
     stockCountVerified: true,
-    stockStatus: deriveStockStatus(newQty),
+    stockStatus: deriveStockStatus(newQty, true),
   };
 }
 
 /** Get inventory history for a group or all groups */
 export async function getInventoryHistory(groupId?: string): Promise<InventoryTransaction[]> {
-  const supabase = getSupabaseClient();
-  try {
-    let query = supabase
-      .from("inventory_transactions")
-      .select("*")
-      .order("created_at", { ascending: false });
+  const sql = groupId
+    ? "SELECT * FROM inventory_transactions WHERE group_id = ? ORDER BY created_at DESC, rowid DESC"
+    : "SELECT * FROM inventory_transactions ORDER BY created_at DESC, rowid DESC";
+  const args = groupId ? [groupId] : [];
 
-    if (groupId) {
-      query = query.eq("group_id", groupId);
-    }
+  const res = await turso.execute({ sql, args });
 
-    const { data, error } = await query;
-    if (!error && data) {
-      return data.map((t) => ({
-        id: t.id,
-        groupId: t.group_id,
-        transactionType: t.transaction_type,
-        quantityChange: t.quantity_change,
-        previousQuantity: t.previous_quantity,
-        newQuantity: t.new_quantity,
-        boxNumber: t.box_number,
-        note: t.note,
-        createdAt: t.created_at,
-      }));
-    }
-  } catch (e) {}
-
-  // Return local transactions filtered by groupId if specified
-  if (groupId) {
-    return localTransactions.filter((t) => t.groupId === groupId);
-  }
-  return localTransactions;
+  return res.rows.map((t) => ({
+    id: String(t.id),
+    groupId: String(t.group_id),
+    transactionType: t.transaction_type as "SALE" | "RESTOCK" | "ADJUSTMENT" | "INITIAL_STOCK",
+    quantityChange: Number(t.quantity_change),
+    previousQuantity: Number(t.previous_quantity),
+    newQuantity: Number(t.new_quantity),
+    boxNumber: String(t.box_number),
+    note: t.note ? String(t.note) : undefined,
+    createdAt: String(t.created_at),
+  }));
 }
 
 /** Get current Purchase List items */
 export async function getPurchaseList(): Promise<PurchaseItem[]> {
-  const allBoxes = await getAllBoxes();
-  const boxMap = new Map(allBoxes.map((b) => [b.id, b]));
+  const res = await turso.execute(`
+    SELECT
+      p.id,
+      p.group_id,
+      p.requested_quantity,
+      p.status,
+      p.note,
+      p.created_at,
+      p.updated_at,
+      b.box_number,
+      b.title,
+      b.stock_quantity
+    FROM purchase_list p
+    LEFT JOIN boxes b ON p.group_id = b.id
+    ORDER BY p.created_at DESC, p.rowid DESC
+  `);
 
-  const supabase = getSupabaseClient();
-  try {
-    const { data, error } = await supabase
-      .from("purchase_list")
-      .select("*")
-      .order("created_at", { ascending: false });
+  if (res.rows.length === 0) {
+    return [];
+  }
 
-    if (!error && data) {
-      return data.map((p) => {
-        const b = boxMap.get(p.group_id);
-        return {
-          id: p.id,
-          groupId: p.group_id,
-          boxNumber: b?.boxNumber || p.group_id,
-          title: b?.title || "",
-          compatibleModels: b?.compatibleModels || [],
-          currentQuantity: b?.stockQuantity ?? 0,
-          requestedQuantity: p.requested_quantity,
-          status: p.status,
-          note: p.note,
-          createdAt: p.created_at,
-          updatedAt: p.updated_at,
-        };
-      });
+  // Fetch models for these boxes
+  const modelsRes = await turso.execute("SELECT box_id, model_name FROM models");
+  const modelsMap = new Map<string, string[]>();
+  for (const row of modelsRes.rows) {
+    const boxId = String(row.box_id);
+    const model = String(row.model_name);
+    const existing = modelsMap.get(boxId);
+    if (existing) {
+      existing.push(model);
+    } else {
+      modelsMap.set(boxId, [model]);
     }
-  } catch (e) {}
+  }
 
-  return localPurchaseList.map((p) => {
-    const b = boxMap.get(p.groupId);
+  return res.rows.map((p) => {
+    const groupId = String(p.group_id);
     return {
-      ...p,
-      boxNumber: b?.boxNumber || p.groupId,
-      title: b?.title || "",
-      compatibleModels: b?.compatibleModels || [],
-      currentQuantity: b?.stockQuantity ?? 0,
+      id: String(p.id),
+      groupId,
+      boxNumber: p.box_number ? String(p.box_number) : groupId,
+      title: p.title ? String(p.title) : "",
+      compatibleModels: modelsMap.get(groupId) || [],
+      currentQuantity: Number(p.stock_quantity ?? 0),
+      requestedQuantity: Number(p.requested_quantity),
+      status: p.status as "NEEDS ORDER" | "ORDERED" | "RECEIVED" | "CANCELLED",
+      note: p.note ? String(p.note) : undefined,
+      createdAt: String(p.created_at),
+      updatedAt: String(p.updated_at),
     };
   });
 }
@@ -376,47 +397,72 @@ export async function addToPurchaseList(
   requestedQuantity = 1,
   note?: string
 ): Promise<PurchaseItem> {
-  const allBoxes = await getAllBoxes();
-  const b = allBoxes.find((box) => box.id === groupId);
+  const existingRes = await turso.execute({
+    sql: "SELECT * FROM purchase_list WHERE group_id = ? AND status NOT IN ('RECEIVED', 'CANCELLED') LIMIT 1",
+    args: [groupId],
+  });
 
-  const existing = localPurchaseList.find(
-    (p) => p.groupId === groupId && p.status !== "RECEIVED" && p.status !== "CANCELLED"
-  );
+  if (existingRes.rows.length > 0) {
+    const existing = existingRes.rows[0];
+    const newRequestedQuantity = Number(existing.requested_quantity) + requestedQuantity;
+    const finalNote = note || (existing.note ? String(existing.note) : undefined);
 
-  if (existing) {
-    existing.requestedQuantity += requestedQuantity;
-    if (note) existing.note = note;
-    existing.updatedAt = new Date().toISOString();
-    return existing;
+    await turso.execute({
+      sql: `UPDATE purchase_list
+            SET requested_quantity = ?, note = ?, updated_at = CURRENT_TIMESTAMP
+            WHERE id = ?`,
+      args: [newRequestedQuantity, finalNote ?? null, String(existing.id)],
+    });
+
+    const boxRes = await turso.execute({
+      sql: "SELECT box_number, title, stock_quantity FROM boxes WHERE id = ?",
+      args: [groupId],
+    });
+    const box = boxRes.rows[0];
+
+    return {
+      id: String(existing.id),
+      groupId,
+      boxNumber: box ? String(box.box_number) : groupId,
+      title: box ? String(box.title) : "",
+      currentQuantity: box ? Number(box.stock_quantity ?? 0) : 0,
+      requestedQuantity: newRequestedQuantity,
+      status: existing.status as "NEEDS ORDER" | "ORDERED" | "RECEIVED" | "CANCELLED",
+      note: finalNote,
+      createdAt: String(existing.created_at),
+      updatedAt: new Date().toISOString(),
+    };
   }
 
-  const newItem: PurchaseItem = {
-    id: `pur-${Date.now()}-${Math.random().toString(36).substr(2, 6)}`,
+  const newId = uuidv4();
+  const reqQty = Math.max(1, requestedQuantity);
+  const itemNote = note || "Reorder requested";
+
+  await turso.execute({
+    sql: `INSERT INTO purchase_list (
+      id, group_id, requested_quantity, status, note, created_at, updated_at
+    ) VALUES (?, ?, ?, 'NEEDS ORDER', ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)`,
+    args: [newId, groupId, reqQty, itemNote],
+  });
+
+  const boxRes = await turso.execute({
+    sql: "SELECT box_number, title, stock_quantity FROM boxes WHERE id = ?",
+    args: [groupId],
+  });
+  const box = boxRes.rows[0];
+
+  return {
+    id: newId,
     groupId,
-    boxNumber: b?.boxNumber || groupId,
-    title: b?.title || "",
-    compatibleModels: b?.compatibleModels || [],
-    currentQuantity: b?.stockQuantity ?? 0,
-    requestedQuantity: Math.max(1, requestedQuantity),
+    boxNumber: box ? String(box.box_number) : groupId,
+    title: box ? String(box.title) : "",
+    currentQuantity: box ? Number(box.stock_quantity ?? 0) : 0,
+    requestedQuantity: reqQty,
     status: "NEEDS ORDER",
-    note: note || "Reorder requested",
+    note: itemNote,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
   };
-
-  localPurchaseList.unshift(newItem);
-
-  const supabase = getSupabaseClient();
-  try {
-    await supabase.from("purchase_list").insert({
-      group_id: groupId,
-      requested_quantity: newItem.requestedQuantity,
-      status: newItem.status,
-      note: newItem.note,
-    });
-  } catch (e) {}
-
-  return newItem;
 }
 
 /** Update status of a purchase list item */
@@ -425,34 +471,50 @@ export async function updatePurchaseStatus(
   status: "NEEDS ORDER" | "ORDERED" | "RECEIVED" | "CANCELLED",
   note?: string
 ): Promise<PurchaseItem> {
-  const item = localPurchaseList.find((p) => p.id === purchaseId);
-  if (!item) {
+  const itemRes = await turso.execute({
+    sql: `SELECT p.*, b.box_number, b.title, b.stock_quantity
+          FROM purchase_list p
+          LEFT JOIN boxes b ON p.group_id = b.id
+          WHERE p.id = ?`,
+    args: [purchaseId],
+  });
+
+  if (itemRes.rows.length === 0) {
     throw new Error(`Purchase item '${purchaseId}' not found`);
   }
 
-  item.status = status;
-  if (note) item.note = note;
-  item.updatedAt = new Date().toISOString();
+  const row = itemRes.rows[0];
+  const finalNote = note || (row.note ? String(row.note) : undefined);
+  const requestedQuantity = Number(row.requested_quantity);
+  const groupId = String(row.group_id);
 
-  // If status is RECEIVED, automatically prompt/execute RESTOCK for requested quantity
-  if (status === "RECEIVED" && item.requestedQuantity > 0) {
+  await turso.execute({
+    sql: "UPDATE purchase_list SET status = ?, note = ?, updated_at = CURRENT_TIMESTAMP WHERE id = ?",
+    args: [status, finalNote ?? null, purchaseId],
+  });
+
+  // If status is RECEIVED, automatically execute RESTOCK for requested quantity
+  if (status === "RECEIVED" && requestedQuantity > 0) {
     await updateStock(
-      item.groupId,
+      groupId,
       "RESTOCK",
-      item.requestedQuantity,
-      `Auto-restocked from Purchase Order (ID: ${item.id})`
+      requestedQuantity,
+      `Auto-restocked from Purchase Order (ID: ${purchaseId})`
     );
   }
 
-  const supabase = getSupabaseClient();
-  try {
-    await supabase
-      .from("purchase_list")
-      .update({ status, note: item.note, updated_at: item.updatedAt })
-      .eq("id", purchaseId);
-  } catch (e) {}
-
-  return item;
+  return {
+    id: purchaseId,
+    groupId,
+    boxNumber: row.box_number ? String(row.box_number) : groupId,
+    title: row.title ? String(row.title) : "",
+    currentQuantity: Number(row.stock_quantity ?? 0),
+    requestedQuantity,
+    status,
+    note: finalNote,
+    createdAt: String(row.created_at),
+    updatedAt: new Date().toISOString(),
+  };
 }
 
 /** Save bulk stock counts from Stock Count Mode */
@@ -468,5 +530,3 @@ export async function saveBulkStockCounts(
   }
   return countSaved;
 }
-
-

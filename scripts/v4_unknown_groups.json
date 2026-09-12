@@ -1,0 +1,980 @@
+[
+  {
+    "idx": 1,
+    "Research Group": "SD-F001 (iPhone 6)",
+    "New Models": "iPhone 6, iPhone 6S",
+    "Evidence": "IPHONE 6 PLUS/IP 6S PLUS"
+  },
+  {
+    "idx": 2,
+    "Research Group": "SD-F013 (iPhone 12 MINI)",
+    "New Models": "iPhone 12 Mini",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 3,
+    "Research Group": "SD-F019 (iPhone SE 2 2020)",
+    "New Models": "iPhone SE 2 2020, iPhone SE 3 2022",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 4,
+    "Research Group": "SD-F033 (iPhone 15 PRO 6.1)",
+    "New Models": "iPhone 15 Pro 6.1",
+    "Evidence": "IPHONE 15 PRO 6.1"
+  },
+  {
+    "idx": 5,
+    "Research Group": "SD-F034 (Samsung S21FE 5G)",
+    "New Models": "Samsung S21FE 5G",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 6,
+    "Research Group": "SD-F035 (iPhone 15 PRO MAX 6.7)",
+    "New Models": "iPhone 15 Pro Max 6.7",
+    "Evidence": "IPHONE 15 PRO MAX 6.7"
+  },
+  {
+    "idx": 7,
+    "Research Group": "SD-F038 (Samsung S25FE)",
+    "New Models": "Samsung S25FE",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 8,
+    "Research Group": "SD-F039 (iPhone 16 PRO MAX 6.9 380胶)",
+    "New Models": "iPhone 16 Pro Max 6.9",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 9,
+    "Research Group": "SD-F041 (iPhone 17 AIR 6.6380胶)",
+    "New Models": "iPhone 17 AIR 6.",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 10,
+    "Research Group": "SD-F042 (Samsung Z FOLD4)",
+    "New Models": "Samsung Z FOLD4, Samsung FOLD 5",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 11,
+    "Research Group": "SD-F043 (iPhone 17 PRO 6.3 380胶)",
+    "New Models": "iPhone 17 Pro 6.3",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 12,
+    "Research Group": "SD-F045 (iPhone 17 PRO MAX 6.9 380胶)",
+    "New Models": "iPhone 17 Pro Max 6.9",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 13,
+    "Research Group": "SD-F099 (OnePlus NORD 2 5G)",
+    "New Models": "OPPO RENO 5 4G, OPPO RENO5 5G, OPPO RENO 5K, OPPO RENO6 4G, OPPO 5G, OPPO RENO7 5G, OPPO K9, OPPO RENO6 5G, OPPO RENO5 4G, OPPO RENO5 K, Realme X7 Max 5G, Realme GT 5G, Realme GT Neo, Realme GT Neo 2T, Realme GT Neo FLASH, Realme GT MASTER, OnePlus NORD 2 5G, OnePlus NORD CE 5G, OnePlus NORD 2T",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 14,
+    "Research Group": "SD-F100 (Realme GT 3 5G)",
+    "New Models": "OPPO K13 5G, Realme GT 3 5G, Realme GT Neo 5, Realme Neo 5 240W, Realme GT Neo 5 SE",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 15,
+    "Research Group": "SD-F101 (OPPO F19)",
+    "New Models": "OPPO F19, OPPO F19S, OPPO F19 Pro, OPPO F19 Pro+ 5G, OPPO F21 Pro, OPPO F21 Pro 5G, OPPO F21S Pro 4G, OPPO F21S Pro 5G, OPPO A74 4G, OPPO A78 4G, OPPO A94 4G, OPPO A94 5G, OPPO A95 4G, OPPO A95 5G, OPPO A96 5G, OPPO RENO5 Z, OPPO RENO6 Z, OPPO RENO5 Lite, OPPO RENO5F, OPPO RENO7 SE 5G, OPPO RENO7Z 5G, OPPO RENO7 4G, OPPO RENO7 Lite, OPPO RENOX7, OPPO RENO8 4G, OPPO RENO5G, OPPO RENO8Z 5G, OPPO RENO8 Lite, OPPO RENO8T 4G, OPPO NARZO 60, OPPO FIND X5 Lite, Realme 7 Pro, Realme 8 4G, Realme 8 Pro, Realme 9 4G, Realme 9 Pro+, Realme 10 4G, Realme X7, Realme V15 5G, Realme 11, Realme 11 4G, Realme NARZO 50 Pro, OnePlus NORD CE 2 5G, OPPO A96 5G(China), OPPO RENO 5F, OPPO RENO 7Z 5G, OPPO RENO 7 4G, OPPO RENO X7, OPPO RENO 5G, OPPO RENO 8Z 5G, OPPO RENO 8 Lite, OPPO RENO 8T 4G, Realme 11(China)",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 16,
+    "Research Group": "SD-F102 (Xiaomi 17)",
+    "New Models": "Xiaomi 17, Xiaomi 17 Pro",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 17,
+    "Research Group": "SD-F103 (Xiaomi POCO M7 4G)",
+    "New Models": "Xiaomi POCO M7 4G, Xiaomi POCO M7 Plus 5G(RM 15 4G, Xiaomi 5G )",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 18,
+    "Research Group": "SD-F104 (Xiaomi POCO M7 4G(RM 15 4G)",
+    "New Models": "Xiaomi POCO M7 4G(RM 15 4G",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 19,
+    "Research Group": "SD-F105 (Xiaomi POCO C85 4G)",
+    "New Models": "Xiaomi POCO C85 4G, Xiaomi POCO C85 5G(RM 15C 4G)",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 20,
+    "Research Group": "SD-F106 (Xiaomi POCO C85 4G)",
+    "New Models": "Xiaomi POCO C85 4G, Xiaomi POCO C85X(RM 15C 4G)",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 21,
+    "Research Group": "SD-F107 (Xiaomi MI 11 LITE 4G)",
+    "New Models": "Xiaomi MI 11 Lite 4G, Xiaomi MI 11 Lite 5G, Xiaomi MI 11 Lite 5G NE, Xiaomi MI 12 Lite",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 22,
+    "Research Group": "SD-F108 (Xiaomi POCO F3 GT)",
+    "New Models": "Xiaomi POCO F3 GT, Xiaomi K40 GAMING",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 23,
+    "Research Group": "SD-F109 (Xiaomi 13)",
+    "New Models": "Xiaomi 13, Xiaomi 14",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 24,
+    "Research Group": "SD-F110 (OnePlus NORD CE 3 LITE 5G)",
+    "New Models": "OPPO A1 5G, OPPO A2 5G, OPPO A3 Pro, OPPO A3 4G, OPPO A3 5G, OPPO A3X, OPPO A5 ENERGY, OPPO A5 Pro 4G, OPPO A5 Pro 5G, OPPO A5 4G, OPPO A5 5G, OPPO A5X 4G, OPPO A58 4G, OPPO A60, OPPO A79 5G, OPPO A80 5G, OPPO A98 5G, OPPO K11X 5G, OPPO K12X, OPPO K13X, OPPO F23 5G, Realme NARZO N55, Realme NARZO 60X 5G, Realme NARZO N65 5G, Realme NARZO 70X 5G, Realme NARZO 80X, Realme NARZO 80 Lite 5G, Realme C55, Realme C63 5G, Realme C65 4G, Realme C65 5G, Realme C67 4G, Realme C67 5G, Realme C71 4G, Realme C73 5G, Realme C75 4G, Realme C75 5G, Realme C75X, Realme V50S, Realme P3X, Realme P3 Lite, Realme P4X, Realme 11 5G, Realme 11X 5G, Realme 12 5G, Realme 12X 5G, Realme 12X India 5G, Realme 12 Lite, Realme 13 5G, Realme 14X, Realme V60 Pro, OnePlus NORD CE 3 Lite 5G, OnePlus NORD N30 5G, OnePlus NORD N30 SE 5G, Vivo T3X 5G, Vivo T4X, Vivo Y19S 4G, Vivo Y19S Pro, Vivo Y21D, Vivo Y28 4G, Vivo Y29 4G, Vivo Y29 5G, Vivo Y31 5G, Vivo Y31 Pro 5G, Vivo Y37 Pro, Vivo Y38 5G, Vivo Y39, Vivo Y58, Vivo Y200I 5G, Vivo Y200+, Vivo Y300I, Vivo Y300T, Vivo iQOO Z9X 5G, Vivo iQOO Z10X, Vivo T3x, Vivo Y29, Vivo Y31 Pro, Vivo Y38, Vivo Y200i, Vivo iQOO Z9x",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 25,
+    "Research Group": "SD-F111 (Xiaomi POCO X7 PRO)",
+    "New Models": "Xiaomi POCO X7 Pro",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 26,
+    "Research Group": "SD-F112 (OnePlus NORD 3)",
+    "New Models": "OPPO K11, OPPO F27 5G, OPPO RENO 12F 4G, OPPO RENO12F 5G, OPPO RENO13F 4G, OPPO RENO 13F 4G, OPPO 5G, Realme GT 5, Realme 12+ 5G, Realme 12 4G, Realme 13 4G, Realme 14, Realme 14T, Realme K12 5G, Realme K12X 5G, Realme K12 Plus, Realme P3, Realme P4, Realme NARZO 70, Realme 70 Pro 5G, Realme P1 5G, Realme Neo 7X, OnePlus NORD 3, OnePlus NORD CE 3, OnePlus NORD 4, OnePlus NORD CE 4, OnePlus ACE 2V, OnePlus ACE 3V, OnePlus NORD CE 4 Lite 5G 无孔, Vivo T3 5G, Vivo S18E, Vivo V29E, Vivo Y100 4G, Vivo Y100 (IDN), Vivo Y200 4G, Vivo Y200 ASIA, Vivo Y200 India, Vivo Y200E, Vivo Y300 5G, Vivo Y400, Vivo V30 SE, Vivo V30 Lite, Vivo V40 SE, Vivo V40 Lite 4G (IDN), Vivo V40 Lite 5G (IDN), Vivo iQOO Neo 6, Vivo iQOO Neo 6 SE, Vivo iQOO Z9 5G, OnePlus Nord CE4 Lite, Vivo T3, Vivo Y300, Vivo V40 Lite 4G(IDN), Vivo V40 Lite (IDN), Vivo iQOO Neo6 SE, Vivo iQOO Z9",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 27,
+    "Research Group": "SD-F113 (OPPO A7)",
+    "New Models": "OPPO A7, OPPO A5S, OPPO A11K, OPPO A12, Realme 3 (VIVO Y93)",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 28,
+    "Research Group": "SD-F114 (OPPO RENO 7 PRO 5G (XIAOMI 11 LITE))",
+    "New Models": "OPPO RENO 7 Pro 5G (XIAOMI 11 Lite)",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 29,
+    "Research Group": "SD-F115 (Xiaomi POCO C40)",
+    "New Models": "Xiaomi POCO C40, Xiaomi POCO C55, Xiaomi POCO C61 (RDEMI 10C)",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 30,
+    "Research Group": "SD-F116 (OnePlus 6T)",
+    "New Models": "OPPO K1, OPPO R17, OPPO RX 17 Pro, OPPO RX17 Neo, Realme X2, Realme XT, OnePlus 6T, OnePlus 7",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 31,
+    "Research Group": "SD-F117 (Vivo V9)",
+    "New Models": "OPPO F7, OPPO R15, OPPO A3 (2018), Vivo V9, Vivo X21, Vivo X21i, Vivo Y85, Vivo Y89 开槽, OnePlus 6, OPPO A3(2018), Vivo Y89",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 32,
+    "Research Group": "SD-F118 (Xiaomi POCO M6 PRO 5G)",
+    "New Models": "Xiaomi POCO M6 Pro 5G, Xiaomi POCO M6 Plus, Xiaomi POCO M6 4G (REDMI 12 4G, Xiaomi 5G)",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 33,
+    "Research Group": "SD-F119 (Realme NEO 7 5G)",
+    "New Models": "Realme Neo 7 5G, Realme Neo 7 SE, Realme GT 7 5G, Realme GT 7T 5G, OnePlus ACE 5, OnePlus ACE 5 Pro",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 34,
+    "Research Group": "SD-F120 (Realme 15T)",
+    "New Models": "Realme 15T, Realme NARZO 90 (玻璃0.25MM+厚胶)",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 35,
+    "Research Group": "SD-F122 (Realme X50 PRO 5G)",
+    "New Models": "Realme X50 Pro 5G, OPPO RENO 3 Pro 4G, Vivo V17, Vivo V17 Pro, Vivo V17 India, Vivo V19, Vivo X30, Vivo X30 Pro, Vivo S5 China, Vivo V19 Indonesia",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 36,
+    "Research Group": "SD-F123 (Realme C2)",
+    "New Models": "Realme C2, Realme C2S, OPPO A1K",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 37,
+    "Research Group": "SD-F124 (Xiaomi POCO M4 PRO 5G (REDMI NOTE 11 5G)",
+    "New Models": "Xiaomi POCO M4 Pro 5G (REDMI Note 11 5G",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 38,
+    "Research Group": "SD-F125 (Realme 13+ 5G)",
+    "New Models": "Realme 13+ 5G",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 39,
+    "Research Group": "SD-F126 (Xiaomi POCO X5 (REDMI NOTE 12 4G)",
+    "New Models": "Xiaomi POCO X5 (REDMI Note 12 4G, Xiaomi 5G)",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 40,
+    "Research Group": "SD-F127 (Realme 10 PRO)",
+    "New Models": "Realme 10 Pro",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 41,
+    "Research Group": "SD-F129 (Realme C85 PRO)",
+    "New Models": "Realme C85 Pro",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 42,
+    "Research Group": "SD-F130 (Realme GT 8)",
+    "New Models": "Realme GT 8, Realme GT 8 Pro, Realme Neo 8, Realme 16 Pro",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 43,
+    "Research Group": "SD-F131 (Realme 15 (ONE PLUS NORD CE5))",
+    "New Models": "Realme 15 (ONE Plus NORD CE5)",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 44,
+    "Research Group": "SD-F132 (Xiaomi 9)",
+    "New Models": "Xiaomi 9, Xiaomi MI 9 Lite, Xiaomi MI CC9 (OPPO F9)",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 45,
+    "Research Group": "SD-F133 (Vivo iQOO NEO7)",
+    "New Models": "Vivo iQOO NEO7, Vivo iQOO NEO7 SE, Vivo iQOO NEO7 Pro, Vivo iQOO NEO7 RACING, Vivo iQOO Neo 8, Vivo iQOO NEO8 Pro, Vivo iQOO 9, Vivo iQOO 10, Vivo iQOO Neo 10R, Vivo iQOO Neo 11, Vivo iQOO Neo 11S, Vivo iQOO Z9 TURBO, Vivo iQOO Z9 TURBO+, Vivo iQOO Z9 TURBO ENDURANCE, Vivo Y200 GT 版, Vivo IQOO 9(China), Vivo Y200 GT",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 46,
+    "Research Group": "SD-F134 (Vivo V70FE 5G)",
+    "New Models": "Vivo V70FE 5G",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 47,
+    "Research Group": "SD-F135 (Vivo iQOO 15)",
+    "New Models": "Vivo iQOO 15",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 48,
+    "Research Group": "SD-F137 (Vivo X70)",
+    "New Models": "Vivo X70",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 49,
+    "Research Group": "SD-F138 (Vivo X300 PRO)",
+    "New Models": "Vivo X300 Pro",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 50,
+    "Research Group": "SD-F139 (Vivo S1)",
+    "New Models": "Vivo S1, Vivo S1 Pro India, Vivo Z1X, Vivo V17 Neo",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 51,
+    "Research Group": "SD-F140 (Vivo X200T)",
+    "New Models": "Vivo X200T, Vivo S20, Vivo S30, Vivo X200S未做库存, Vivo Y500 Pro",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 52,
+    "Research Group": "SD-F141 (Vivo V21)",
+    "New Models": "Vivo V21, Vivo V21 5G, Vivo V21S, Vivo V25, Vivo V25E, Vivo T1 Pro, Vivo T1 (骁龙778G), Vivo iQOO Z6 Pro, Huawei HUAWEIW Enjoy 20 Pro, Honor NOVA 8 SE, Honor 30 Youth",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 53,
+    "Research Group": "SD-F142 (Vivo V23 5G 开槽)",
+    "New Models": "Vivo V23 5G 开槽",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 54,
+    "Research Group": "SD-F143 (Vivo G2)",
+    "New Models": "Vivo G2, Vivo Y01, Vivo Y02, Vivo Y02S, Vivo Y03, Vivo T2X, Vivo Y02A, Vivo Y03T, Vivo Y11 (2023), Vivo Y3S, Vivo Y11S, Vivo Y12A, Vivo Y12S, Vivo Y15S, Vivo Y16, Vivo Y17S, Vivo Y18, Vivo Y18E, Vivo Y18INDIA, Vivo Y18i, Vivo Y18T, Vivo Y 20, Vivo Y20i, Vivo Y20G, Vivo Y20A, Vivo Y20T, Vivo Y21, Vivo Y21A, Vivo Y21G, Vivo Y21S, Vivo Y21T, Vivo Y22, Vivo Y22S, Vivo Y28 5G, Vivo Y28S 5G, Vivo Y30 China, Vivo Y31, Vivo Y31 2021, Vivo Y31S 5G, Vivo Y32, Vivo Y33S, Vivo Y33E, Vivo Y33T, Vivo Y354G, Vivo 5G, Vivo Y36i, Vivo Y37, Vivo Y51 2020 DECEMBER, Vivo Y51A, Vivo Y52 5G, Vivo Y52S, Vivo Y52T 5G, Vivo Y52S T1, Vivo Y53S 4G, Vivo Y55S 5G, Vivo Y55 5G, Vivo Y56, Vivo Y72 5G, Vivo Y73T 5G, Vivo Y75 5G, Vivo Y75S 5G, Vivo Y76 5G, Vivo Y77 5G, Vivo T1X, Vivo T1X 4G, Vivo T3 Lite, Vivo iQOO Z5X, Vivo iQOO Z6, Vivo iQOO Z6 Lite 5G, Vivo iQOO Z3, Vivo iQOO U5, Vivo iQOO Z7i, Vivo iQOO Z9 Lite, Vivo T2x (India), Vivo Y11, Vivo Y18 (India), Vivo Y20, Vivo Y37m, Vivo Y28e, Vivo Y28s, Vivo Y31s, Vivo Y35, Vivo Y35 5G, Vivo Y52t, Vivo Y73t, Vivo Y75s, Vivo Y77, Vivo iQOO Z6 Lite, Vivo Z7i",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 55,
+    "Research Group": "SD-F144 (Realme GT 2)",
+    "New Models": "Realme GT 2, Realme GT Neo 2, Realme GT Neo 3T, Realme Q5 Pro (ONE Plus 9RT 5G)",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 56,
+    "Research Group": "SD-F145 (Vivo Y3)",
+    "New Models": "Vivo Y3, Vivo Y11 2019, Vivo Y12, Vivo Y15 2019, Vivo Y17, Vivo U10",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 57,
+    "Research Group": "SD-F146 (Vivo S50)",
+    "New Models": "Vivo S50, Vivo V70, Vivo 70 E Lite, Vivo IQ00 15R, Vivo Z11 TURB0 (XM POCO F8 Pro)",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 58,
+    "Research Group": "SD-F147 (OnePlus 13R 5G)",
+    "New Models": "OnePlus 13R 5G",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 59,
+    "Research Group": "SD-F148 (Vivo Y31D)",
+    "New Models": "Vivo Y31D, Vivo Y500i, Vivo Y51 Pro (REALME 15X India)",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 60,
+    "Research Group": "SD-F149 (OnePlus 13T)",
+    "New Models": "OnePlus 13T, OnePlus 13S",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 61,
+    "Research Group": "SD-F150 (Vivo iQOO NEO11)",
+    "New Models": "Vivo iQOO NEO11, Honor WIN, Honor WIN RT",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 62,
+    "Research Group": "SD-F151 (Nothing CMF PHONE 1)",
+    "New Models": "Vivo V60 Lite 4G, Vivo V60 Lite 5G, Vivo V50 Lite 5G, Nothing CMF PHONE 1",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 63,
+    "Research Group": "SD-F152 (OnePlus 9)",
+    "New Models": "OnePlus 9, OnePlus 8T, OnePlus 9R",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 64,
+    "Research Group": "SD-F154 (OnePlus NORD CE 5)",
+    "New Models": "OnePlus NORD CE 5, OnePlus ACE5 RACING",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 65,
+    "Research Group": "SD-F155 (OnePlus NORD CE 2 LITE 5G)",
+    "New Models": "OnePlus NORD CE 2 Lite 5G, OnePlus NORD 2 Lite, OnePlus N100, OnePlus ACE RACING",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 66,
+    "Research Group": "SD-F156 (OnePlus NORD)",
+    "New Models": "OnePlus NORD",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 67,
+    "Research Group": "SD-F157 (OnePlus TURBO 6)",
+    "New Models": "OnePlus TURBO 6, OnePlus TURBO 6V, OnePlus NORD 6, Infinix Note 60, Infinix INFI Note 60 Pro, Motorola G67 5G, Motorola G77 5G, Tecno CAMON 50 4G",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 68,
+    "Research Group": "SD-F158 (Nothing PHONE 1)",
+    "New Models": "Nothing PHONE 1",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 69,
+    "Research Group": "SD-F159 (Vivo Ultrasonic poreless unlock VIVO iQOO 13 5G)",
+    "New Models": "Vivo Ultrasonic poreless unlock VIVO iQOO 13 5G",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 70,
+    "Research Group": "SD-F160 (Nothing PHONE 2)",
+    "New Models": "Nothing PHONE 2",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 71,
+    "Research Group": "SD-F161 (HONOR X8B)",
+    "New Models": "Honor X8B, Honor X8C, Honor X50i+, Honor X60i, Honor X70iHONOR 200 Lite, Honor 400 Lite, Honor X70i, Honor 200 Lite",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 72,
+    "Research Group": "SD-F162 (Nothing PHONE 3)",
+    "New Models": "Nothing PHONE 3",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 73,
+    "Research Group": "SD-F163 (HONOR 400)",
+    "New Models": "Honor 400",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 74,
+    "Research Group": "SD-F164 (Nothing PHONE 2A)",
+    "New Models": "Nothing PHONE 2A, Nothing PHONE 2A Plus",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 75,
+    "Research Group": "SD-F165 (HONOR X6C)",
+    "New Models": "Honor X6C",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 76,
+    "Research Group": "SD-F166 (Nothing PHONE 3A)",
+    "New Models": "Nothing PHONE 3A, Nothing 3A Pro",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 77,
+    "Research Group": "SD-F167 (HONOR X7C)",
+    "New Models": "Honor X7C, Honor X7D 4G, Honor X7B",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 78,
+    "Research Group": "SD-F168 (HONOR X70 5G)",
+    "New Models": "Honor X70 5G, Honor X9D 5G, Honor Power 2, Honor Magic 8 Lite, Honor X70 REFRESH 5G",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 79,
+    "Research Group": "SD-F169 (Nothing CMF PHONE 2)",
+    "New Models": "Nothing CMF PHONE 2, Nothing 2 Pro, Nothing PHONE 3A Lite",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 80,
+    "Research Group": "SD-F170 (HUAWEI HONOR X60)",
+    "New Models": "Huawei HONOR X60, Honor X9C Smart 未做库存, Tecno Spark 30 4G",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 81,
+    "Research Group": "SD-F171 (Nothing PHONE 4A PRO)",
+    "New Models": "Nothing PHONE 4A Pro",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 82,
+    "Research Group": "SD-F172 (HONOR MAGIC 8 PRO AIR (1+13T))",
+    "New Models": "Honor Magic 8 Pro AIR (1+13T)",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 83,
+    "Research Group": "SD-F173 (Nothing PHONE 4A)",
+    "New Models": "Nothing PHONE 4A",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 84,
+    "Research Group": "SD-F174 (Google PIXEL 10A)",
+    "New Models": "Google Pixel 10A, Google Pixel 9A",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 85,
+    "Research Group": "SD-F175 (Google PIXEL 9)",
+    "New Models": "Google Pixel 9, Google Pixel 9 Pro",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 86,
+    "Research Group": "SD-F176 (Google PIXEL 9 PRO XL)",
+    "New Models": "Google Pixel 9 Pro XL",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 87,
+    "Research Group": "SD-F177 (Google PIXEL 4A 4G)",
+    "New Models": "Google Pixel 4A 4G",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 88,
+    "Research Group": "SD-F178 (Google PIXEL 4A 5G)",
+    "New Models": "Google Pixel 4A 5G",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 89,
+    "Research Group": "SD-F179 (Google PIXEL 6A)",
+    "New Models": "Google Pixel 6A",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 90,
+    "Research Group": "SD-F180 (Google PIXEL 7A)",
+    "New Models": "Google Pixel 7A",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 91,
+    "Research Group": "SD-F181 (Google PIXEL 8A)",
+    "New Models": "Google Pixel 8A",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 92,
+    "Research Group": "SD-F182 (Google PIXEL 6)",
+    "New Models": "Google Pixel 6",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 93,
+    "Research Group": "SD-F183 (Google PIXEL 7)",
+    "New Models": "Google Pixel 7",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 94,
+    "Research Group": "SD-F184 (Google PIXEL 8)",
+    "New Models": "Google Pixel 8",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 95,
+    "Research Group": "SD-F185 (Google PIXEL 8 PRO)",
+    "New Models": "Google Pixel 8 Pro",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 96,
+    "Research Group": "SD-F186 (Google Ultrasonic poreless unlock GG PIXEL 10)",
+    "New Models": "Google Ultrasonic poreless unlock GG Pixel 10, Google 10 Pro",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 97,
+    "Research Group": "SD-F187 (Motorola G60)",
+    "New Models": "Infinix Hot 10, Infinix Hot 11S, Infinix Hot 20S, Infinix Hot 30, Infinix Hot 30 5G, Infinix Hot 40, Infinix Hot 40 Pro, Infinix Note 30 4G, Infinix Note 30 5G, Infinix Note 40X 5G, Infinix ZERO 5G, Infinix ZERO 5G 2023, Motorola G60, Motorola G60S, Motorola G51 5G, Motorola G40 FUSION, Tecno Spark 6, Tecno Spark 10 Pro, Tecno Spark 20 Pro, Tecno POVA 4, Tecno POVA 4G, Tecno POVA 5 4G, Tecno POVA 5 Pro, Tecno CAMON 18, Tecno 18T, Tecno 18P, Tecno CAMON 19 Neo",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 98,
+    "Research Group": "SD-F188 (Google PIXEL 10 PRO XL)",
+    "New Models": "Google Pixel 10 Pro XL",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 99,
+    "Research Group": "SD-F189 (Motorola G05)",
+    "New Models": "Motorola G05, Motorola G15, Motorola G15 Power, Motorola E15, Motorola G35 (1+NORD CE 3 Lite)",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 100,
+    "Research Group": "SD-F190 (Tecno SPARK GO1)",
+    "New Models": "Infinix Hot 50 5G, Infinix Hot 50i 4G, Infinix Smart 9, Infinix 9 HD, Tecno Spark GO1, Tecno Spark GO 1S, Tecno Spark 30 5G, Tecno SPARK30C 4G, Tecno POVA 6",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 101,
+    "Research Group": "SD-F191 (Infinix NOTE 40 4G)",
+    "New Models": "Infinix Note 40 4G, Infinix 5G, Infinix Note 50 4G, Infinix Note 50 Pro 4G, Infinix Note 50 Pro+ 5G, Infinix GT 20 Pro, Tecno POVA 6, Tecno POVA 6 Pro, Tecno CAMON 30 4G, Tecno CAMON 30 Pro 5G",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 102,
+    "Research Group": "SD-F192 (Motorola G57 POWER)",
+    "New Models": "Motorola G57 Power, Motorola G67 Power, Motorola G75, Motorola G100, Motorola G (2025), Motorola G Power (2025)",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 103,
+    "Research Group": "SD-F193 (Motorola G52 4G)",
+    "New Models": "Motorola G52 4G, Motorola G82 5G, Motorola G71S 5G, Motorola G72 4G, Motorola EDGE 30 5G",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 104,
+    "Research Group": "SD-F194 (Motorola G31)",
+    "New Models": "Motorola G31, Motorola G41, Motorola G42, Motorola G71 5G",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 105,
+    "Research Group": "SD-F195 (Motorola G13)",
+    "New Models": "Motorola G13, Motorola G14, Motorola G23, Motorola G32, Motorola G34 5G, Motorola G45, Motorola G53 5G, Motorola G54 5G, Motorola G55, Motorola G62 5G, Motorola G62, Motorola G64 5G, Motorola G73 5G",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 106,
+    "Research Group": "SD-F196 (Motorola G04)",
+    "New Models": "Motorola G04, Motorola G04S, Motorola G22, Motorola G24, Motorola G24 Power, Motorola E32, Motorola E32S",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 107,
+    "Research Group": "SD-F197 (Motorola G84 5G)",
+    "New Models": "Motorola G84 5G",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 108,
+    "Research Group": "SD-F198 (Motorola S50)",
+    "New Models": "Motorola S50, Motorola EDGE 50 Neo",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 109,
+    "Research Group": "SD-F199 (Tecno NEO 5G)",
+    "New Models": "Tecno Neo 5G, Tecno Pop 9 4G",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 110,
+    "Research Group": "SD-F200 (Motorola G75)",
+    "New Models": "Motorola G75, Motorola G 2025, Motorola G Power 2025",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 111,
+    "Research Group": "SD-F201 (Motorola G STYLUS 5G 2025)",
+    "New Models": "Motorola G STYLUS 5G 2025, Motorola EDGE 60 STYLUS",
+    "Evidence": "Our independent extraction + explicit cross-brand references from Mietubl 2026 PDF"
+  },
+  {
+    "idx": 112,
+    "Research Group": "SD-F202 (Honor 600 PRO)",
+    "New Models": "Honor 600 Pro",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 113,
+    "Research Group": "SD-F203 (Honor 500)",
+    "New Models": "Honor 500, Honor 500 Pro(China)",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 114,
+    "Research Group": "SD-F204 (Honor X8D)",
+    "New Models": "Honor X8D",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 115,
+    "Research Group": "SD-F206 (Huawei PURA 90 PRO MAX)",
+    "New Models": "Huawei PURA 90 Pro Max",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 116,
+    "Research Group": "SD-F207 (Infinix HOT 70)",
+    "New Models": "Infinix Hot 70, Infinix Smart 20",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 117,
+    "Research Group": "SD-F214 (Motorola Moto G06)",
+    "New Models": "Motorola Moto G06, Motorola Moto G06 Power",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 118,
+    "Research Group": "SD-F215 (Motorola Moto E13)",
+    "New Models": "Motorola Moto E13, Motorola Moto E22",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 119,
+    "Research Group": "SD-F216 (Motorola Moto G05)",
+    "New Models": "Motorola Moto G05, Motorola Moto G15, Motorola Moto G15 Power, Motorola Moto E15, Motorola Moto G35",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 120,
+    "Research Group": "SD-F217 (OnePlus Nord N30)",
+    "New Models": "OnePlus Nord N30, OnePlus Nord N30 SE",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 121,
+    "Research Group": "SD-F219 (OPPO A6C 4G(GLOBAL))",
+    "New Models": "OPPO A6C 4G(Global)",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 122,
+    "Research Group": "SD-F221 (Realme NARZO 90)",
+    "New Models": "Realme NARZO 90",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 123,
+    "Research Group": "SD-F222 (Redmi 15 5G (Global))",
+    "New Models": "Redmi 15 5G (Global)",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 124,
+    "Research Group": "SD-F223 (Redmi 15C 4G(EU))",
+    "New Models": "Redmi 15C 4G(EU)",
+    "Evidence": "REDMI 15C 4G(EU)"
+  },
+  {
+    "idx": 125,
+    "Research Group": "SD-F224 (Redmi 15 5G(EU))",
+    "New Models": "Redmi 15 5G(EU)",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 126,
+    "Research Group": "SD-F225 (Redmi A5 4G (EU))",
+    "New Models": "Redmi A5 4G (EU)",
+    "Evidence": "REDMI A5 4G (EU)"
+  },
+  {
+    "idx": 127,
+    "Research Group": "SD-F226 (Samsung Ｚ FOLD 8 WIDE)",
+    "New Models": "Samsung Ｚ FOLD 8 WIDE",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 128,
+    "Research Group": "SD-F228 (Samsung S21 PLUS No Hole Unlock)",
+    "New Models": "Samsung S21 Plus No Hole Unlock",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 129,
+    "Research Group": "SD-F229 (Samsung S23 No Hole Unlock)",
+    "New Models": "Samsung S23 No Hole Unlock",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 130,
+    "Research Group": "SD-F230 (Samsung S23 PLUS No Hole Unlock)",
+    "New Models": "Samsung S23 Plus No Hole Unlock",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 131,
+    "Research Group": "SD-F231 (Samsung S25 No Hole Unlock)",
+    "New Models": "Samsung S25 No Hole Unlock",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 132,
+    "Research Group": "SD-F232 (Samsung S25 PLUS No Hole Unlock)",
+    "New Models": "Samsung S25 Plus No Hole Unlock",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 133,
+    "Research Group": "SD-F233 (Samsung S24 ULTRA No Hole Unlock)",
+    "New Models": "Samsung S24 Ultra No Hole Unlock",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 134,
+    "Research Group": "SD-F234 (Samsung S25 ULTRA No Hole Unlock)",
+    "New Models": "Samsung S25 Ultra No Hole Unlock",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 135,
+    "Research Group": "SD-F235 (Samsung S25 EDGE 5G No Hole Unlock)",
+    "New Models": "Samsung S25 EDGE 5G No Hole Unlock",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 136,
+    "Research Group": "SD-F236 (Samsung S26 No Hole Unlock)",
+    "New Models": "Samsung S26 No Hole Unlock",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 137,
+    "Research Group": "SD-F237 (Samsung S26 PLUS No Hole Unlock)",
+    "New Models": "Samsung S26 Plus No Hole Unlock",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 138,
+    "Research Group": "SD-F238 (Samsung S26 ULTRA No Hole Unlock)",
+    "New Models": "Samsung S26 Ultra No Hole Unlock",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 139,
+    "Research Group": "SD-F239 (Tecno Spark 20)",
+    "New Models": "Tecno Spark 20, Tecno Spark 20c, Tecno Spark Go 2024, Tecno Pop 8",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 140,
+    "Research Group": "SD-F240 (VIVO 15 ULTRA)",
+    "New Models": "Vivo 15 Ultra",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 141,
+    "Research Group": "SD-F241 (VIVO T5 Pro)",
+    "New Models": "Vivo T5 Pro, Vivo Y600 Pro, Vivo iQOO Z11, Vivo iQOO Z11 5G, Vivo Y600 Turbo",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 142,
+    "Research Group": "SD-F242 (VIVO X300S)",
+    "New Models": "Vivo X300S",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 143,
+    "Research Group": "SD-F243 (VIVO S7 5G)",
+    "New Models": "Vivo S7 5G, Vivo S9",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 144,
+    "Research Group": "SD-F244 (VIVO iQOO 13)",
+    "New Models": "Vivo iQOO 13",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 145,
+    "Research Group": "SD-F245 (VIVO X300 ULTRA)",
+    "New Models": "Vivo X300 Ultra, Vivo IQOO 15T",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 146,
+    "Research Group": "SD-F246 (VIVO IQOO NEO11(CHINA))",
+    "New Models": "Vivo IQOO NEO11(China)",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 147,
+    "Research Group": "SD-F247 (Xiaomi POC C40)",
+    "New Models": "Xiaomi POC C40, Xiaomi POC C55, Xiaomi POC C61",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 148,
+    "Research Group": "SD-F248 (Xiaomi Mi 9 Pro)",
+    "New Models": "Xiaomi Mi 9 Pro",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 149,
+    "Research Group": "SD-F249 (Xiaomi POC M7 4G (Global))",
+    "New Models": "Xiaomi POC M7 4G (Global), Xiaomi POC M7 Plus 5G",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 150,
+    "Research Group": "SD-F250 (Xiaomi POC C85 4G(GLOBAL))",
+    "New Models": "Xiaomi POC C85 4G(Global), Xiaomi POCO C85X, Xiaomi POC C81, Xiaomi C81 Pro",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 151,
+    "Research Group": "SD-F251 (Xiaomi POC C85 4G(EU))",
+    "New Models": "Xiaomi POC C85 4G(EU), Xiaomi POC C85 5G",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 152,
+    "Research Group": "SD-F252 (Xiaomi POC M7 4G(EU))",
+    "New Models": "Xiaomi POC M7 4G(EU)",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 153,
+    "Research Group": "SD-F253 (Xiaomi POC M2)",
+    "New Models": "Xiaomi POC M2",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 154,
+    "Research Group": "SD-F254 (Xiaomi POC M4 PRO 5G)",
+    "New Models": "Xiaomi POC M4 Pro 5G",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 155,
+    "Research Group": "SD-F255 (Xiaomi XIAOMI POC X4 GT)",
+    "New Models": "Xiaomi XIAOMI POC X4 GT",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 156,
+    "Research Group": "SD-F256 (Xiaomi POC X5)",
+    "New Models": "Xiaomi POC X5",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 157,
+    "Research Group": "SD-F257 (Xiaomi POC X6 5G)",
+    "New Models": "Xiaomi POC X6 5G, Xiaomi POC X6 Pro 5G, Xiaomi POC F6 5G",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 158,
+    "Research Group": "SD-F258 (Xiaomi POC M3)",
+    "New Models": "Xiaomi POC M3",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 159,
+    "Research Group": "SD-F259 (Xiaomi POC F8 ULTRA)",
+    "New Models": "Xiaomi POC F8 Ultra",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 160,
+    "Research Group": "SD-F260 (Xiaomi 17T PRO)",
+    "New Models": "Xiaomi 17T Pro",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 161,
+    "Research Group": "SD-F261 (Xiaomi POC M6 PRO 4G)",
+    "New Models": "Xiaomi POC M6 Pro 4G, Xiaomi POC X6 Neo",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 162,
+    "Research Group": "SD-F262 (Xiaomi POC F8 PRO)",
+    "New Models": "Xiaomi POC F8 Pro, Xiaomi POC X8 Pro, Xiaomi 17T",
+    "Evidence": "Mietubl live Super-D model list"
+  },
+  {
+    "idx": 163,
+    "Research Group": "SD-F263 (Xiaomi POC X5 PRO)",
+    "New Models": "Xiaomi POC X5 Pro",
+    "Evidence": "Mietubl live Super-D model list"
+  }
+]

@@ -1,0 +1,1169 @@
+{
+  "suspicious_models": [
+    {
+      "gid": "SD-F004",
+      "bnum": "BOX 004",
+      "model": "Samsung 5G",
+      "category": "Broad Brand/Network String",
+      "reason": "Broad generic model entry representing 5G model family within group.",
+      "action": "KEEP AS-IS & FLAG FOR MANUAL REVIEW"
+    },
+    {
+      "gid": "SD-F004",
+      "bnum": "BOX 004",
+      "model": "Tecno 5G",
+      "category": "Broad Brand/Network String",
+      "reason": "Broad generic model entry representing 5G model family within group.",
+      "action": "KEEP AS-IS & FLAG FOR MANUAL REVIEW"
+    },
+    {
+      "gid": "SD-F037",
+      "bnum": "BOX 037",
+      "model": "iPhone 17 6.3 380胶",
+      "category": "Factory Annotation Text Attached",
+      "reason": "Contains supplier factory specification note (e.g., 380胶 glue specification).",
+      "action": "KEEP AS-IS & FLAG FOR MANUAL REVIEW"
+    },
+    {
+      "gid": "SD-F039",
+      "bnum": "BOX 039",
+      "model": "iPhone 16 PRO MAX 6.9 380胶",
+      "category": "Factory Annotation Text Attached",
+      "reason": "Contains supplier factory specification note (e.g., 380胶 glue specification).",
+      "action": "KEEP AS-IS & FLAG FOR MANUAL REVIEW"
+    },
+    {
+      "gid": "SD-F041",
+      "bnum": "BOX 041",
+      "model": "iPhone 17 AIR 6.6380胶",
+      "category": "Factory Annotation Text Attached",
+      "reason": "Contains supplier factory specification note (e.g., 380胶 glue specification).",
+      "action": "KEEP AS-IS & FLAG FOR MANUAL REVIEW"
+    },
+    {
+      "gid": "SD-F043",
+      "bnum": "BOX 043",
+      "model": "iPhone 17 PRO 6.3 380胶",
+      "category": "Factory Annotation Text Attached",
+      "reason": "Contains supplier factory specification note (e.g., 380胶 glue specification).",
+      "action": "KEEP AS-IS & FLAG FOR MANUAL REVIEW"
+    },
+    {
+      "gid": "SD-F045",
+      "bnum": "BOX 045",
+      "model": "iPhone 17 PRO MAX 6.9 380胶",
+      "category": "Factory Annotation Text Attached",
+      "reason": "Contains supplier factory specification note (e.g., 380胶 glue specification).",
+      "action": "KEEP AS-IS & FLAG FOR MANUAL REVIEW"
+    },
+    {
+      "gid": "SD-F120",
+      "bnum": "BOX 120",
+      "model": "Realme NARZO 90 (玻璃0.25MM+厚胶)",
+      "category": "Factory Annotation Text Attached",
+      "reason": "Contains supplier factory specification note (e.g., 380胶 glue specification).",
+      "action": "KEEP AS-IS & FLAG FOR MANUAL REVIEW"
+    },
+    {
+      "gid": "SD-F190",
+      "bnum": "BOX 190",
+      "model": "Tecno 5G",
+      "category": "Broad Brand/Network String",
+      "reason": "Broad generic model entry representing 5G model family within group.",
+      "action": "KEEP AS-IS & FLAG FOR MANUAL REVIEW"
+    },
+    {
+      "gid": "SD-F191",
+      "bnum": "BOX 191",
+      "model": "Tecno 5G",
+      "category": "Broad Brand/Network String",
+      "reason": "Broad generic model entry representing 5G model family within group.",
+      "action": "KEEP AS-IS & FLAG FOR MANUAL REVIEW"
+    },
+    {
+      "gid": "SD-F199",
+      "bnum": "BOX 199",
+      "model": "Tecno 5G",
+      "category": "Broad Brand/Network String",
+      "reason": "Broad generic model entry representing 5G model family within group.",
+      "action": "KEEP AS-IS & FLAG FOR MANUAL REVIEW"
+    }
+  ],
+  "same_group_variations": [
+    {
+      "gid": "SD-F004",
+      "bnum": "BOX 004",
+      "models": [
+        "Samsung A02",
+        "Samsung A02 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F004",
+      "bnum": "BOX 004",
+      "models": [
+        "Tecno SPARK10 4G",
+        "Tecno Spark 10"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F008",
+      "bnum": "BOX 008",
+      "models": [
+        "Samsung A14 4G",
+        "Samsung A14 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F010",
+      "bnum": "BOX 010",
+      "models": [
+        "Samsung A15 4G",
+        "Samsung A15 5G",
+        "Samsung A15"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F010",
+      "bnum": "BOX 010",
+      "models": [
+        "Samsung A25 5G",
+        "Samsung A25"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F010",
+      "bnum": "BOX 010",
+      "models": [
+        "Samsung F34 5G",
+        "Samsung F34"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F012",
+      "bnum": "BOX 012",
+      "models": [
+        "Samsung A16 4G",
+        "Samsung A16 5G",
+        "Samsung A16"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F012",
+      "bnum": "BOX 012",
+      "models": [
+        "Samsung A17 5G",
+        "Samsung A17"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F012",
+      "bnum": "BOX 012",
+      "models": [
+        "Samsung M17 5G",
+        "Samsung M17"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F024",
+      "bnum": "BOX 024",
+      "models": [
+        "Samsung A51",
+        "Samsung A51 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F024",
+      "bnum": "BOX 024",
+      "models": [
+        "Samsung S20FE",
+        "Samsung S20FE 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F024",
+      "bnum": "BOX 024",
+      "models": [
+        "OPPO RENO 4",
+        "OPPO RENO4 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F028",
+      "bnum": "BOX 028",
+      "models": [
+        "Infinix NOTE 12 (2023)",
+        "Infinix NOTE 12(2023)"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F030",
+      "bnum": "BOX 030",
+      "models": [
+        "Samsung A71",
+        "Samsung A71 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F030",
+      "bnum": "BOX 030",
+      "models": [
+        "Redmi NOTE 12 PRO 4G",
+        "Redmi NOTE 12 PRO 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F047",
+      "bnum": "BOX 047",
+      "models": [
+        "Redmi 15 4G",
+        "Redmi 15 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F049",
+      "bnum": "BOX 049",
+      "models": [
+        "Redmi 15 4G",
+        "Redmi 15 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F050",
+      "bnum": "BOX 050",
+      "models": [
+        "Samsung A06 4G",
+        "Samsung A06 5G",
+        "Samsung A06"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F050",
+      "bnum": "BOX 050",
+      "models": [
+        "Samsung A07 5G",
+        "Samsung A07"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F050",
+      "bnum": "BOX 050",
+      "models": [
+        "Samsung M07 4G",
+        "Samsung M07"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F050",
+      "bnum": "BOX 050",
+      "models": [
+        "Samsung F07 4G",
+        "Samsung F07"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F050",
+      "bnum": "BOX 050",
+      "models": [
+        "Redmi 13C 4G",
+        "Redmi 13C 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F051",
+      "bnum": "BOX 051",
+      "models": [
+        "Redmi 15C 4G",
+        "Redmi 15C 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F052",
+      "bnum": "BOX 052",
+      "models": [
+        "Redmi K30",
+        "Redmi K30 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F052",
+      "bnum": "BOX 052",
+      "models": [
+        "Vivo Y36 4G",
+        "Vivo Y36 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F058",
+      "bnum": "BOX 058",
+      "models": [
+        "OPPO A53 4G",
+        "OPPO A53 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F058",
+      "bnum": "BOX 058",
+      "models": [
+        "OPPO A54 4G",
+        "OPPO A54 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F058",
+      "bnum": "BOX 058",
+      "models": [
+        "OPPO A72 5G",
+        "OPPO A72 4G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F058",
+      "bnum": "BOX 058",
+      "models": [
+        "Xiaomi POCO M3 PRO 4G",
+        "Xiaomi POCO M3 PRO 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F058",
+      "bnum": "BOX 058",
+      "models": [
+        "Realme 7 5G",
+        "Realme 7"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F058",
+      "bnum": "BOX 058",
+      "models": [
+        "Realme 7 (ASIA)",
+        "Realme 7(ASIA)"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F058",
+      "bnum": "BOX 058",
+      "models": [
+        "Realme NARZO 30 4G",
+        "Realme NARZO 30 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F058",
+      "bnum": "BOX 058",
+      "models": [
+        "Realme 9i 4G",
+        "Realme 9i"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F058",
+      "bnum": "BOX 058",
+      "models": [
+        "Realme X3 SUPER ZOOM",
+        "Realme X3 SuperZoom"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F058",
+      "bnum": "BOX 058",
+      "models": [
+        "Realme NARZO 50 4G",
+        "Realme Narzo 50"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F062",
+      "bnum": "BOX 062",
+      "models": [
+        "Redmi 12 4G",
+        "Redmi 12 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F062",
+      "bnum": "BOX 062",
+      "models": [
+        "Redmi 13 4G",
+        "Redmi 13 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F062",
+      "bnum": "BOX 062",
+      "models": [
+        "Redmi NOTE 12R",
+        "Redmi Note12 R"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F065",
+      "bnum": "BOX 065",
+      "models": [
+        "Redmi 14C 4G",
+        "Redmi 14C 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F077",
+      "bnum": "BOX 077",
+      "models": [
+        "Redmi NOTE 11 PRO+",
+        "Redmi Note 11 Pro+ 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F077",
+      "bnum": "BOX 077",
+      "models": [
+        "Redmi NOTE 14 4G",
+        "Redmi NOTE 14 5G",
+        "Redmi NOTE 14"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F077",
+      "bnum": "BOX 077",
+      "models": [
+        "Redmi NOTE 14 SE",
+        "Redmi Note 14 SE 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F082",
+      "bnum": "BOX 082",
+      "models": [
+        "Vivo V21E",
+        "Vivo V21E 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F083",
+      "bnum": "BOX 083",
+      "models": [
+        "Redmi NOTE 12 4G",
+        "Redmi NOTE 12 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F090",
+      "bnum": "BOX 090",
+      "models": [
+        "Redmi 11 PRIME 4G",
+        "Redmi 11 PRIME 5G",
+        "Redmi 11 Prime"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F090",
+      "bnum": "BOX 090",
+      "models": [
+        "Redmi 10 5G",
+        "Realme 10 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F090",
+      "bnum": "BOX 090",
+      "models": [
+        "Redmi 10 PRIME+5G",
+        "Redmi 10 Prime+ 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F090",
+      "bnum": "BOX 090",
+      "models": [
+        "Redmi NOTE 11R 5G",
+        "Redmi Note 11R"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F090",
+      "bnum": "BOX 090",
+      "models": [
+        "OPPO A57 4G",
+        "OPPO A57 5G",
+        "OPPO A57"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F090",
+      "bnum": "BOX 090",
+      "models": [
+        "OPPO A58X 5G",
+        "OPPO A58x"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F090",
+      "bnum": "BOX 090",
+      "models": [
+        "OPPO A59 5G",
+        "OPPO A59"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F090",
+      "bnum": "BOX 090",
+      "models": [
+        "OPPO A77 4G",
+        "OPPO A77 5G",
+        "OPPO A77"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F090",
+      "bnum": "BOX 090",
+      "models": [
+        "OPPO A78 5G",
+        "OPPO A78"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F090",
+      "bnum": "BOX 090",
+      "models": [
+        "Realme 10S 5G",
+        "Realme 10s"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F090",
+      "bnum": "BOX 090",
+      "models": [
+        "Realme V23I 5G",
+        "Realme V23i"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F090",
+      "bnum": "BOX 090",
+      "models": [
+        "Realme V30 5G",
+        "Realme V30"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F090",
+      "bnum": "BOX 090",
+      "models": [
+        "OnePlus NORD N20 SE",
+        "Realme Nord N20 SE"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F090",
+      "bnum": "BOX 090",
+      "models": [
+        "Honor X8A 5G",
+        "Honor X8a"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F090",
+      "bnum": "BOX 090",
+      "models": [
+        "Honor PLAY 6C",
+        "Honor Play6C"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F091",
+      "bnum": "BOX 091",
+      "models": [
+        "OPPO A6 PRO 4G",
+        "OPPO A6 PRO 5G",
+        "OPPO A6 PRO"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F097",
+      "bnum": "BOX 097",
+      "models": [
+        "OPPO A6 4G",
+        "OPPO A6 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F097",
+      "bnum": "BOX 097",
+      "models": [
+        "OPPO A6X 4G",
+        "OPPO A6X 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F097",
+      "bnum": "BOX 097",
+      "models": [
+        "OPPO A6S 4G",
+        "OPPO A6S 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F097",
+      "bnum": "BOX 097",
+      "models": [
+        "OPPO A6T 4G",
+        "OPPO A6T 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F099",
+      "bnum": "BOX 099",
+      "models": [
+        "OPPO RENO 5 4G",
+        "OPPO RENO5 5G",
+        "OPPO RENO5 4G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F099",
+      "bnum": "BOX 099",
+      "models": [
+        "OPPO RENO 5K",
+        "OPPO RENO5 K"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F099",
+      "bnum": "BOX 099",
+      "models": [
+        "OPPO RENO6 4G",
+        "OPPO RENO6 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F101",
+      "bnum": "BOX 101",
+      "models": [
+        "OPPO F21 PRO",
+        "OPPO F21 PRO 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F101",
+      "bnum": "BOX 101",
+      "models": [
+        "OPPO F21S PRO 4G",
+        "OPPO F21S PRO 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F101",
+      "bnum": "BOX 101",
+      "models": [
+        "OPPO A94 4G",
+        "OPPO A94 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F101",
+      "bnum": "BOX 101",
+      "models": [
+        "OPPO A95 4G",
+        "OPPO A95 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F101",
+      "bnum": "BOX 101",
+      "models": [
+        "OPPO RENO5F",
+        "OPPO RENO 5F"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F101",
+      "bnum": "BOX 101",
+      "models": [
+        "OPPO RENO7Z 5G",
+        "OPPO RENO 7Z 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F101",
+      "bnum": "BOX 101",
+      "models": [
+        "OPPO RENO7 4G",
+        "OPPO RENO 7 4G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F101",
+      "bnum": "BOX 101",
+      "models": [
+        "OPPO RENOX7",
+        "OPPO RENO X7"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F101",
+      "bnum": "BOX 101",
+      "models": [
+        "OPPO RENO5G",
+        "OPPO RENO 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F101",
+      "bnum": "BOX 101",
+      "models": [
+        "OPPO RENO8Z 5G",
+        "OPPO RENO 8Z 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F101",
+      "bnum": "BOX 101",
+      "models": [
+        "OPPO RENO8 LITE",
+        "OPPO RENO 8 LITE"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F101",
+      "bnum": "BOX 101",
+      "models": [
+        "OPPO RENO8T 4G",
+        "OPPO RENO 8T 4G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F101",
+      "bnum": "BOX 101",
+      "models": [
+        "Realme 11",
+        "Realme 11 4G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F107",
+      "bnum": "BOX 107",
+      "models": [
+        "Xiaomi MI 11 LITE 4G",
+        "Xiaomi MI 11 LITE 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F110",
+      "bnum": "BOX 110",
+      "models": [
+        "OPPO A3 4G",
+        "OPPO A3 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F110",
+      "bnum": "BOX 110",
+      "models": [
+        "OPPO A5 PRO 4G",
+        "OPPO A5 PRO 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F110",
+      "bnum": "BOX 110",
+      "models": [
+        "OPPO A5 4G",
+        "OPPO A5 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F110",
+      "bnum": "BOX 110",
+      "models": [
+        "Realme C65 4G",
+        "Realme C65 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F110",
+      "bnum": "BOX 110",
+      "models": [
+        "Realme C67 4G",
+        "Realme C67 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F110",
+      "bnum": "BOX 110",
+      "models": [
+        "Realme C75 4G",
+        "Realme C75 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F110",
+      "bnum": "BOX 110",
+      "models": [
+        "Vivo T3X 5G",
+        "VIVO T3x"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F110",
+      "bnum": "BOX 110",
+      "models": [
+        "Vivo Y29 4G",
+        "Vivo Y29 5G",
+        "VIVO Y29"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F110",
+      "bnum": "BOX 110",
+      "models": [
+        "Vivo Y31 PRO 5G",
+        "VIVO Y31 Pro"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F110",
+      "bnum": "BOX 110",
+      "models": [
+        "Vivo Y38 5G",
+        "VIVO Y38"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F110",
+      "bnum": "BOX 110",
+      "models": [
+        "Vivo Y200I 5G",
+        "VIVO Y200i"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F110",
+      "bnum": "BOX 110",
+      "models": [
+        "Vivo iQOO Z9X 5G",
+        "VIVO iQOO Z9x"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F112",
+      "bnum": "BOX 112",
+      "models": [
+        "OPPO RENO 12F 4G",
+        "OPPO RENO12F 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F112",
+      "bnum": "BOX 112",
+      "models": [
+        "OPPO RENO13F 4G",
+        "OPPO RENO 13F 4G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F112",
+      "bnum": "BOX 112",
+      "models": [
+        "Vivo T3 5G",
+        "VIVO T3"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F112",
+      "bnum": "BOX 112",
+      "models": [
+        "Vivo Y300 5G",
+        "VIVO Y300"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F112",
+      "bnum": "BOX 112",
+      "models": [
+        "Vivo V40 LITE 4G (IDN)",
+        "Vivo V40 LITE 5G (IDN)",
+        "VIVO V40 LITE 4G(IDN)",
+        "VIVO V40 Lite (IDN)"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F112",
+      "bnum": "BOX 112",
+      "models": [
+        "Vivo iQOO NEO 6 SE",
+        "VIVO iQOO Neo6 SE"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F112",
+      "bnum": "BOX 112",
+      "models": [
+        "Vivo iQOO Z9 5G",
+        "VIVO iQOO Z9"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F117",
+      "bnum": "BOX 117",
+      "models": [
+        "OPPO A3 (2018)",
+        "OPPO A3(2018)"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F141",
+      "bnum": "BOX 141",
+      "models": [
+        "Vivo V21",
+        "Vivo V21 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F143",
+      "bnum": "BOX 143",
+      "models": [
+        "Vivo Y 20",
+        "VIVO Y20"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F143",
+      "bnum": "BOX 143",
+      "models": [
+        "Vivo Y28S 5G",
+        "VIVO Y28s"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F143",
+      "bnum": "BOX 143",
+      "models": [
+        "Vivo Y31S 5G",
+        "VIVO Y31s"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F143",
+      "bnum": "BOX 143",
+      "models": [
+        "Vivo Y354G",
+        "VIVO Y35",
+        "VIVO Y35 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F143",
+      "bnum": "BOX 143",
+      "models": [
+        "Vivo Y52T 5G",
+        "VIVO Y52t"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F143",
+      "bnum": "BOX 143",
+      "models": [
+        "Vivo Y73T 5G",
+        "VIVO Y73t"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F143",
+      "bnum": "BOX 143",
+      "models": [
+        "Vivo Y75S 5G",
+        "VIVO Y75s"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F143",
+      "bnum": "BOX 143",
+      "models": [
+        "Vivo Y77 5G",
+        "VIVO Y77"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F143",
+      "bnum": "BOX 143",
+      "models": [
+        "Vivo T1X",
+        "Vivo T1X 4G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F143",
+      "bnum": "BOX 143",
+      "models": [
+        "Vivo iQOO Z6 LITE 5G",
+        "VIVO iQOO Z6 Lite"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F151",
+      "bnum": "BOX 151",
+      "models": [
+        "Vivo V60 LITE 4G",
+        "Vivo V60 LITE 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F153",
+      "bnum": "BOX 153",
+      "models": [
+        "OnePlus 10T",
+        "OnePlus 10T 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F187",
+      "bnum": "BOX 187",
+      "models": [
+        "Infinix HOT 30",
+        "Infinix HOT 30 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F187",
+      "bnum": "BOX 187",
+      "models": [
+        "Infinix NOTE 30 4G",
+        "Infinix NOTE 30 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F195",
+      "bnum": "BOX 195",
+      "models": [
+        "Motorola G62 5G",
+        "Motorola G62"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    },
+    {
+      "gid": "SD-F241",
+      "bnum": "BOX 241",
+      "models": [
+        "VIVO iQOO Z11",
+        "VIVO iQOO Z11 5G"
+      ],
+      "note": "Subtle variant / 4G-5G dual entry / spacing variation within same compatibility group."
+    }
+  ]
+}
