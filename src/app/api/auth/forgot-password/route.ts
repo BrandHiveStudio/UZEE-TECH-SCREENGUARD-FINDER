@@ -8,36 +8,44 @@ export const dynamic = "force-dynamic";
 
 export async function POST(request: Request) {
   try {
-    const body = await request.json();
-    const { email } = body;
+    const body = await request.json().catch(() => ({}));
+    const email = (body.email || "").trim().toLowerCase();
 
-    if (!email || typeof email !== "string" || !email.includes("@")) {
+    console.log("[FORGOT-PASSWORD] Request received for:", email);
+
+    if (!email || !email.includes("@")) {
       return NextResponse.json(
         { error: "A valid email address is required" },
         { status: 400 }
       );
     }
 
-    // Normalize incoming email
-    const targetEmail = email.trim().toLowerCase();
-
-    // Query Turso strictly
+    // Query the database using the Turso client
     const userRes = await turso.execute({
       sql: "SELECT id, email FROM users WHERE LOWER(email) = ? LIMIT 1",
-      args: [targetEmail],
+      args: [email],
     });
 
-    // CRITICAL: If no user is returned, DO NOT CALL sendPasswordResetEmail. Exit immediately.
-    if (userRes.rows.length === 0) {
-      return NextResponse.json({
-        success: true,
-        message: "If an account exists, a link was sent.",
-      });
+    console.log(
+      "[FORGOT-PASSWORD] DB Search Rows Count:",
+      userRes.rows ? userRes.rows.length : 0
+    );
+
+    // STRICT EARLY EXIT: If user doesn't exist, halt execution immediately with 404
+    if (!userRes.rows || userRes.rows.length === 0) {
+      console.log(
+        "[FORGOT-PASSWORD] User not found. Halting execution without sending email."
+      );
+      return NextResponse.json(
+        { error: "No account found with this email address. Check for typos or contact the Admin." },
+        { status: 404 }
+      );
     }
 
+    // Retrieve verified registered user
     const userRow = userRes.rows[0];
     const userId = String(userRow.id);
-    const registeredEmail = String(userRow.email);
+    const matchedEmail = String(userRow.email).trim().toLowerCase();
 
     // Generate secure random raw token (64 hex characters)
     const rawToken = crypto.randomBytes(32).toString("hex");
@@ -61,8 +69,13 @@ export async function POST(request: Request) {
       args: [uuidv4(), userId, tokenHash, expiresAt],
     });
 
-    // ONLY when user is found: call sendPasswordResetEmail with registered email and rawToken
-    await sendPasswordResetEmail(registeredEmail, rawToken);
+    // Dispatch reset email strictly to verified registered email
+    await sendPasswordResetEmail(matchedEmail, rawToken);
+
+    console.log(
+      "[FORGOT-PASSWORD] Successfully dispatched reset email to registered user:",
+      matchedEmail
+    );
 
     return NextResponse.json({
       success: true,
@@ -70,7 +83,7 @@ export async function POST(request: Request) {
     });
   } catch (err) {
     const msg = err instanceof Error ? err.message : "Unknown error";
-    console.error("[auth/forgot-password] Error:", msg);
+    console.error("[FORGOT-PASSWORD] Error:", msg);
     return NextResponse.json(
       { error: "Failed to process password reset request", details: msg },
       { status: 500 }

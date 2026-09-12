@@ -28,9 +28,12 @@ export default function ForgotPasswordPage() {
         body: JSON.stringify({ email: email.trim().toLowerCase() }),
       });
 
-      const data = await res.json();
+      const data = await res.json().catch(() => ({}));
       if (!res.ok) {
-        setError(data.error || "Failed to submit request.");
+        setError(
+          data.error ||
+            "No account found with this email address. Check for typos or contact the Admin."
+        );
         return;
       }
 
@@ -104,8 +107,8 @@ export default function ForgotPasswordPage() {
 
               <form onSubmit={handleSubmit} className="space-y-5">
                 {error && (
-                  <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-red-500/10 border border-red-500/20 text-red-600 dark:text-red-400 text-sm">
-                    <AlertCircle className="w-5 h-5 shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3 p-4 rounded-2xl bg-red-50 dark:bg-red-950/50 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300 text-sm font-medium animate-fade-in shadow-sm">
+                    <AlertCircle className="w-5 h-5 shrink-0 mt-0.5 text-red-600 dark:text-red-400" />
                     <span>{error}</span>
                   </div>
                 )}

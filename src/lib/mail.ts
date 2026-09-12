@@ -21,12 +21,15 @@ export async function sendPasswordResetEmail(
   toEmail: string,
   token: string
 ): Promise<{ success: boolean; error?: string }> {
-  const baseUrl =
+  // Sanitize baseUrl: strip any accidental markdown brackets or parentheses
+  const rawUrl =
     process.env.NEXT_PUBLIC_APP_URL ||
     process.env.APP_URL ||
     "https://finder.uzeetech.com.lk";
 
-  const resetUrl = `${baseUrl.replace(/\/$/, "")}/reset-password?token=${encodeURIComponent(token)}`;
+  const match = rawUrl.match(/https?:\/\/[^\s\)\>\]'"]+/);
+  const cleanBaseUrl = (match ? match[0] : "https://finder.uzeetech.com.lk").replace(/\/$/, "");
+  const resetUrl = `${cleanBaseUrl}/reset-password?token=${encodeURIComponent(token.trim())}`;
 
   console.log("\n=======================================================");
   console.log(`🔑 [PASSWORD RESET LINK for ${toEmail}]:`);
