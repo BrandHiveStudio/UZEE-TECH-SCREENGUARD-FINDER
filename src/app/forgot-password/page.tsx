@@ -123,7 +123,7 @@ export default function ForgotPasswordPage() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       required
-                      placeholder="uzeetechcare@gmail.com"
+                      placeholder="Enter your registered account email"
                       className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/80 text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm font-medium transition-all"
                     />
                   </div>

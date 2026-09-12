@@ -22,7 +22,7 @@ export async function POST(request: Request) {
 
     // Check if user exists in database
     const userRes = await turso.execute({
-      sql: "SELECT id, email FROM users WHERE email = ? LIMIT 1",
+      sql: "SELECT id, email FROM users WHERE LOWER(email) = ? LIMIT 1",
       args: [normalizedEmail],
     });
 
@@ -34,7 +34,9 @@ export async function POST(request: Request) {
       });
     }
 
-    const userId = String(userRes.rows[0].id);
+    const userRow = userRes.rows[0];
+    const userId = String(userRow.id);
+    const registeredEmail = String(userRow.email);
 
     // Generate secure random raw token (64 hex characters)
     const rawToken = crypto.randomBytes(32).toString("hex");
@@ -58,8 +60,8 @@ export async function POST(request: Request) {
       args: [uuidv4(), userId, tokenHash, expiresAt],
     });
 
-    // Dispatch email
-    await sendPasswordResetEmail(normalizedEmail, rawToken);
+    // Dispatch email directly to registered user email
+    await sendPasswordResetEmail(registeredEmail, rawToken);
 
     return NextResponse.json({
       success: true,

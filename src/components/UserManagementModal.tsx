@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { X, Users, UserPlus, Trash2, Mail, Lock, AlertCircle, CheckCircle2, Loader2, ShieldCheck } from "lucide-react";
+import { X, Users, UserPlus, Trash2, Mail, Lock, AlertCircle, CheckCircle2, Loader2, ShieldCheck, Eye, EyeOff } from "lucide-react";
 
 interface UserItem {
   id: string;
@@ -25,6 +25,7 @@ export function UserManagementModal({ isOpen, onClose }: UserManagementModalProp
   const [showAddForm, setShowAddForm] = useState(false);
   const [newEmail, setNewEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const [creating, setCreating] = useState(false);
   const [deletingId, setDeletingId] = useState<string | null>(null);
 
@@ -52,16 +53,24 @@ export function UserManagementModal({ isOpen, onClose }: UserManagementModalProp
       setShowAddForm(false);
       setNewEmail("");
       setNewPassword("");
+      setShowPassword(false);
       setActionSuccess(null);
     }
   }, [isOpen]);
 
   if (!isOpen) return null;
 
+  const isMaxUsers = users.length >= 3;
+
   const handleAddUser = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
     setActionSuccess(null);
+
+    if (isMaxUsers) {
+      setError("User capacity reached (3/3). Delete an existing account to register a new user.");
+      return;
+    }
 
     if (!newEmail.trim() || !newEmail.includes("@")) {
       setError("Please enter a valid email address");
@@ -149,7 +158,7 @@ export function UserManagementModal({ isOpen, onClose }: UserManagementModalProp
                 Manage Authorized Users
               </h3>
               <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-                Administer user accounts with full access to ScreenGuard Finder
+                Administer user accounts with full access to ScreenGuard Finder (Max 3 Users)
               </p>
             </div>
           </div>
@@ -179,7 +188,12 @@ export function UserManagementModal({ isOpen, onClose }: UserManagementModalProp
 
           {/* Add User Section */}
           <div>
-            {!showAddForm ? (
+            {isMaxUsers ? (
+              <div className="p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-700 dark:text-amber-400 text-xs font-semibold flex items-center gap-2.5">
+                <AlertCircle className="w-4 h-4 shrink-0 text-amber-500" />
+                <span>User capacity reached (3/3). Delete an existing account to register a new user.</span>
+              </div>
+            ) : !showAddForm ? (
               <button
                 type="button"
                 onClick={() => setShowAddForm(true)}
@@ -232,14 +246,22 @@ export function UserManagementModal({ isOpen, onClose }: UserManagementModalProp
                         <Lock className="w-3.5 h-3.5" />
                       </div>
                       <input
-                        type="password"
+                        type={showPassword ? "text" : "password"}
                         value={newPassword}
                         onChange={(e) => setNewPassword(e.target.value)}
                         required
                         minLength={6}
                         placeholder="••••••••"
-                        className="w-full pl-9 pr-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-xs font-medium focus:ring-2 focus:ring-brand-500 focus:outline-none"
+                        className="w-full pl-9 pr-9 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-xs font-medium focus:ring-2 focus:ring-brand-500 focus:outline-none"
                       />
+                      <button
+                        type="button"
+                        onClick={() => setShowPassword(!showPassword)}
+                        className="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+                        tabIndex={-1}
+                      >
+                        {showPassword ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -270,7 +292,7 @@ export function UserManagementModal({ isOpen, onClose }: UserManagementModalProp
           {/* User List */}
           <div>
             <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2.5">
-              Registered Accounts ({users.length})
+              REGISTERED ACCOUNTS ({users.length}/3)
             </h4>
 
             {loading ? (

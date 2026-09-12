@@ -13,6 +13,7 @@ export interface Box {
   stockCountVerified?: boolean;
   stockStatus?: "IN_STOCK" | "LOW_STOCK" | "OUT_OF_STOCK" | "NOT_COUNTED";
   purchaseStatus?: "NEEDS ORDER" | "ORDERED" | "RECEIVED" | "CANCELLED" | "NONE";
+  unitsSold?: number;
 }
 
 export interface InventoryTransaction {

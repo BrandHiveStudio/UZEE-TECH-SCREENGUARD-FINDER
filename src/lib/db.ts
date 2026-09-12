@@ -32,7 +32,8 @@ export async function getAllBoxes(): Promise<Box[]> {
         source,
         verification,
         stock_quantity,
-        stock_count_verified
+        stock_count_verified,
+        units_sold
       FROM boxes
       ORDER BY box_number ASC`
     );
@@ -73,6 +74,7 @@ export async function getAllBoxes(): Promise<Box[]> {
         stockQuantity: stockQty,
         stockCountVerified: stockVerified,
         stockStatus: deriveStockStatus(stockQty, stockVerified),
+        unitsSold: Math.max(0, Number(row.units_sold ?? 0)),
       };
     });
   } catch (error) {
@@ -87,6 +89,7 @@ export async function getAllBoxes(): Promise<Box[]> {
         stockQuantity: qty,
         stockCountVerified: ver,
         stockStatus: deriveStockStatus(qty, ver),
+        unitsSold: Math.max(0, b.unitsSold ?? 0),
       };
     });
   }
@@ -96,6 +99,7 @@ export async function getAllBoxes(): Promise<Box[]> {
 export async function upsertBox(box: Box): Promise<Box> {
   const stockQty = Math.max(0, box.stockQuantity ?? 0);
   const stockVer = box.stockCountVerified ?? false;
+  const unitsSold = Math.max(0, box.unitsSold ?? 0);
 
   // Check if box already exists in database
   const existingRes = await turso.execute({
@@ -118,8 +122,9 @@ export async function upsertBox(box: Box): Promise<Box> {
         verification,
         stock_quantity,
         stock_count_verified,
+        units_sold,
         updated_at
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
       ON CONFLICT(id) DO UPDATE SET
         box_number = excluded.box_number,
         display_size = excluded.display_size,
@@ -131,6 +136,7 @@ export async function upsertBox(box: Box): Promise<Box> {
         verification = excluded.verification,
         stock_quantity = excluded.stock_quantity,
         stock_count_verified = excluded.stock_count_verified,
+        units_sold = excluded.units_sold,
         updated_at = CURRENT_TIMESTAMP`,
       args: [
         box.id,
@@ -144,6 +150,7 @@ export async function upsertBox(box: Box): Promise<Box> {
         box.verification ?? null,
         stockQty,
         stockVer ? 1 : 0,
+        unitsSold,
       ],
     },
     {
@@ -198,6 +205,7 @@ export async function upsertBox(box: Box): Promise<Box> {
     stockQuantity: stockQty,
     stockCountVerified: stockVer,
     stockStatus: deriveStockStatus(stockQty, stockVer),
+    unitsSold,
   };
 }
 
@@ -233,6 +241,7 @@ export async function updateStock(
 
   const boxRow = boxRes.rows[0];
   const prevQty = Number(boxRow.stock_quantity ?? 0);
+  const prevSold = Number(boxRow.units_sold ?? 0);
   let newQty = prevQty;
   let qtyChange = 0;
 
@@ -254,6 +263,11 @@ export async function updateStock(
     throw new Error(`Stock quantity cannot be negative (current: ${prevQty}, attempted change: ${qtyChange})`);
   }
 
+  const newSold = action === "SALE" ? prevSold + 1 : prevSold;
+  const updateBoxSql = action === "SALE"
+    ? `UPDATE boxes SET stock_quantity = ?, units_sold = COALESCE(units_sold, 0) + 1, stock_count_verified = 1, updated_at = CURRENT_TIMESTAMP WHERE id = ?`
+    : `UPDATE boxes SET stock_quantity = ?, stock_count_verified = 1, updated_at = CURRENT_TIMESTAMP WHERE id = ?`;
+
   const txId = uuidv4();
   const txNote = note || (action === "SALE" ? "Customer sale" : action === "RESTOCK" ? "Restock added" : "Physical stock count adjustment");
 
@@ -261,7 +275,7 @@ export async function updateStock(
   await turso.batch(
     [
       {
-        sql: `UPDATE boxes SET stock_quantity = ?, stock_count_verified = 1, updated_at = CURRENT_TIMESTAMP WHERE id = ?`,
+        sql: updateBoxSql,
         args: [newQty, groupId],
       },
       {
@@ -311,6 +325,7 @@ export async function updateStock(
     stockQuantity: newQty,
     stockCountVerified: true,
     stockStatus: deriveStockStatus(newQty, true),
+    unitsSold: newSold,
   };
 }
 

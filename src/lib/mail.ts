@@ -47,10 +47,11 @@ export async function sendPasswordResetEmail(
 
   try {
     const fromAddress = `"UZEE TECH Support" <${emailUser}>`;
+    const recipient = toEmail.trim().toLowerCase();
 
     await transporter.sendMail({
       from: fromAddress,
-      to: toEmail,
+      to: recipient,
       subject: "Reset your UZEE TECH ScreenGuard Finder password",
       html: `
         <!DOCTYPE html>

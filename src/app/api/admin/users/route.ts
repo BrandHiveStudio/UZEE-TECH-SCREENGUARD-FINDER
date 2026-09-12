@@ -42,6 +42,16 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
+    // Enforce 3-user hard limit (Owner Admin + 2 Staff)
+    const countRes = await turso.execute("SELECT COUNT(*) as count FROM users");
+    const userCount = Number(countRes.rows[0]?.count ?? 0);
+    if (userCount >= 3) {
+      return NextResponse.json(
+        { error: "Maximum limit reached. Only 3 authorized accounts (Admin + 2 users) are permitted." },
+        { status: 400 }
+      );
+    }
+
     const body = await request.json();
     const { email, password } = body;
 
