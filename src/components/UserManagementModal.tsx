@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { X, Users, UserPlus, Trash2, Mail, Lock, AlertCircle, CheckCircle2, Loader2, ShieldCheck, Eye, EyeOff } from "lucide-react";
+import { X, Users, UserPlus, Trash2, Mail, Lock, AlertCircle, CheckCircle2, Loader2, ShieldCheck, Eye, EyeOff, Key } from "lucide-react";
 
 interface UserItem {
   id: string;
@@ -29,6 +29,24 @@ export function UserManagementModal({ isOpen, onClose }: UserManagementModalProp
   const [creating, setCreating] = useState(false);
   const [deletingId, setDeletingId] = useState<string | null>(null);
 
+  // Change Password State
+  const [passwordTargetUser, setPasswordTargetUser] = useState<UserItem | null>(null);
+  const [changePasswordVal, setChangePasswordVal] = useState("");
+  const [confirmPasswordVal, setConfirmPasswordVal] = useState("");
+  const [showNewPassword, setShowNewPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [updatingPassword, setUpdatingPassword] = useState(false);
+  const [passwordError, setPasswordError] = useState<string | null>(null);
+
+  const closePasswordModal = () => {
+    setPasswordTargetUser(null);
+    setChangePasswordVal("");
+    setConfirmPasswordVal("");
+    setShowNewPassword(false);
+    setShowConfirmPassword(false);
+    setPasswordError(null);
+  };
+
   const fetchUsers = async () => {
     setLoading(true);
     setError(null);
@@ -55,6 +73,7 @@ export function UserManagementModal({ isOpen, onClose }: UserManagementModalProp
       setNewPassword("");
       setShowPassword(false);
       setActionSuccess(null);
+      closePasswordModal();
     }
   }, [isOpen]);
 
@@ -141,6 +160,49 @@ export function UserManagementModal({ isOpen, onClose }: UserManagementModalProp
       setError("Failed to delete user");
     } finally {
       setDeletingId(null);
+    }
+  };
+
+  const handlePasswordSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setPasswordError(null);
+
+    if (!passwordTargetUser) return;
+
+    if (changePasswordVal.length < 6) {
+      setPasswordError("Password must be at least 6 characters long.");
+      return;
+    }
+
+    if (changePasswordVal !== confirmPasswordVal) {
+      setPasswordError("Passwords do not match.");
+      return;
+    }
+
+    setUpdatingPassword(true);
+    try {
+      const res = await fetch("/api/admin/users/change-password", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          userId: passwordTargetUser.id,
+          newPassword: changePasswordVal,
+        }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) {
+        setPasswordError(data.error || "Failed to update password");
+        return;
+      }
+
+      setActionSuccess(data.message || `Password updated successfully for ${passwordTargetUser.email}.`);
+      closePasswordModal();
+      setTimeout(() => setActionSuccess(null), 4000);
+    } catch {
+      setPasswordError("Network error while updating password");
+    } finally {
+      setUpdatingPassword(false);
     }
   };
 
@@ -329,24 +391,52 @@ export function UserManagementModal({ isOpen, onClose }: UserManagementModalProp
                       </div>
                     </div>
 
-                    {!u.isCurrent ? (
-                      <button
-                        type="button"
-                        onClick={() => handleDeleteUser(u.id, u.email)}
-                        disabled={deletingId === u.id}
-                        className="p-2 rounded-xl text-slate-400 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors"
-                        title={`Delete user ${u.email}`}
-                      >
-                        {deletingId === u.id ? (
-                          <Loader2 className="w-4 h-4 animate-spin text-red-500" />
-                        ) : (
-                          <Trash2 className="w-4 h-4" />
-                        )}
-                      </button>
+                    {u.isCurrent ? (
+                      <div className="flex items-center gap-2">
+                        <span className="text-[11px] font-semibold text-slate-400 italic px-1">
+                          Active Session
+                        </span>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            closePasswordModal();
+                            setPasswordTargetUser(u);
+                          }}
+                          className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-brand-50 dark:bg-brand-950/50 hover:bg-brand-100 dark:hover:bg-brand-900/60 text-brand-700 dark:text-brand-300 text-xs font-semibold border border-brand-200/80 dark:border-brand-800 transition-all shadow-xs"
+                          title="Change password for your active account"
+                        >
+                          <Key className="w-3.5 h-3.5" />
+                          <span>Change Password</span>
+                        </button>
+                      </div>
                     ) : (
-                      <span className="text-[11px] font-semibold text-slate-400 italic px-2">
-                        Active Session
-                      </span>
+                      <div className="flex items-center gap-1.5">
+                        <button
+                          type="button"
+                          onClick={() => {
+                            closePasswordModal();
+                            setPasswordTargetUser(u);
+                          }}
+                          className="flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-slate-500 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-brand-50 dark:hover:bg-brand-950/30 text-xs font-semibold border border-transparent hover:border-brand-200 dark:hover:border-brand-900 transition-all"
+                          title={`Change password for ${u.email}`}
+                        >
+                          <Key className="w-3.5 h-3.5" />
+                          <span>Password</span>
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => handleDeleteUser(u.id, u.email)}
+                          disabled={deletingId === u.id}
+                          className="p-2 rounded-xl text-slate-400 hover:text-red-600 dark:hover:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors"
+                          title={`Delete user ${u.email}`}
+                        >
+                          {deletingId === u.id ? (
+                            <Loader2 className="w-4 h-4 animate-spin text-red-500" />
+                          ) : (
+                            <Trash2 className="w-4 h-4" />
+                          )}
+                        </button>
+                      </div>
                     )}
                   </div>
                 ))}
@@ -366,6 +456,160 @@ export function UserManagementModal({ isOpen, onClose }: UserManagementModalProp
           </button>
         </div>
       </div>
+
+      {/* Change Password Sub-Modal */}
+      {passwordTargetUser && (
+        <div
+          className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-xs animate-fade-in"
+          onClick={(e) => {
+            if (e.target === e.currentTarget && !updatingPassword) {
+              closePasswordModal();
+            }
+          }}
+        >
+          <div className="bg-white dark:bg-slate-900 rounded-2xl w-full max-w-md border border-slate-200 dark:border-slate-800 shadow-2xl overflow-hidden animate-scale-in">
+            {/* Header */}
+            <div className="flex items-center justify-between px-5 py-4 border-b border-slate-100 dark:border-slate-800">
+              <div className="flex items-center gap-2.5">
+                <div className="p-2 rounded-xl bg-brand-700 text-white font-bold">
+                  <Key className="w-4 h-4" />
+                </div>
+                <div>
+                  <h4 className="text-sm font-bold text-slate-900 dark:text-white">
+                    Change Password
+                  </h4>
+                  <p className="text-[11px] text-slate-500 dark:text-slate-400 font-medium truncate max-w-[260px]">
+                    {passwordTargetUser.email}
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={closePasswordModal}
+                disabled={updatingPassword}
+                className="p-1.5 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors disabled:opacity-50"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            {/* Form */}
+            <form onSubmit={handlePasswordSubmit} className="p-5 space-y-4">
+              {passwordError && (
+                <div className="flex items-start gap-2 p-3 rounded-xl bg-red-500/10 border border-red-500/20 text-red-600 dark:text-red-400 text-xs font-semibold animate-fade-in">
+                  <AlertCircle className="w-4 h-4 shrink-0 mt-0.5" />
+                  <span>{passwordError}</span>
+                </div>
+              )}
+
+              <div>
+                <label className="block text-[11px] font-bold text-slate-600 dark:text-slate-300 mb-1">
+                  New Password
+                </label>
+                <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                    <Lock className="w-3.5 h-3.5" />
+                  </div>
+                  <input
+                    type={showNewPassword ? "text" : "password"}
+                    value={changePasswordVal}
+                    onChange={(e) => setChangePasswordVal(e.target.value)}
+                    required
+                    minLength={6}
+                    placeholder="Enter new password (min. 6 chars)"
+                    className="w-full pl-9 pr-9 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-800/60 text-slate-900 dark:text-white text-xs font-medium focus:ring-2 focus:ring-brand-500 focus:outline-none"
+                    autoFocus
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowNewPassword(!showNewPassword)}
+                    className="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+                    tabIndex={-1}
+                  >
+                    {showNewPassword ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
+                  </button>
+                </div>
+                {changePasswordVal.length > 0 && changePasswordVal.length < 6 && (
+                  <p className="text-[10px] text-amber-500 mt-1 font-medium">
+                    Password must be at least 6 characters.
+                  </p>
+                )}
+              </div>
+
+              <div>
+                <label className="block text-[11px] font-bold text-slate-600 dark:text-slate-300 mb-1">
+                  Confirm New Password
+                </label>
+                <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                    <Lock className="w-3.5 h-3.5" />
+                  </div>
+                  <input
+                    type={showConfirmPassword ? "text" : "password"}
+                    value={confirmPasswordVal}
+                    onChange={(e) => setConfirmPasswordVal(e.target.value)}
+                    required
+                    minLength={6}
+                    placeholder="Re-enter new password"
+                    className="w-full pl-9 pr-9 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50/50 dark:bg-slate-800/60 text-slate-900 dark:text-white text-xs font-medium focus:ring-2 focus:ring-brand-500 focus:outline-none"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                    className="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+                    tabIndex={-1}
+                  >
+                    {showConfirmPassword ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
+                  </button>
+                </div>
+                {confirmPasswordVal.length > 0 && changePasswordVal !== confirmPasswordVal && (
+                  <p className="text-[10px] text-red-500 mt-1 font-medium">
+                    Passwords do not match.
+                  </p>
+                )}
+                {confirmPasswordVal.length >= 6 && changePasswordVal === confirmPasswordVal && (
+                  <p className="text-[10px] text-emerald-600 dark:text-emerald-400 mt-1 font-medium flex items-center gap-1">
+                    <CheckCircle2 className="w-3 h-3" />
+                    Passwords match.
+                  </p>
+                )}
+              </div>
+
+              <div className="flex items-center justify-end gap-2 pt-2 border-t border-slate-100 dark:border-slate-800">
+                <button
+                  type="button"
+                  onClick={closePasswordModal}
+                  disabled={updatingPassword}
+                  className="px-4 py-2 rounded-xl font-bold text-xs text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  disabled={
+                    updatingPassword ||
+                    changePasswordVal.length < 6 ||
+                    changePasswordVal !== confirmPasswordVal
+                  }
+                  className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-brand-700 hover:bg-brand-800 text-white font-bold text-xs shadow-md disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                >
+                  {updatingPassword ? (
+                    <>
+                      <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                      <span>Updating...</span>
+                    </>
+                  ) : (
+                    <>
+                      <Key className="w-3.5 h-3.5" />
+                      <span>Update Password</span>
+                    </>
+                  )}
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

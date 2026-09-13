@@ -65,7 +65,8 @@ CREATE TABLE IF NOT EXISTS users (
   id            TEXT PRIMARY KEY,
   email         TEXT UNIQUE NOT NULL,
   password_hash TEXT NOT NULL,
-  created_at    TEXT NOT NULL DEFAULT (CURRENT_TIMESTAMP)
+  created_at    TEXT NOT NULL DEFAULT (CURRENT_TIMESTAMP),
+  updated_at    TEXT
 );
 
 -- 7. Password Reset Tokens table
