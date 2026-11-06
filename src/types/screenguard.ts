@@ -1,3 +1,24 @@
+export interface ScreenGuardVariants {
+  super_d: number;
+  privacy: number;
+  matte: number;
+  borderless: number;
+}
+
+export interface ScreenGuardItem {
+  groupId: string;
+  boxNumber: string;
+  displaySize: string;
+  title: string;
+  compatibleModels: string;
+  stockQuantity: number;
+  variants?: ScreenGuardVariants;
+  stockStatus: string;
+  stockCountVerified: string;
+  category: string;
+  notes?: string;
+}
+
 export interface Box {
   id: string;
   boxNumber: string;
@@ -10,6 +31,7 @@ export interface Box {
   source?: string;
   verification?: string;
   stockQuantity?: number;
+  variants?: ScreenGuardVariants;
   stockCountVerified?: boolean;
   stockStatus?: "IN_STOCK" | "LOW_STOCK" | "OUT_OF_STOCK" | "NOT_COUNTED";
   purchaseStatus?: "NEEDS ORDER" | "ORDERED" | "RECEIVED" | "CANCELLED" | "NONE";

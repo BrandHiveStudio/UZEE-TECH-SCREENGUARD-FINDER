@@ -3,8 +3,9 @@ import type { Box, SearchResultItem } from "@/types/screenguard";
 
 // ─── Bidirectional Brand Aliases Mapping ───────────────────────────────────────
 const BRAND_ALIASES: Record<string, string[]> = {
-  ip: ["iphone"],
-  iphone: ["ip"],
+  ip: ["iphone", "apple"],
+  iphone: ["ip", "apple"],
+  apple: ["iphone", "ip"],
   sam: ["samsung", "galaxy"],
   samsung: ["sam", "galaxy"],
   galaxy: ["sam", "samsung"],
@@ -37,8 +38,7 @@ export function createSearchEngine(boxes: Box[]) {
     keys: [
       { name: "boxNumber", weight: 0.35 },
       { name: "compatibleModels", weight: 0.45 },
-      { name: "displaySize", weight: 0.15 },
-      { name: "title", weight: 0.15 },
+      { name: "title", weight: 0.20 },
     ],
     threshold: 0.2,
     distance: 50,
@@ -56,6 +56,7 @@ function normalizeText(text: string): string {
   // Normalize brand abbreviations
   t = t.replace(/1\+/g, "oneplus");
   t = t.replace(/\bip\b/g, "iphone");
+  t = t.replace(/\bapple\b/g, "iphone");
   t = t.replace(/\bsam\b/g, "samsung");
   t = t.replace(/\brm\b/g, "redmi");
   t = t.replace(/\bop\b/g, "oppo");
@@ -63,6 +64,10 @@ function normalizeText(text: string): string {
   t = t.replace(/\breal\b/g, "realme");
   t = t.replace(/\bpoc\b/g, "poco");
   t = t.replace(/\bxm\b/g, "xiaomi");
+
+  // Normalize '+' to 'plus' so "7+" matches "7 plus"
+  t = t.replace(/(\d+)\s*\+/g, "$1 plus ");
+  t = t.replace(/\+/g, " plus ");
 
   // Standardize model numbers e.g. "9 rt" -> "9rt"
   t = t.replace(/\b(\d+)\s*(rt|fe|pro|plus|max|lite|ultra|gt|se|neo|5g|4g|c|i|s|e|k|a|x)\b/gi, "$1$2");

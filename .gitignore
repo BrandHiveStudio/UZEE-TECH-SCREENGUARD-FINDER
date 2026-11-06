@@ -23,3 +23,7 @@ Thumbs.db
 
 .vercel
 .env*
+
+# Backups
+backup_*.sqlite
+data/backups/

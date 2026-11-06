@@ -1,7 +1,19 @@
 import { turso } from "./turso";
 import { v4 as uuidv4 } from "uuid";
 import type { InStatement } from "@libsql/client";
-import type { Box, InventoryTransaction, PurchaseItem } from "@/types/screenguard";
+import type { Box, InventoryTransaction, PurchaseItem, ScreenGuardVariants } from "@/types/screenguard";
+import { normalizeVariants, calculateTotalStock } from "./screenguard";
+
+let _variantsColumnChecked = false;
+async function ensureVariantsColumn() {
+  if (_variantsColumnChecked) return;
+  try {
+    await turso.execute("ALTER TABLE boxes ADD COLUMN variants TEXT");
+  } catch {
+    // Column already exists
+  }
+  _variantsColumnChecked = true;
+}
 
 export function deriveStockStatus(
   quantity: number,
@@ -19,6 +31,8 @@ export function deriveStockStatus(
 /** Fetch all boxes with their compatible models via 1-to-many join */
 export async function getAllBoxes(): Promise<Box[]> {
   try {
+    await ensureVariantsColumn();
+
     // 1. Query all boxes
     const boxesRes = await turso.execute(
       `SELECT
@@ -33,7 +47,8 @@ export async function getAllBoxes(): Promise<Box[]> {
         verification,
         stock_quantity,
         stock_count_verified,
-        units_sold
+        units_sold,
+        variants
       FROM boxes
       ORDER BY box_number ASC`
     );
@@ -56,7 +71,21 @@ export async function getAllBoxes(): Promise<Box[]> {
     }
 
     return boxesRes.rows.map((row) => {
-      const stockQty = Math.max(0, Number(row.stock_quantity ?? 0));
+      const rawStock = Math.max(0, Number(row.stock_quantity ?? 0));
+      let variants: ScreenGuardVariants;
+      if (row.variants) {
+        try {
+          const parsed = JSON.parse(String(row.variants));
+          variants = normalizeVariants(parsed, rawStock);
+        } catch {
+          variants = normalizeVariants(null, rawStock);
+        }
+      } else {
+        variants = normalizeVariants(null, rawStock);
+      }
+
+      // Automated aggregate sum of all four variants
+      const stockQty = calculateTotalStock(variants);
       const stockVerified = Boolean(row.stock_count_verified);
       const id = String(row.id);
 
@@ -72,6 +101,7 @@ export async function getAllBoxes(): Promise<Box[]> {
         source: row.source ? String(row.source) : undefined,
         verification: row.verification ? String(row.verification) : undefined,
         stockQuantity: stockQty,
+        variants,
         stockCountVerified: stockVerified,
         stockStatus: deriveStockStatus(stockQty, stockVerified),
         unitsSold: Math.max(0, Number(row.units_sold ?? 0)),
@@ -80,13 +110,19 @@ export async function getAllBoxes(): Promise<Box[]> {
   } catch (error) {
     console.error("[db] Turso query failed, using emergency fallback to local JSON data:", error);
     const jsonModule = await import("@/data/screenguards.json");
-    const jsonBoxes = (jsonModule.default.boxes || jsonModule.boxes) as Box[];
+    const jsonBoxes = (jsonModule.default.boxes || jsonModule.boxes) as unknown as Box[];
     return jsonBoxes.map((b) => {
-      const qty = Math.max(0, b.stockQuantity ?? 0);
+      const rawStock = Math.max(0, b.stockQuantity ?? 0);
+      const variants = normalizeVariants(b.variants, rawStock);
+      const qty = calculateTotalStock(variants);
       const ver = b.stockCountVerified ?? false;
       return {
         ...b,
+        notes: b.notes || undefined,
+        source: b.source || undefined,
+        verification: b.verification || undefined,
         stockQuantity: qty,
+        variants,
         stockCountVerified: ver,
         stockStatus: deriveStockStatus(qty, ver),
         unitsSold: Math.max(0, b.unitsSold ?? 0),
@@ -97,9 +133,13 @@ export async function getAllBoxes(): Promise<Box[]> {
 
 /** Insert or update a box and its models atomically in Turso */
 export async function upsertBox(box: Box): Promise<Box> {
-  const stockQty = Math.max(0, box.stockQuantity ?? 0);
+  await ensureVariantsColumn();
+
+  const variants = normalizeVariants(box.variants, box.stockQuantity ?? 0);
+  const stockQty = calculateTotalStock(variants);
   const stockVer = box.stockCountVerified ?? false;
   const unitsSold = Math.max(0, box.unitsSold ?? 0);
+  const variantsJSON = JSON.stringify(variants);
 
   // Check if box already exists in database
   const existingRes = await turso.execute({
@@ -123,8 +163,9 @@ export async function upsertBox(box: Box): Promise<Box> {
         stock_quantity,
         stock_count_verified,
         units_sold,
+        variants,
         updated_at
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
       ON CONFLICT(id) DO UPDATE SET
         box_number = excluded.box_number,
         display_size = excluded.display_size,
@@ -137,6 +178,7 @@ export async function upsertBox(box: Box): Promise<Box> {
         stock_quantity = excluded.stock_quantity,
         stock_count_verified = excluded.stock_count_verified,
         units_sold = excluded.units_sold,
+        variants = excluded.variants,
         updated_at = CURRENT_TIMESTAMP`,
       args: [
         box.id,
@@ -151,6 +193,7 @@ export async function upsertBox(box: Box): Promise<Box> {
         stockQty,
         stockVer ? 1 : 0,
         unitsSold,
+        variantsJSON,
       ],
     },
     {

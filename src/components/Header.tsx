@@ -2,17 +2,16 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Settings, Sun, Moon, Sparkles, LogOut, User } from "lucide-react";
-import { useTheme } from "next-themes";
+import { Settings, Sparkles, LogOut, User } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
+import { WhatsAppOrderModal } from "@/components/WhatsAppOrderModal";
 import { useEffect, useState } from "react";
 
 export function Header({ totalBoxes }: { totalBoxes?: number }) {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
   const [currentUser, setCurrentUser] = useState<{ id: string; email: string } | null>(null);
+  const [isWhatsAppOpen, setIsWhatsAppOpen] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
     // Fetch current user session
     fetch("/api/auth/me")
       .then((res) => res.json())
@@ -71,32 +70,41 @@ export function Header({ totalBoxes }: { totalBoxes?: number }) {
             </div>
           )}
 
-          {/* Theme Toggle */}
-          {mounted && (
-            <button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="p-2.5 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-              aria-label="Toggle theme"
-              title={theme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode"}
-            >
-              {theme === "dark" ? (
-                <Sun className="w-5 h-5 text-amber-400" />
-              ) : (
-                <Moon className="w-5 h-5 text-slate-600" />
-              )}
-            </button>
-          )}
+          {/* WhatsApp Order Button */}
+          <button
+            type="button"
+            onClick={() => setIsWhatsAppOpen(true)}
+            className="flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white px-3.5 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold shadow-sm transition-all active:scale-95"
+          >
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.087.087-.177.182-.076.356.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/>
+            </svg>
+            <span className="hidden sm:inline">WhatsApp Order</span>
+          </button>
 
-          {/* Admin Gear Button with Label */}
+          {/* Reorder PO Link */}
+          <Link
+            href="/admin/restock"
+            className="hidden md:flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white hover:bg-zinc-100 text-zinc-800 border border-zinc-300 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-200 dark:border-slate-700 font-bold text-xs transition-all shadow-sm"
+            title="Low-Stock Reorder Hub & PO Generator"
+          >
+            <span>📋</span>
+            <span>Reorder PO</span>
+          </Link>
+
+          {/* Admin Button: Red outline matching UZEE TECH logo red */}
           <Link
             href="/admin"
-            className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-100 dark:bg-slate-800/80 hover:bg-brand-50 dark:hover:bg-brand-950/50 text-slate-700 dark:text-slate-200 hover:text-brand-700 dark:hover:text-brand-400 border border-slate-200/60 dark:border-slate-700/60 font-bold text-xs sm:text-sm transition-all duration-200 group shadow-sm"
+            className="flex items-center gap-2 px-3.5 py-2 rounded-xl text-red-600 dark:text-red-400 border border-red-500/30 hover:bg-red-500/10 font-bold text-xs sm:text-sm transition-all duration-200 group shadow-sm"
             title="Open Admin Dashboard"
             aria-label="Admin Dashboard"
           >
-            <Settings className="w-4 h-4 transition-transform duration-300 group-hover:rotate-45 text-brand-700 dark:text-brand-400" />
+            <Settings className="w-4 h-4 transition-transform duration-300 group-hover:rotate-45 text-red-600 dark:text-red-400" />
             <span>Admin</span>
           </Link>
+
+          {/* Theme Toggle */}
+          <ThemeToggle />
 
           {/* User / Sign Out */}
           {currentUser && (
@@ -121,6 +129,12 @@ export function Header({ totalBoxes }: { totalBoxes?: number }) {
           )}
         </div>
       </div>
+
+      <WhatsAppOrderModal
+        isOpen={isWhatsAppOpen}
+        onClose={() => setIsWhatsAppOpen(false)}
+        initialModel=""
+      />
     </header>
   );
 }

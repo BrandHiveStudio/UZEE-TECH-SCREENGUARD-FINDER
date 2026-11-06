@@ -1,44 +1,86 @@
 "use client";
 
-import { useState } from "react";
-import { Package, Copy, Check, ShieldCheck, Smartphone, Maximize2, X } from "lucide-react";
-import type { SearchResultItem } from "@/types/screenguard";
+import React, { useState, useMemo } from "react";
+import {
+  Package,
+  Copy,
+  Check,
+  Maximize2,
+  Zap,
+  ShieldAlert,
+  Printer,
+  ChevronDown,
+  ChevronUp,
+} from "lucide-react";
+import type { Box, SearchResultItem } from "@/types/screenguard";
+import { findCrossFitAlternatives } from "@/lib/crossFitMatcher";
+import {
+  inferGeometryProfile,
+  NOTCH_META,
+  EDGE_META,
+} from "@/lib/geometryGuard";
+import { normalizeVariants } from "@/lib/screenguard";
 
 interface ResultCardProps {
   result: SearchResultItem;
   searchQuery?: string;
+  allBoxes?: Box[];
   onStockUpdate?: () => void;
+  onSelectBox?: (boxNumber: string) => void;
+  onRequestDeadStockOrder?: (model: string) => void;
+  onRequestWasteLog?: (box: Box) => void;
+  onQueueA4Label?: (box: Box) => void;
 }
 
-export function ResultCard({ result, searchQuery, onStockUpdate }: ResultCardProps) {
+export function ResultCard({
+  result,
+  searchQuery,
+  allBoxes,
+  onStockUpdate,
+  onSelectBox,
+  onRequestDeadStockOrder,
+  onRequestWasteLog,
+  onQueueA4Label,
+}: ResultCardProps) {
   const { item, matchedModel } = result;
   const [copiedBox, setCopiedBox] = useState(false);
-  const [copiedAll, setCopiedAll] = useState(false);
   const [isUpdatingStock, setIsUpdatingStock] = useState(false);
-  const [isRestockModalOpen, setIsRestockModalOpen] = useState(false);
-  const [restockQty, setRestockQty] = useState(10);
-
   const [isExpanded, setIsExpanded] = useState(false);
 
   const stockQty = item.stockQuantity ?? 0;
   const isVerified = item.stockCountVerified ?? false;
-  const stockStatus = item.stockStatus || (isVerified ? (stockQty >= 4 ? "IN_STOCK" : stockQty >= 1 ? "LOW_STOCK" : "OUT_OF_STOCK") : "NOT_COUNTED");
+  const stockStatus =
+    item.stockStatus ||
+    (isVerified
+      ? stockQty >= 4
+        ? "IN_STOCK"
+        : stockQty >= 1
+        ? "LOW_STOCK"
+        : "OUT_OF_STOCK"
+      : "NOT_COUNTED");
+
+  const variants = useMemo(
+    () => normalizeVariants(item.variants, stockQty),
+    [item.variants, stockQty]
+  );
+
+  // Inferred Phone / Screen Guard Geometry Profile
+  const itemGeometry = useMemo(() => inferGeometryProfile(item), [item]);
+
+  // Compute Cross-Fit Alternatives
+  const crossFitAlternatives = useMemo(() => {
+    if (!allBoxes || allBoxes.length === 0) return [];
+    return findCrossFitAlternatives(item, allBoxes);
+  }, [item, allBoxes]);
 
   const handleCopyBox = () => {
     navigator.clipboard.writeText(item.boxNumber);
     setCopiedBox(true);
-    setTimeout(() => setCopiedBox(false), 1800);
-  };
-
-  const handleCopyAll = () => {
-    const text = `${item.boxNumber} (Display Size: ${item.displaySize || "Unknown"})\nStock: ${stockStatus === "NOT_COUNTED" ? "NOT COUNTED" : `${stockQty} (${stockStatus.replace("_", " ")})`}\nCompatible Models:\n${item.compatibleModels.join("\n")}`;
-    navigator.clipboard.writeText(text);
-    setCopiedAll(true);
-    setTimeout(() => setCopiedAll(false), 1800);
+    setTimeout(() => setCopiedBox(false), 1600);
   };
 
   const handleQuickSale = async () => {
-    if (stockQty <= 0 || !isVerified) return;
+    if (stockQty <= 0) return;
     setIsUpdatingStock(true);
     try {
       const res = await fetch("/api/inventory", {
@@ -61,32 +103,6 @@ export function ResultCard({ result, searchQuery, onStockUpdate }: ResultCardPro
     }
   };
 
-  const confirmRestock = async () => {
-    if (isNaN(restockQty) || restockQty <= 0) return;
-
-    setIsUpdatingStock(true);
-    try {
-      const res = await fetch("/api/inventory", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          action: "update_stock",
-          groupId: item.id,
-          stockAction: "RESTOCK",
-          amount: restockQty,
-        }),
-      });
-      if (res.ok && onStockUpdate) {
-        onStockUpdate();
-        setIsRestockModalOpen(false);
-      }
-    } catch (e) {
-      console.error("Quick restock failed", e);
-    } finally {
-      setIsUpdatingStock(false);
-    }
-  };
-
   const highlightMatch = (text: string) => {
     if (!searchQuery?.trim()) return text;
     const q = searchQuery.trim();
@@ -95,7 +111,7 @@ export function ResultCard({ result, searchQuery, onStockUpdate }: ResultCardPro
     return (
       <>
         {text.substring(0, idx)}
-        <mark className="bg-amber-200 dark:bg-amber-500/40 text-slate-900 dark:text-amber-100 rounded px-1 py-0.5 font-semibold">
+        <mark className="bg-amber-400 text-slate-950 rounded px-1 font-black">
           {text.substring(idx, idx + q.length)}
         </mark>
         {text.substring(idx + q.length)}
@@ -103,250 +119,188 @@ export function ResultCard({ result, searchQuery, onStockUpdate }: ResultCardPro
     );
   };
 
-  const visibleModels = isExpanded
-    ? item.compatibleModels
-    : item.compatibleModels.slice(0, 12);
-  const remainingCount = item.compatibleModels.length - visibleModels.length;
+  const aliases = item.compatibleModels || [];
+  const initialDisplayCount = 6;
+  const visibleAliases = isExpanded ? aliases : aliases.slice(0, initialDisplayCount);
+  const remainingCount = aliases.length - visibleAliases.length;
 
   return (
-    <div className="w-full bg-white dark:bg-slate-900 rounded-3xl p-5 sm:p-7 border border-slate-200/80 dark:border-slate-800 shadow-apple dark:shadow-apple-dark hover:shadow-apple-hover transition-all duration-300 relative group overflow-hidden animate-fade-in">
-      {/* Top Header Row */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100 dark:border-slate-800/80">
-        <div className="flex items-center gap-3 flex-wrap">
-          {/* Box Badge */}
-          <div className="flex items-center gap-2 px-4 py-2 bg-brand-700 dark:bg-brand-600 text-white rounded-2xl shadow-md shadow-brand-700/20 font-black text-lg sm:text-xl tracking-tight">
-            <Package className="w-5 h-5" />
+    <div className="flex flex-col justify-between bg-white dark:bg-[#111827] hover:bg-zinc-50 dark:hover:bg-[#151e30] border border-zinc-200 dark:border-slate-800 hover:border-zinc-300 dark:hover:border-slate-700 rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-md transition-all duration-200 gap-2.5 group">
+      {/* 1. Header: Box ID Badge + Primary Model + Display Size + Geometry */}
+      <div className="flex items-start justify-between gap-3">
+        <div className="flex items-center gap-2.5 flex-wrap">
+          {/* High-contrast BOX badge */}
+          <button
+            type="button"
+            onClick={handleCopyBox}
+            className="flex items-center gap-1.5 px-3 py-1 bg-brand-700 hover:bg-brand-600 text-white rounded-xl font-black text-xs sm:text-sm tracking-wide shadow-sm shadow-brand-700/20 active:scale-95 transition"
+            title="Click to copy box number"
+          >
+            <Package className="w-4 h-4 shrink-0" />
             <span>{item.boxNumber}</span>
+            {copiedBox ? (
+              <Check className="w-3.5 h-3.5 text-emerald-300 ml-0.5" />
+            ) : (
+              <Copy className="w-3 h-3 text-white/60 ml-0.5 opacity-0 group-hover:opacity-100 transition-opacity" />
+            )}
+          </button>
+
+          {/* Screen Size Pill */}
+          <div className="flex items-center gap-1 px-2.5 py-1 bg-zinc-100 dark:bg-slate-800/80 border border-zinc-200 dark:border-slate-700/80 rounded-xl text-xs font-bold text-zinc-700 dark:text-slate-300">
+            <Maximize2 className="w-3 h-3 text-brand-500" />
+            <span>{item.displaySize || "Standard"}</span>
           </div>
 
-          {/* Display Size Badge */}
-          <div className="flex items-center gap-2 px-3.5 py-1.5 bg-slate-100 dark:bg-slate-800/90 border border-slate-200/80 dark:border-slate-700/80 rounded-2xl">
-            <Maximize2 className="w-4 h-4 text-brand-700 dark:text-brand-400" />
-            <div>
-              <span className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 dark:text-slate-500 block leading-tight">
-                Display Size
-              </span>
-              <span className="text-sm font-black text-slate-900 dark:text-white leading-tight">
-                {item.displaySize || "Unknown"}
-              </span>
-            </div>
+          {/* Geometry Cut Pill */}
+          <div className="hidden sm:flex items-center gap-1 px-2 py-1 bg-zinc-100 dark:bg-slate-800/60 border border-zinc-200 dark:border-slate-700/60 rounded-xl text-[11px] font-bold text-zinc-600 dark:text-slate-400">
+            <span>{NOTCH_META[itemGeometry.notchType].icon}</span>
+            <span>{NOTCH_META[itemGeometry.notchType].short}</span>
+            <span>•</span>
+            <span>{EDGE_META[itemGeometry.edgeCut].short}</span>
           </div>
-
-          {/* Stock Badge & Quantity */}
-          <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-2xl border bg-slate-50 dark:bg-slate-800/90 border-slate-200/80 dark:border-slate-700/80">
-            <div className="flex flex-col">
-              <span className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 dark:text-slate-500 leading-tight">
-                Stock
-              </span>
-              <span className="text-sm font-black text-slate-900 dark:text-white leading-tight">
-                {stockStatus === "NOT_COUNTED" ? "Not Counted" : `${stockQty} units`}
-              </span>
-            </div>
-
-            {/* Status Badge */}
-            <span
-              className={`px-2.5 py-1 rounded-xl text-xs font-black tracking-wider uppercase border ${
-                stockStatus === "IN_STOCK"
-                  ? "bg-emerald-50 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800"
-                  : stockStatus === "LOW_STOCK"
-                  ? "bg-amber-50 dark:bg-amber-950/50 text-amber-700 dark:text-amber-400 border-amber-200 dark:border-amber-800"
-                  : stockStatus === "NOT_COUNTED"
-                  ? "bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border-slate-200 dark:border-slate-700"
-                  : "bg-rose-50 dark:bg-rose-950/50 text-rose-700 dark:text-rose-400 border-rose-200 dark:border-rose-800"
-              }`}
-            >
-              {stockStatus === "IN_STOCK"
-                ? "IN STOCK"
-                : stockStatus === "LOW_STOCK"
-                ? "LOW STOCK"
-                : stockStatus === "NOT_COUNTED"
-                ? "NOT COUNTED"
-                : "OUT OF STOCK"}
-            </span>
-          </div>
-
-          {matchedModel && (
-            <div className="text-xs font-semibold text-slate-600 dark:text-slate-300">
-              Matched: {highlightMatch(matchedModel)}
-            </div>
-          )}
         </div>
 
-        {/* Action Buttons */}
-        <div className="flex items-center gap-2 flex-wrap self-start sm:self-auto">
-          {/* Quick SOLD (-1) */}
-          <button
-            onClick={handleQuickSale}
-            disabled={isUpdatingStock || stockQty <= 0 || !isVerified}
-            className={`px-3 py-1.5 text-xs font-bold rounded-xl transition-colors border ${
-              stockQty > 0 && isVerified
-                ? "bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 hover:bg-rose-100 dark:hover:bg-rose-900/50 border-rose-200 dark:border-rose-800"
-                : "bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-600 cursor-not-allowed border-slate-200 dark:border-slate-800"
+        {/* Stock Status Pill */}
+        <div className="shrink-0 flex items-center gap-1.5">
+          <span
+            className={`px-2.5 py-1 rounded-xl text-[10px] font-black tracking-wider uppercase border ${
+              stockStatus === "IN_STOCK"
+                ? "bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border-emerald-500/30"
+                : stockStatus === "LOW_STOCK"
+                ? "bg-amber-500/10 text-amber-700 dark:text-amber-400 border-amber-500/30"
+                : stockStatus === "NOT_COUNTED"
+                ? "bg-zinc-100 dark:bg-slate-800 text-zinc-600 dark:text-slate-400 border-zinc-200 dark:border-slate-700"
+                : "bg-rose-500/10 text-rose-700 dark:text-rose-400 border-rose-500/30"
             }`}
-            title={!isVerified ? "Stock must be physically counted first" : stockQty <= 0 ? "Out of stock" : "Record 1 unit sold"}
           >
-            SOLD (-1)
-          </button>
-
-          {/* Quick RESTOCK */}
-          <button
-            onClick={() => setIsRestockModalOpen(true)}
-            disabled={isUpdatingStock}
-            className="px-3 py-1.5 text-xs font-bold rounded-xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-100 dark:hover:bg-emerald-900/50 transition-colors border border-emerald-200 dark:border-emerald-800"
-            title="Restock stock quantity"
-          >
-            + RESTOCK
-          </button>
-
-          <button
-            onClick={handleCopyBox}
-            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors border border-slate-200/60 dark:border-slate-700/60"
-            title="Copy Box Number"
-          >
-            {copiedBox ? (
-              <>
-                <Check className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
-                <span className="text-emerald-600 dark:text-emerald-400">Copied!</span>
-              </>
-            ) : (
-              <>
-                <Copy className="w-3.5 h-3.5" />
-                <span>Box #</span>
-              </>
-            )}
-          </button>
-
-          <button
-            onClick={handleCopyAll}
-            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-xl bg-brand-50 dark:bg-brand-950/40 text-brand-700 dark:text-brand-400 hover:bg-brand-100 dark:hover:bg-brand-900/50 transition-colors border border-brand-200/60 dark:border-brand-800/60"
-            title="Copy All Compatible Models"
-          >
-            {copiedAll ? (
-              <>
-                <Check className="w-3.5 h-3.5" />
-                <span>Copied!</span>
-              </>
-            ) : (
-              <>
-                <Copy className="w-3.5 h-3.5" />
-                <span>Copy All</span>
-              </>
-            )}
-          </button>
+            {stockStatus === "IN_STOCK"
+              ? `${stockQty} IN STOCK`
+              : stockStatus === "LOW_STOCK"
+              ? `${stockQty} LOW STOCK`
+              : stockStatus === "NOT_COUNTED"
+              ? "NOT COUNTED"
+              : "OUT OF STOCK"}
+          </span>
         </div>
       </div>
 
-      {/* Restock Dialog Modal */}
-      {isRestockModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm animate-fade-in">
-          <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 w-full max-w-sm border border-slate-200 dark:border-slate-800 shadow-2xl space-y-4 animate-scale-in">
-            <div className="flex items-center justify-between">
-              <h4 className="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
-                <Package className="w-5 h-5 text-emerald-600" />
-                RESTOCK {item.boxNumber}
-              </h4>
-              <button
-                onClick={() => setIsRestockModalOpen(false)}
-                className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+      {/* Series Title & Direct Search Match Highlight */}
+      <div>
+        <h3 className="text-base font-extrabold text-zinc-900 dark:text-white tracking-tight flex items-center gap-2">
+          <span>{highlightMatch(item.title)}</span>
+          {matchedModel && matchedModel.toLowerCase() !== item.title.toLowerCase() && (
+            <span className="text-xs font-semibold text-emerald-700 dark:text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-lg border border-emerald-500/20">
+              Match: {highlightMatch(matchedModel)}
+            </span>
+          )}
+        </h3>
+      </div>
+
+      {/* 2. Variant Availability Strip */}
+      <div className="grid grid-cols-4 gap-1.5 p-1 rounded-xl bg-zinc-100/90 dark:bg-slate-950/80 border border-zinc-200 dark:border-slate-800 text-[11px]">
+        {/* Clear */}
+        <div
+          className={`flex flex-col items-center justify-center py-1 px-1 rounded-lg border transition ${
+            (variants.super_d ?? 0) > 0
+              ? "bg-emerald-500/15 dark:bg-emerald-500/20 border-emerald-500/40 text-emerald-800 dark:text-emerald-300 font-bold"
+              : "bg-white/60 dark:bg-slate-900/50 border-zinc-200/80 dark:border-slate-800/70 text-zinc-500 dark:text-slate-400"
+          }`}
+        >
+          <span className="text-[10px] text-zinc-500 dark:text-slate-400 font-medium">Clear</span>
+          <span className="font-black text-xs text-zinc-900 dark:text-white">{variants.super_d ?? 0}</span>
+        </div>
+
+        {/* Privacy */}
+        <div
+          className={`flex flex-col items-center justify-center py-1 px-1 rounded-lg border transition ${
+            (variants.privacy ?? 0) > 0
+              ? "bg-purple-500/15 dark:bg-purple-500/20 border-purple-500/40 text-purple-800 dark:text-purple-300 font-bold ring-1 ring-purple-500/20"
+              : "bg-white/60 dark:bg-slate-900/50 border-zinc-200/80 dark:border-slate-800/70 text-zinc-500 dark:text-slate-400"
+          }`}
+        >
+          <span className="text-[10px] text-zinc-500 dark:text-slate-400 font-medium">🕶️ Privacy</span>
+          <span className="font-black text-xs text-zinc-900 dark:text-white">{variants.privacy ?? 0}</span>
+        </div>
+
+        {/* Matte */}
+        <div
+          className={`flex flex-col items-center justify-center py-1 px-1 rounded-lg border transition ${
+            (variants.matte ?? 0) > 0
+              ? "bg-blue-500/15 dark:bg-blue-500/20 border-blue-500/40 text-blue-800 dark:text-blue-300 font-bold"
+              : "bg-white/60 dark:bg-slate-900/50 border-zinc-200/80 dark:border-slate-800/70 text-zinc-500 dark:text-slate-400"
+          }`}
+        >
+          <span className="text-[10px] text-zinc-500 dark:text-slate-400 font-medium">🌫️ Matte</span>
+          <span className="font-black text-xs text-zinc-900 dark:text-white">{variants.matte ?? 0}</span>
+        </div>
+
+        {/* Borderless */}
+        <div
+          className={`flex flex-col items-center justify-center py-1 px-1 rounded-lg border transition ${
+            (variants.borderless ?? 0) > 0
+              ? "bg-amber-500/15 dark:bg-amber-500/20 border-amber-500/40 text-amber-800 dark:text-amber-300 font-bold"
+              : "bg-white/60 dark:bg-slate-900/50 border-zinc-200/80 dark:border-slate-800/70 text-zinc-500 dark:text-slate-400"
+          }`}
+        >
+          <span className="text-[10px] text-zinc-500 dark:text-slate-400 font-medium">🔲 Border</span>
+          <span className="font-black text-xs text-zinc-900 dark:text-white">{variants.borderless ?? 0}</span>
+        </div>
+      </div>
+
+      {/* 3. Cross-Fit Fallback Alert (ONLY displayed when out of stock AND alternatives exist) */}
+      {(stockQty === 0 || stockStatus === "OUT_OF_STOCK") && crossFitAlternatives.length > 0 && (
+        <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/30 space-y-1.5">
+          <div className="flex items-center justify-between text-xs font-black text-amber-600 dark:text-amber-400">
+            <span className="flex items-center gap-1">
+              <span>⚠️</span>
+              <span>Cross-Fit Alternatives ({crossFitAlternatives.length}):</span>
+            </span>
+            <span className="text-[10px] px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-700 dark:text-amber-300 font-bold">
+              {item.displaySize || "Screen"} Cut
+            </span>
+          </div>
+
+          <div className="space-y-1">
+            {crossFitAlternatives.slice(0, 2).map((alt) => (
+              <div
+                key={alt.boxId}
+                className="flex items-center justify-between gap-2 bg-white dark:bg-slate-900/90 p-2 rounded-lg border border-amber-500/20 text-xs shadow-sm"
               >
-                <X className="w-5 h-5" />
-              </button>
-            </div>
-
-            <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-              How many units were received?
-            </p>
-
-            {/* Quick Add Buttons */}
-            <div className="flex gap-2">
-              {[1, 5, 10, 20].map((num) => (
-                <button
-                  key={num}
-                  type="button"
-                  onClick={() => setRestockQty(num)}
-                  className={`flex-1 py-2 rounded-xl font-bold text-xs border transition-colors ${
-                    restockQty === num
-                      ? "bg-emerald-600 text-white border-emerald-600"
-                      : "bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100"
-                  }`}
-                >
-                  +{num}
-                </button>
-              ))}
-            </div>
-
-            {/* Custom Quantity Input */}
-            <div className="space-y-1">
-              <label className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400">
-                Quantity
-              </label>
-              <input
-                type="number"
-                min="1"
-                value={restockQty}
-                onChange={(e) => setRestockQty(Math.max(1, parseInt(e.target.value, 10) || 1))}
-                className="w-full px-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 font-bold text-base text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500/30 text-center"
-              />
-            </div>
-
-            <div className="flex gap-2 pt-2">
-              <button
-                type="button"
-                onClick={() => setIsRestockModalOpen(false)}
-                className="flex-1 py-2.5 rounded-xl font-semibold text-xs text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-              >
-                Cancel
-              </button>
-              <button
-                type="button"
-                onClick={confirmRestock}
-                disabled={isUpdatingStock}
-                className="flex-1 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md transition-colors disabled:opacity-50"
-              >
-                Confirm Restock
-              </button>
-            </div>
+                <div className="min-w-0 flex-1">
+                  <span className="font-black text-zinc-900 dark:text-white mr-1.5">{alt.boxNumber}</span>
+                  <span className="text-zinc-600 dark:text-slate-300 text-[11px]">
+                    ({alt.matchedModelSummary}) — {alt.totalStock} in stock
+                  </span>
+                </div>
+                {onSelectBox && (
+                  <button
+                    type="button"
+                    onClick={() => onSelectBox(alt.boxNumber)}
+                    className="px-2 py-0.5 rounded-md bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-[10px] transition shrink-0"
+                  >
+                    View Box
+                  </button>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       )}
 
-      {/* Main Raw Group Title / Summary */}
-      <div className="pt-4 pb-3">
-        <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-1">
-          BOX COMPATIBILITY GROUP
-        </h4>
-        <p className="text-slate-800 dark:text-slate-200 font-medium text-sm sm:text-base leading-relaxed bg-slate-50 dark:bg-slate-800/40 p-3.5 rounded-2xl border border-slate-200/40 dark:border-slate-700/40">
-          {highlightMatch(item.title)}
-        </p>
-      </div>
-
-      {/* Compatible Models Grid */}
-      <div className="space-y-2 pt-2">
-        <div className="flex items-center justify-between">
-          <span className="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 flex items-center gap-1">
-            <Smartphone className="w-3.5 h-3.5" />
-            Compatible Models ({item.compatibleModels.length})
-          </span>
-          {item.compatibleModels.length > 12 && (
-            <button
-              onClick={() => setIsExpanded(!isExpanded)}
-              className="text-xs font-bold text-brand-700 dark:text-brand-400 hover:underline"
-            >
-              {isExpanded ? "Show Less" : `+ ${remainingCount} more models`}
-            </button>
-          )}
-        </div>
-
-        <div className="flex flex-wrap gap-2 pt-1">
-          {visibleModels.map((model, idx) => {
-            const isMatched = searchQuery && model.toLowerCase().includes(searchQuery.trim().toLowerCase());
+      {/* 4. Compatible Aliases (Compact pill tags) */}
+      <div className="space-y-1.5">
+        <div className="flex flex-wrap gap-1.5 max-h-20 overflow-hidden">
+          {visibleAliases.map((model, idx) => {
+            const isMatched =
+              searchQuery &&
+              model.toLowerCase().includes(searchQuery.trim().toLowerCase());
             return (
               <span
                 key={idx}
-                className={`inline-flex items-center px-3 py-1.5 rounded-xl text-xs font-semibold transition-all ${
+                className={`inline-flex items-center px-2 py-0.5 rounded-lg text-[11px] font-medium transition ${
                   isMatched
-                    ? "bg-brand-700 text-white shadow-sm ring-2 ring-brand-700/30 scale-105"
-                    : "bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200/50 dark:border-slate-700/50"
+                    ? "bg-brand-500/20 text-brand-700 dark:text-brand-300 border border-brand-500/40 font-bold"
+                    : "bg-zinc-100 dark:bg-slate-800/80 text-zinc-700 dark:text-slate-300 border border-zinc-200 dark:border-slate-700/60 hover:bg-zinc-200 dark:hover:bg-slate-700/60"
                 }`}
               >
                 {highlightMatch(model)}
@@ -354,6 +308,83 @@ export function ResultCard({ result, searchQuery, onStockUpdate }: ResultCardPro
             );
           })}
         </div>
+
+        {aliases.length > initialDisplayCount && (
+          <button
+            type="button"
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="text-[11px] font-bold text-zinc-500 hover:text-zinc-900 dark:text-slate-400 dark:hover:text-white flex items-center gap-1 transition"
+          >
+            {isExpanded ? (
+              <>
+                <ChevronUp className="w-3 h-3" /> Show Less
+              </>
+            ) : (
+              <>
+                <ChevronDown className="w-3 h-3" /> +{remainingCount} more models
+              </>
+            )}
+          </button>
+        )}
+      </div>
+
+      {/* 5. Action Footer */}
+      <div className="pt-2 border-t border-zinc-200 dark:border-slate-800/80 flex items-center justify-between gap-2 flex-wrap">
+        <div className="flex items-center gap-1.5">
+          {/* Quick SOLD (-1) */}
+          <button
+            type="button"
+            onClick={handleQuickSale}
+            disabled={isUpdatingStock || stockQty <= 0}
+            className={`px-3 py-1.5 rounded-xl font-black text-xs transition border flex items-center gap-1 ${
+              stockQty > 0
+                ? "bg-rose-50 dark:bg-rose-500/15 hover:bg-rose-100 dark:hover:bg-rose-500/25 text-rose-700 dark:text-rose-300 border-rose-200 dark:border-rose-500/30 active:scale-95"
+                : "bg-zinc-100 dark:bg-slate-800/40 text-zinc-400 dark:text-slate-600 border-zinc-200 dark:border-slate-800 cursor-not-allowed"
+            }`}
+            title="Decrement 1 unit sold"
+          >
+            <span>SOLD (-1)</span>
+          </button>
+
+          {/* Quick Waste */}
+          {onRequestWasteLog && (
+            <button
+              type="button"
+              onClick={() => onRequestWasteLog(item)}
+              disabled={stockQty <= 0}
+              className="px-2.5 py-1.5 rounded-xl font-bold text-xs bg-zinc-100 hover:bg-zinc-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-zinc-700 dark:text-slate-300 hover:text-rose-600 dark:hover:text-rose-400 border border-zinc-200 dark:border-slate-700 transition flex items-center gap-1"
+              title="Record broken, defect, or bubble-spoiled glass"
+            >
+              <ShieldAlert className="w-3.5 h-3.5 text-rose-500 dark:text-rose-400" />
+              <span className="hidden sm:inline">Waste</span>
+            </button>
+          )}
+
+          {/* A4 Label Queue */}
+          {onQueueA4Label && (
+            <button
+              type="button"
+              onClick={() => onQueueA4Label(item)}
+              className="p-1.5 rounded-xl bg-zinc-100 hover:bg-zinc-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-zinc-700 dark:text-slate-300 hover:text-zinc-900 dark:hover:text-white border border-zinc-200 dark:border-slate-700 transition"
+              title="Queue sticker in A4 Print Studio"
+            >
+              <Printer className="w-3.5 h-3.5" />
+            </button>
+          )}
+        </div>
+
+        {/* WhatsApp Customer / Dead-Stock Order */}
+        {onRequestDeadStockOrder && (
+          <button
+            type="button"
+            onClick={() => onRequestDeadStockOrder(matchedModel || item.title)}
+            className="px-3 py-1.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs transition flex items-center gap-1.5 shadow-sm active:scale-95"
+            title="Send instant WhatsApp reorder"
+          >
+            <Zap className="w-3.5 h-3.5" />
+            <span>WA Order</span>
+          </button>
+        )}
       </div>
     </div>
   );

@@ -1,0 +1,4382 @@
+[
+  {
+    "id": "box-001",
+    "groupId": "box-001",
+    "boxNumber": "BOX 001",
+    "displaySize": "4.7\"",
+    "title": "iPhone 6",
+    "compatibleModels": [
+      "iPhone 7",
+      "iPhone 8",
+      "iphone 6s",
+      "iPhone 6"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-002",
+    "groupId": "box-002",
+    "boxNumber": "BOX 002",
+    "displaySize": "5.5\"",
+    "title": "iPhone 6+",
+    "compatibleModels": [
+      "iPhone 8+",
+      "iPhone 6+",
+      "iPhone 7+"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-003",
+    "groupId": "box-003",
+    "boxNumber": "BOX 003",
+    "displaySize": "5.8\"",
+    "title": "iPhone X",
+    "compatibleModels": [
+      "iPhone XS",
+      "iPhone 11 Pro",
+      "iPhone X"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-004",
+    "groupId": "box-004",
+    "boxNumber": "BOX 004",
+    "displaySize": "6.1\"",
+    "title": "iPhone XR",
+    "compatibleModels": [
+      "iPhone 11",
+      "iPhone XR"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-005",
+    "groupId": "box-005",
+    "boxNumber": "BOX 005",
+    "displaySize": "6.5\"",
+    "title": "iPhone XS Max",
+    "compatibleModels": [
+      "iPhone XS Max",
+      "iPhone 11 Pro Max"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-006",
+    "groupId": "box-006",
+    "boxNumber": "BOX 006",
+    "displaySize": "6.1\"",
+    "title": "iPhone 12",
+    "compatibleModels": [
+      "iPhone 12 Pro",
+      "iPhone 12"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-007",
+    "groupId": "box-007",
+    "boxNumber": "BOX 007",
+    "displaySize": "5.4\"",
+    "title": "iPhone 12 mini",
+    "compatibleModels": [
+      "iPhone 13 mini",
+      "iPhone 12 mini"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-008",
+    "groupId": "box-008",
+    "boxNumber": "BOX 008",
+    "displaySize": "6.7\"",
+    "title": "iPhone 12 Pro Max",
+    "compatibleModels": [
+      "iPhone 12 Pro Max"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-009",
+    "groupId": "box-009",
+    "boxNumber": "BOX 009",
+    "displaySize": "6.1\"",
+    "title": "iPhone 13",
+    "compatibleModels": [
+      "iPhone 16e",
+      "iPhone 14",
+      "iPhone 13 Pro",
+      "iPhone 13"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-010",
+    "groupId": "box-010",
+    "boxNumber": "BOX 010",
+    "displaySize": "6.7\"",
+    "title": "iPhone 13 Pro Max",
+    "compatibleModels": [
+      "iPhone 14+",
+      "iPhone 13 Pro Max"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-011",
+    "groupId": "box-011",
+    "boxNumber": "BOX 011",
+    "displaySize": "6.1\"",
+    "title": "iPhone 14 Pro",
+    "compatibleModels": [
+      "iPhone 14 Pro"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-012",
+    "groupId": "box-012",
+    "boxNumber": "BOX 012",
+    "displaySize": "6.7\"",
+    "title": "iPhone 14 Pro Max",
+    "compatibleModels": [
+      "iPhone 14 Pro Max"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-013",
+    "groupId": "box-013",
+    "boxNumber": "BOX 013",
+    "displaySize": "6.1\"",
+    "title": "iPhone 15",
+    "compatibleModels": [
+      "iPhone 15",
+      "iPhone 16"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-014",
+    "groupId": "box-014",
+    "boxNumber": "BOX 014",
+    "displaySize": "6.7\"",
+    "title": "iPhone 15 Plus",
+    "compatibleModels": [
+      "iPhone 15 Plus",
+      "iPhone 16 Plus"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-015",
+    "groupId": "box-015",
+    "boxNumber": "BOX 015",
+    "displaySize": "6.1\"",
+    "title": "iPhone 15 Pro",
+    "compatibleModels": [
+      "iPhone 15 Pro"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-016",
+    "groupId": "box-016",
+    "boxNumber": "BOX 016",
+    "displaySize": "6.7\"",
+    "title": "iPhone 15 Pro Max",
+    "compatibleModels": [
+      "iPhone 15 Pro Max"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-017",
+    "groupId": "box-017",
+    "boxNumber": "BOX 017",
+    "displaySize": "6.3\"",
+    "title": "iPhone 16 Pro",
+    "compatibleModels": [
+      "iPhone 16 Pro"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-018",
+    "groupId": "box-018",
+    "boxNumber": "BOX 018",
+    "displaySize": "6.9\"",
+    "title": "iPhone 16 Pro Max",
+    "compatibleModels": [
+      "iPhone 16 Pro Max"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-019",
+    "groupId": "box-019",
+    "boxNumber": "BOX 019",
+    "displaySize": "6.3\"",
+    "title": "iPhone 17",
+    "compatibleModels": [
+      "iPhone 17",
+      "iPhone 17 Pro"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-020",
+    "groupId": "box-020",
+    "boxNumber": "BOX 020",
+    "displaySize": "6.9\"",
+    "title": "iPhone 17 Pro Max",
+    "compatibleModels": [
+      "iPhone 17 Pro Max"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-021",
+    "groupId": "box-021",
+    "boxNumber": "BOX 021",
+    "displaySize": "6.3\"",
+    "title": "Google Pixel 4XL",
+    "compatibleModels": [
+      "Google Pixel 4XL"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-022",
+    "groupId": "box-022",
+    "boxNumber": "BOX 022",
+    "displaySize": "6.0\"",
+    "title": "Google Pixel 5",
+    "compatibleModels": [
+      "Google Pixel 5"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-023",
+    "groupId": "box-023",
+    "boxNumber": "BOX 023",
+    "displaySize": "6.2\"",
+    "title": "Google Pixel 5XL",
+    "compatibleModels": [
+      "Google Pixel 5XL"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-024",
+    "groupId": "box-024",
+    "boxNumber": "BOX 024",
+    "displaySize": "6.1\"",
+    "title": "Google Pixel 6A",
+    "compatibleModels": [
+      "Google Pixel 6A",
+      "Google Pixel 7A"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-025",
+    "groupId": "box-025",
+    "boxNumber": "BOX 025",
+    "displaySize": "6.4\"",
+    "title": "Google Pixel 6",
+    "compatibleModels": [
+      "Google Pixel 6"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-026",
+    "groupId": "box-026",
+    "boxNumber": "BOX 026",
+    "displaySize": "6.3\"",
+    "title": "Google Pixel 7",
+    "compatibleModels": [
+      "Google Pixel 7"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-027",
+    "groupId": "box-027",
+    "boxNumber": "BOX 027",
+    "displaySize": "6.2\"",
+    "title": "Google Pixel 8",
+    "compatibleModels": [
+      "Google Pixel 8"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-028",
+    "groupId": "box-028",
+    "boxNumber": "BOX 028",
+    "displaySize": "6.1\"",
+    "title": "Google Pixel 8A",
+    "compatibleModels": [
+      "Google Pixel 8A"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-029",
+    "groupId": "box-029",
+    "boxNumber": "BOX 029",
+    "displaySize": "6.7\"",
+    "title": "Google Pixel 8 Pro",
+    "compatibleModels": [
+      "Google Pixel 8 Pro"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-030",
+    "groupId": "box-030",
+    "boxNumber": "BOX 030",
+    "displaySize": "6.3\"",
+    "title": "Google Pixel 9 Pro",
+    "compatibleModels": [
+      "Google Pixel 9 Pro"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-031",
+    "groupId": "box-031",
+    "boxNumber": "BOX 031",
+    "displaySize": "6.3\"",
+    "title": "Google Pixel 9A",
+    "compatibleModels": [
+      "Google Pixel 9A"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-032",
+    "groupId": "box-032",
+    "boxNumber": "BOX 032",
+    "displaySize": "6.8\"",
+    "title": "Google Pixel 9 Pro XL",
+    "compatibleModels": [
+      "Google Pixel 9 Pro XL"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-033",
+    "groupId": "box-033",
+    "boxNumber": "BOX 033",
+    "displaySize": "6.3\"",
+    "title": "Google Pixel 9",
+    "compatibleModels": [
+      "Google Pixel 9"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-034",
+    "groupId": "box-034",
+    "boxNumber": "BOX 034",
+    "displaySize": "6.3\"",
+    "title": "Google Pixel 10",
+    "compatibleModels": [
+      "Google Pixel 10"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-035",
+    "groupId": "box-035",
+    "boxNumber": "BOX 035",
+    "displaySize": "6.3\"",
+    "title": "Google Pixel 10 Pro",
+    "compatibleModels": [
+      "Google Pixel 10 Pro"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-036",
+    "groupId": "box-036",
+    "boxNumber": "BOX 036",
+    "displaySize": "6.8\"",
+    "title": "Google Pixel 10 Pro XL",
+    "compatibleModels": [
+      "Google Pixel 10 Pro XL"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-037",
+    "groupId": "box-037",
+    "boxNumber": "BOX 037",
+    "displaySize": "6.3\"",
+    "title": "Google Pixel 10A",
+    "compatibleModels": [
+      "Google Pixel 10A"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-038",
+    "groupId": "box-038",
+    "boxNumber": "BOX 038",
+    "displaySize": "Mixed",
+    "title": "S8",
+    "compatibleModels": [
+      "S9+",
+      "S10",
+      "S9",
+      "S8+",
+      "S8"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-039",
+    "groupId": "box-039",
+    "boxNumber": "BOX 039",
+    "displaySize": "Mixed",
+    "title": "S20",
+    "compatibleModels": [
+      "S20+",
+      "S20 FE",
+      "S20 Ultra",
+      "S20"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-040",
+    "groupId": "box-040",
+    "boxNumber": "BOX 040",
+    "displaySize": "Mixed",
+    "title": "S21",
+    "compatibleModels": [
+      "S21 Ultra",
+      "S21",
+      "S21 FE",
+      "S21+"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-041",
+    "groupId": "box-041",
+    "boxNumber": "BOX 041",
+    "displaySize": "Mixed",
+    "title": "S22",
+    "compatibleModels": [
+      "S23",
+      "S22",
+      "S22+",
+      "S23+"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-042",
+    "groupId": "box-042",
+    "boxNumber": "BOX 042",
+    "displaySize": "Mixed",
+    "title": "S22 Ultra",
+    "compatibleModels": [
+      "S23 Ultra",
+      "S22 Ultra"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-043",
+    "groupId": "box-043",
+    "boxNumber": "BOX 043",
+    "displaySize": "Mixed",
+    "title": "S24",
+    "compatibleModels": [
+      "S24+",
+      "S24",
+      "S24 Ultra"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-044",
+    "groupId": "box-044",
+    "boxNumber": "BOX 044",
+    "displaySize": "Mixed",
+    "title": "S25",
+    "compatibleModels": [
+      "S25",
+      "S25 Ultra",
+      "S25+"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-045",
+    "groupId": "box-045",
+    "boxNumber": "BOX 045",
+    "displaySize": "Mixed",
+    "title": "S26",
+    "compatibleModels": [
+      "S26+",
+      "S26",
+      "S26 Ultra"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-046",
+    "groupId": "box-046",
+    "boxNumber": "BOX 046",
+    "displaySize": "Mixed",
+    "title": "Samsung Galaxy A71",
+    "compatibleModels": [
+      "Redmi K60 Pro",
+      "Samsung Galaxy S10 Lite",
+      "Samsung Galaxy A21S",
+      "Redmi Note 12 Pro",
+      "Huawei Nova 8i",
+      "Redmi Note 14",
+      "Redmi 11",
+      "Samsung Galaxy A90",
+      "Samsung Note 10 Lite",
+      "Samsung Galaxy M55",
+      "Samsung Galaxy M51",
+      "HOT 50I",
+      "INFINIX HOT 50",
+      "Redmi 9S",
+      "Redmi K30",
+      "Samsung Galaxy M52",
+      "Redmi K50",
+      "Samsung Galaxy A80",
+      "Redmi Note 14 SE",
+      "Redmi 9 Pro Max",
+      "Redmi Note 12",
+      "Redmi Note 13",
+      "OPPO A36",
+      "Redmi K60",
+      "Samsung Galaxy A91",
+      "NORD CE3 LITE",
+      "Redmi K50 Pro",
+      "Redmi K30 Ultra",
+      "Samsung Galaxy F56",
+      "Redmi 11 Pro+",
+      "Samsung Galaxy A20",
+      "Samsung Galaxy M53",
+      "Samsung Galaxy M55s",
+      "Redmi Note 12 Pro+",
+      "OPPO K10 China",
+      "Samsung Galaxy F54",
+      "Redmi 10 Pro Max",
+      "Redmi 12 Explorer",
+      "Redmi K30 Pro",
+      "Redmi K40 Pro",
+      "Samsung Galaxy A71 5G",
+      "Samsung Galaxy A71",
+      "Redmi K60E",
+      "Redmi 11 Pro",
+      "OPPO A54",
+      "OPPO A96",
+      "Redmi K40",
+      "Samsung Galaxy A72",
+      "OPPO K10X",
+      "Samsung Galaxy M62",
+      "Honor 50 Lite",
+      "Redmi K40 Pro+",
+      "Samsung Galaxy F62",
+      "OPPO K10",
+      "Redmi Note 9 Pro",
+      "OPPO A55",
+      "Samsung Galaxy A73",
+      "POCO X5",
+      "Samsung Galaxy A81",
+      "HONOR X9",
+      "Redmi Note 10 Pro",
+      "OPPO A76",
+      "Huawei Y9a",
+      "OPPO A53",
+      "Samsung C55"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-047",
+    "groupId": "box-047",
+    "boxNumber": "BOX 047",
+    "displaySize": "6.7\"",
+    "title": "Samsung Galaxy A16",
+    "compatibleModels": [
+      "Samsung Galaxy A16",
+      "Samsung Galaxy A14",
+      "SAMSUNG GALAXYF36",
+      "Samsung Galaxy F96",
+      "SAMSUNG GALAXY M36",
+      "SAMSUNG GALAXY A17",
+      "Samsung Galaxy F16",
+      "Samsung Galaxy M16",
+      "Samsung Galaxy M86",
+      "SAMSUNG GALAXY M17",
+      "Samsung Galaxy A26",
+      "Samsung Galaxy F17"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-048",
+    "groupId": "box-048",
+    "boxNumber": "BOX 048",
+    "displaySize": "6.7\"",
+    "title": "Samsung Galaxy A05",
+    "compatibleModels": [
+      "A05s",
+      "A06",
+      "A07",
+      "A14",
+      "A22",
+      "C51",
+      "C51S",
+      "C61",
+      "C63",
+      "C71",
+      "F06",
+      "F06 5G",
+      "F07",
+      "F14",
+      "F42",
+      "M06",
+      "M14",
+      "Narzo 80 Lite",
+      "Note 50",
+      "Note 60",
+      "Note 60X",
+      "Note 70",
+      "P4 Lite",
+      "POCO C65",
+      "POCO M6",
+      "Realme C51",
+      "Realme C51S",
+      "Realme C53",
+      "Realme C61",
+      "Realme C61 India",
+      "Realme C63",
+      "Realme C65S",
+      "Realme N53",
+      "Realme N61",
+      "Realme N63",
+      "Realme Note 50",
+      "Realme Note 60",
+      "Realme Note 60X",
+      "Redmi 13C",
+      "Redmi 13R",
+      "Redmi A3",
+      "Samsung A06",
+      "Samsung A14",
+      "Samsung Galaxy A05",
+      "Samsung Galaxy A05S",
+      "Samsung Galaxy A06",
+      "Samsung Galaxy A07",
+      "Samsung Galaxy A14",
+      "Samsung Galaxy A22",
+      "Samsung Galaxy F05",
+      "Samsung Galaxy F14",
+      "Samsung Galaxy F42",
+      "Samsung Galaxy M05",
+      "Samsung Galaxy M14",
+      "Vivo Y04",
+      "Vivo Y19E",
+      "Vivo Y29S",
+      "Y04",
+      "Y19",
+      "Y19E",
+      "Y19S",
+      "Y21",
+      "Y29S"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-049",
+    "groupId": "box-049",
+    "boxNumber": "BOX 049",
+    "displaySize": "6.67\"",
+    "title": "Redmi Note 10",
+    "compatibleModels": [
+      "Redmi K60E",
+      "Redmi 40 Pro+",
+      "Redmi K50 Pro",
+      "Redmi Note 10",
+      "Redmi K40S",
+      "Redmi Note 13",
+      "POCO X5 Pro",
+      "Redmi 11 Pro+",
+      "Redmi K40",
+      "Redmi 14 5E",
+      "Redmi 10 Pro",
+      "Redmi 11 Pro",
+      "Redmi 11E Pro",
+      "POCO Mi 11ST",
+      "POCO 13T Pro",
+      "Redmi Note 14",
+      "Redmi 11",
+      "POCO F5",
+      "Redmi 13 Pro",
+      "Redmi K50",
+      "Redmi 10 Pro Max"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-050",
+    "groupId": "box-050",
+    "boxNumber": "BOX 050",
+    "displaySize": "6.6\"",
+    "title": "Samsung Galaxy A34 5G",
+    "compatibleModels": [
+      "A34 5G",
+      "Samsung Galaxy A34 5G"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-051",
+    "groupId": "box-051",
+    "boxNumber": "BOX 051",
+    "displaySize": "6.6\"",
+    "title": "Samsung Galaxy A55",
+    "compatibleModels": [
+      "Samsung Galaxy A35",
+      "Samsung Galaxy A55",
+      "Samsung Galaxy M35"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-053",
+    "groupId": "box-053",
+    "boxNumber": "BOX 053",
+    "displaySize": "Mixed",
+    "title": "Redmi 10",
+    "compatibleModels": [
+      "POCO M3 Pro",
+      "Redmi Note 11 SE",
+      "Redmi Note 10",
+      "Realme 30 Pro",
+      "OPPO 2Z",
+      "Redmi Note 11",
+      "Realme 7 Global",
+      "Redmi 10 Prime",
+      "OPPO A92",
+      "OPPO Reno 2",
+      "Realme 7 5G",
+      "OPPO A52",
+      "Redmi 10",
+      "Realme 6",
+      "Realme Narzo 20 Pro",
+      "OPPO 2F",
+      "Realme X7 Pro",
+      "Realme 30",
+      "Realme 6S",
+      "OPPO K7X",
+      "Redmi 10T",
+      "Realme 7 Asia"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-054",
+    "groupId": "box-054",
+    "boxNumber": "BOX 054",
+    "displaySize": "6.53\"",
+    "title": "Redmi 9",
+    "compatibleModels": [
+      "Redmi 9 Prime",
+      "Redmi 9",
+      "Redmi 10A 5G",
+      "Redmi 9i",
+      "Redmi 9A",
+      "Redmi 9C"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-055",
+    "groupId": "box-055",
+    "boxNumber": "BOX 055",
+    "displaySize": "Mixed",
+    "title": "Samsung Galaxy A15",
+    "compatibleModels": [
+      "Samsung A15",
+      "Samsung Galaxy A25",
+      "A25",
+      "Samsung Galaxy A24",
+      "A24",
+      "M15",
+      "Samsung Galaxy A25 5G",
+      "A25 5G",
+      "A15 5G",
+      "F15",
+      "Samsung Galaxy F15",
+      "A34",
+      "Samsung Galaxy F34",
+      "F34",
+      "Samsung Galaxy A15",
+      "Samsung Galaxy M15",
+      "M34",
+      "Samsung Galaxy A34",
+      "Samsung Galaxy M34"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": "Camera Model Scanner",
+    "verification": "Packaging Scan (Pending Physical Fit)",
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-056",
+    "groupId": "box-056",
+    "boxNumber": "BOX 056",
+    "displaySize": "6.3\"",
+    "title": "Redmi Note 7",
+    "compatibleModels": [
+      "Redmi 7S",
+      "Redmi Y3",
+      "Redmi 7 Pro",
+      "Redmi Note 7"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-058",
+    "groupId": "box-058",
+    "boxNumber": "BOX 058",
+    "displaySize": "6.5\"",
+    "title": "Samsung Galaxy A51",
+    "compatibleModels": [
+      "A52",
+      "A52 5G",
+      "A52S",
+      "M31",
+      "OPPO A93",
+      "OPPO F17 Pro",
+      "OPPO Reno 4",
+      "OPPO Reno 4 SE",
+      "OPPO Reno 4F",
+      "OPPO Reno 5 5G",
+      "S20 FE",
+      "S20 FE 5G",
+      "Samsung A51",
+      "Samsung Galaxy A51",
+      "Samsung Galaxy A52",
+      "Samsung Galaxy A52S",
+      "Samsung Galaxy A53",
+      "Samsung Galaxy M31S",
+      "Samsung Galaxy S20 FE",
+      "Samsung Galaxy S20 FE 5G"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-060",
+    "groupId": "box-060",
+    "boxNumber": "BOX 060",
+    "displaySize": "Mixed",
+    "title": "Samsung Galaxy A80",
+    "compatibleModels": [
+      "SAMSUNG GALAXY M21 2021",
+      "Samsung Galaxy M30",
+      "Vivo U10",
+      "Samsung Galaxy A80",
+      "Vivo S1 Pro",
+      "Vivo Y12",
+      "Vivo Y17",
+      "Vivo Y93",
+      "Samsung Galaxy F41",
+      "Samsung Galaxy A31",
+      "Vivo Y75",
+      "Vivo U3X",
+      "SAMSUNG GALAXY A30",
+      "Samsung Galaxy M30S",
+      "Samsung Galaxy M13",
+      "Samsung Galaxy M21",
+      "Vivo S1",
+      "Samsung Galaxy A50",
+      "Samsung Galaxy M32",
+      "Samsung Galaxy M31 Prime",
+      "Vivo Y15",
+      "Samsung Galaxy M10S",
+      "Samsung Galaxy A80S",
+      "Vivo Y3 Standard",
+      "Samsung Galaxy A20",
+      "Vivo Z5",
+      "Samsung Galaxy M31",
+      "Samsung Galaxy M21S",
+      "Samsung Galaxy A32",
+      "Samsung Galaxy A50S",
+      "Vivo Z1X",
+      "Vivo Y11 (2019)",
+      "Vivo V17",
+      "SAMSUNG GALAXY A30S",
+      "Samsung Galaxy F22",
+      "Vivo Y9"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-061",
+    "groupId": "box-061",
+    "boxNumber": "BOX 061",
+    "displaySize": "6.4\"",
+    "title": "Samsung Galaxy A54",
+    "compatibleModels": [
+      "SA54",
+      "Samsung Galaxy A54",
+      "Samsung Galaxy S23 FE"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-062",
+    "groupId": "box-062",
+    "boxNumber": "BOX 062",
+    "displaySize": "Mixed",
+    "title": "Samsung Galaxy A11",
+    "compatibleModels": [
+      "Reno Ace",
+      "Huawei 9X",
+      "Samsung Galaxy A90",
+      "Huawei Y3",
+      "Z5",
+      "Y9A",
+      "Redmi 10X",
+      "Y19",
+      "Y15",
+      "Y53",
+      "Samsung Galaxy A80",
+      "Samsung Galaxy M11",
+      "OPPO Reno Ace",
+      "OPPO F11 Pro",
+      "Huawei Y9 Prime",
+      "OPPO Reno 10X",
+      "OPPO F11",
+      "9X Pro",
+      "A9",
+      "OnePlus 7T",
+      "9X",
+      "Huawei Y9",
+      "A52",
+      "Redmi 9T",
+      "Reno 10X",
+      "POCO M3",
+      "Huawei Z5",
+      "K3",
+      "Huawei Y53",
+      "OPPO K3",
+      "Redmi 8 Pro",
+      "Redmi Note 9",
+      "Samsung Galaxy A11",
+      "M11",
+      "Huawei Y19",
+      "OPPO A52",
+      "OPPO A9",
+      "Y9 Prime",
+      "F11 Pro",
+      "A90",
+      "Redmi 10X Pro",
+      "Y9",
+      "Huawei 9X Pro",
+      "Huawei Y9S",
+      "A80",
+      "Samsung A11"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-063",
+    "groupId": "box-063",
+    "boxNumber": "BOX 063",
+    "displaySize": "6.43\"",
+    "title": "Redmi Note 10",
+    "compatibleModels": [
+      "Note 11SE",
+      "Redmi Note 10",
+      "Note 12",
+      "Redmi Note 10S",
+      "Note 12 Pro",
+      "Note 10 Pro Max",
+      "Xiaomi Poco M4 Pro 2022",
+      "Note 11 Pro",
+      "Redmi Note 11 2022",
+      "Note 11",
+      "Note 11 5G",
+      "Note 10 Pro",
+      "Redmi 11S 2022"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-064",
+    "groupId": "box-064",
+    "boxNumber": "BOX 064",
+    "displaySize": "6.22\"",
+    "title": "Redmi 8",
+    "compatibleModels": [
+      "Redmi 8",
+      "Redmi 8A Dual",
+      "Redmi 8A Pro",
+      "Redmi Note 8",
+      "Redmi 8A"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-065",
+    "groupId": "box-065",
+    "boxNumber": "BOX 065",
+    "displaySize": "Mixed",
+    "title": "Samsung Galaxy A10",
+    "compatibleModels": [
+      "M04",
+      "A32 5G",
+      "F13",
+      "A13",
+      "Vivo Y91C",
+      "Infinix S4",
+      "M12",
+      "F04",
+      "A7X",
+      "OPPO A7X",
+      "M02",
+      "OPPO R17",
+      "A02",
+      "A04s",
+      "OPPO R17 Pro",
+      "OPPO A12",
+      "Y20",
+      "A04 Core",
+      "F23",
+      "A23",
+      "M13",
+      "Samsung Galaxy M01S",
+      "A23 5G",
+      "Vivo Y11i",
+      "SAMSUNG GALAXY M01S",
+      "M32 5G",
+      "A04e",
+      "Y22",
+      "Y20S",
+      "A55",
+      "OPPO A5S",
+      "M02s",
+      "OPPO A11K",
+      "F12",
+      "M13 5G",
+      "Infinix X626",
+      "A03 Core",
+      "A11K",
+      "X6226",
+      "INF S4",
+      "F02s",
+      "Samsung Galaxy M20",
+      "A10S",
+      "M20",
+      "Vivo Y95",
+      "Y21",
+      "A12",
+      "A13 5G",
+      "Samsung Galaxy M10",
+      "Vivo Y90",
+      "Y21S",
+      "Samsung A10",
+      "R17 Pro",
+      "A04",
+      "M10S",
+      "Vivo Y1S",
+      "M23",
+      "A02s",
+      "A03s",
+      "M33",
+      "M10",
+      "OPPO A7",
+      "Vivo Y10",
+      "Vivo Y93",
+      "Samsung Galaxy A10S",
+      "Samsung Galaxy A10",
+      "Vivo Y91",
+      "A03",
+      "Vivo Y91i",
+      "R17"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-066",
+    "groupId": "box-066",
+    "boxNumber": "BOX 066",
+    "displaySize": "5.5\"",
+    "title": "J7 2016",
+    "compatibleModels": [
+      "J7 2016",
+      "Max",
+      "J7",
+      "J7 Prime",
+      "J4"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-067",
+    "groupId": "box-067",
+    "boxNumber": "BOX 067",
+    "displaySize": "5.5\"",
+    "title": "J7 Pro",
+    "compatibleModels": [
+      "J7 Pro",
+      "J710"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-068",
+    "groupId": "box-068",
+    "boxNumber": "BOX 068",
+    "displaySize": "5.0\"",
+    "title": "J5",
+    "compatibleModels": [
+      "J5",
+      "J6+",
+      "J6"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-069",
+    "groupId": "box-069",
+    "boxNumber": "BOX 069",
+    "displaySize": "5.6\"",
+    "title": "A8 2018",
+    "compatibleModels": [
+      "A8 2018",
+      "A9",
+      "J5 Prime"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-070",
+    "groupId": "box-070",
+    "boxNumber": "BOX 070",
+    "displaySize": "5.0\"",
+    "title": "A2 Core",
+    "compatibleModels": [
+      "Y7 Prime",
+      "A2 Core",
+      "M01",
+      "7C"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-071",
+    "groupId": "box-071",
+    "boxNumber": "BOX 071",
+    "displaySize": "Mixed",
+    "title": "S1 Pro",
+    "compatibleModels": [
+      "OPPO A60",
+      "OPPO F5",
+      "S1 Pro",
+      "Vivo Y65"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-072",
+    "groupId": "box-072",
+    "boxNumber": "BOX 072",
+    "displaySize": "5.7\"",
+    "title": "OPPO A83",
+    "compatibleModels": [
+      "OPPO A83"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-073",
+    "groupId": "box-073",
+    "boxNumber": "BOX 073",
+    "displaySize": "5.2\"",
+    "title": "OPPO A57",
+    "compatibleModels": [
+      "A57 4G",
+      "A57 5G",
+      "A57E",
+      "A57S",
+      "OPPO A57"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-074",
+    "groupId": "box-074",
+    "boxNumber": "BOX 074",
+    "displaySize": "6.4\"",
+    "title": "OPPO A91",
+    "compatibleModels": [
+      "F15",
+      "F17",
+      "F17 Pro",
+      "F19 Pro",
+      "OPPO A91",
+      "OPPO F15",
+      "OPPO F17",
+      "OPPO Reno 3",
+      "Reno 3"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-075",
+    "groupId": "box-075",
+    "boxNumber": "BOX 075",
+    "displaySize": "6.43\"",
+    "title": "OPPO A93",
+    "compatibleModels": [
+      "OPPO A93",
+      "Huawei Y8P",
+      "Realme 8"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-076",
+    "groupId": "box-076",
+    "boxNumber": "BOX 076",
+    "displaySize": "5.45\"",
+    "title": "Y5 2018",
+    "compatibleModels": [
+      "Y81",
+      "Y83",
+      "Y89",
+      "Y5 2018"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-077",
+    "groupId": "box-077",
+    "boxNumber": "BOX 077",
+    "displaySize": "6.59\"",
+    "title": "Y9 Prime",
+    "compatibleModels": [
+      "Honor 20",
+      "5T",
+      "Y9 Prime",
+      "Honor Enjoy 8E"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-078",
+    "groupId": "box-078",
+    "boxNumber": "BOX 078",
+    "displaySize": "5.7\"",
+    "title": "Y6 2018",
+    "compatibleModels": [
+      "Play 10",
+      "Y6P",
+      "Y6 2018"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-079",
+    "groupId": "box-079",
+    "boxNumber": "BOX 079",
+    "displaySize": "6.5\"",
+    "title": "Y9 2019",
+    "compatibleModels": [
+      "Y9 2019",
+      "Y9 2018"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-080",
+    "groupId": "box-080",
+    "boxNumber": "BOX 080",
+    "displaySize": "6.26\"",
+    "title": "Y7 2019",
+    "compatibleModels": [
+      "Y7 2019",
+      "Y7 2018"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-081",
+    "groupId": "box-081",
+    "boxNumber": "BOX 081",
+    "displaySize": "5.84\"",
+    "title": "P20 Lite",
+    "compatibleModels": [
+      "P20 Lite",
+      "Nova 5i",
+      "P40 Lite"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-082",
+    "groupId": "box-082",
+    "boxNumber": "BOX 082",
+    "displaySize": "5.9\"",
+    "title": "Nova 2i",
+    "compatibleModels": [
+      "Nova 3i",
+      "Nova 2i"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-083",
+    "groupId": "box-083",
+    "boxNumber": "BOX 083",
+    "displaySize": "5.45\"",
+    "title": "Y5P",
+    "compatibleModels": [
+      "Y5P"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-084",
+    "groupId": "box-084",
+    "boxNumber": "BOX 084",
+    "displaySize": "6.5\"",
+    "title": "Realme 5",
+    "compatibleModels": [
+      "10",
+      "10 5G",
+      "10A",
+      "10S",
+      "10T",
+      "20",
+      "20A",
+      "30",
+      "30A",
+      "40",
+      "5 Pro",
+      "50",
+      "50A",
+      "50A Prime",
+      "50i",
+      "50i Prime",
+      "5S",
+      "5i",
+      "6i",
+      "70 Lite",
+      "7i",
+      "9 Prime",
+      "9A",
+      "9C",
+      "9i",
+      "9i 5G",
+      "C15",
+      "C20",
+      "C25",
+      "C25S",
+      "C25Y",
+      "C30",
+      "C30S",
+      "C31",
+      "C33",
+      "C35",
+      "C51",
+      "C51S",
+      "C53",
+      "C61",
+      "C63",
+      "C71",
+      "Enjoy 20",
+      "Honor 20",
+      "Honor 30",
+      "Honor 40",
+      "Honor 70 Lite",
+      "Honor Play 6C",
+      "Honor X5",
+      "Huawei Enjoy 50Z",
+      "Huawei Nova Y61",
+      "Huawei X5",
+      "Huawei X5+",
+      "Huawei X6",
+      "Huawei X6A",
+      "Huawei X6B",
+      "Huawei X8",
+      "Huawei X8A",
+      "Narzo 10",
+      "Note 50",
+      "Note 60",
+      "Note 60X",
+      "Note 70",
+      "Nova Y70",
+      "Nova Y71",
+      "Nova Y72",
+      "Nova Y90",
+      "P4 Lite",
+      "Play 6C",
+      "Realme 10A",
+      "Realme 5",
+      "Realme C15",
+      "Realme C20",
+      "Realme C25",
+      "Redmi 10A",
+      "Redmi 9",
+      "Redmi 9 Prime",
+      "Redmi 9A",
+      "Redmi 9C",
+      "Redmi 9i",
+      "Samsung A20s",
+      "Samsung Galaxy A20S",
+      "Tecno 7 Pro",
+      "Tecno POP 5 Lite",
+      "Tecno Pop 7",
+      "Tecno Spark 10",
+      "Tecno Spark 10C",
+      "Tecno Spark 6 GO",
+      "Tecno Spark 7",
+      "Tecno Spark 8C",
+      "Tecno Spark 90",
+      "Tecno Spark 90 2020",
+      "Tecno Spark 90 2023",
+      "X5 Plus",
+      "X5B",
+      "X5B Plus",
+      "X6",
+      "X6A",
+      "X6B",
+      "X7",
+      "X7A",
+      "X7B",
+      "X8",
+      "X8A"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-085",
+    "groupId": "box-085",
+    "boxNumber": "BOX 085",
+    "displaySize": "Mixed",
+    "title": "A51",
+    "compatibleModels": [
+      "OnePlus 14 Civi Pro",
+      "OnePlus Nord",
+      "Google Pixel 6",
+      "A51"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-086",
+    "groupId": "box-086",
+    "boxNumber": "BOX 086",
+    "displaySize": "6.39\"",
+    "title": "V15 Pro",
+    "compatibleModels": [
+      "K20",
+      "F2 Pro",
+      "V15 Pro",
+      "F2",
+      "K20 Pro"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-088",
+    "groupId": "box-088",
+    "boxNumber": "BOX 088",
+    "displaySize": "Mixed",
+    "title": "Redmi Note 12",
+    "compatibleModels": [
+      "POCO Hot 50",
+      "Note 13R Pro",
+      "POCO C65",
+      "Note 13",
+      "POCO M6",
+      "Redmi Note 12",
+      "Note 14S",
+      "POCO 50i",
+      "Note 12 Turbo",
+      "Note 12 Pro",
+      "Note 13 Pro",
+      "POCO X9",
+      "POCO F5"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-089",
+    "groupId": "box-089",
+    "boxNumber": "BOX 089",
+    "displaySize": "6.7\"",
+    "title": "S24 FE",
+    "compatibleModels": [
+      "A55",
+      "A56",
+      "A35",
+      "S24 FE",
+      "A57",
+      "M56",
+      "M36",
+      "M47",
+      "25 FE",
+      "F56",
+      "A37",
+      "A36",
+      "Samsung A54"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-090",
+    "groupId": "box-090",
+    "boxNumber": "BOX 090",
+    "displaySize": "Mixed",
+    "title": "X5B",
+    "compatibleModels": [
+      "A1",
+      "X6",
+      "A2 PWS",
+      "X6B",
+      "A2",
+      "X5B",
+      "X6A"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-091",
+    "groupId": "box-091",
+    "boxNumber": "BOX 091",
+    "displaySize": "Mixed",
+    "title": "X7B",
+    "compatibleModels": [
+      "Honor 9X Pro",
+      "Honor 9X",
+      "M7",
+      "Honor 90",
+      "X7B",
+      "Honor 9",
+      "X7C",
+      "Honor P81",
+      "M7 Plus",
+      "Motorola G75"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-092",
+    "groupId": "box-092",
+    "boxNumber": "BOX 092",
+    "displaySize": "6.53\"",
+    "title": "Huawei Nova 7",
+    "compatibleModels": [
+      "Huawei P40 Lite",
+      "Huawei Nova 7",
+      "V30 Pro",
+      "Nova 7 SE",
+      "Nova 10Z",
+      "Nova 10",
+      "Honor 30",
+      "30S",
+      "P40 Lite E",
+      "V30"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-094",
+    "groupId": "box-094",
+    "boxNumber": "BOX 094",
+    "displaySize": "6.62\"",
+    "title": "OnePlus 9 RT",
+    "compatibleModels": [
+      "OnePlus 9 RT"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-095",
+    "groupId": "box-095",
+    "boxNumber": "BOX 095",
+    "displaySize": "6.88\"",
+    "title": "Redmi 14C",
+    "compatibleModels": [
+      "Redmi 14C",
+      "Redmi 14C 5G",
+      "Redmi 14R",
+      "Redmi 15",
+      "Redmi 15C",
+      "Redmi 15C 5G",
+      "Redmi A3",
+      "Redmi A4",
+      "Redmi A5"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-096",
+    "groupId": "box-096",
+    "boxNumber": "BOX 096",
+    "displaySize": "Unknown",
+    "title": "Box 096",
+    "compatibleModels": [
+      "Box 096"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-097",
+    "groupId": "box-097",
+    "boxNumber": "BOX 097",
+    "displaySize": "6.75\"",
+    "title": "ZTE A35",
+    "compatibleModels": [
+      "ZTE A35"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-099",
+    "groupId": "box-099",
+    "boxNumber": "BOX 099",
+    "displaySize": "6.5\"",
+    "title": "Nokia C3",
+    "compatibleModels": [
+      "Nokia C3"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-101",
+    "groupId": "box-101",
+    "boxNumber": "BOX 101",
+    "displaySize": "6.5\"",
+    "title": "Honor X6",
+    "compatibleModels": [
+      "Honor X6"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-104",
+    "groupId": "box-104",
+    "boxNumber": "BOX 104",
+    "displaySize": "6.0\"",
+    "title": "OPPO F5",
+    "compatibleModels": [
+      "OPPO F5"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-105",
+    "groupId": "box-105",
+    "boxNumber": "BOX 105",
+    "displaySize": "6.7\"",
+    "title": "Honor X8",
+    "compatibleModels": [
+      "Honor X8"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-106",
+    "groupId": "box-106",
+    "boxNumber": "BOX 106",
+    "displaySize": "6.7\"",
+    "title": "Honor 400",
+    "compatibleModels": [
+      "Honor 400"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-107",
+    "groupId": "box-107",
+    "boxNumber": "BOX 107",
+    "displaySize": "6.59\"",
+    "title": "Honor 9X",
+    "compatibleModels": [
+      "Honor 9X"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-108",
+    "groupId": "box-108",
+    "boxNumber": "BOX 108",
+    "displaySize": "6.7\"",
+    "title": "Samsung Galaxy A06",
+    "compatibleModels": [
+      "F07",
+      "Samsung Galaxy A06",
+      "Samsung A06",
+      "M06",
+      "F06",
+      "F06 5G"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-110",
+    "groupId": "box-110",
+    "boxNumber": "BOX 110",
+    "displaySize": "6.78\"",
+    "title": "Tecno Pova 5 Pro",
+    "compatibleModels": [
+      "Spark Go 2020",
+      "Tecno Pop 5 LTE",
+      "Pova 5 Pro",
+      "Spark 10",
+      "Spark Go 2024",
+      "Spark 6 Go",
+      "Spark 20C",
+      "Pop 9",
+      "Spark 8C",
+      "Spark 10C",
+      "Spark 20",
+      "Pova 6 Neo 5G",
+      "Pop 7",
+      "Spark Go",
+      "Pova 5",
+      "Spark 30C",
+      "Tecno Pova 5 Pro",
+      "Pop 7 Pro",
+      "Spark 7",
+      "Spark Go 2023",
+      "Pop 8",
+      "Pova 4"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-112",
+    "groupId": "box-112",
+    "boxNumber": "BOX 112",
+    "displaySize": "Mixed",
+    "title": "M53",
+    "compatibleModels": [
+      "M53",
+      "OPPO A54"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-113",
+    "groupId": "box-113",
+    "boxNumber": "BOX 113",
+    "displaySize": "6.55\"",
+    "title": "OnePlus 9T",
+    "compatibleModels": [
+      "OnePlus 9T",
+      "9R",
+      "OnePlus 9",
+      "8T",
+      "9T"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-114",
+    "groupId": "box-114",
+    "boxNumber": "BOX 114",
+    "displaySize": "6.82\"",
+    "title": "Hot 12 Play",
+    "compatibleModels": [
+      "Hot 12 Play"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-115",
+    "groupId": "box-115",
+    "boxNumber": "BOX 115",
+    "displaySize": "6.9\"",
+    "title": "Tecno Pova 2",
+    "compatibleModels": [
+      "Tecno Pova 2"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-116",
+    "groupId": "box-116",
+    "boxNumber": "BOX 116",
+    "displaySize": "6.8\"",
+    "title": "Camon 17F",
+    "compatibleModels": [
+      "Camon 17F"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-117",
+    "groupId": "box-117",
+    "boxNumber": "BOX 117",
+    "displaySize": "Unknown",
+    "title": "ZTE 154",
+    "compatibleModels": [
+      "ZTE 154"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-118",
+    "groupId": "box-118",
+    "boxNumber": "BOX 118",
+    "displaySize": "Mixed",
+    "title": "Motorola G31",
+    "compatibleModels": [
+      "Motorola G41",
+      "Motorola G71",
+      "Motorola G31",
+      "G71",
+      "Motorola G51",
+      "G51",
+      "G71 5G",
+      "G41"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-119",
+    "groupId": "box-119",
+    "boxNumber": "BOX 119",
+    "displaySize": "6.7\"",
+    "title": "Honor X8",
+    "compatibleModels": [
+      "Honor X8"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-120",
+    "groupId": "box-120",
+    "boxNumber": "BOX 120",
+    "displaySize": "6.95\"",
+    "title": "Infinix Note 11i",
+    "compatibleModels": [
+      "Note 50",
+      "Note 12 Pro",
+      "Infinix Note 12",
+      "GT 30 Pro",
+      "Infinix Note 11i",
+      "Note 50 Pro",
+      "GT 50 Pro",
+      "Note 40 Pro",
+      "Note 40",
+      "GT 20 Pro",
+      "Note 12i",
+      "Note 12 G96",
+      "Zero 30",
+      "Zero 20",
+      "Note 12 2023",
+      "Note 30 Pro",
+      "Note 30"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-121",
+    "groupId": "box-121",
+    "boxNumber": "BOX 121",
+    "displaySize": "6.78\"",
+    "title": "Infinix Hot 30",
+    "compatibleModels": [
+      "Hot 12",
+      "Hot 30 5G",
+      "Hot 50",
+      "Hot 40 Pro",
+      "Hot 10S",
+      "Hot 50 Pro",
+      "Hot 50i",
+      "Infinix Hot 30",
+      "Hot 20S",
+      "Hot 40",
+      "Hot 11S",
+      "Hot 20",
+      "Hot 11",
+      "Infinix Hot 10",
+      "Hot 12i",
+      "Hot 30",
+      "Hot 50i Pro"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-122",
+    "groupId": "box-122",
+    "boxNumber": "BOX 122",
+    "displaySize": "Unknown",
+    "title": "Box 122",
+    "compatibleModels": [
+      "Box 122"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-123",
+    "groupId": "box-123",
+    "boxNumber": "BOX 123",
+    "displaySize": "6.67\"",
+    "title": "Redmi Note 9",
+    "compatibleModels": [
+      "Note 9 Pro",
+      "Redmi 10X 4G",
+      "Redmi Note 9",
+      "Note 9T",
+      "Note 9S",
+      "Note 9 Pro Max",
+      "Redmi Note 13",
+      "Redmi 10X",
+      "Redmi 10X Pro",
+      "Note 9 5G"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-125",
+    "groupId": "box-125",
+    "boxNumber": "BOX 125",
+    "displaySize": "6.88\"",
+    "title": "Redmi 15",
+    "compatibleModels": [
+      "Redmi 15C",
+      "Redmi 15 4G Global",
+      "Redmi 15",
+      "Redmi 15C 5G",
+      "Redmi 15 5G Global",
+      "Redmi 15 5G",
+      "Redmi 15 4G"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-126",
+    "groupId": "box-126",
+    "boxNumber": "BOX 126",
+    "displaySize": "6.72\"",
+    "title": "OnePlus Nord CE 3 Lite",
+    "compatibleModels": [
+      "Nord N30 SE",
+      "Note 12 4G",
+      "OnePlus Nord CE 3 Lite",
+      "OnePlus Nord N30",
+      "Poco X5 5G",
+      "Redmi Note 12",
+      "Redmi Note 13",
+      "Redmi Note 13 Pro",
+      "Redmi Note 13 Pro+",
+      "Redmi Note 13R Pro"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-128",
+    "groupId": "box-128",
+    "boxNumber": "BOX 128",
+    "displaySize": "6.78\"",
+    "title": "Infinix Hot 40 Pro",
+    "compatibleModels": [
+      "Note 60 Pro",
+      "GT 50 Pro",
+      "Infinix Hot 40 Pro",
+      "Infinix Note 60"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-129",
+    "groupId": "box-129",
+    "boxNumber": "BOX 129",
+    "displaySize": "Unknown",
+    "title": "Box 129",
+    "compatibleModels": [
+      "Box 129"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "box-130",
+    "groupId": "box-130",
+    "boxNumber": "BOX 130",
+    "displaySize": "6.55\"",
+    "title": "OnePlus 8T",
+    "compatibleModels": [
+      "OnePlus 8T"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789822502272",
+    "groupId": "SD-NEW-1789822502272",
+    "boxNumber": "BOX 131",
+    "displaySize": "6.7",
+    "title": "HONOR X8C",
+    "compatibleModels": [
+      "X70i",
+      "Honor 200 Lite",
+      "X8B",
+      "PLAY 9T PRO",
+      "NOVA 13",
+      "Honor 400 Lite",
+      "X60I",
+      "Honor X8C",
+      "X60i",
+      "X50i+"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789822541087",
+    "groupId": "SD-NEW-1789822541087",
+    "boxNumber": "BOX 132",
+    "displaySize": "6.6",
+    "title": "Honor X6C",
+    "compatibleModels": [
+      "Honor X6C"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789822737410",
+    "groupId": "SD-NEW-1789822737410",
+    "boxNumber": "BOX 133",
+    "displaySize": "6.7",
+    "title": "Honor X70",
+    "compatibleModels": [
+      "X9D",
+      "HONOR  X70",
+      "Honor Power 2",
+      "Honor Magic 8 Lite"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789822786041",
+    "groupId": "SD-NEW-1789822786041",
+    "boxNumber": "BOX 134",
+    "displaySize": "6.7",
+    "title": "Honor X8D",
+    "compatibleModels": [
+      "Honor X8D"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789822834940",
+    "groupId": "SD-NEW-1789822834940",
+    "boxNumber": "BOX 135",
+    "displaySize": "6.55",
+    "title": "Nothing Phone 1",
+    "compatibleModels": [
+      "Nothing Phone 1"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789822930886",
+    "groupId": "SD-NEW-1789822930886",
+    "boxNumber": "BOX 136",
+    "displaySize": "6.7",
+    "title": "Nothing Phone 2",
+    "compatibleModels": [
+      "Nothing Phone 2"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789822951017",
+    "groupId": "SD-NEW-1789822951017",
+    "boxNumber": "BOX 137",
+    "displaySize": "6.77",
+    "title": "Nothing Phone 3",
+    "compatibleModels": [
+      "Nothing Phone 3"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823008998",
+    "groupId": "SD-NEW-1789823008998",
+    "boxNumber": "BOX 138",
+    "displaySize": "6.7",
+    "title": "Nothing Phone 2A / Phone 2A Plus",
+    "compatibleModels": [
+      "Phone 2A Plus",
+      "Nothing Phone 2A"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823108963",
+    "groupId": "SD-NEW-1789823108963",
+    "boxNumber": "BOX 139",
+    "displaySize": "6.67",
+    "title": "CMF Phone 1",
+    "compatibleModels": [
+      "CMF PHONE 1",
+      "CMF Phone 2",
+      "CMF Phone 2 Pro"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823180306",
+    "groupId": "SD-NEW-1789823180306",
+    "boxNumber": "BOX 140",
+    "displaySize": "Unknown",
+    "title": "0",
+    "compatibleModels": [
+      "0"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823211555",
+    "groupId": "SD-NEW-1789823211555",
+    "boxNumber": "BOX 141",
+    "displaySize": "6.6",
+    "title": "Huawei Pura 70 / Pura 80",
+    "compatibleModels": [
+      "Pura 80",
+      "Huawei Pura 70"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823253552",
+    "groupId": "SD-NEW-1789823253552",
+    "boxNumber": "BOX 142",
+    "displaySize": "6.5",
+    "title": "Infinix Hot 8",
+    "compatibleModels": [
+      "Hot 12i",
+      "Smart 7 HD",
+      "Hot 8 Lite",
+      "Smart 6",
+      "Hot 10i",
+      "Hot 20i",
+      "Smart 6 HD",
+      "Hot 30i",
+      "Hot 11"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823301852",
+    "groupId": "SD-NEW-1789823301852",
+    "boxNumber": "BOX 143",
+    "displaySize": "6.56",
+    "title": "Infinix Hot 40i",
+    "compatibleModels": [
+      "Infinix Hot 40i",
+      "Smart 8",
+      "Smart 8 Pro"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823344245",
+    "groupId": "SD-NEW-1789823344245",
+    "boxNumber": "BOX 144",
+    "displaySize": "6.7",
+    "title": "Infinix Hot 70",
+    "compatibleModels": [
+      "Smart 20",
+      "Infinix Hot 70"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823376371",
+    "groupId": "SD-NEW-1789823376371",
+    "boxNumber": "BOX 145",
+    "displaySize": "6.7",
+    "title": "Infinix Note 40",
+    "compatibleModels": [
+      "GT 20 Pro",
+      "Note 50",
+      "Infinix Note 40",
+      "Note 50 Pro",
+      "Note 50 Pro+"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823411928",
+    "groupId": "SD-NEW-1789823411928",
+    "boxNumber": "BOX 146",
+    "displaySize": "6.5",
+    "title": "Motorola E13",
+    "compatibleModels": [
+      "Motorola E13",
+      "E22"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823457045",
+    "groupId": "SD-NEW-1789823457045",
+    "boxNumber": "BOX 147",
+    "displaySize": "6.7",
+    "title": "Motorola G05",
+    "compatibleModels": [
+      "Motorola G05",
+      "E15",
+      "G15 Power",
+      "G15",
+      "G35"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823486445",
+    "groupId": "SD-NEW-1789823486445",
+    "boxNumber": "BOX 148",
+    "displaySize": "6.7",
+    "title": "Motorola G86",
+    "compatibleModels": [
+      "Edge 70",
+      "Motorola G86",
+      "G86 Power",
+      "X70 Air"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823540539",
+    "groupId": "SD-NEW-1789823540539",
+    "boxNumber": "BOX 149",
+    "displaySize": "6.7",
+    "title": "Motorola G06",
+    "compatibleModels": [
+      "Motorola G06",
+      "G77 5G",
+      "G06 Power",
+      "G67 5G"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823570055",
+    "groupId": "SD-NEW-1789823570055",
+    "boxNumber": "BOX 150",
+    "displaySize": "6.6",
+    "title": "ITEL A60",
+    "compatibleModels": [
+      "A60S",
+      "ITEL A60",
+      "P40",
+      "A70",
+      "S23"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823596271",
+    "groupId": "SD-NEW-1789823596271",
+    "boxNumber": "BOX 151",
+    "displaySize": "6.6",
+    "title": "ITEL S24",
+    "compatibleModels": [
+      "ITEL S24"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823627152",
+    "groupId": "SD-NEW-1789823627152",
+    "boxNumber": "BOX 152",
+    "displaySize": "6.78",
+    "title": "Tecno Spark 20",
+    "compatibleModels": [
+      "Tecno Spark 20",
+      "Pop 8",
+      "Spark Go 2024",
+      "Spark 20C"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823678117",
+    "groupId": "SD-NEW-1789823678117",
+    "boxNumber": "BOX 153",
+    "displaySize": "6.78",
+    "title": "Tecno Spark 30",
+    "compatibleModels": [
+      "Tecno Spark 30",
+      "Pop 9 5G",
+      "Spark 30C",
+      "Pop 9",
+      "Spark 30 5G"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823715924",
+    "groupId": "SD-NEW-1789823715924",
+    "boxNumber": "BOX 154",
+    "displaySize": "6.78",
+    "title": "Tecno Camon 30",
+    "compatibleModels": [
+      "Camon 30 Pro",
+      "Camon 30 5G",
+      "Tecno Camon 30",
+      "Pova 6 Pro",
+      "Pova 6"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823749046",
+    "groupId": "SD-NEW-1789823749046",
+    "boxNumber": "BOX 155",
+    "displaySize": "6.78",
+    "title": "Tecno Camon 50",
+    "compatibleModels": [
+      "Tecno Camon 50"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823778712",
+    "groupId": "SD-NEW-1789823778712",
+    "boxNumber": "BOX 156",
+    "displaySize": "6.74",
+    "title": "OnePlus Nord 3",
+    "compatibleModels": [
+      "Nord CE 4 Lite",
+      "Nord CE 3",
+      "OnePlus Nord 3",
+      "Nord CE 4",
+      "Ace 3V",
+      "Ace 2V",
+      "Nord 4"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789823976323",
+    "groupId": "SD-NEW-1789823976323",
+    "boxNumber": "BOX 158",
+    "displaySize": "6.83",
+    "title": "OnePlus Nord 5",
+    "compatibleModels": [
+      "Ace 5 Ultra",
+      "Nord 6",
+      "OnePlus Nord 5",
+      "Nord CE 5",
+      "Nord CE 6"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789824064865",
+    "groupId": "SD-NEW-1789824064865",
+    "boxNumber": "BOX 159",
+    "displaySize": "6.49",
+    "title": "OnePlus Nord N10",
+    "compatibleModels": [
+      "Nord CE 2",
+      "OnePlus Nord N10",
+      "Nord N200"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789824205844",
+    "groupId": "SD-NEW-1789824205844",
+    "boxNumber": "BOX 160",
+    "displaySize": "6.78",
+    "title": "OnePlus Nord N10",
+    "compatibleModels": [
+      "Nord CE 2",
+      "Nord N200",
+      "OnePlus Nord N10"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789824235174",
+    "groupId": "SD-NEW-1789824235174",
+    "boxNumber": "BOX 161",
+    "displaySize": "6.5",
+    "title": "Motorola G13",
+    "compatibleModels": [
+      "G23",
+      "G55",
+      "G73 5G",
+      "G62 5G",
+      "G34 5G",
+      "G64 5G",
+      "Motorola G13",
+      "G14",
+      "G54 5G",
+      "G32",
+      "G53 5G",
+      "G45"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  },
+  {
+    "id": "SD-NEW-1789824794935",
+    "groupId": "SD-NEW-1789824794935",
+    "boxNumber": "BOX 162",
+    "displaySize": "6.56",
+    "title": "Motorola G04",
+    "compatibleModels": [
+      "G22",
+      "Edge 50 Neo",
+      "G24",
+      "G24 Power",
+      "Motorola G04",
+      "E32",
+      "Moto S50",
+      "E32S",
+      "G04S",
+      "G84 5G"
+    ],
+    "stockQuantity": 0,
+    "unitsSold": 0,
+    "stockStatus": "NOT COUNTED",
+    "stockCountVerified": false,
+    "source": null,
+    "verification": null,
+    "category": "Super-D",
+    "notes": null,
+    "variants": {
+      "super_d": 0,
+      "privacy": 0,
+      "matte": 0,
+      "borderless": 0
+    }
+  }
+]
