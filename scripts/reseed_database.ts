@@ -305,12 +305,18 @@ export async function runReseed() {
   const allFreshBoxes = await getAllBoxes();
 
   const validationChecks = [
+    { query: "A05", expectedBox: "BOX 048" },
+    { query: "A05s", expectedBox: "BOX 048" },
+    { query: "A06", expectedBox: "BOX 048" },
+    { query: "apple 7 plus", expectedBox: "BOX 002" },
+    { query: "iPhone 6", expectedBox: "BOX 001" },
     { query: "pixel 6a", expectedBox: "BOX 024" },
+    { query: "Google Pixel 6", expectedBox: "BOX 085" },
+    { query: "Google Pixel 9a", expectedBox: "BOX 029" },
+    { query: "OPPO F17", expectedBox: "BOX 098" },
     { query: "pixel 7", expectedBox: "BOX 026" },
     { query: "s20 ultra", expectedBox: "BOX 039" },
     { query: "galaxy s22+", expectedBox: "BOX 041" },
-    { query: "Samsung Galaxy A06", expectedBox: "BOX 048" },
-    { query: "A06", expectedBox: "BOX 048" },
     { query: "redmi note 13 pro", expectedBox: "BOX 049" },
     { query: "redmi note 13", expectedBox: "BOX 126" },
     { query: "box 084", expectedBox: "BOX 084" },
