@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { X, ShieldAlert, CheckCircle, AlertTriangle, Info, Layers } from "lucide-react";
 import type { Box } from "@/types/screenguard";
 
@@ -11,6 +11,19 @@ interface DataQualityModalProps {
 }
 
 export function DataQualityModal({ isOpen, onClose, boxes }: DataQualityModalProps) {
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        e.stopPropagation();
+        onClose();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown, true);
+    return () => window.removeEventListener("keydown", handleKeyDown, true);
+  }, [isOpen, onClose]);
+
   if (!isOpen) return null;
 
   // Run Data Quality Audit on current live boxes

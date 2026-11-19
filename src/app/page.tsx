@@ -125,28 +125,70 @@ export default function HomePage() {
     return () => window.removeEventListener("focus", onFocus);
   }, []);
 
-  // Global Keyboard Shortcuts
+  // Global Keyboard Shortcuts & Topmost Modal Escape Stack
   useEffect(() => {
     const handleGlobalShortcuts = (e: KeyboardEvent) => {
-      // Alt + B -> view all boxes
-      if (e.altKey && (e.key === "b" || e.key === "B")) {
+      // 1. ESC handling with capture priority
+      if (e.key === "Escape") {
+        e.preventDefault();
+        e.stopPropagation();
+
+        // Priority 1: A4 Label Studio Modal
+        if (isA4ModalOpen || a4TargetBox) {
+          setIsA4ModalOpen(false);
+          setA4TargetBox(null);
+          return;
+        }
+
+        // Priority 2: Waste Tracker Modal
+        if (wasteTargetBox) {
+          setWasteTargetBox(null);
+          return;
+        }
+
+        // Priority 3: WhatsApp Supplier Order Modal
+        if (isWhatsAppModalOpen) {
+          setIsWhatsAppModalOpen(false);
+          return;
+        }
+
+        // Priority 4: If no modal is open, clear search query and refocus search input
+        if (query) {
+          setQuery("");
+        }
+        if (navMode !== "search") {
+          setNavMode("search");
+        }
+        const searchInput = document.getElementById("main-search-input") as HTMLInputElement | null;
+        searchInput?.focus();
+        return;
+      }
+
+      const isInput = ["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement?.tagName || "");
+
+      // 2. Focus search bar via "/" (when not typing in an input) or "Ctrl+K" / "Cmd+K"
+      if (
+        (e.key === "/" && !isInput) ||
+        ((e.ctrlKey || e.metaKey) && (e.key === "k" || e.key === "K"))
+      ) {
+        e.preventDefault();
+        const searchInput = document.getElementById("main-search-input") as HTMLInputElement | null;
+        searchInput?.focus();
+        searchInput?.select();
+        return;
+      }
+
+      // 3. Alt + B -> view all boxes
+      if (!isInput && e.altKey && (e.key === "b" || e.key === "B")) {
         e.preventDefault();
         setNavMode("all");
         setQuery("");
       }
-      // Escape -> dismiss query or reset to search
-      else if (e.key === "Escape") {
-        if (query) {
-          setQuery("");
-        } else if (navMode !== "search") {
-          setNavMode("search");
-        }
-      }
     };
 
-    window.addEventListener("keydown", handleGlobalShortcuts);
-    return () => window.removeEventListener("keydown", handleGlobalShortcuts);
-  }, [query, navMode]);
+    window.addEventListener("keydown", handleGlobalShortcuts, { capture: true });
+    return () => window.removeEventListener("keydown", handleGlobalShortcuts, { capture: true });
+  }, [isA4ModalOpen, a4TargetBox, wasteTargetBox, isWhatsAppModalOpen, query, navMode]);
 
   useEffect(() => {
     if (!query.trim() || query.length < 3) return;

@@ -22,21 +22,23 @@ export function SearchBar({
   const [isListening, setIsListening] = useState(false);
   const recognitionRef = useRef<any>(null);
 
-  // Keyboard shortcut: Press "/" to focus
+  // Keyboard shortcut: Press "/" or "Ctrl+K" / "Cmd+K" to focus
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "/" && document.activeElement !== inputRef.current) {
+      const isInput = ["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement?.tagName || "");
+      if (
+        (e.key === "/" && !isInput) ||
+        ((e.ctrlKey || e.metaKey) && (e.key === "k" || e.key === "K"))
+      ) {
         e.preventDefault();
         inputRef.current?.focus();
-      } else if (e.key === "Escape" && document.activeElement === inputRef.current) {
-        onChange("");
-        inputRef.current?.blur();
+        inputRef.current?.select();
       }
     };
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [onChange]);
+  }, []);
 
   // Voice Search Handler
   const toggleVoiceSearch = useCallback(() => {
@@ -99,6 +101,7 @@ export function SearchBar({
 
         <input
           ref={inputRef}
+          id="main-search-input"
           type="text"
           value={value}
           onChange={(e) => onChange(e.target.value)}
@@ -141,7 +144,7 @@ export function SearchBar({
           ) : (
             <div className="hidden sm:flex items-center pointer-events-none">
               <kbd className="px-2 py-0.5 text-[11px] font-black text-zinc-500 dark:text-slate-400 bg-zinc-100 dark:bg-slate-800/80 border border-zinc-200 dark:border-slate-700/80 rounded-md">
-                /
+                Ctrl+K /
               </kbd>
             </div>
           )}

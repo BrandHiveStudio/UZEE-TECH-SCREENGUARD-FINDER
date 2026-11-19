@@ -96,6 +96,23 @@ export function SnapshotViewerModal({ isOpen, onClose }: SnapshotViewerModalProp
     }
   };
 
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        e.stopPropagation();
+        if (previewContent) {
+          setPreviewContent(null);
+        } else {
+          onClose();
+        }
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown, true);
+    return () => window.removeEventListener("keydown", handleKeyDown, true);
+  }, [isOpen, onClose, previewContent]);
+
   if (!isOpen) return null;
 
   return (

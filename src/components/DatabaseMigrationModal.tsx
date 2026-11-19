@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   X,
   AlertTriangle,
@@ -76,6 +76,19 @@ export function DatabaseMigrationModal({
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        e.stopPropagation();
+        onClose();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown, true);
+    return () => window.removeEventListener("keydown", handleKeyDown, true);
+  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 

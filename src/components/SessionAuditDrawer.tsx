@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   History,
   X,
@@ -49,6 +49,19 @@ export function SessionAuditDrawer({
   onClearHistory,
 }: SessionAuditDrawerProps) {
   const [revertingId, setRevertingId] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        e.stopPropagation();
+        onClose();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown, true);
+    return () => window.removeEventListener("keydown", handleKeyDown, true);
+  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 

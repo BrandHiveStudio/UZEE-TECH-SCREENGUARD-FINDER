@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import {
   X,
   ClipboardList,
@@ -52,14 +52,12 @@ export function FastPasteManifestModal({
   const [isAnalyzed, setIsAnalyzed] = useState(false);
   const [isCommitting, setIsCommitting] = useState(false);
 
-  if (!isOpen) return null;
-
-  const handleAnalyze = () => {
+  const handleAnalyze = useCallback(() => {
     if (!rawText.trim()) return;
     const parsed = parseRawManifestText(rawText, allBoxes);
     setItems(parsed);
     setIsAnalyzed(true);
-  };
+  }, [rawText, allBoxes]);
 
   const handleClear = () => {
     setRawText("");
@@ -126,7 +124,7 @@ export function FastPasteManifestModal({
   const selectedItems = items.filter((it) => it.selected && it.matchedBox);
   const totalUnits = selectedItems.reduce((sum, it) => sum + it.quantity, 0);
 
-  const handleCommit = async () => {
+  const handleCommit = useCallback(async () => {
     if (selectedItems.length === 0 || isCommitting) return;
     setIsCommitting(true);
     try {
@@ -143,7 +141,29 @@ export function FastPasteManifestModal({
     } finally {
       setIsCommitting(false);
     }
-  };
+  }, [selectedItems, isCommitting, onCommitManifest, onClose]);
+
+  // Ctrl+Enter / Cmd+Enter shortcut
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === "Enter") {
+        e.preventDefault();
+        e.stopPropagation();
+        if (!isAnalyzed && rawText.trim()) {
+          handleAnalyze();
+        } else if (isAnalyzed && selectedItems.length > 0 && !isCommitting) {
+          handleCommit();
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen, isAnalyzed, rawText, selectedItems.length, isCommitting, handleAnalyze, handleCommit]);
+
+  if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-black/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-5 animate-in fade-in duration-200">
@@ -166,12 +186,18 @@ export function FastPasteManifestModal({
               </p>
             </div>
           </div>
-          <button
-            onClick={onClose}
-            className="p-2 rounded-xl text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition"
-          >
-            <X className="w-5 h-5" />
-          </button>
+          <div className="flex items-center gap-2">
+            <kbd className="hidden sm:inline-flex items-center gap-1 text-[10px] font-mono font-bold text-slate-400 dark:text-slate-500 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-2 py-1 rounded-lg shadow-2xs">
+              ESC ✕
+            </kbd>
+            <button
+              onClick={onClose}
+              className="p-2 rounded-xl text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition"
+              title="Close (Esc)"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
         </div>
 
         {/* Content Body */}
@@ -229,6 +255,9 @@ export function FastPasteManifestModal({
                 >
                   <Sparkles className="w-4 h-4" />
                   ⚡ Analyze Manifest
+                  <kbd className="hidden sm:inline-block text-[10px] bg-teal-700/80 text-white/90 px-1.5 py-0.5 rounded font-mono font-normal">
+                    Ctrl+↵
+                  </kbd>
                 </button>
               </div>
             </div>
@@ -528,6 +557,9 @@ export function FastPasteManifestModal({
                 <>
                   <Check className="w-4 h-4" />
                   🚀 Commit All Stock Increments (+{totalUnits})
+                  <kbd className="hidden sm:inline-block text-[10px] bg-teal-700/80 text-white/90 px-1.5 py-0.5 rounded font-mono font-normal">
+                    Ctrl+↵
+                  </kbd>
                 </>
               )}
             </button>

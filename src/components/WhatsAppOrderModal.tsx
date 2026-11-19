@@ -77,6 +77,23 @@ export function WhatsAppOrderModal({
     return matches;
   }, [phoneModel, catalogModels]);
 
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        e.stopPropagation();
+        if (isModelDropdownOpen) {
+          setIsModelDropdownOpen(false);
+        } else {
+          onClose();
+        }
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown, true);
+    return () => window.removeEventListener("keydown", handleKeyDown, true);
+  }, [isOpen, onClose, isModelDropdownOpen]);
+
   if (!isOpen) return null;
 
   const handleSaveSupplier = () => {
@@ -163,12 +180,18 @@ export function WhatsAppOrderModal({
             </div>
           </div>
 
-          <button
-            onClick={onClose}
-            className="p-1.5 rounded-xl text-zinc-400 hover:text-zinc-700 dark:text-slate-400 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-slate-800 transition"
-          >
-            <X className="w-4 h-4" />
-          </button>
+          <div className="flex items-center gap-2">
+            <kbd className="hidden sm:inline-flex items-center gap-1 text-[10px] font-mono font-bold text-slate-400 dark:text-slate-500 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-2 py-0.5 rounded-lg shadow-2xs">
+              ESC ✕
+            </kbd>
+            <button
+              onClick={onClose}
+              className="p-1.5 rounded-xl text-zinc-400 hover:text-zinc-700 dark:text-slate-400 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-slate-800 transition"
+              title="Close (Esc)"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
         </div>
 
         {/* Subtle WhatsApp green accent line */}

@@ -77,6 +77,25 @@ export function UserManagementModal({ isOpen, onClose }: UserManagementModalProp
     }
   }, [isOpen]);
 
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        e.stopPropagation();
+        if (passwordTargetUser) {
+          closePasswordModal();
+        } else if (showAddForm) {
+          setShowAddForm(false);
+        } else {
+          onClose();
+        }
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown, true);
+    return () => window.removeEventListener("keydown", handleKeyDown, true);
+  }, [isOpen, onClose, passwordTargetUser, showAddForm]);
+
   if (!isOpen) return null;
 
   const isMaxUsers = users.length >= 3;
@@ -224,12 +243,18 @@ export function UserManagementModal({ isOpen, onClose }: UserManagementModalProp
               </p>
             </div>
           </div>
-          <button
-            onClick={onClose}
-            className="p-2 rounded-xl text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-          >
-            <X className="w-5 h-5" />
-          </button>
+          <div className="flex items-center gap-2">
+            <kbd className="hidden sm:inline-flex items-center gap-1 text-[10px] font-mono font-bold text-slate-400 dark:text-slate-500 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-2 py-1 rounded-lg shadow-2xs">
+              ESC ✕
+            </kbd>
+            <button
+              onClick={onClose}
+              className="p-2 rounded-xl text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              title="Close (Esc)"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
         </div>
 
         {/* Modal Body */}

@@ -105,10 +105,15 @@ export function AdminSidebar({
         <button
           type="button"
           onClick={onOpenAddGroup}
-          className="w-full bg-[#BE123C] hover:bg-[#9F1239] text-white font-semibold py-2.5 px-4 rounded-xl shadow-sm text-sm flex items-center justify-center gap-2 mb-6 transition active:scale-95"
+          className="w-full bg-[#BE123C] hover:bg-[#9F1239] text-white font-semibold py-2.5 px-4 rounded-xl shadow-sm text-sm flex items-center justify-between gap-2 mb-6 transition active:scale-95"
         >
-          <Plus className="w-4 h-4" />
-          <span>+ Add Compatibility Group</span>
+          <div className="flex items-center gap-2">
+            <Plus className="w-4 h-4" />
+            <span>New Box Group</span>
+          </div>
+          <kbd className="text-[10px] bg-rose-900/60 text-white/90 px-1.5 py-0.5 rounded font-mono font-normal">
+            Alt+N
+          </kbd>
         </button>
 
         {/* Navigation Categories */}
@@ -171,6 +176,23 @@ export function AdminSidebar({
               INTELLIGENCE &amp; AUDITING
             </div>
             <div className="space-y-1">
+              {/* Fast-Paste Inward Manifest */}
+              {onOpenBulkIntake && (
+                <button
+                  type="button"
+                  onClick={onOpenBulkIntake}
+                  className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800/60 transition"
+                >
+                  <div className="flex items-center gap-2.5">
+                    <UploadCloud className="w-4 h-4 text-teal-500" />
+                    <span>Fast Inward</span>
+                  </div>
+                  <kbd className="text-[10px] bg-slate-100 dark:bg-slate-800 text-slate-500 px-1 py-0.5 rounded font-mono font-medium">
+                    Alt+I
+                  </kbd>
+                </button>
+              )}
+
               {/* Stock Count Mode */}
               <button
                 type="button"
@@ -223,9 +245,14 @@ export function AdminSidebar({
                 <Printer className="w-4 h-4 text-slate-500" />
                 <span>A4 Label Studio</span>
               </div>
-              <span className="text-[10px] bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded font-mono font-bold">
-                3×4 Sheet
-              </span>
+              <div className="flex items-center gap-1.5">
+                <kbd className="text-[10px] bg-slate-100 dark:bg-slate-800 text-slate-500 px-1 py-0.5 rounded font-mono font-medium">
+                  Alt+P
+                </kbd>
+                <span className="text-[10px] bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded font-mono font-bold">
+                  3×4 Sheet
+                </span>
+              </div>
             </button>
             <button
               type="button"

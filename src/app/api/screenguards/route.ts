@@ -1,13 +1,12 @@
 import { NextResponse } from "next/server";
 import { getAllBoxes, upsertBox, deleteBox } from "@/lib/db";
+import { normalizeVariants, calculateTotalStock } from "@/lib/screenguard";
 import type { Box } from "@/types/screenguard";
 
 // Force this route to be dynamic — never statically pre-rendered at build time.
-// Required because it calls Supabase which needs runtime env vars.
 export const dynamic = "force-dynamic";
 
 // ─── GET /api/screenguards ────────────────────────────────────────────────────
-// Returns all boxes from Supabase as { boxes: Box[] }
 export async function GET() {
   try {
     const boxes = await getAllBoxes();
@@ -24,25 +23,26 @@ export async function GET() {
   }
 }
 
+// ─── Helper to normalize and prepare Box for persistence ──────────────────────
+function prepareBoxData(rawBox: any): Box {
+  const variants = normalizeVariants(rawBox.variants, rawBox.stockQuantity ?? 0);
+  const totalStock = calculateTotalStock(variants);
+
+  return {
+    ...rawBox,
+    stockQuantity: totalStock,
+    variants,
+  };
+}
+
 // ─── POST /api/screenguards ───────────────────────────────────────────────────
 // Body: { action: "upsert", box: Box }
 //       { action: "delete", id: string }
+//       { box: Box } or direct box properties
 export async function POST(request: Request) {
   try {
     const body = await request.json();
     const { action } = body;
-
-    if (action === "upsert") {
-      const box: Box = body.box;
-      if (!box || !box.id || !box.boxNumber) {
-        return NextResponse.json(
-          { error: "Invalid box data — id and boxNumber are required" },
-          { status: 400 }
-        );
-      }
-      const saved = await upsertBox(box);
-      return NextResponse.json({ success: true, box: saved });
-    }
 
     if (action === "delete") {
       const { id } = body;
@@ -56,14 +56,104 @@ export async function POST(request: Request) {
       return NextResponse.json({ success: true });
     }
 
-    return NextResponse.json(
-      { error: `Unknown action: ${action}` },
-      { status: 400 }
-    );
+    // Handle upsert action or direct box payload
+    const rawBox = body.box || (body.id && body.boxNumber ? body : null);
+    if (!rawBox || !rawBox.id || !rawBox.boxNumber) {
+      return NextResponse.json(
+        { error: "Invalid box data — id and boxNumber are required" },
+        { status: 400 }
+      );
+    }
+
+    const box = prepareBoxData(rawBox);
+    const saved = await upsertBox(box);
+    return NextResponse.json({ success: true, box: saved });
   } catch (error) {
     const message = error instanceof Error ? error.message : "Unknown error";
     return NextResponse.json(
       { error: "Request failed", details: message },
+      { status: 500 }
+    );
+  }
+}
+
+// ─── PUT /api/screenguards ────────────────────────────────────────────────────
+export async function PUT(request: Request) {
+  try {
+    const body = await request.json();
+    const rawBox = body.box || body;
+
+    if (!rawBox || !rawBox.id || !rawBox.boxNumber) {
+      return NextResponse.json(
+        { error: "Invalid box data — id and boxNumber are required" },
+        { status: 400 }
+      );
+    }
+
+    const box = prepareBoxData(rawBox);
+    const saved = await upsertBox(box);
+    return NextResponse.json({ success: true, box: saved });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Unknown error";
+    return NextResponse.json(
+      { error: "PUT failed", details: message },
+      { status: 500 }
+    );
+  }
+}
+
+// ─── PATCH /api/screenguards ──────────────────────────────────────────────────
+export async function PATCH(request: Request) {
+  try {
+    const body = await request.json();
+    const rawBox = body.box || body;
+    const targetId = rawBox?.id;
+
+    if (!targetId) {
+      return NextResponse.json({ error: "id is required for PATCH" }, { status: 400 });
+    }
+
+    const allBoxes = await getAllBoxes();
+    const existing = allBoxes.find((b) => b.id === targetId);
+
+    const merged = existing ? { ...existing, ...rawBox } : rawBox;
+    const box = prepareBoxData(merged);
+    const saved = await upsertBox(box);
+    return NextResponse.json({ success: true, box: saved });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Unknown error";
+    return NextResponse.json(
+      { error: "PATCH failed", details: message },
+      { status: 500 }
+    );
+  }
+}
+
+// ─── DELETE /api/screenguards ─────────────────────────────────────────────────
+export async function DELETE(request: Request) {
+  try {
+    const { searchParams } = new URL(request.url);
+    let id = searchParams.get("id");
+
+    if (!id) {
+      try {
+        const body = await request.json();
+        id = body?.id;
+      } catch {
+        // no body
+      }
+    }
+
+    if (!id) {
+      return NextResponse.json({ error: "id is required for delete" }, { status: 400 });
+    }
+
+    await deleteBox(id);
+    return NextResponse.json({ success: true });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Unknown error";
+    return NextResponse.json(
+      { error: "DELETE failed", details: message },
       { status: 500 }
     );
   }

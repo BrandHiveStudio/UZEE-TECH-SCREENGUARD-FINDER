@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { X, Check, ArrowRight, ArrowLeft, Package, Save } from "lucide-react";
 import type { Box } from "@/types/screenguard";
 
@@ -20,6 +20,19 @@ export function StockCountModeModal({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [countsMap, setCountsMap] = useState<Record<string, number>>({});
   const [isSaving, setIsSaving] = useState(false);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        e.stopPropagation();
+        onClose();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown, true);
+    return () => window.removeEventListener("keydown", handleKeyDown, true);
+  }, [isOpen, onClose]);
 
   if (!isOpen || boxes.length === 0) return null;
 
@@ -103,12 +116,18 @@ export function StockCountModeModal({
             </div>
           </div>
 
-          <button
-            onClick={onClose}
-            className="p-2 rounded-xl text-white/80 hover:text-white hover:bg-white/10 transition-colors"
-          >
-            <X className="w-5 h-5" />
-          </button>
+          <div className="flex items-center gap-2">
+            <kbd className="hidden sm:inline-flex items-center gap-1 text-[10px] font-mono font-bold text-white/80 bg-white/10 border border-white/20 px-2 py-0.5 rounded-lg shadow-2xs">
+              ESC ✕
+            </kbd>
+            <button
+              onClick={onClose}
+              className="p-2 rounded-xl text-white/80 hover:text-white hover:bg-white/10 transition-colors"
+              title="Close (Esc)"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
         </div>
 
         {/* Walkthrough Content Card */}

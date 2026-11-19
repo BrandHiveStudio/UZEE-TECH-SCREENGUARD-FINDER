@@ -19,7 +19,7 @@ import {
   NOTCH_META,
   EDGE_META,
 } from "@/lib/geometryGuard";
-import { normalizeVariants } from "@/lib/screenguard";
+import { normalizeVariants, parseTwoPartBoxBadge } from "@/lib/screenguard";
 
 interface ResultCardProps {
   result: SearchResultItem;
@@ -124,26 +124,37 @@ export function ResultCard({
   const visibleAliases = isExpanded ? aliases : aliases.slice(0, initialDisplayCount);
   const remainingCount = aliases.length - visibleAliases.length;
 
+  const { mainBox, suffix } = useMemo(() => {
+    return parseTwoPartBoxBadge(item.boxNumber);
+  }, [item.boxNumber]);
+
   return (
-    <div className="flex flex-col justify-between bg-white dark:bg-[#111827] hover:bg-zinc-50 dark:hover:bg-[#151e30] border border-zinc-200 dark:border-slate-800 hover:border-zinc-300 dark:hover:border-slate-700 rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-md transition-all duration-200 gap-2.5 group">
+    <div className="flex flex-col justify-between bg-white dark:bg-[#111113] hover:bg-slate-50 dark:hover:bg-[#18181B] border border-[#E2E8F0] dark:border-[#27272A] rounded-2xl p-3.5 sm:p-4 shadow-sm hover:shadow-md transition-all duration-200 gap-2.5 group">
       {/* 1. Header: Box ID Badge + Primary Model + Display Size + Geometry */}
       <div className="flex items-start justify-between gap-3">
         <div className="flex items-center gap-2.5 flex-wrap">
-          {/* High-contrast BOX badge */}
-          <button
-            type="button"
-            onClick={handleCopyBox}
-            className="flex items-center gap-1.5 px-3 py-1 bg-brand-700 hover:bg-brand-600 text-white rounded-xl font-black text-xs sm:text-sm tracking-wide shadow-sm shadow-brand-700/20 active:scale-95 transition"
-            title="Click to copy box number"
-          >
-            <Package className="w-4 h-4 shrink-0" />
-            <span>{item.boxNumber}</span>
-            {copiedBox ? (
-              <Check className="w-3.5 h-3.5 text-emerald-300 ml-0.5" />
-            ) : (
-              <Copy className="w-3 h-3 text-white/60 ml-0.5 opacity-0 group-hover:opacity-100 transition-opacity" />
+          {/* Two-Part Box Badge Hierarchy */}
+          <div className="flex items-center gap-2 flex-wrap">
+            <button
+              type="button"
+              onClick={handleCopyBox}
+              className="flex items-center gap-1.5 px-3 py-1 bg-[#BE123C] hover:bg-[#9F1239] text-white rounded-xl font-black text-xs sm:text-sm tracking-wide shadow-sm shadow-rose-900/20 active:scale-95 transition whitespace-nowrap shrink-0"
+              title="Click to copy box number"
+            >
+              <Package className="w-4 h-4 shrink-0" />
+              <span>{mainBox}</span>
+              {copiedBox ? (
+                <Check className="w-3.5 h-3.5 text-emerald-300 ml-0.5" />
+              ) : (
+                <Copy className="w-3 h-3 text-white/60 ml-0.5 opacity-0 group-hover:opacity-100 transition-opacity" />
+              )}
+            </button>
+            {suffix && (
+              <span className="text-[10px] font-bold tracking-wider text-slate-500 dark:text-zinc-400 bg-slate-100 dark:bg-zinc-800/80 px-2 py-0.5 rounded-md border border-slate-200 dark:border-zinc-700 uppercase whitespace-nowrap">
+                {suffix}
+              </span>
             )}
-          </button>
+          </div>
 
           {/* Screen Size Pill */}
           <div className="flex items-center gap-1 px-2.5 py-1 bg-zinc-100 dark:bg-slate-800/80 border border-zinc-200 dark:border-slate-700/80 rounded-xl text-xs font-bold text-zinc-700 dark:text-slate-300">
@@ -196,54 +207,30 @@ export function ResultCard({
         </h3>
       </div>
 
-      {/* 2. Variant Availability Strip */}
-      <div className="grid grid-cols-4 gap-1.5 p-1 rounded-xl bg-zinc-100/90 dark:bg-slate-950/80 border border-zinc-200 dark:border-slate-800 text-[11px]">
+      {/* 2. Calm Neutral Variant Tiles with 4px Left-Edge Color Accent Bars */}
+      <div className="grid grid-cols-4 gap-2">
         {/* Clear */}
-        <div
-          className={`flex flex-col items-center justify-center py-1 px-1 rounded-lg border transition ${
-            (variants.super_d ?? 0) > 0
-              ? "bg-emerald-500/15 dark:bg-emerald-500/20 border-emerald-500/40 text-emerald-800 dark:text-emerald-300 font-bold"
-              : "bg-white/60 dark:bg-slate-900/50 border-zinc-200/80 dark:border-slate-800/70 text-zinc-500 dark:text-slate-400"
-          }`}
-        >
-          <span className="text-[10px] text-zinc-500 dark:text-slate-400 font-medium">Clear</span>
-          <span className="font-black text-xs text-zinc-900 dark:text-white">{variants.super_d ?? 0}</span>
+        <div className="relative flex flex-col justify-between p-2 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 border-l-4 border-l-[#10B981] overflow-hidden">
+          <span className="text-[10px] font-semibold text-slate-500 dark:text-zinc-400">Clear</span>
+          <span className="font-extrabold text-sm text-slate-900 dark:text-white tabular-nums">{variants.super_d ?? 0}</span>
         </div>
 
         {/* Privacy */}
-        <div
-          className={`flex flex-col items-center justify-center py-1 px-1 rounded-lg border transition ${
-            (variants.privacy ?? 0) > 0
-              ? "bg-purple-500/15 dark:bg-purple-500/20 border-purple-500/40 text-purple-800 dark:text-purple-300 font-bold ring-1 ring-purple-500/20"
-              : "bg-white/60 dark:bg-slate-900/50 border-zinc-200/80 dark:border-slate-800/70 text-zinc-500 dark:text-slate-400"
-          }`}
-        >
-          <span className="text-[10px] text-zinc-500 dark:text-slate-400 font-medium">🕶️ Privacy</span>
-          <span className="font-black text-xs text-zinc-900 dark:text-white">{variants.privacy ?? 0}</span>
+        <div className="relative flex flex-col justify-between p-2 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 border-l-4 border-l-[#8B5CF6] overflow-hidden">
+          <span className="text-[10px] font-semibold text-slate-500 dark:text-zinc-400">Privacy</span>
+          <span className="font-extrabold text-sm text-slate-900 dark:text-white tabular-nums">{variants.privacy ?? 0}</span>
         </div>
 
         {/* Matte */}
-        <div
-          className={`flex flex-col items-center justify-center py-1 px-1 rounded-lg border transition ${
-            (variants.matte ?? 0) > 0
-              ? "bg-blue-500/15 dark:bg-blue-500/20 border-blue-500/40 text-blue-800 dark:text-blue-300 font-bold"
-              : "bg-white/60 dark:bg-slate-900/50 border-zinc-200/80 dark:border-slate-800/70 text-zinc-500 dark:text-slate-400"
-          }`}
-        >
-          <span className="text-[10px] text-zinc-500 dark:text-slate-400 font-medium">🌫️ Matte</span>
-          <span className="font-black text-xs text-zinc-900 dark:text-white">{variants.matte ?? 0}</span>
+        <div className="relative flex flex-col justify-between p-2 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 border-l-4 border-l-[#3B82F6] overflow-hidden">
+          <span className="text-[10px] font-semibold text-slate-500 dark:text-zinc-400">Matte</span>
+          <span className="font-extrabold text-sm text-slate-900 dark:text-white tabular-nums">{variants.matte ?? 0}</span>
         </div>
 
         {/* Borderless */}
-        <div
-          className={`flex flex-col items-center justify-center py-1 px-1 rounded-lg border transition ${
-            (variants.borderless ?? 0) > 0
-              ? "bg-amber-500/15 dark:bg-amber-500/20 border-amber-500/40 text-amber-800 dark:text-amber-300 font-bold"
-              : "bg-white/60 dark:bg-slate-900/50 border-zinc-200/80 dark:border-slate-800/70 text-zinc-500 dark:text-slate-400"
-          }`}
-        >
-          <span className="text-[10px] text-zinc-500 dark:text-slate-400 font-medium">🔲 Border</span>
-          <span className="font-black text-xs text-zinc-900 dark:text-white">{variants.borderless ?? 0}</span>
+        <div className="relative flex flex-col justify-between p-2 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 border-l-4 border-l-[#F59E0B] overflow-hidden">
+          <span className="text-[10px] font-semibold text-slate-500 dark:text-zinc-400">Borderless</span>
+          <span className="font-extrabold text-sm text-slate-900 dark:text-white tabular-nums">{variants.borderless ?? 0}</span>
         </div>
       </div>
 
@@ -267,7 +254,7 @@ export function ResultCard({
                 className="flex items-center justify-between gap-2 bg-white dark:bg-slate-900/90 p-2 rounded-lg border border-amber-500/20 text-xs shadow-sm"
               >
                 <div className="min-w-0 flex-1">
-                  <span className="font-black text-zinc-900 dark:text-white mr-1.5">{alt.boxNumber}</span>
+                  <span className="font-black text-zinc-900 dark:text-white mr-1.5 whitespace-nowrap shrink-0">{alt.boxNumber}</span>
                   <span className="text-zinc-600 dark:text-slate-300 text-[11px]">
                     ({alt.matchedModelSummary}) — {alt.totalStock} in stock
                   </span>

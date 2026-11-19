@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, useRef } from "react";
 import Link from "next/link";
 import { AdminSidebar, type AdminView } from "@/components/AdminSidebar";
 import { AdminBoxModal } from "@/components/AdminBoxModal";
@@ -24,7 +24,7 @@ import {
   type WasteStats,
   WASTE_REASON_META,
 } from "@/lib/wasteLog";
-import { getNextBoxSequence, normalizeVariants, calculateTotalStock, type VariantKey, VARIANT_META } from "@/lib/screenguard";
+import { getNextBoxSequence, normalizeVariants, calculateTotalStock, parseTwoPartBoxBadge, type VariantKey, VARIANT_META } from "@/lib/screenguard";
 import { matchesBox } from "@/lib/searchNormalizer";
 import type { Box, ScreenGuardVariants } from "@/types/screenguard";
 import {
@@ -118,6 +118,168 @@ export default function AdminPage() {
     };
     setSessionLogs((prev) => [fullLog, ...prev].slice(0, 25));
   };
+
+  const adminSearchInputRef = useRef<HTMLInputElement>(null);
+
+  // ── Global Keyboard Shortcuts & Topmost Modal Escape Stack on Admin Portal ──
+  useEffect(() => {
+    const handleGlobalShortcuts = (e: KeyboardEvent) => {
+      // 1. ESC handling with capture priority
+      if (e.key === "Escape") {
+        e.preventDefault();
+        e.stopPropagation();
+
+        // Priority 1: Edit Box Modal / Add Compatibility Group Modal
+        if (isModalOpen) {
+          setIsModalOpen(false);
+          setEditingBox(null);
+          return;
+        }
+
+        // Priority 2: A4 Label Studio / Thermal Label Studio / Single-Box Print Dialog
+        if (isA4ModalOpen || a4InitialBox) {
+          setIsA4ModalOpen(false);
+          setA4InitialBox(null);
+          return;
+        }
+        if (isThermalStudioOpen || selectedThermalBox) {
+          setIsThermalStudioOpen(false);
+          setSelectedThermalBox(null);
+          return;
+        }
+
+        // Priority 3: Fast Inward Modal / Stock Count Mode / Waste Log Modal
+        if (isFastPasteModalOpen) {
+          setIsFastPasteModalOpen(false);
+          return;
+        }
+        if (isStockCountModalOpen) {
+          setIsStockCountModalOpen(false);
+          return;
+        }
+        if (isWasteModalOpen || wasteTargetBox) {
+          setIsWasteModalOpen(false);
+          setWasteTargetBox(null);
+          return;
+        }
+
+        // Priority 4: WhatsApp Order Modal / Settings & Passcode / Manage Users / History Modal / Audit Modals
+        if (isWhatsAppModalOpen) {
+          setIsWhatsAppModalOpen(false);
+          return;
+        }
+        if (isUserModalOpen) {
+          setIsUserModalOpen(false);
+          return;
+        }
+        if (isHistoryDrawerOpen) {
+          setIsHistoryDrawerOpen(false);
+          return;
+        }
+        if (isMigrationModalOpen) {
+          setIsMigrationModalOpen(false);
+          return;
+        }
+        if (isSnapshotViewerOpen) {
+          setIsSnapshotViewerOpen(false);
+          return;
+        }
+        if (isQualityModalOpen) {
+          setIsQualityModalOpen(false);
+          return;
+        }
+        if (isImportModalOpen) {
+          setIsImportModalOpen(false);
+          return;
+        }
+        if (isBulkDeleteModalOpen) {
+          setIsBulkDeleteModalOpen(false);
+          return;
+        }
+
+        // Priority 5: Any open dropdown menu (e.g. Tools dropdown)
+        if (isToolsOpen) {
+          setIsToolsOpen(false);
+          return;
+        }
+
+        // Priority 6: If no modal or dropdown is open, clear search filters and focus search
+        if (searchFilter || boxNumberFilter || brandFilter || sizeFilter || stockStatusFilter !== "ALL") {
+          setSearchFilter("");
+          setBoxNumberFilter("");
+          setBrandFilter("");
+          setSizeFilter("");
+          setStockStatusFilter("ALL");
+        }
+        adminSearchInputRef.current?.focus();
+        return;
+      }
+
+      // Check if typing inside an interactive input
+      const isInput = ["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement?.tagName || "");
+
+      // 2. Focus search bar via "/" (when not typing in an input) or "Ctrl+K" / "Cmd+K"
+      if (
+        (e.key === "/" && !isInput) ||
+        ((e.ctrlKey || e.metaKey) && (e.key === "k" || e.key === "K"))
+      ) {
+        e.preventDefault();
+        adminSearchInputRef.current?.focus();
+        adminSearchInputRef.current?.select();
+        return;
+      }
+
+      // 3. Alt + N -> Open + Add Compatibility Group modal
+      if (e.altKey && (e.key === "n" || e.key === "N")) {
+        e.preventDefault();
+        setEditingBox(null);
+        setIsModalOpen(true);
+        return;
+      }
+
+      // 4. Alt + I -> Open Fast Inward modal
+      if (e.altKey && (e.key === "i" || e.key === "I")) {
+        e.preventDefault();
+        setIsFastPasteModalOpen(true);
+        return;
+      }
+
+      // 5. Alt + P -> Open A4 Label Studio
+      if (e.altKey && (e.key === "p" || e.key === "P")) {
+        e.preventDefault();
+        setA4InitialBox(null);
+        setIsA4ModalOpen(true);
+        return;
+      }
+    };
+
+    window.addEventListener("keydown", handleGlobalShortcuts, { capture: true });
+    return () => window.removeEventListener("keydown", handleGlobalShortcuts, { capture: true });
+  }, [
+    isModalOpen,
+    isA4ModalOpen,
+    a4InitialBox,
+    isThermalStudioOpen,
+    selectedThermalBox,
+    isFastPasteModalOpen,
+    isStockCountModalOpen,
+    isWasteModalOpen,
+    wasteTargetBox,
+    isWhatsAppModalOpen,
+    isUserModalOpen,
+    isHistoryDrawerOpen,
+    isMigrationModalOpen,
+    isSnapshotViewerOpen,
+    isQualityModalOpen,
+    isImportModalOpen,
+    isBulkDeleteModalOpen,
+    isToolsOpen,
+    searchFilter,
+    boxNumberFilter,
+    brandFilter,
+    sizeFilter,
+    stockStatusFilter,
+  ]);
 
   // ── Load all data from API ────────────────────────────────────────────────
   async function fetchData() {
@@ -712,6 +874,7 @@ export default function AdminPage() {
           setAdminView(v);
         }}
         onOpenAddGroup={handleOpenAddModal}
+        onOpenBulkIntake={() => setIsFastPasteModalOpen(true)}
         onOpenStockCount={() => setIsStockCountModalOpen(true)}
         onOpenDataQuality={() => setIsQualityModalOpen(true)}
         onOpenImportCSV={() => setIsImportModalOpen(true)}
@@ -764,17 +927,17 @@ export default function AdminPage() {
             <div className="flex items-center gap-2">
               <button
                 type="button"
-                onClick={handleOpenAddModal}
-                className="px-4 py-2 rounded-xl bg-[#BE123C] hover:bg-[#9F1239] text-white font-semibold text-xs transition shadow-sm flex items-center gap-1.5 active:scale-95"
+                onClick={() => setIsFastPasteModalOpen(true)}
+                className="px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 font-semibold text-xs transition flex items-center gap-1.5 active:scale-95 shadow-sm"
               >
-                <Plus className="w-4 h-4" />
-                <span>+ Add Group</span>
+                <ClipboardList className="w-3.5 h-3.5 text-blue-500" />
+                <span>Fast Inward</span>
               </button>
               <Link
                 href="/"
                 className="px-3.5 py-2 rounded-xl bg-white hover:bg-slate-50 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 font-semibold text-xs transition shadow-sm flex items-center gap-1.5"
               >
-                <span>← Public Finder</span>
+                <span>← Counter</span>
               </Link>
             </div>
           </div>
@@ -1087,10 +1250,15 @@ export default function AdminPage() {
                       >
                         <div className="space-y-2">
                           <div className="flex items-center justify-between gap-2">
-                            <div className="flex items-center gap-2">
-                              <span className="px-2.5 py-0.5 rounded-lg bg-[#BE123C] text-white font-bold text-xs shadow-sm">
-                                {box.boxNumber}
+                            <div className="flex items-center gap-2 flex-wrap">
+                              <span className="px-2.5 py-0.5 rounded-lg bg-[#BE123C] text-white font-black text-xs shadow-sm whitespace-nowrap shrink-0">
+                                {parseTwoPartBoxBadge(box.boxNumber).mainBox}
                               </span>
+                              {parseTwoPartBoxBadge(box.boxNumber).suffix && (
+                                <span className="text-[10px] font-bold tracking-wider text-slate-500 dark:text-zinc-400 bg-slate-100 dark:bg-zinc-800/80 px-2 py-0.5 rounded-md border border-slate-200 dark:border-zinc-700 uppercase whitespace-nowrap">
+                                  {parseTwoPartBoxBadge(box.boxNumber).suffix}
+                                </span>
+                              )}
                               <span className="px-2 py-0.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-bold text-xs">
                                 📱 {box.displaySize || "Universal"}
                               </span>
@@ -1230,15 +1398,6 @@ export default function AdminPage() {
               {/* 2. Action Toolbar */}
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3.5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
                 <div className="flex items-center gap-2 flex-wrap">
-                  <button
-                    type="button"
-                    onClick={handleOpenAddModal}
-                    className="px-4 py-2 rounded-xl bg-[#BE123C] hover:bg-[#9F1239] text-white font-semibold text-xs transition shadow-sm flex items-center gap-1.5 active:scale-95"
-                  >
-                    <Plus className="w-4 h-4" />
-                    <span>+ Add Group</span>
-                  </button>
-
                   <button
                     type="button"
                     onClick={() => setIsFastPasteModalOpen(true)}
@@ -1400,10 +1559,12 @@ export default function AdminPage() {
                   <div className="relative">
                     <Search className="w-4 h-4 absolute left-3 top-2.5 text-slate-400" />
                     <input
+                      ref={adminSearchInputRef}
+                      id="admin-search-input"
                       type="text"
                       value={searchFilter}
                       onChange={(e) => setSearchFilter(e.target.value)}
-                      placeholder="Search model, box, title..."
+                      placeholder="Search model, box, title... (Ctrl+K or /)"
                       className="w-full pl-9 pr-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white placeholder:text-slate-400 text-xs font-medium focus:outline-none focus:ring-1 focus:ring-rose-500"
                     />
                   </div>
@@ -1490,7 +1651,7 @@ export default function AdminPage() {
                     return (
                       <div
                         key={box.id}
-                        className="bg-white dark:bg-[#111827] border border-slate-200/90 dark:border-slate-800 rounded-2xl p-4 sm:p-5 mb-3 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4 hover:shadow-md transition"
+                        className="bg-white dark:bg-[#111113] border border-[#E2E8F0] dark:border-[#27272A] rounded-2xl p-4 sm:p-5 mb-3 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4 hover:shadow-md transition"
                       >
                         {/* Left Block */}
                         <div className="space-y-2 flex-1 min-w-0">
@@ -1501,10 +1662,22 @@ export default function AdminPage() {
                               {box.id}
                             </span>
 
-                            {/* BOX 001 (Red brand pill) */}
-                            <span className="px-2.5 py-0.5 rounded-lg bg-[#BE123C] text-white font-bold text-xs shadow-sm">
-                              {box.boxNumber}
-                            </span>
+                            {/* Two-Part Box Badge Hierarchy */}
+                            {(() => {
+                              const { mainBox, suffix } = parseTwoPartBoxBadge(box.boxNumber);
+                              return (
+                                <div className="flex items-center gap-1.5 flex-wrap">
+                                  <span className="px-2.5 py-0.5 rounded-lg bg-[#BE123C] text-white font-black text-xs shadow-sm whitespace-nowrap shrink-0">
+                                    {mainBox}
+                                  </span>
+                                  {suffix && (
+                                    <span className="text-[10px] font-bold tracking-wider text-slate-500 dark:text-zinc-400 bg-slate-100 dark:bg-zinc-800/80 px-2 py-0.5 rounded-md border border-slate-200 dark:border-zinc-700 uppercase whitespace-nowrap">
+                                      {suffix}
+                                    </span>
+                                  )}
+                                </div>
+                              );
+                            })()}
 
                             {/* Screen size */}
                             <span className="px-2 py-0.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold text-xs border border-slate-200 dark:border-slate-700">
@@ -1546,6 +1719,31 @@ export default function AdminPage() {
                               {box.title}
                             </h3>
                           </div>
+
+                          {/* Calm Neutral Variant Tiles with 4px Left-Edge Color Accent Bars */}
+                          {(() => {
+                            const bVars = normalizeVariants(box.variants, qty);
+                            return (
+                              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 py-1 max-w-lg">
+                                <div className="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 border-l-4 border-l-[#10B981]">
+                                  <span className="text-[10px] font-semibold text-slate-500 dark:text-zinc-400">Clear</span>
+                                  <span className="text-xs font-black text-slate-900 dark:text-white tabular-nums">{bVars.super_d ?? 0}</span>
+                                </div>
+                                <div className="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 border-l-4 border-l-[#8B5CF6]">
+                                  <span className="text-[10px] font-semibold text-slate-500 dark:text-zinc-400">Privacy</span>
+                                  <span className="text-xs font-black text-slate-900 dark:text-white tabular-nums">{bVars.privacy ?? 0}</span>
+                                </div>
+                                <div className="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 border-l-4 border-l-[#3B82F6]">
+                                  <span className="text-[10px] font-semibold text-slate-500 dark:text-zinc-400">Matte</span>
+                                  <span className="text-xs font-black text-slate-900 dark:text-white tabular-nums">{bVars.matte ?? 0}</span>
+                                </div>
+                                <div className="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 border-l-4 border-l-[#F59E0B]">
+                                  <span className="text-[10px] font-semibold text-slate-500 dark:text-zinc-400">Borderless</span>
+                                  <span className="text-xs font-black text-slate-900 dark:text-white tabular-nums">{bVars.borderless ?? 0}</span>
+                                </div>
+                              </div>
+                            );
+                          })()}
 
                           {/* Bottom Aliases: Soft gray pill tags */}
                           <div className="flex flex-wrap items-center gap-1.5 pt-0.5">

@@ -53,13 +53,15 @@ export function compactString(str: string): string {
 
 /**
  * Extract numerical box indicator if the query is referring to a box directly.
- * E.g., "box 48", "box048", "box 048", "48", "#48", "048"
+ * E.g., "box 48", "box048", "box 048", "48", "#48", "048",
+ * "BOX 001 PRIVACY/CLEAR/MATTE/BORDERLESS", "box 001 privacy", etc.
  */
 export function parseBoxQuery(rawQuery: string): { isBoxQuery: boolean; numStr: string; cleanNum: number } | null {
   const q = rawQuery.trim().toLowerCase();
   
-  // Matches "box 48", "box048", "box-48", "b 48"
-  const boxMatch = q.match(/^(?:box|b)?\s*#?0*(\d{1,4})$/i);
+  // Matches "box 48", "box048", "box-48", "b 48", "48", "#48", "048"
+  // and full formatted queries like "BOX 001 PRIVACY/CLEAR/MATTE/BORDERLESS", "box 001 privacy", etc.
+  const boxMatch = q.match(/^(?:box|b)?\s*[-#]?\s*0*(\d{1,4})(?:\s*[\/\s-]*\s*(?:privacy|clear|matte|borderless)[\w\/\s-]*)?$/i);
   if (boxMatch && boxMatch[1]) {
     const cleanNum = parseInt(boxMatch[1], 10);
     return {
@@ -150,9 +152,9 @@ export function matchesBox(
   const boxId = ("id" in box ? box.id : (box as ScreenGuardItem).groupId) || "";
 
   if (parsedBox) {
-    const boxNumDigits = box.boxNumber.replace(/\D/g, "");
-    if (boxNumDigits) {
-      const boxInt = parseInt(boxNumDigits, 10);
+    const boxNumMatch = box.boxNumber.match(/\d+/);
+    if (boxNumMatch) {
+      const boxInt = parseInt(boxNumMatch[0], 10);
       if (boxInt === parsedBox.cleanNum) {
         return true;
       }

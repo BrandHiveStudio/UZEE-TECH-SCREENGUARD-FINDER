@@ -4,25 +4,25 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
+    --background: 210 40% 98%; /* #f8fafc */
     --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
+    --card: 0 0% 100%; /* #ffffff */
     --card-foreground: 222.2 84% 4.9%;
     --primary: 356 72% 40%; /* UZEE TECH Crimson #b01d23 */
     --primary-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
+    --border: 214.3 31.8% 91.4%; /* #e2e8f0 */
     --ring: 356 72% 40%;
     --radius: 1rem;
   }
 
   .dark {
-    --background: 224 71% 4%;
+    --background: 240 10% 3.9%; /* #09090b */
     --foreground: 210 40% 98%;
-    --card: 222 47% 8%;
+    --card: 240 5.9% 6.7%; /* #111113 */
     --card-foreground: 210 40% 98%;
     --primary: 356 72% 50%;
     --primary-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
+    --border: 240 3.7% 15.9%; /* #27272a */
     --ring: 356 72% 50%;
   }
 }

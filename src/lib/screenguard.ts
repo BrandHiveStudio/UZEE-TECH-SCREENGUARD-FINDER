@@ -73,7 +73,7 @@ export function getNextBoxSequence(
   const nextNum = maxNumber + 1;
   const padded = String(nextNum).padStart(3, "0");
   return {
-    nextBoxNumber: `BOX ${padded}`,
+    nextBoxNumber: `BOX ${padded} PRIVACY/CLEAR/MATTE/BORDERLESS`,
     nextGroupId: `box-${padded}`,
   };
 }
@@ -111,5 +111,22 @@ export function calculateTotalStock(variants: ScreenGuardVariants): number {
     (variants.matte || 0) +
     (variants.borderless || 0)
   );
+}
+
+/**
+ * Splits standard box number "BOX XXX PRIVACY/CLEAR/MATTE/BORDERLESS"
+ * into a primary tag ("BOX XXX") and a clean suffix subtitle ("PRIVACY / CLEAR / MATTE / BORDERLESS").
+ */
+export function parseTwoPartBoxBadge(boxNumber: string): { mainBox: string; suffix: string } {
+  const match = (boxNumber || "").match(/^(BOX\s+\d+[A-Z]?)(.*)$/i);
+  if (match) {
+    const mainBox = match[1].trim();
+    const rawSuffix = match[2].trim().replace(/^[\/\-\s]+/, "").replace(/[\/\-\s]+$/, "");
+    return {
+      mainBox,
+      suffix: rawSuffix || "PRIVACY / CLEAR / MATTE / BORDERLESS",
+    };
+  }
+  return { mainBox: boxNumber || "", suffix: "" };
 }
 

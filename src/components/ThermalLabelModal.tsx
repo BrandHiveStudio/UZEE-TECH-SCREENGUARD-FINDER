@@ -32,6 +32,19 @@ export function ThermalLabelModal({ isOpen, onClose, box, allBoxes = [] }: Therm
     }
   }, []);
 
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        e.stopPropagation();
+        onClose();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown, true);
+    return () => window.removeEventListener("keydown", handleKeyDown, true);
+  }, [isOpen, onClose]);
+
   const currentBox =
     (allBoxes && allBoxes.find((b) => b.id === selectedBoxId)) ||
     box ||
@@ -105,12 +118,18 @@ export function ThermalLabelModal({ isOpen, onClose, box, allBoxes = [] }: Therm
                 </p>
               </div>
             </div>
-            <button
-              onClick={onClose}
-              className="p-1.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
-            >
-              <X className="w-5 h-5" />
-            </button>
+            <div className="flex items-center gap-2">
+              <kbd className="hidden sm:inline-flex items-center gap-1 text-[10px] font-mono font-bold text-slate-400 bg-slate-800/80 border border-slate-700 px-2 py-1 rounded-lg shadow-2xs">
+                ESC ✕
+              </kbd>
+              <button
+                onClick={onClose}
+                className="p-1.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
+                title="Close (Esc)"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
           </div>
 
           {/* Options Bar */}
